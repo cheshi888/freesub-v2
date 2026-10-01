@@ -5,13 +5,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "188.114.96.3",
-      "server_port": 443,
-      "uuid": "3423809a-08e5-4b93-bd76-c6cdcbfd9b52",
+      "tag": "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe",
+      "server": "89.125.96.81",
+      "server_port": 2053,
+      "uuid": "6c713691-3ca2-0008-ad25-113d1bed6b03",
       "tls": {
         "enabled": true,
-        "server_name": "bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev",
+        "server_name": "wss.zazazuza.ru",
         "insecure": false,
         "alpn": [
           "http/1.1"
@@ -23,9 +23,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/vl/Dx6V42S2EK2zpfDrJrOZXj4MI5PnNOGr",
+        "path": "/vpn-wss/fluxor/59011/",
         "headers": {
-          "Host": "bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev"
+          "Host": "wss.zazazuza.ru"
         }
       }
     },
@@ -34,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - xiaohe"
+        "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - xiaohe"
+        "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

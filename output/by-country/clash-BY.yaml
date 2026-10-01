@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇶 IQ 01 - xiaohe
-  server: 188.114.96.3
-  port: 443
+- name: 🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe
+  server: 89.125.96.81
+  port: 2053
   udp: true
   type: vless
-  uuid: 3423809a-08e5-4b93-bd76-c6cdcbfd9b52
+  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
   tls: true
-  servername: bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev
+  servername: wss.zazazuza.ru
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vl/Dx6V42S2EK2zpfDrJrOZXj4MI5PnNOGr
+    path: /vpn-wss/fluxor/59011/
     headers:
-      Host: bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev
+      Host: wss.zazazuza.ru
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇶 IQ 01 - xiaohe
+  - 🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇶 IQ 01 - xiaohe
+  - 🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe
 rules:
 - MATCH,PROXIES

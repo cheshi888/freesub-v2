@@ -4,158 +4,38 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
-  server: 129.153.71.28
-  port: 28863
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  server: hi.northcluster.info
+  port: 52300
   udp: true
-  type: vless
-  uuid: 1eb148ad-8549-4d07-858f-253a8f5c33c4
-  tls: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  type: vmess
+  uuid: 6e571484-4166-4699-8f58-b34a1823691f
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-- name: 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
-  server: 57.129.130.57
-  port: 52014
+    path: /video
+- name: 🇸🇬 新加坡 (Singapore) 02 (家宽) - xiaohe
+  server: s3.huhiuh.space
+  port: 18642
   udp: true
-  type: vless
-  uuid: 4c6609bf-8457-4260-b4fa-321379e57a4e
-  tls: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristifp=chrome
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-- name: 🇺🇸 美国 (United States) 03 (家宽) - xiaohe
-  server: 154.9.30.191
-  port: 18376
-  udp: true
-  type: vless
-  uuid: 88ee0e1e-a2a2-477e-88ce-4875c058aeba
-  tls: true
-  servername: 123.714541.xyz
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /Ra-vl
-    headers:
-      Host: 123.714541.xyz
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
-  server: hinet1.2yly.com
-  port: 24215
-  udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - xiaohe
-  server: 104.21.41.247
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 0da0a073-a5b0-4229-bf11-24592f6290b9
-  tls: true
-  servername: tcdnu.azad0namah.ir
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tucdn/
-    headers:
-      Host: tcdnu.azad0namah.ir
-- name: 🇹🇷 土耳其 (Turkey) 06 (移动家宽) - xiaohe
-  server: tcdnu.azad0namah.ir
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 0da0a073-a5b0-4229-bf11-24592f6290b9
-  tls: true
-  servername: tcdnu.azad0namah.ir
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tuws/
-    headers:
-      Host: tcdnu.azad0namah.ir
-- name: 🇺🇸 美国 (United States) 07 (家宽) - xiaohe
-  server: 103.21.220.248
-  port: 29608
-  udp: true
-  type: vless
-  uuid: 88ee0e1e-a2a2-477e-88ce-4875c058aeba
-  tls: true
-  servername: 123.714541.xyz
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /Ra-vl
-    headers:
-      Host: 123.714541.xyz
-- name: 🇺🇸 美国 (United States) 08 (家宽) - xiaohe
-  server: 211.229.56.86
-  port: 30021
-  udp: true
-  type: vless
-  uuid: 88ee0e1e-a2a2-477e-88ce-4875c058aeba
-  tls: true
-  servername: 123.714541.xyz
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /Ra-vl
-    headers:
-      Host: 123.714541.xyz
-- name: 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - xiaohe
-  server: x-tw01.xueshan168.cc
-  port: 16000
-  udp: true
-  type: vless
-  uuid: cf20ac54-9c77-4fec-b2b6-bcf8223aa4d5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: CuqzBeQR_1VIdOGOgn5v8-t-X-YzURF9b3wtKVVyKQ8
-  servername: s0.awsstatic.com
-  client-fingerprint: chrome
+  type: hysteria2
+  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  sni: www.bing.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 03 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 06 (移动家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 07 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 08 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 02 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 03 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 06 (移动家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 07 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 08 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 02 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
