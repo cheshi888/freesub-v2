@@ -5,14 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: 13.49.76.55
+  server: 13.49.21.155
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: 51.20.96.231
+  server: 51.20.77.147
   port: 443
   udp: true
   type: ss
@@ -26,14 +26,14 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  server: 13.60.213.145
+  server: 13.48.104.64
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
-  server: 13.49.21.155
+  server: 51.20.122.188
   port: 443
   udp: true
   type: ss
@@ -54,56 +54,40 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 08 - xiaohe
-  server: 34.51.231.250
+  server: 13.60.213.145
   port: 443
   udp: true
-  type: vless
-  uuid: e4be912f-68e8-4d51-80a4-1342b646f8e0
-  tls: true
-  reality-opts:
-    public-key: fV003yDr_sb_Wkgz6MxnIUJMgD15osWhzU-HZ5fLPFg
-    short-id: 79ff7d51e3c56323
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 09 - xiaohe
-  server: 31.77.158.132
+  server: 143.246.196.207
   port: 443
   udp: true
   type: vless
-  uuid: af2bf319-ba88-4fec-8317-2b6a8cee96d1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: COMosLQzz8GJ3ATEBK__SBjKsiL5VVS1MWkWUFpQTVk
-  servername: hittaikea.prizraknode.shop
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 10 - xiaohe
-  server: 143.246.194.132
-  port: 443
-  udp: true
-  type: vless
-  uuid: dc9e93bc-b53a-11f1-91d3-52540030ba36
+  uuid: ac0c2945-b758-11f1-8181-54db13ea7d40
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
-  servername: www.ikea.com
+  servername: www.blocket.se
+  client-fingerprint: chrome
+- name: 🇸🇪 瑞典 (Sweden) 10 - xiaohe
+  server: 62.60.159.81
+  port: 2053
+  udp: true
+  type: vless
+  uuid: fc00adfb-232a-46ce-8b93-0c70e516aa8a
+  tls: true
+  reality-opts:
+    public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
+    short-id: d0ea1847066af5a6
+  servername: www.samsung.com
   client-fingerprint: safari
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpce5bb9e71
 - name: 🇸🇪 瑞典 (Sweden) 11 - xiaohe
-  server: 13.48.104.64
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 12 - xiaohe
-  server: 51.20.77.147
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 13 - xiaohe
   server: surstreming.vvzzkontaktezzvv.garden
   port: 443
   udp: true
@@ -115,43 +99,26 @@ proxies:
     public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
     short-id: fb442438e2223836
   servername: surstreming.vvzzkontaktezzvv.garden
-  client-fingerprint: random
-- name: 🇸🇪 瑞典 (Sweden) 14 - xiaohe
-  server: 51.20.122.188
+  client-fingerprint: chrome
+- name: 🇸🇪 瑞典 (Sweden) 12 - xiaohe
+  server: 51.20.96.231
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 15 - xiaohe
-  server: 62.60.159.81
-  port: 2053
+- name: 🇸🇪 瑞典 (Sweden) 13 - xiaohe
+  server: 34.51.231.250
+  port: 443
   udp: true
   type: vless
-  uuid: fc00adfb-232a-46ce-8b93-0c70e516aa8a
+  uuid: e4be912f-68e8-4d51-80a4-1342b646f8e0
   tls: true
   reality-opts:
-    public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
-    short-id: d0ea1847066af5a6
-  servername: www.samsung.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpce5bb9e71
-- name: 🇸🇪 瑞典 (Sweden) 16 - xiaohe
-  server: 176.109.104.103
-  port: 9881
-  udp: true
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-  servername: dl.google.com
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
+    public-key: fV003yDr_sb_Wkgz6MxnIUJMgD15osWhzU-HZ5fLPFg
+    short-id: 79ff7d51e3c56323
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -170,9 +137,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 11 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 12 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 13 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 14 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 15 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 16 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -191,8 +155,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 11 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 12 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 13 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 14 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 15 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 16 - xiaohe
 rules:
 - MATCH,PROXIES

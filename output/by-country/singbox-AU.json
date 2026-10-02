@@ -6,18 +6,6 @@
     {
       "type": "hysteria2",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-      "server": "vpn-au-001.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-au-001.fastervpn.world",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
       "server": "152.67.115.203",
       "server_port": 443,
       "password": "633bc3be486b646190661ac2387c150a",
@@ -32,12 +20,41 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
+      "server": "137.23.3.238",
+      "server_port": 20000,
+      "password": "b42d90fa667942aebc734d60",
+      "tls": {
+        "enabled": true,
+        "server_name": "rmgyvpn.rest",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "b42d90fa667942aebc734d60"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
+      "server": "vpn-au-001.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-au-001.fastervpn.world",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 02 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
+        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe"
       ]
     },
     {
@@ -45,7 +62,8 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 02 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
+        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

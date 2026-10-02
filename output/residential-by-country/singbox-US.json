@@ -5,49 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe",
-      "server": "172.64.42.85",
-      "server_port": 2086,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls ",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 02 (移动家宽) - xiaohe",
-      "server": "172.64.158.146",
-      "server_port": 8880,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 03 (移动家宽) - xiaohe",
-      "server": "162.159.0.53",
-      "server_port": 80,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 04 (家宽) - xiaohe",
+      "tag": "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
       "server": "140.150.227.51",
       "server_port": 443,
       "uuid": "a15d1b88-e3f4-4f4d-9c04-462a2965a60a",
@@ -67,24 +25,43 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 02 (家宽) - xiaohe",
+      "server": "154.17.228.81",
+      "server_port": 59686,
+      "uuid": "88ee0e1e-a2a2-477e-88ce-4875c058aeba",
+      "tls": {
+        "enabled": true,
+        "server_name": "123.714541.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Ra-vl",
+        "headers": {
+          "Host": "123.714541.xyz"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe",
-        "🇺🇸 美国 (United States) 02 (移动家宽) - xiaohe",
-        "🇺🇸 美国 (United States) 03 (移动家宽) - xiaohe",
-        "🇺🇸 美国 (United States) 04 (家宽) - xiaohe"
+        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
+        "🇺🇸 美国 (United States) 02 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe",
-        "🇺🇸 美国 (United States) 02 (移动家宽) - xiaohe",
-        "🇺🇸 美国 (United States) 03 (移动家宽) - xiaohe",
-        "🇺🇸 美国 (United States) 04 (家宽) - xiaohe"
+        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
+        "🇺🇸 美国 (United States) 02 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

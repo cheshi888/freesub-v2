@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
-  server: 77.74.123.102
+  server: 77.74.123.101
   port: 8443
   udp: true
   type: hysteria2
@@ -13,24 +13,6 @@ proxies:
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  server: 162.249.127.142
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  sni: hop-germany-september.dynuddns.com
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
-  server: 162.249.125.133
-  port: 443
-  udp: true
-  type: hysteria2
-  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
-  sni: hy2-new.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   server: 46.28.67.55
   port: 443
   udp: true
@@ -43,7 +25,17 @@ proxies:
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
+  server: 162.249.125.133
+  port: 443
+  udp: true
+  type: hysteria2
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
+  sni: hy2-new.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: c1b4086fea89914496c7e10967a419216566
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   server: 146.70.124.85
   port: 443
   udp: true
@@ -55,22 +47,30 @@ proxies:
     public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
     short-id: fe24f8a0a560056e
   servername: www.datadoghq.com
-  client-fingerprint: edge
-- name: 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
-  server: 185.156.44.99
-  port: 443
+  client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
+  server: 162.249.127.143
+  port: 8443
   udp: true
   type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: t.me
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  sni: hop-germany-september.dynuddns.com
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe
-  server: 154.46.31.106
+- name: 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
+  server: bogging-eyeteeth-fly.freesocks.work
   port: 443
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: QFWzCw2uX9B9i6qAYeFBIE
+- name: 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe
+  server: 185.156.44.99
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: speedtest.tinkoff.ru
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select

@@ -4,31 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe
-  server: 45.132.177.96
-  port: 9889
+- name: 🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe
+  server: 81.208.170.142
+  port: 1500
   udp: true
   type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  uuid: e332f028-d343-5b44-8016-b3130f39e133
   tls: true
   reality-opts:
-    public-key: ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU
-  servername: dl.google.com
+    public-key: VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE
+    short-id: 775eb6408888248e
+  servername: www.ebay.com
   client-fingerprint: chrome
   network: grpc
   grpc-opts:
-    grpc-service-name: grpc-tunnel
+    grpc-service-name: ''
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe
+  - 🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe
+  - 🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe
 rules:
 - MATCH,PROXIES

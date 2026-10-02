@@ -16,7 +16,7 @@ proxies:
     public-key: PmdZ2ETkHc0zjYcs22xT_wyZk5fEpX7mg7RP396HBBc
     short-id: 232b1b09e45325a4
   servername: cz1.animeteka.info
-  client-fingerprint: firefox
+  client-fingerprint: ios
 - name: 🇨🇿 捷克 (Czech) 02 - xiaohe
   server: 153.76.190.41
   port: 8443
@@ -25,6 +25,19 @@ proxies:
   password: 3a92b39a-5f02-415e-a908-783ec320e83f
   sni: speedtestmark.com
   skip-cert-verify: true
+- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
+  server: 45.151.180.165
+  port: 43000
+  udp: true
+  type: vless
+  uuid: a80212c8-a909-4837-beb2-7960b59ee5ca
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: lGf40xP_E5TZz9KkrQoeUKCfRq8WBatc7OYnRgBEuXI
+    short-id: e4a3b0e4
+  servername: 45.151.180.165
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +45,7 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
+  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -39,5 +53,6 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
+  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 rules:
 - MATCH,PROXIES

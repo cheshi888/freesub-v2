@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇪 比利时 (Belgium) 01 - xiaohe
-  server: 34.38.82.200
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6d341f6e-7b9d-4ae3-999b-00333de7bdfb
-  tls: true
-  reality-opts:
-    public-key: v6QpErcVOVKIYLm53R3bAP8zIKCFr4HAJWW0VwBKtws
-    short-id: 31f187650d9530bb
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇧🇪 比利时 (Belgium) 02 - xiaohe
   server: 34.156.242.126
   port: 443
   udp: true
@@ -27,7 +15,19 @@ proxies:
     public-key: OQ0MKzP5TYtlJCteckb25tD6USBH__D1z28Y8BOcdG4
     short-id: b4f2c0e3d8668c2f
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
+- name: 🇧🇪 比利时 (Belgium) 02 - xiaohe
+  server: 34.38.82.200
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6d341f6e-7b9d-4ae3-999b-00333de7bdfb
+  tls: true
+  reality-opts:
+    public-key: v6QpErcVOVKIYLm53R3bAP8zIKCFr4HAJWW0VwBKtws
+    short-id: 31f187650d9530bb
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

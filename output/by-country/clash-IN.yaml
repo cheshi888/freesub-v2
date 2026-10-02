@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaohe
-  server: 35.244.28.130
+  server: tttyder.wsone.icu
   port: 443
   udp: true
   type: trojan
@@ -23,35 +23,49 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 03 - xiaohe
-  server: hyfuuf6.wsone.icu
-  port: 443
-  udp: true
-  type: trojan
-  password: M7v%w11Se*
-  sni: hyfuuf6.wsone.icu
-  skip-cert-verify: false
-- name: 🇮🇳 印度 (India) 04 - xiaohe
-  server: 139.84.166.47
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: GEdoeeqLZtkJRgSa
-- name: 🇮🇳 印度 (India) 05 - xiaohe
-  server: 148.113.5.44
-  port: 443
-  udp: true
-  type: vless
-  uuid: 72ea5a91-ffcc-43d2-9297-5993c3abf186
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI
-    short-id: 221873918e0bb74d
-  servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 03 - xiaohe
+  server: 20.235.220.189
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: 6jdvarazgu3qqr6q.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers: &id001
+      Host: 6jdvarazgu3qqr6q.v.3dns.vip
+- name: 🇮🇳 印度 (India) 04 - xiaohe
+  server: 20.235.220.189
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: 6jdvarazgu3qqr6q.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers: *id001
+- name: 🇮🇳 印度 (India) 05 - xiaohe
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select

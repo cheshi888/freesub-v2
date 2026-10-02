@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-10-02 12:02:35 UTC
+生成时间: 2026-10-02 17:40:20 UTC
 ==============================================================================
 
 说明:
@@ -15,39 +15,9 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 6
+本轮家宽节点数: 4
 
-[1] US  移动网络  置信度 85
-     exit_ip : 192.193.104.22
-     server  : 172.64.42.85:2086  (vless)
-     ASN     : AS25883 Citigroup Inc.
-     ISP     : Citigroup Inc.
-     ORG     : Citibank N.A
-     ip-api  : hosting=False proxy=False mobile=True reverse=-
-     ipapi.is: company=Citibank N.A. asn=AS25883 Citigroup Inc.
-     fraud   : 0  (-1 = 未取到评分)
-
-[2] US  移动网络  置信度 85
-     exit_ip : 192.193.104.22
-     server  : 172.64.158.146:8880  (vless)
-     ASN     : AS25883 Citigroup Inc.
-     ISP     : Citigroup Inc.
-     ORG     : Citibank N.A
-     ip-api  : hosting=False proxy=False mobile=True reverse=-
-     ipapi.is: company=Citibank N.A. asn=AS25883 Citigroup Inc.
-     fraud   : 0  (-1 = 未取到评分)
-
-[3] US  移动网络  置信度 85
-     exit_ip : 192.193.104.22
-     server  : 162.159.0.53:80  (vless)
-     ASN     : AS25883 Citigroup Inc.
-     ISP     : Citigroup Inc.
-     ORG     : Citibank N.A
-     ip-api  : hosting=False proxy=False mobile=True reverse=-
-     ipapi.is: company=Citibank N.A. asn=AS25883 Citigroup Inc.
-     fraud   : 0  (-1 = 未取到评分)
-
-[4] US  严格家宽  置信度 70
+[1] US  严格家宽  置信度 70
      exit_ip : 140.150.227.51
      server  : 140.150.227.51:443  (vless)
      ASN     : -
@@ -57,19 +27,29 @@
      ipapi.is: company=Private Customer asn=AS29802 HIVELOCITY, Inc.
      fraud   : 0  (-1 = 未取到评分)
 
-[5] NL  移动网络  置信度 85
-     exit_ip : 31.77.114.212
-     server  : 31.77.114.212:443  (vless)
-     ASN     : AS219064 Akenai Products LTD
-     ISP     : Akenai-Products-AS
-     ORG     : Akenai Products LTD
-     ip-api  : hosting=False proxy=False mobile=True reverse=-
-     ipapi.is: company=Private Customer asn=AS219064 Akenai Products LTD
+[2] US  严格家宽  置信度 71
+     exit_ip : 179.254.94.59
+     server  : 154.17.228.81:59686  (vless)
+     ASN     : AS209604 2E TELEKOMUNIKASYON LTD STI
+     ISP     : 2E TELEKOMUNIKASYON LTD STI
+     ORG     : 2E Telekomunikasyon LTD. STI
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=2E Telekomunikasyon LTD. STI. asn=AS209604 2E TELEKOMUNIKASYON LTD STI
      fraud   : 0  (-1 = 未取到评分)
 
-[6] HK  严格家宽  置信度 82
+[3] TW  严格家宽  置信度 82
+     exit_ip : 118.167.235.241
+     server  : 118.167.235.241:24215  (vless)
+     ASN     : AS3462 Data Communication Business Group
+     ISP     : Chunghwa Telecom Co., Ltd.
+     ORG     : Chunghwa Telecom Co. Ltd.
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
+     fraud   : 0  (-1 = 未取到评分)
+
+[4] HK  严格家宽  置信度 82
      exit_ip : 218.250.216.236
-     server  : 218.250.216.236:443  (vless)
+     server  : a736eb68-tmb1c0-tpkh0c-1r7od.hk2.hyhuawei.com:443  (vless)
      ASN     : AS4760 HKT Limited
      ISP     : Hong Kong Telecommunications (HKT) Limited Mass Internet
      ORG     : Hong Kong Telecommunications (HKT) Limited

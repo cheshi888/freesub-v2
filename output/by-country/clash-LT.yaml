@@ -6,68 +6,83 @@ log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - xiaohe
   server: 195.238.126.20
-  port: 9001
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: UkXRsXvR6buDMG2Y
-- name: 🇱🇹 立陶宛 (Lithuania) 02 - xiaohe
-  server: 195.238.126.20
-  port: 9011
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: M3t2ZEQcMGRWBjRa
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaohe
-  server: 195.238.126.20
-  port: 9002
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: b8KkNDjEd5QqFyRm
-- name: 🇱🇹 立陶宛 (Lithuania) 04 - xiaohe
-  server: 195.238.126.20
-  port: 9008
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: y9VURyNzJWNRYEGQ
-- name: 🇱🇹 立陶宛 (Lithuania) 05 - xiaohe
-  server: 195.238.126.20
-  port: 9078
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: JCJpbRbQZNw9XFZG
-- name: 🇱🇹 立陶宛 (Lithuania) 06 - xiaohe
-  server: 195.238.126.20
-  port: 9086
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇹 立陶宛 (Lithuania) 07 - xiaohe
-  server: 195.238.126.20
   port: 9012
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: xaupMUvhptwxdDUg
-- name: 🇱🇹 立陶宛 (Lithuania) 08 - xiaohe
+- name: 🇱🇹 立陶宛 (Lithuania) 02 - xiaohe
+  server: 195.238.126.20
+  port: 9001
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: UkXRsXvR6buDMG2Y
+- name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaohe
   server: 195.238.126.20
   port: 9045
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: Lp27rqyJq72bZsqX
-- name: 🇱🇹 立陶宛 (Lithuania) 09 - xiaohe
+- name: 🇱🇹 立陶宛 (Lithuania) 04 - xiaohe
+  server: 195.238.126.20
+  port: 9086
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇹 立陶宛 (Lithuania) 05 - xiaohe
+  server: 195.238.126.20
+  port: 9002
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: b8KkNDjEd5QqFyRm
+- name: 🇱🇹 立陶宛 (Lithuania) 06 - xiaohe
   server: 195.238.126.20
   port: 9068
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: mwgRg9hRq3b4Qnwb
+- name: 🇱🇹 立陶宛 (Lithuania) 07 - xiaohe
+  server: 195.238.126.20
+  port: 9078
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: JCJpbRbQZNw9XFZG
+- name: 🇱🇹 立陶宛 (Lithuania) 08 - xiaohe
+  server: 195.238.126.20
+  port: 9011
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: M3t2ZEQcMGRWBjRa
+- name: 🇱🇹 立陶宛 (Lithuania) 09 - xiaohe
+  server: 195.238.126.20
+  port: 9008
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: y9VURyNzJWNRYEGQ
 - name: 🇱🇹 立陶宛 (Lithuania) 10 - xiaohe
+  server: 84.32.151.226
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3e35758a-911b-4e30-bc1a-8985323df6f7
+  tls: true
+  reality-opts:
+    public-key: C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4
+    short-id: 4a7d3e9f2b8c6a1d
+  servername: workspace.cloudnativecontrol.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: moktana.net.v1.StreamService
+- name: 🇱🇹 立陶宛 (Lithuania) 11 - xiaohe
   server: 62.77.158.1
   port: 443
   udp: true
@@ -79,7 +94,7 @@ proxies:
     public-key: sVhkyiMXvpofflCdSszxQmsqOXV1kg1Ldxq1a9mOPjs
     short-id: 6a
   servername: online.1c.ru
-  client-fingerprint: chrome
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -95,6 +110,7 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 08 - xiaohe
   - 🇱🇹 立陶宛 (Lithuania) 09 - xiaohe
   - 🇱🇹 立陶宛 (Lithuania) 10 - xiaohe
+  - 🇱🇹 立陶宛 (Lithuania) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -110,5 +126,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 08 - xiaohe
   - 🇱🇹 立陶宛 (Lithuania) 09 - xiaohe
   - 🇱🇹 立陶宛 (Lithuania) 10 - xiaohe
+  - 🇱🇹 立陶宛 (Lithuania) 11 - xiaohe
 rules:
 - MATCH,PROXIES

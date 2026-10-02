@@ -13,13 +13,19 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
-  server: silversbgfgov.vip43.wogbcnmnagfwgov.com
-  port: 11243
+  server: 104.16.10.2
+  port: 443
   udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
+  type: vless
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  tls: true
+  servername: v2ray.simspeedup.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
 proxy-groups:
 - name: PROXIES
   type: select

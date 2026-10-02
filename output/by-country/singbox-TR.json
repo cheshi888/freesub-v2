@@ -6,13 +6,46 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "178.83.46.216",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+      "server": "49.13.231.249",
+      "server_port": 33483,
+      "uuid": "758a691a-45d2-4462-a0e8-991248a6994e",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
+      "server": "supervpn.armanspeed.ir",
+      "server_port": 443,
+      "uuid": "9e316d2c-3f46-4f47-a3bd-cad429b8eb2a",
+      "security": "auto"
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
+      "server": "85.192.48.142",
+      "server_port": 443,
+      "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nvidia.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+          "short_id": "db04ce8bdb8900f1"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - xiaohe",
       "server": "78.135.73.47",
       "server_port": 443,
       "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
@@ -32,41 +65,12 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
-      "server": "me17.msjia8844.site",
-      "server_port": 7443,
-      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
-      "tls": {
-        "enabled": true,
-        "server_name": "me17.msjia8844.site",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - xiaohe",
-      "server": "85.192.48.142",
-      "server_port": 443,
-      "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nvidia.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "short_id": "db04ce8bdb8900f1"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - xiaohe",
+      "server": "bale.xv98.ir",
+      "server_port": 5051,
+      "method": "chacha20-ietf-poly1305",
+      "password": "68mL2QkZEBlxWa3hcslGDw"
     },
     {
       "type": "selector",
@@ -76,7 +80,8 @@
         "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
         "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
         "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 04 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 04 - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 05 - xiaohe"
       ]
     },
     {
@@ -86,7 +91,8 @@
         "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
         "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
         "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 04 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 04 - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
