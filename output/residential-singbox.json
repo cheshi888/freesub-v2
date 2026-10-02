@@ -26,9 +26,55 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 02 (家宽) - xiaohe",
-      "server": "154.17.228.81",
-      "server_port": 59686,
+      "tag": "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe",
+      "server": "178.83.46.216",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
+      "server": "118.167.235.241",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 (家宽) - xiaohe",
+      "server": "89.218.15.90",
+      "server_port": 10002,
+      "uuid": "392fcc7e-b995-11f1-a6b7-1b2272a86bd5",
+      "tls": {
+        "enabled": true,
+        "server_name": "kz1.vpnjantit.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vpnjantit",
+        "headers": {
+          "Host": "kz1.vpnjantit.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 05 (家宽) - xiaohe",
+      "server": "103.21.220.248",
+      "server_port": 29608,
       "uuid": "88ee0e1e-a2a2-477e-88ce-4875c058aeba",
       "tls": {
         "enabled": true,
@@ -49,41 +95,47 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
-      "server": "118.167.235.241",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tag": "🇺🇸 美国 (United States) 06 (家宽) - xiaohe",
+      "server": "211.229.56.86",
+      "server_port": 30021,
+      "uuid": "88ee0e1e-a2a2-477e-88ce-4875c058aeba",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
+        "server_name": "123.714541.xyz",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Ra-vl",
+        "headers": {
+          "Host": "123.714541.xyz"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe",
-      "server": "a736eb68-tmb1c0-tpkh0c-1r7od.hk2.hyhuawei.com",
-      "server_port": 443,
-      "uuid": "6d56436c-150d-11f0-b0c8-f23c913c8d2b",
+      "tag": "🇺🇸 美国 (United States) 07 (家宽) - xiaohe",
+      "server": "125.208.247.88",
+      "server_port": 38241,
+      "uuid": "88ee0e1e-a2a2-477e-88ce-4875c058aeba",
       "tls": {
         "enabled": true,
-        "server_name": "download.windowsupdate.com",
+        "server_name": "123.714541.xyz",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo",
-          "short_id": ""
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Ra-vl",
+        "headers": {
+          "Host": "123.714541.xyz"
         }
       }
     },
@@ -93,9 +145,12 @@
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
-        "🇺🇸 美国 (United States) 02 (家宽) - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 (家宽) - xiaohe",
+        "🇺🇸 美国 (United States) 05 (家宽) - xiaohe",
+        "🇺🇸 美国 (United States) 06 (家宽) - xiaohe",
+        "🇺🇸 美国 (United States) 07 (家宽) - xiaohe"
       ]
     },
     {
@@ -103,9 +158,12 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
-        "🇺🇸 美国 (United States) 02 (家宽) - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 (家宽) - xiaohe",
+        "🇺🇸 美国 (United States) 05 (家宽) - xiaohe",
+        "🇺🇸 美国 (United States) 06 (家宽) - xiaohe",
+        "🇺🇸 美国 (United States) 07 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

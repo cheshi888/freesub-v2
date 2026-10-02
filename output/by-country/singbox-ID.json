@@ -4,12 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
-      "server": "zfd-boardv2.kunlun01dns.com",
-      "server_port": 16298,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
+      "server": "103.172.197.3",
+      "server_port": 16006,
+      "uuid": "f8c9d2a1-da40-4f90-b671-11772a0b13d6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU",
+          "short_id": ""
+        }
+      }
     },
     {
       "type": "vless",
@@ -35,7 +48,7 @@
     {
       "type": "trojan",
       "tag": "🇮🇩 印尼 (Indonesia) 03 - xiaohe",
-      "server": "188.114.97.6",
+      "server": "104.18.32.87",
       "server_port": 443,
       "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
       "tls": {

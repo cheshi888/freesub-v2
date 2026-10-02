@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
-  server: free.sahanwickramasinghe.me
+  server: support.zoom.us
   port: 80
   udp: true
   type: vless
@@ -15,17 +15,31 @@ proxies:
     path: /
     headers:
       Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 02 - xiaohe
+  server: 140.245.120.16
+  port: 443
+  udp: true
+  type: vless
+  uuid: 92d67828-4c56-4795-af5a-f387651380dc
+  tls: true
+  servername: trackydev.site
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 02 - xiaohe
 rules:
 - MATCH,PROXIES

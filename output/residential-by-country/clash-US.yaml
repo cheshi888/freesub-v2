@@ -18,8 +18,8 @@ proxies:
   servername: us51.mech-pro.online
   client-fingerprint: firefox
 - name: 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
-  server: 154.17.228.81
-  port: 59686
+  server: 103.21.220.248
+  port: 29608
   udp: true
   type: vless
   uuid: 88ee0e1e-a2a2-477e-88ce-4875c058aeba
@@ -32,6 +32,36 @@ proxies:
     path: /Ra-vl
     headers:
       Host: 123.714541.xyz
+- name: 🇺🇸 美国 (United States) 03 (家宽) - xiaohe
+  server: 211.229.56.86
+  port: 30021
+  udp: true
+  type: vless
+  uuid: 88ee0e1e-a2a2-477e-88ce-4875c058aeba
+  tls: true
+  servername: 123.714541.xyz
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /Ra-vl
+    headers:
+      Host: 123.714541.xyz
+- name: 🇺🇸 美国 (United States) 04 (家宽) - xiaohe
+  server: 125.208.247.88
+  port: 38241
+  udp: true
+  type: vless
+  uuid: 88ee0e1e-a2a2-477e-88ce-4875c058aeba
+  tls: true
+  servername: 123.714541.xyz
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /Ra-vl
+    headers:
+      Host: 123.714541.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +69,8 @@ proxy-groups:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   - 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 03 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 04 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -46,5 +78,7 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   - 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 03 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 04 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

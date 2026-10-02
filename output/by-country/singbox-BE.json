@@ -6,26 +6,6 @@
     {
       "type": "vless",
       "tag": "🇧🇪 比利时 (Belgium) 01 - xiaohe",
-      "server": "34.156.242.126",
-      "server_port": 443,
-      "uuid": "d4d1b597-2769-465b-b7fa-c2b84393d3ee",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "OQ0MKzP5TYtlJCteckb25tD6USBH__D1z28Y8BOcdG4",
-          "short_id": "b4f2c0e3d8668c2f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇪 比利时 (Belgium) 02 - xiaohe",
       "server": "34.38.82.200",
       "server_port": 443,
       "uuid": "6d341f6e-7b9d-4ae3-999b-00333de7bdfb",
@@ -34,7 +14,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -42,6 +22,14 @@
           "short_id": "31f187650d9530bb"
         }
       }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇧🇪 比利时 (Belgium) 02 - xiaohe",
+      "server": "zfd-boardv2.kunlun01dns.com",
+      "server_port": 16307,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
     },
     {
       "type": "selector",

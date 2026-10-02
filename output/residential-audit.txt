@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-10-02 17:40:20 UTC
+生成时间: 2026-10-02 22:01:33 UTC
 ==============================================================================
 
 说明:
@@ -15,7 +15,7 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 4
+本轮家宽节点数: 7
 
 [1] US  严格家宽  置信度 70
      exit_ip : 140.150.227.51
@@ -27,14 +27,14 @@
      ipapi.is: company=Private Customer asn=AS29802 HIVELOCITY, Inc.
      fraud   : 0  (-1 = 未取到评分)
 
-[2] US  严格家宽  置信度 71
-     exit_ip : 179.254.94.59
-     server  : 154.17.228.81:59686  (vless)
-     ASN     : AS209604 2E TELEKOMUNIKASYON LTD STI
-     ISP     : 2E TELEKOMUNIKASYON LTD STI
-     ORG     : 2E Telekomunikasyon LTD. STI
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=2E Telekomunikasyon LTD. STI. asn=AS209604 2E TELEKOMUNIKASYON LTD STI
+[2] TR  移动网络  置信度 85
+     exit_ip : 2a01:f900:12:216::1
+     server  : 178.83.46.216:2053  (vless)
+     ASN     : AS44620 Netlen Internet Hizmetleri Ltd. Sti.
+     ISP     : Netlen Internet Hizmetleri Ltd. Sti.
+     ORG     : Netlen Internet Hizmetleri Ltd. Sti
+     ip-api  : hosting=False proxy=False mobile=True reverse=-
+     ipapi.is: company=Netlen Internet asn=AS44620 Netlen Internet Hizmetleri Ltd. Sti.
      fraud   : 0  (-1 = 未取到评分)
 
 [3] TW  严格家宽  置信度 82
@@ -47,12 +47,42 @@
      ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
      fraud   : 0  (-1 = 未取到评分)
 
-[4] HK  严格家宽  置信度 82
-     exit_ip : 218.250.216.236
-     server  : a736eb68-tmb1c0-tpkh0c-1r7od.hk2.hyhuawei.com:443  (vless)
-     ASN     : AS4760 HKT Limited
-     ISP     : Hong Kong Telecommunications (HKT) Limited Mass Internet
-     ORG     : Hong Kong Telecommunications (HKT) Limited
+[4] KZ  严格家宽  置信度 82
+     exit_ip : 89.218.15.90
+     server  : 89.218.15.90:10002  (vless)
+     ASN     : AS9198 JSC Kazakhtelecom
+     ISP     : Kazakhtelecom Data Network Administration
+     ORG     : Nur-Sultan
      ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Hong Kong Telecommunications (HKT) Limited Mass Internet asn=AS4760 PCCW IMS Limited
+     ipapi.is: company=Nur-Sultan asn=AS9198 JSC Kazakhtelecom
+     fraud   : 0  (-1 = 未取到评分)
+
+[5] US  严格家宽  置信度 71
+     exit_ip : 179.254.94.59
+     server  : 103.21.220.248:29608  (vless)
+     ASN     : AS209604 2E TELEKOMUNIKASYON LTD STI
+     ISP     : 2E TELEKOMUNIKASYON LTD STI
+     ORG     : 2E Telekomunikasyon LTD. STI
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=2E Telekomunikasyon LTD. STI. asn=AS209604 2E TELEKOMUNIKASYON LTD STI
+     fraud   : 0  (-1 = 未取到评分)
+
+[6] US  严格家宽  置信度 71
+     exit_ip : 179.254.94.59
+     server  : 211.229.56.86:30021  (vless)
+     ASN     : AS209604 2E TELEKOMUNIKASYON LTD STI
+     ISP     : 2E TELEKOMUNIKASYON LTD STI
+     ORG     : 2E Telekomunikasyon LTD. STI
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=2E Telekomunikasyon LTD. STI. asn=AS209604 2E TELEKOMUNIKASYON LTD STI
+     fraud   : 0  (-1 = 未取到评分)
+
+[7] US  严格家宽  置信度 71
+     exit_ip : 179.254.94.59
+     server  : 125.208.247.88:38241  (vless)
+     ASN     : AS209604 2E TELEKOMUNIKASYON LTD STI
+     ISP     : 2E TELEKOMUNIKASYON LTD STI
+     ORG     : 2E Telekomunikasyon LTD. STI
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=2E Telekomunikasyon LTD. STI. asn=AS209604 2E TELEKOMUNIKASYON LTD STI
      fraud   : 0  (-1 = 未取到评分)

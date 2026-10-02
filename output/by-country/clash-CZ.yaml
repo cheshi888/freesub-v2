@@ -5,27 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 85.117.235.50
-  port: 443
-  udp: true
-  type: vless
-  uuid: f4d71fd6-1c25-4748-836b-1dbda9268039
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: PmdZ2ETkHc0zjYcs22xT_wyZk5fEpX7mg7RP396HBBc
-    short-id: 232b1b09e45325a4
-  servername: cz1.animeteka.info
-  client-fingerprint: ios
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 153.76.190.41
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 3a92b39a-5f02-415e-a908-783ec320e83f
-  sni: speedtestmark.com
-  skip-cert-verify: true
-- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
   server: 45.151.180.165
   port: 43000
   udp: true
@@ -38,6 +17,27 @@ proxies:
     short-id: e4a3b0e4
   servername: 45.151.180.165
   client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
+  server: 85.117.235.50
+  port: 443
+  udp: true
+  type: vless
+  uuid: f4d71fd6-1c25-4748-836b-1dbda9268039
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: PmdZ2ETkHc0zjYcs22xT_wyZk5fEpX7mg7RP396HBBc
+    short-id: 232b1b09e45325a4
+  servername: cz1.animeteka.info
+  client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
+  server: 153.76.190.41
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 3a92b39a-5f02-415e-a908-783ec320e83f
+  sni: speedtestmark.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select

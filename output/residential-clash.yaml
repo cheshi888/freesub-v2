@@ -17,9 +17,40 @@ proxies:
     short-id: 16e0f049
   servername: us51.mech-pro.online
   client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
-  server: 154.17.228.81
-  port: 59686
+- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
+  server: 178.83.46.216
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  server: 118.167.235.241
+  port: 24215
+  udp: true
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: firefox
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 (家宽) - xiaohe
+  server: 89.218.15.90
+  port: 10002
+  udp: true
+  type: vless
+  uuid: 392fcc7e-b995-11f1-a6b7-1b2272a86bd5
+  tls: true
+  servername: kz1.vpnjantit.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /vpnjantit
+    headers:
+      Host: kz1.vpnjantit.com
+- name: 🇺🇸 美国 (United States) 05 (家宽) - xiaohe
+  server: 103.21.220.248
+  port: 29608
   udp: true
   type: vless
   uuid: 88ee0e1e-a2a2-477e-88ce-4875c058aeba
@@ -32,45 +63,59 @@ proxies:
     path: /Ra-vl
     headers:
       Host: 123.714541.xyz
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  server: 118.167.235.241
-  port: 24215
+- name: 🇺🇸 美国 (United States) 06 (家宽) - xiaohe
+  server: 211.229.56.86
+  port: 30021
   udp: true
   type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  uuid: 88ee0e1e-a2a2-477e-88ce-4875c058aeba
   tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
+  servername: 123.714541.xyz
+  skip-cert-verify: false
   client-fingerprint: random
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
-  server: a736eb68-tmb1c0-tpkh0c-1r7od.hk2.hyhuawei.com
-  port: 443
+  network: ws
+  ws-opts:
+    path: /Ra-vl
+    headers:
+      Host: 123.714541.xyz
+- name: 🇺🇸 美国 (United States) 07 (家宽) - xiaohe
+  server: 125.208.247.88
+  port: 38241
   udp: true
   type: vless
-  uuid: 6d56436c-150d-11f0-b0c8-f23c913c8d2b
+  uuid: 88ee0e1e-a2a2-477e-88ce-4875c058aeba
   tls: true
-  reality-opts:
-    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
-  servername: download.windowsupdate.com
-  client-fingerprint: random
+  servername: 123.714541.xyz
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /Ra-vl
+    headers:
+      Host: 123.714541.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 05 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 06 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 07 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 05 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 06 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 07 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
