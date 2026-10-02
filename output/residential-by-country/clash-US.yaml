@@ -4,30 +4,41 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  server: 188.114.97.6
+- name: 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
+  server: 172.64.42.85
   port: 2086
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: '/?ed=2560security=tls '
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
-  server: 104.21.70.21
-  port: 8080
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 02 (移动家宽) - xiaohe
+  server: 172.64.158.146
+  port: 8880
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls
     headers:
-      Host: newwk1.f1w.de5.net
-- name: 🇺🇸 美国 (United States) 03 (家宽) - xiaohe
-  server: us51.mech-pro.online
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 03 (移动家宽) - xiaohe
+  server: 162.159.0.53
+  port: 80
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 04 (家宽) - xiaohe
+  server: 140.150.227.51
   port: 443
   udp: true
   type: vless
@@ -44,16 +55,18 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 03 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 02 (移动家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 03 (移动家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 04 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 03 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 02 (移动家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 03 (移动家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 04 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

@@ -12,18 +12,29 @@
       "password": "kDWvXYZoTBcGkC4"
     },
     {
+      "type": "vmess",
+      "tag": "🇵🇭 菲律宾 (Philippines) 02 - xiaohe",
+      "server": "silversbgfgov.vip44.wogbcnmnagfwgov.com",
+      "server_port": 11244,
+      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
+      "security": "auto",
+      "alter_id": 2
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇭 菲律宾 (Philippines) 01 - xiaohe"
+        "🇵🇭 菲律宾 (Philippines) 01 - xiaohe",
+        "🇵🇭 菲律宾 (Philippines) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇭 菲律宾 (Philippines) 01 - xiaohe"
+        "🇵🇭 菲律宾 (Philippines) 01 - xiaohe",
+        "🇵🇭 菲律宾 (Philippines) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

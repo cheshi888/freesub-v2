@@ -4,30 +4,41 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  server: 188.114.97.6
+- name: 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
+  server: 172.64.42.85
   port: 2086
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: '/?ed=2560security=tls '
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
-  server: 104.21.70.21
-  port: 8080
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 02 (移动家宽) - xiaohe
+  server: 172.64.158.146
+  port: 8880
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls
     headers:
-      Host: newwk1.f1w.de5.net
-- name: 🇺🇸 美国 (United States) 03 (家宽) - xiaohe
-  server: us51.mech-pro.online
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 03 (移动家宽) - xiaohe
+  server: 162.159.0.53
+  port: 80
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 04 (家宽) - xiaohe
+  server: 140.150.227.51
   port: 443
   udp: true
   type: vless
@@ -39,126 +50,50 @@ proxies:
     short-id: 16e0f049
   servername: us51.mech-pro.online
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
-  server: 178.83.46.216
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
-  server: 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
+- name: 🇳🇱 荷兰 (Netherlands) 05 (移动家宽) - xiaohe
+  server: 31.77.114.212
   port: 443
   udp: true
-  type: hysteria2
-  password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
-  sni: 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇻🇳 越南 (Vietnam) 06 (家宽) - xiaohe
-  server: 109.110.162.40
-  port: 23005
-  udp: true
-  type: trojan
-  password: fac593ac-d6aa-4523-bea9-b3eb2a2b3da3
-  sni: 82.yuanul.com
-  skip-cert-verify: false
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 (家宽) - xiaohe
-  server: 89.218.15.90
-  port: 10002
-  udp: true
   type: vless
-  uuid: 392fcc7e-b995-11f1-a6b7-1b2272a86bd5
+  uuid: af2bf319-ba88-4fec-8317-2b6a8cee96d1
+  flow: xtls-rprx-vision
   tls: true
-  servername: kz1.vpnjantit.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vpnjantit
-- name: 🇭🇰 中国香港 (Hong Kong) 08 (移动家宽) - xiaohe
-  server: dog-hk.kunlun01dns.com
-  port: 21022
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 09 (移动家宽) - xiaohe
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16113
-  udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 10 (家宽) - xiaohe
-  server: 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
+  reality-opts:
+    public-key: Zli2oz4Y11pvkrGK71XDcbp1OWIPzK2FYhUXQvl1yiI
+  servername: aken.nightfall.best
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaohe
+  server: 218.250.216.236
   port: 443
   udp: true
-  type: hysteria2
-  password: 3bd247a8-993e-11ec-a8bf-f23c91cfbbc9
-  sni: 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 11 (家宽) - xiaohe
-  server: sbgfgov.vip24.wogacnmnagfwgov.com
-  port: 11224
-  udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
-- name: 🇹🇼 中国台湾 (Taiwan) 12 (家宽) - xiaohe
-  server: hi.northcluster.info
-  port: 52300
-  udp: true
-  type: vmess
-  uuid: 6e571484-4166-4699-8f58-b34a1823691f
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /video
-- name: 🇸🇬 新加坡 (Singapore) 13 (家宽) - xiaohe
-  server: s3.huhiuh.space
-  port: 18642
-  udp: true
-  type: hysteria2
-  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: www.bing.com
-  skip-cert-verify: true
+  type: vless
+  uuid: 6d56436c-150d-11f0-b0c8-f23c913c8d2b
+  tls: true
+  reality-opts:
+    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
+  servername: download.windowsupdate.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 03 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
-  - 🇻🇳 越南 (Vietnam) 06 (家宽) - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 08 (移动家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 09 (移动家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 10 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 11 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 12 (家宽) - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 13 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 02 (移动家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 03 (移动家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 04 (家宽) - xiaohe
+  - 🇳🇱 荷兰 (Netherlands) 05 (移动家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 03 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
-  - 🇻🇳 越南 (Vietnam) 06 (家宽) - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 08 (移动家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 09 (移动家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 10 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 11 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 12 (家宽) - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 13 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 02 (移动家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 03 (移动家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 04 (家宽) - xiaohe
+  - 🇳🇱 荷兰 (Netherlands) 05 (移动家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

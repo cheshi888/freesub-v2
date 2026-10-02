@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-10-02 03:49:21 UTC
+生成时间: 2026-10-02 12:02:35 UTC
 ==============================================================================
 
 说明:
@@ -15,31 +15,41 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 13
+本轮家宽节点数: 6
 
-[1] US  严格家宽  置信度 82
-     exit_ip : 99.63.206.163
-     server  : 188.114.97.6:2086  (vless)
-     ASN     : AS7018 AT&T Enterprises, LLC
-     ISP     : AT&T Enterprises, LLC
-     ORG     : AT&T Corp
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=AT&T Enterprises, LLC asn=AS7018 AT&T Enterprises, LLC
-     fraud   : 10  (-1 = 未取到评分)
+[1] US  移动网络  置信度 85
+     exit_ip : 192.193.104.22
+     server  : 172.64.42.85:2086  (vless)
+     ASN     : AS25883 Citigroup Inc.
+     ISP     : Citigroup Inc.
+     ORG     : Citibank N.A
+     ip-api  : hosting=False proxy=False mobile=True reverse=-
+     ipapi.is: company=Citibank N.A. asn=AS25883 Citigroup Inc.
+     fraud   : 0  (-1 = 未取到评分)
 
-[2] US  严格家宽  置信度 82
-     exit_ip : 99.63.206.163
-     server  : 104.21.70.21:8080  (vless)
-     ASN     : AS7018 AT&T Enterprises, LLC
-     ISP     : AT&T Enterprises, LLC
-     ORG     : AT&T Corp
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=AT&T Enterprises, LLC asn=AS7018 AT&T Enterprises, LLC
-     fraud   : 10  (-1 = 未取到评分)
+[2] US  移动网络  置信度 85
+     exit_ip : 192.193.104.22
+     server  : 172.64.158.146:8880  (vless)
+     ASN     : AS25883 Citigroup Inc.
+     ISP     : Citigroup Inc.
+     ORG     : Citibank N.A
+     ip-api  : hosting=False proxy=False mobile=True reverse=-
+     ipapi.is: company=Citibank N.A. asn=AS25883 Citigroup Inc.
+     fraud   : 0  (-1 = 未取到评分)
 
-[3] US  严格家宽  置信度 70
+[3] US  移动网络  置信度 85
+     exit_ip : 192.193.104.22
+     server  : 162.159.0.53:80  (vless)
+     ASN     : AS25883 Citigroup Inc.
+     ISP     : Citigroup Inc.
+     ORG     : Citibank N.A
+     ip-api  : hosting=False proxy=False mobile=True reverse=-
+     ipapi.is: company=Citibank N.A. asn=AS25883 Citigroup Inc.
+     fraud   : 0  (-1 = 未取到评分)
+
+[4] US  严格家宽  置信度 70
      exit_ip : 140.150.227.51
-     server  : us51.mech-pro.online:443  (vless)
+     server  : 140.150.227.51:443  (vless)
      ASN     : -
      ISP     : Private Customer
      ORG     : -
@@ -47,102 +57,22 @@
      ipapi.is: company=Private Customer asn=AS29802 HIVELOCITY, Inc.
      fraud   : 0  (-1 = 未取到评分)
 
-[4] TR  移动网络  置信度 85
-     exit_ip : 2a01:f900:12:216::1
-     server  : 178.83.46.216:2053  (vless)
-     ASN     : AS44620 Netlen Internet Hizmetleri Ltd. Sti.
-     ISP     : Netlen Internet Hizmetleri Ltd. Sti.
-     ORG     : Netlen Internet Hizmetleri Ltd. Sti
+[5] NL  移动网络  置信度 85
+     exit_ip : 31.77.114.212
+     server  : 31.77.114.212:443  (vless)
+     ASN     : AS219064 Akenai Products LTD
+     ISP     : Akenai-Products-AS
+     ORG     : Akenai Products LTD
      ip-api  : hosting=False proxy=False mobile=True reverse=-
-     ipapi.is: company=Netlen Internet asn=AS44620 Netlen Internet Hizmetleri Ltd. Sti.
+     ipapi.is: company=Private Customer asn=AS219064 Akenai Products LTD
      fraud   : 0  (-1 = 未取到评分)
 
-[5] HK  严格家宽  置信度 82
-     exit_ip : 112.120.221.250
-     server  : 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com:443  (hysteria2)
+[6] HK  严格家宽  置信度 82
+     exit_ip : 218.250.216.236
+     server  : 218.250.216.236:443  (vless)
      ASN     : AS4760 HKT Limited
      ISP     : Hong Kong Telecommunications (HKT) Limited Mass Internet
      ORG     : Hong Kong Telecommunications (HKT) Limited
      ip-api  : hosting=False proxy=False mobile=False reverse=-
      ipapi.is: company=Hong Kong Telecommunications (HKT) Limited Mass Internet asn=AS4760 PCCW IMS Limited
      fraud   : 0  (-1 = 未取到评分)
-
-[6] VN  严格家宽  置信度 82
-     exit_ip : 42.112.30.100
-     server  : 109.110.162.40:23005  (trojan)
-     ASN     : AS18403 FPT Telecom Company
-     ISP     : Vietnam Internet Network Information Center
-     ORG     : -
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=FPT Telecom asn=AS18403 FPT Telecom Company
-     fraud   : 4  (-1 = 未取到评分)
-
-[7] KZ  严格家宽  置信度 82
-     exit_ip : 89.218.15.90
-     server  : 89.218.15.90:10002  (vless)
-     ASN     : AS9198 JSC Kazakhtelecom
-     ISP     : Kazakhtelecom Data Network Administration
-     ORG     : Nur-Sultan
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Nur-Sultan asn=AS9198 JSC Kazakhtelecom
-     fraud   : 0  (-1 = 未取到评分)
-
-[8] HK  移动网络  置信度 85
-     exit_ip : 81.168.109.187
-     server  : dog-hk.kunlun01dns.com:21022  (vmess)
-     ASN     : AS9304 HGC Global Communications Limited
-     ISP     : HGC Global Communications Limited
-     ORG     : -
-     ip-api  : hosting=False proxy=False mobile=True reverse=-
-     ipapi.is: company=Private Customer asn=AS9304 HGC Global Communications Limited
-     fraud   : 0  (-1 = 未取到评分)
-
-[9] HK  移动网络  置信度 85
-     exit_ip : 81.168.109.165
-     server  : zfd-hkv2.kunlun01dns.com:16113  (vmess)
-     ASN     : AS9304 HGC Global Communications Limited
-     ISP     : HGC Global Communications Limited
-     ORG     : -
-     ip-api  : hosting=False proxy=False mobile=True reverse=-
-     ipapi.is: company=Private Customer asn=AS9304 HGC Global Communications Limited
-     fraud   : 0  (-1 = 未取到评分)
-
-[10] HK  严格家宽  置信度 82
-     exit_ip : 203.198.86.98
-     server  : 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com:443  (hysteria2)
-     ASN     : AS4760 HKT Limited
-     ISP     : Hong Kong Telecommunications (HKT) Limited Mass Internet
-     ORG     : Hong Kong Telecommunications (HKT) Limited
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Hong Kong Telecommunications (HKT) Limited Mass Internet asn=AS4760 PCCW IMS Limited
-     fraud   : 0  (-1 = 未取到评分)
-
-[11] TW  严格家宽  置信度 82
-     exit_ip : 36.234.137.156
-     server  : sbgfgov.vip24.wogacnmnagfwgov.com:11224  (vmess)
-     ASN     : AS3462 Data Communication Business Group
-     ISP     : Chunghwa Telecom Co., Ltd.
-     ORG     : Chunghwa Telecom Co. Ltd.
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
-     fraud   : 0  (-1 = 未取到评分)
-
-[12] TW  严格家宽  置信度 82
-     exit_ip : 1.162.189.4
-     server  : hi.northcluster.info:52300  (vmess)
-     ASN     : AS3462 Data Communication Business Group
-     ISP     : Chunghwa Telecom Co., Ltd.
-     ORG     : Chunghwa Telecom Co. Ltd.
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
-     fraud   : 0  (-1 = 未取到评分)
-
-[13] SG  严格家宽  置信度 82
-     exit_ip : 202.156.27.133
-     server  : s3.huhiuh.space:18642  (hysteria2)
-     ASN     : AS4657 StarHub Ltd
-     ISP     : StarHub Cable Vision Ltd
-     ORG     : SGCABLEVISION
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=StarHub Cable Vision Ltd asn=AS4657 Starhub Ltd.
-     fraud   : 1  (-1 = 未取到评分)

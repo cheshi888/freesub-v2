@@ -17,28 +17,17 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇧🇪 比利时 (Belgium) 02 - xiaohe
-  server: 35.195.122.169
+  server: 34.156.242.126
   port: 443
   udp: true
   type: vless
-  uuid: e3fb56fe-bdbc-4f0e-b1ed-de2f7c85f254
+  uuid: d4d1b597-2769-465b-b7fa-c2b84393d3ee
   tls: true
   reality-opts:
-    public-key: i_UbRo65YEpOFuKkNVa0GEMl7xLDx9B1nmeyeNWyJQs
-    short-id: 68e97022627fa882
+    public-key: OQ0MKzP5TYtlJCteckb25tD6USBH__D1z28Y8BOcdG4
+    short-id: b4f2c0e3d8668c2f
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇧🇪 比利时 (Belgium) 03 - xiaohe
-  server: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-  port: 2095
-  udp: true
-  type: vless
-  uuid: 73796e63-0000-4000-8000-000000000008
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,7 +35,6 @@ proxy-groups:
   - AUTO
   - 🇧🇪 比利时 (Belgium) 01 - xiaohe
   - 🇧🇪 比利时 (Belgium) 02 - xiaohe
-  - 🇧🇪 比利时 (Belgium) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,6 +42,5 @@ proxy-groups:
   proxies:
   - 🇧🇪 比利时 (Belgium) 01 - xiaohe
   - 🇧🇪 比利时 (Belgium) 02 - xiaohe
-  - 🇧🇪 比利时 (Belgium) 03 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -17,17 +17,27 @@ proxies:
     short-id: 232b1b09e45325a4
   servername: cz1.animeteka.info
   client-fingerprint: firefox
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
+  server: 153.76.190.41
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 3a92b39a-5f02-415e-a908-783ec320e83f
+  sni: speedtestmark.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 02 - xiaohe
 rules:
 - MATCH,PROXIES

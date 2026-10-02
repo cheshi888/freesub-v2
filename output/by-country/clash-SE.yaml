@@ -5,82 +5,79 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: 13.49.21.155
+  server: 13.49.76.55
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: 13.48.177.148
+  server: 51.20.96.231
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: 51.20.122.188
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  server: 13.62.228.76
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
-  server: 51.20.86.152
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
-  server: 13.60.213.145
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
   server: 13.61.185.249
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  server: 13.60.213.145
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  server: 13.49.21.155
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  server: 13.48.177.148
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
+  server: 13.62.228.76
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 08 - xiaohe
-  server: 51.20.77.147
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 09 - xiaohe
-  server: 51.20.143.248
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 10 - xiaohe
-  server: 5.157.10.148
+  server: 34.51.231.250
   port: 443
   udp: true
   type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  uuid: e4be912f-68e8-4d51-80a4-1342b646f8e0
+  tls: true
+  reality-opts:
+    public-key: fV003yDr_sb_Wkgz6MxnIUJMgD15osWhzU-HZ5fLPFg
+    short-id: 79ff7d51e3c56323
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 09 - xiaohe
+  server: 31.77.158.132
+  port: 443
+  udp: true
+  type: vless
+  uuid: af2bf319-ba88-4fec-8317-2b6a8cee96d1
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
-    short-id: fb442438e2223836
-  servername: surstreming.vvzzkontaktezzvv.garden
+    public-key: COMosLQzz8GJ3ATEBK__SBjKsiL5VVS1MWkWUFpQTVk
+  servername: hittaikea.prizraknode.shop
   client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 11 - xiaohe
+- name: 🇸🇪 瑞典 (Sweden) 10 - xiaohe
   server: 143.246.194.132
   port: 443
   udp: true
@@ -92,19 +89,41 @@ proxies:
     public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
   servername: www.ikea.com
   client-fingerprint: safari
+- name: 🇸🇪 瑞典 (Sweden) 11 - xiaohe
+  server: 13.48.104.64
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 12 - xiaohe
-  server: 34.51.231.250
+  server: 51.20.77.147
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 13 - xiaohe
+  server: surstreming.vvzzkontaktezzvv.garden
   port: 443
   udp: true
   type: vless
-  uuid: e4be912f-68e8-4d51-80a4-1342b646f8e0
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: fV003yDr_sb_Wkgz6MxnIUJMgD15osWhzU-HZ5fLPFg
-    short-id: 79ff7d51e3c56323
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 13 - xiaohe
+    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
+    short-id: fb442438e2223836
+  servername: surstreming.vvzzkontaktezzvv.garden
+  client-fingerprint: random
+- name: 🇸🇪 瑞典 (Sweden) 14 - xiaohe
+  server: 51.20.122.188
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 15 - xiaohe
   server: 62.60.159.81
   port: 2053
   udp: true
@@ -119,20 +138,20 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpce5bb9e71
-- name: 🇸🇪 瑞典 (Sweden) 14 - xiaohe
-  server: 13.48.104.64
-  port: 443
+- name: 🇸🇪 瑞典 (Sweden) 16 - xiaohe
+  server: 176.109.104.103
+  port: 9881
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 15 - xiaohe
-  server: 51.20.72.15
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  type: vless
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  tls: true
+  reality-opts:
+    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
+  servername: dl.google.com
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
 proxy-groups:
 - name: PROXIES
   type: select
@@ -153,6 +172,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 13 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 14 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 15 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 16 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -173,5 +193,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 13 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 14 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 15 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 16 - xiaohe
 rules:
 - MATCH,PROXIES

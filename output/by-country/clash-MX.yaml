@@ -1,0 +1,45 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇲🇽 墨西哥 (Mexico) 01 - xiaohe
+  server: 34.51.23.2
+  port: 443
+  udp: true
+  type: vless
+  uuid: 79bc7b01-6e4e-4365-a120-fefac8182bd9
+  tls: true
+  reality-opts:
+    public-key: vFcM44RcbcO5jcrSWHLd_0exXAnnJLhpCNnMrWCwlzI
+    short-id: 65f01b4b99e52015
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇲🇽 墨西哥 (Mexico) 02 - xiaohe
+  server: moblemangol.ir
+  port: 2082
+  udp: true
+  type: vless
+  uuid: 6a219111-9ee4-4a7a-b9df-af0a33918cb2
+  network: httpupgrade
+  httpupgrade-opts:
+    path: /
+    headers:
+      Host: usiii.zendegizibast.ir
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇲🇽 墨西哥 (Mexico) 01 - xiaohe
+  - 🇲🇽 墨西哥 (Mexico) 02 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇲🇽 墨西哥 (Mexico) 01 - xiaohe
+  - 🇲🇽 墨西哥 (Mexico) 02 - xiaohe
+rules:
+- MATCH,PROXIES
