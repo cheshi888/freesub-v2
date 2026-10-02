@@ -1,0 +1,59 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  server: 188.114.97.6
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
+  server: 104.21.70.21
+  port: 8080
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: newwk1.f1w.de5.net
+- name: 🇺🇸 美国 (United States) 03 (家宽) - xiaohe
+  server: us51.mech-pro.online
+  port: 443
+  udp: true
+  type: vless
+  uuid: a15d1b88-e3f4-4f4d-9c04-462a2965a60a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI
+    short-id: 16e0f049
+  servername: us51.mech-pro.online
+  client-fingerprint: firefox
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 03 (家宽) - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 03 (家宽) - xiaohe
+rules:
+- MATCH,PROXIES

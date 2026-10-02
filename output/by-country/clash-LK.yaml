@@ -5,15 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
-  server: 51.75.67.209
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3d08ed67-5a47-42d3-a948-ebc7d2eb21f7
-  tls: true
-  servername: free.sahanwickramasinghe.me
-  skip-cert-verify: false
-- name: 🇱🇰 斯里兰卡 (Sri Lanka) 02 - xiaohe
   server: free.sahanwickramasinghe.me
   port: 80
   udp: true
@@ -22,6 +13,18 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 02 - xiaohe
+  server: 51.75.67.209
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3d08ed67-5a47-42d3-a948-ebc7d2eb21f7
+  tls: true
+  servername: free.sahanwickramasinghe.me
+  skip-cert-verify: false
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

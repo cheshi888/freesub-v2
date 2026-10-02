@@ -6,13 +6,6 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "109.230.196.66",
-      "server_port": 208,
-      "uuid": "8d89622f-3150-424e-8446-06866a3d6b66"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
       "server": "85.192.48.142",
       "server_port": 443,
       "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
@@ -33,50 +26,26 @@
     },
     {
       "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
+      "server": "109.230.196.66",
+      "server_port": 208,
+      "uuid": "8d89622f-3150-424e-8446-06866a3d6b66"
+    },
+    {
+      "type": "vmess",
       "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
-      "server": "151.241.226.201",
-      "server_port": 2053,
-      "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
-          "short_id": "9e419c0759b54d6f"
-        }
+      "server": "206.1.99.160",
+      "server_port": 443,
+      "uuid": "Nitro_Skybot@",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/"
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 04 - xiaohe",
-      "server": "me17.msjia8844.site",
-      "server_port": 7443,
-      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
-      "tls": {
-        "enabled": true,
-        "server_name": "me17.msjia8844.site",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - xiaohe",
-      "server": "test.keoplentuio.xyz",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 06 - xiaohe",
       "server": "83.217.9.140",
       "server_port": 43000,
       "uuid": "85163fd9-6f73-4eea-b1df-3b327dacbabf",
@@ -96,6 +65,86 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - xiaohe",
+      "server": "151.241.226.201",
+      "server_port": 2053,
+      "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
+          "short_id": "9e419c0759b54d6f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 06 - xiaohe",
+      "server": "78.135.73.47",
+      "server_port": 443,
+      "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.datadoghq.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8",
+          "short_id": "f46cd3ea3d1eb72d"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇷 土耳其 (Turkey) 07 - xiaohe",
+      "server": "nimm.mpd.cc.cd",
+      "server_port": 2053,
+      "password": "e309e031-991e-4656-9934-44d10deb8fd8",
+      "tls": {
+        "enabled": true,
+        "server_name": "nimm.mpd.cc.cd",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/0962"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 08 - xiaohe",
+      "server": "155.103.70.53",
+      "server_port": 30303,
+      "uuid": "d18c6897-2849-456a-8c46-d7ecece47c20",
+      "tls": {
+        "enabled": true,
+        "server_name": "wzs.echo.net.eu.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HAAQNCV1EClxZAgMWAlBZXRlKXU4aTV8WGRQRQkoXFgweUABdHg==",
+        "headers": {
+          "Host": "wzs.echo.net.eu.org"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -105,7 +154,9 @@
         "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
         "🇹🇷 土耳其 (Turkey) 04 - xiaohe",
         "🇹🇷 土耳其 (Turkey) 05 - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 06 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 06 - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 07 - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 08 - xiaohe"
       ]
     },
     {
@@ -117,7 +168,9 @@
         "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
         "🇹🇷 土耳其 (Turkey) 04 - xiaohe",
         "🇹🇷 土耳其 (Turkey) 05 - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 06 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 06 - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 07 - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 08 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

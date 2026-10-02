@@ -15,27 +15,18 @@ proxies:
     public-key: HnHVuSObMrldWGzq1-Eb93fwgu6QQRp6H0_8LX3ikDc
     short-id: 2c2d919f5183d0b7
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇱 智利 (Chile) 02 - xiaohe
-  server: 64.176.2.21
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: xBStBEVqvGwHPocc
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇱 智利 (Chile) 01 - xiaohe
-  - 🇨🇱 智利 (Chile) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇱 智利 (Chile) 01 - xiaohe
-  - 🇨🇱 智利 (Chile) 02 - xiaohe
 rules:
 - MATCH,PROXIES

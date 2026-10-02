@@ -44,12 +44,26 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇧🇪 比利时 (Belgium) 03 - xiaohe",
+      "server": "vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev",
+      "server_port": 2095,
+      "uuid": "73796e63-0000-4000-8000-000000000008",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇧🇪 比利时 (Belgium) 01 - xiaohe",
-        "🇧🇪 比利时 (Belgium) 02 - xiaohe"
+        "🇧🇪 比利时 (Belgium) 02 - xiaohe",
+        "🇧🇪 比利时 (Belgium) 03 - xiaohe"
       ]
     },
     {
@@ -57,7 +71,8 @@
       "tag": "auto",
       "outbounds": [
         "🇧🇪 比利时 (Belgium) 01 - xiaohe",
-        "🇧🇪 比利时 (Belgium) 02 - xiaohe"
+        "🇧🇪 比利时 (Belgium) 02 - xiaohe",
+        "🇧🇪 比利时 (Belgium) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

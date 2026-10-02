@@ -5,12 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 109.230.196.66
-  port: 208
-  udp: true
-  type: vless
-  uuid: 8d89622f-3150-424e-8446-06866a3d6b66
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   server: 85.192.48.142
   port: 443
   udp: true
@@ -23,35 +17,24 @@ proxies:
     short-id: db04ce8bdb8900f1
   servername: nvidia.com
   client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  server: 109.230.196.66
+  port: 208
+  udp: true
+  type: vless
+  uuid: 8d89622f-3150-424e-8446-06866a3d6b66
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  server: 151.241.226.201
-  port: 2053
+  server: 206.1.99.160
+  port: 443
   udp: true
-  type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  tls: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: chrome
+  type: vmess
+  uuid: Nitro_Skybot@
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
 - name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  server: me17.msjia8844.site
-  port: 7443
-  udp: true
-  type: hysteria2
-  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  sni: me17.msjia8844.site
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
-- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
   server: 83.217.9.140
   port: 43000
   udp: true
@@ -64,6 +47,57 @@ proxies:
     short-id: 68d2eb23
   servername: 83.217.9.140
   client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+  server: 151.241.226.201
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  tls: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
+  server: 78.135.73.47
+  port: 443
+  udp: true
+  type: vless
+  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
+    short-id: f46cd3ea3d1eb72d
+  servername: www.datadoghq.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 07 - xiaohe
+  server: nimm.mpd.cc.cd
+  port: 2053
+  udp: true
+  type: trojan
+  password: e309e031-991e-4656-9934-44d10deb8fd8
+  sni: nimm.mpd.cc.cd
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /0962
+- name: 🇹🇷 土耳其 (Turkey) 08 - xiaohe
+  server: 155.103.70.53
+  port: 30303
+  udp: true
+  type: vless
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  tls: true
+  servername: wzs.echo.net.eu.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HAAQNCV1EClxZAgMWAlBZXRlKXU4aTV8WGRQRQkoXFgweUABdHg==
+    headers:
+      Host: wzs.echo.net.eu.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -75,6 +109,8 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -86,5 +122,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 08 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
-  server: 185.135.86.175
-  port: 9094
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: rpgbNnU9rDDU4aWZ
-- name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
   server: 138.124.180.137
   port: 443
   udp: true
@@ -24,15 +17,7 @@ proxies:
     short-id: 33acba1b
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
-  server: 91.240.86.70
-  port: 24443
-  udp: true
-  type: hysteria2
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
-  skip-cert-verify: false
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
+- name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
   server: 104.252.19.114
   port: 8443
   udp: true
@@ -51,8 +36,6 @@ proxy-groups:
   - AUTO
   - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,7 +43,5 @@ proxy-groups:
   proxies:
   - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
 rules:
 - MATCH,PROXIES
