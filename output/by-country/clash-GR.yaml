@@ -26,6 +26,14 @@ proxies:
     short-id: 94acb54627612d43
   servername: www.cloudflare.com
   client-fingerprint: firefox
+- name: 🇬🇷 希腊 (Greece) 03 - xiaohe
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16310
+  udp: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -33,6 +41,7 @@ proxy-groups:
   - AUTO
   - 🇬🇷 希腊 (Greece) 01 - xiaohe
   - 🇬🇷 希腊 (Greece) 02 - xiaohe
+  - 🇬🇷 希腊 (Greece) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -40,5 +49,6 @@ proxy-groups:
   proxies:
   - 🇬🇷 希腊 (Greece) 01 - xiaohe
   - 🇬🇷 希腊 (Greece) 02 - xiaohe
+  - 🇬🇷 希腊 (Greece) 03 - xiaohe
 rules:
 - MATCH,PROXIES

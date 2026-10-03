@@ -5,26 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe",
-      "server": "45.132.177.96",
-      "server_port": 9889,
-      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+      "tag": "🇦🇶 AQ 01 - xiaohe",
+      "server": "2.27.26.132",
+      "server_port": 444,
+      "uuid": "141bbdef-a341-4846-aec7-9d6531ff8790",
       "tls": {
         "enabled": true,
-        "server_name": "dl.google.com",
+        "server_name": "apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU",
-          "short_id": ""
+          "public_key": "dEhIR-YkvqguXB5_P3LMuyNYM82lMHQsSGhhtkmvE0k",
+          "short_id": "d7abeb515312dc2f"
         }
       },
       "transport": {
         "type": "grpc",
-        "service_name": "grpc-tunnel"
+        "service_name": "apple.com"
       }
     },
     {
@@ -32,14 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe"
+        "🇦🇶 AQ 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe"
+        "🇦🇶 AQ 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

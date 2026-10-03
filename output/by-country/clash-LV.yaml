@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
-  server: 185.135.86.175
-  port: 9033
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: UTJA57ypk2XKQpnm
-- name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
-  server: 185.135.86.175
-  port: 9086
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
   server: 185.28.47.28
   port: 443
   udp: true
@@ -30,21 +16,36 @@ proxies:
     public-key: wHTq_owme8N6237B37GhneBcNJQtzRdIFouRkSscgnQ
     short-id: 40fac5d64bc6a540
   servername: latinki.pumpkinpie.study
-  client-fingerprint: firefox
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
-  server: 195.123.213.28
-  port: 443
+  client-fingerprint: random
+- name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
+  server: 185.135.86.175
+  port: 9017
   udp: true
-  type: vless
-  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
-    short-id: 5c256336e3b673fa
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-cfb
+  password: HAVAdE3nXhqA5nHp
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
+  server: 185.135.86.175
+  port: 9082
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 45xgMgm386pjWjTx
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
+  server: 185.135.86.175
+  port: 9034
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: Yg4MbdXFQ9HFFVY6
 - name: 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
+  server: 185.135.86.175
+  port: 9036
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: hbtvgUz5uNYyB3Rf
+- name: 🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe
   server: 138.124.180.137
   port: 443
   udp: true
@@ -56,19 +57,20 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe
-  server: 104.252.19.114
-  port: 8443
+  client-fingerprint: chrome
+- name: 🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe
+  server: 195.123.213.28
+  port: 443
   udp: true
   type: vless
-  uuid: 40cba749-bca9-4089-9c02-84a357244ce0
+  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: cD8mVX41lqyVGCuPz0-tQWcNqkMxiPZxU7JJsyyNAEI
-  servername: omvpn.info
-  client-fingerprint: chrome
+    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
+    short-id: 5c256336e3b673fa
+  servername: www.cloudflare.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -80,6 +82,7 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -91,5 +94,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe
 rules:
 - MATCH,PROXIES

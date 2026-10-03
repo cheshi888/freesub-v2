@@ -30,18 +30,6 @@ proxies:
     short-id: a1b2c3d4
   servername: store.steampowered.com
   client-fingerprint: chrome
-- name: 🇮🇱 以色列 (Israel) 03 - xiaohe
-  server: 34.165.56.30
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0c40bce9-8710-4820-8f22-0742b61df999
-  tls: true
-  reality-opts:
-    public-key: AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc
-    short-id: fffff8acddadcac3
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇮🇱 以色列 (Israel) 01 - xiaohe
   - 🇮🇱 以色列 (Israel) 02 - xiaohe
-  - 🇮🇱 以色列 (Israel) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -57,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇮🇱 以色列 (Israel) 01 - xiaohe
   - 🇮🇱 以色列 (Israel) 02 - xiaohe
-  - 🇮🇱 以色列 (Israel) 03 - xiaohe
 rules:
 - MATCH,PROXIES

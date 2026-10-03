@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
-  server: vpn-au-001.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-au-001.fastervpn.world
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   server: 152.67.115.203
   port: 443
   udp: true
@@ -22,19 +14,26 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
-- name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
-  server: 51.161.204.244
+- name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
+  server: 35.197.168.118
   port: 443
   udp: true
   type: vless
-  uuid: 36e89875-9c53-482b-bc41-d3890e9da176
-  flow: xtls-rprx-vision
+  uuid: 4f865f35-cf47-4e7f-a7e6-8882511a1b36
   tls: true
   reality-opts:
-    public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
-    short-id: 0ad08b47f498efd2
+    public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
+    short-id: 8a7d5e0248cdb1b1
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
+  server: au-1.tr202613.com
+  port: 443
+  udp: true
+  type: trojan
+  password: 2ni2H9zUKdDCjREL8Z
+  sni: au-1.tr202613.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select

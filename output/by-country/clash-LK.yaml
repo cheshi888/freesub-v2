@@ -5,6 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
+  server: free.sahanwickramasinghe.me
+  port: 80
+  udp: true
+  type: vless
+  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 02 - xiaohe
   server: cdn.zoom.us
   port: 80
   udp: true
@@ -15,15 +24,6 @@ proxies:
     path: /
     headers:
       Host: cloud.ghostdev.lk
-- name: 🇱🇰 斯里兰卡 (Sri Lanka) 02 - xiaohe
-  server: free.sahanwickramasinghe.me
-  port: 80
-  udp: true
-  type: vless
-  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
-  network: ws
-  ws-opts:
-    path: /
 proxy-groups:
 - name: PROXIES
   type: select
