@@ -5,18 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe
-  server: 185.162.229.50
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime61.workers.dev
-- name: 🇷🇸 塞尔维亚 (Serbia) 02 - xiaohe
-  server: 176.108.246.58
+  server: 45.132.177.96
   port: 9889
   udp: true
   type: vless
@@ -35,13 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe
-  - 🇷🇸 塞尔维亚 (Serbia) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe
-  - 🇷🇸 塞尔维亚 (Serbia) 02 - xiaohe
 rules:
 - MATCH,PROXIES

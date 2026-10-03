@@ -4,9 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇷🇴 罗马尼亚 (Romania) 01 - xiaohe",
-      "server": "77.74.123.101",
+      "server": "88.216.66.30",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vms.lifetime04.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - xiaohe",
+      "server": "77.74.123.102",
       "server_port": 8443,
       "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
       "tls": {
@@ -17,8 +31,8 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - xiaohe",
-      "server": "162.249.127.143",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - xiaohe",
+      "server": "162.249.127.137",
       "server_port": 8443,
       "password": "9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z",
       "tls": {
@@ -29,48 +43,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - xiaohe",
-      "server": "109.104.106.15",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - xiaohe",
+      "server": "46.28.67.55",
       "server_port": 443,
-      "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
+      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "d3-ro.cloud-cdn.xyz",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "a_v5l6R-rpVGlENLeONW4sz-GdRwIoDqISOWXGov8nw",
-          "short_id": "87709fed663228e5"
+          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
+          "short_id": "d06d78e974491b6e"
         }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - xiaohe",
-      "server": "bogging-eyeteeth-fly.freesocks.work",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "QFWzCw2uX9B9i6qAYeFBIE"
-    },
-    {
       "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 05 - xiaohe",
-      "server": "185.156.44.99",
-      "server_port": 443,
-      "password": "gf1:gfhysteria2024",
-      "tls": {
-        "enabled": true,
-        "server_name": "speedtest.tinkoff.ru",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - xiaohe",
       "server": "162.249.125.133",
       "server_port": 443,
       "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
@@ -85,29 +79,24 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 07 - xiaohe",
-      "server": "46.28.67.55",
+      "type": "hysteria2",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - xiaohe",
+      "server": "hy2-new.aspidnet.xyz",
       "server_port": 443,
-      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
-      "flow": "xtls-rprx-vision",
+      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
-          "short_id": "d06d78e974491b6e"
-        }
+        "server_name": "hy2-new.aspidnet.xyz",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "c1b4086fea89914496c7e10967a419216566"
       }
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 08 - xiaohe",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 07 - xiaohe",
       "server": "109.104.106.149",
       "server_port": 443,
       "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
@@ -128,7 +117,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 09 - xiaohe",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 08 - xiaohe",
       "server": "146.70.124.85",
       "server_port": 443,
       "uuid": "40abbe13-f02e-4da2-9b19-966c2c3eb4ee",
@@ -148,6 +137,68 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 09 - xiaohe",
+      "server": "109.104.106.15",
+      "server_port": 443,
+      "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "d3-ro.cloud-cdn.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "a_v5l6R-rpVGlENLeONW4sz-GdRwIoDqISOWXGov8nw",
+          "short_id": "87709fed663228e5"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 10 - xiaohe",
+      "server": "185.156.44.99",
+      "server_port": 443,
+      "password": "gf1:gfhysteria2024",
+      "tls": {
+        "enabled": true,
+        "server_name": "speedtest.tinkoff.ru",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 11 - xiaohe",
+      "server": "193.163.203.253",
+      "server_port": 443,
+      "uuid": "441afe11-a180-4516-bb80-80a8a6b38705",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk",
+          "short_id": "5ee019e02e6ed99a"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 12 - xiaohe",
+      "server": "154.46.31.106",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "QFWzCw2uX9B9i6qAYeFBIE"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -160,7 +211,10 @@
         "🇷🇴 罗马尼亚 (Romania) 06 - xiaohe",
         "🇷🇴 罗马尼亚 (Romania) 07 - xiaohe",
         "🇷🇴 罗马尼亚 (Romania) 08 - xiaohe",
-        "🇷🇴 罗马尼亚 (Romania) 09 - xiaohe"
+        "🇷🇴 罗马尼亚 (Romania) 09 - xiaohe",
+        "🇷🇴 罗马尼亚 (Romania) 10 - xiaohe",
+        "🇷🇴 罗马尼亚 (Romania) 11 - xiaohe",
+        "🇷🇴 罗马尼亚 (Romania) 12 - xiaohe"
       ]
     },
     {
@@ -175,7 +229,10 @@
         "🇷🇴 罗马尼亚 (Romania) 06 - xiaohe",
         "🇷🇴 罗马尼亚 (Romania) 07 - xiaohe",
         "🇷🇴 罗马尼亚 (Romania) 08 - xiaohe",
-        "🇷🇴 罗马尼亚 (Romania) 09 - xiaohe"
+        "🇷🇴 罗马尼亚 (Romania) 09 - xiaohe",
+        "🇷🇴 罗马尼亚 (Romania) 10 - xiaohe",
+        "🇷🇴 罗马尼亚 (Romania) 11 - xiaohe",
+        "🇷🇴 罗马尼亚 (Romania) 12 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

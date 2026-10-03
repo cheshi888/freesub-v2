@@ -16,15 +16,8 @@ proxies:
     public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
     short-id: db04ce8bdb8900f1
   servername: nvidia.com
-  client-fingerprint: chrome
+  client-fingerprint: ''
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: bale.xv98.ir
-  port: 5051
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 68mL2QkZEBlxWa3hcslGDw
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   server: 78.135.73.47
   port: 443
   udp: true
@@ -36,8 +29,8 @@ proxies:
     public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  client-fingerprint: qq
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -49,7 +42,7 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   server: me17.msjia8844.site
   port: 7443
   udp: true
@@ -59,30 +52,19 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
-- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
-  server: 176.96.131.251
-  port: 1280
+- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+  server: 194.135.34.223
+  port: 443
   udp: true
   type: vless
-  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇹🇷 土耳其 (Turkey) 07 - xiaohe
-  server: 155.103.70.53
-  port: 30303
-  udp: true
-  type: vless
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  uuid: 4deb9957-e037-4ae2-8892-da357cc6f99f
+  flow: xtls-rprx-vision
   tls: true
-  servername: wzs.echo.net.eu.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: '/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HAAQNCV1EClxZAgMWAlBZXRlKXU4aTV8WGRQRQkoXFgweUABdHg== '
-    headers:
-      Host: wzs.echo.net.eu.org
+  reality-opts:
+    public-key: t_qv0VOfWhKZJV_giGC55-ipgHYWo44Yfvik_B8T8ik
+    short-id: 4a46213c935e2ee4
+  servername: baltic.cendora.ru
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -93,8 +75,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -105,7 +85,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
 rules:
 - MATCH,PROXIES
