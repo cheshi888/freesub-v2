@@ -16,7 +16,7 @@ proxies:
     public-key: r4Dp3mztZaizbDk28rEOkLikk7erR9dzzc-Jrsgraho
     short-id: a1b2c3d4
   servername: store.steampowered.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇮🇱 以色列 (Israel) 02 - xiaohe
   server: 185.95.231.156
   port: 443
@@ -29,7 +29,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇮🇱 以色列 (Israel) 03 - xiaohe
   server: 34.165.56.30
   port: 443
@@ -41,15 +41,7 @@ proxies:
     public-key: AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc
     short-id: fffff8acddadcac3
   servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇮🇱 以色列 (Israel) 04 - xiaohe
-  server: 129.159.156.109
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: f25f19f29ce3fb53a35bf1b35b452a43
-  sni: www.bing.com
-  skip-cert-verify: true
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -58,7 +50,6 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 01 - xiaohe
   - 🇮🇱 以色列 (Israel) 02 - xiaohe
   - 🇮🇱 以色列 (Israel) 03 - xiaohe
-  - 🇮🇱 以色列 (Israel) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -67,6 +58,5 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 01 - xiaohe
   - 🇮🇱 以色列 (Israel) 02 - xiaohe
   - 🇮🇱 以色列 (Israel) 03 - xiaohe
-  - 🇮🇱 以色列 (Israel) 04 - xiaohe
 rules:
 - MATCH,PROXIES

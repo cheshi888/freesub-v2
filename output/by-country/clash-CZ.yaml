@@ -5,19 +5,45 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 45.151.180.165
-  port: 43000
+  server: 172.67.203.158
+  port: 443
   udp: true
   type: vless
-  uuid: a80212c8-a909-4837-beb2-7960b59ee5ca
-  flow: xtls-rprx-vision
+  uuid: 911b84e1-d046-4fbf-bfc0-c168791115ef
+  tls: true
+  servername: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /vl/YCNmDFbqMu7cgTzgsfEWGtBD8kR
+    headers:
+      Host: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
+  server: 172.66.44.124
+  port: 8443
+  udp: true
+  type: vless
+  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
+  tls: true
+  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /9BozNyvQ8VdRvsYX?ed=2560fp=randomized
+    headers:
+      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
+  server: 86.54.82.184
+  port: 443
+  udp: true
+  type: vless
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
   tls: true
   reality-opts:
-    public-key: lGf40xP_E5TZz9KkrQoeUKCfRq8WBatc7OYnRgBEuXI
-    short-id: e4a3b0e4
-  servername: 45.151.180.165
-  client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: example.org
+  client-fingerprint: firefox
+- name: 🇨🇿 捷克 (Czech) 04 - xiaohe
   server: 85.117.235.50
   port: 443
   udp: true
@@ -29,15 +55,15 @@ proxies:
     public-key: PmdZ2ETkHc0zjYcs22xT_wyZk5fEpX7mg7RP396HBBc
     short-id: 232b1b09e45325a4
   servername: cz1.animeteka.info
-  client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
+  client-fingerprint: firefox
+- name: 🇨🇿 捷克 (Czech) 05 - xiaohe
   server: 153.76.190.41
   port: 8443
   udp: true
   type: hysteria2
   password: 3a92b39a-5f02-415e-a908-783ec320e83f
   sni: speedtestmark.com
-  skip-cert-verify: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,6 +72,8 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
   - 🇨🇿 捷克 (Czech) 03 - xiaohe
+  - 🇨🇿 捷克 (Czech) 04 - xiaohe
+  - 🇨🇿 捷克 (Czech) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +82,7 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
   - 🇨🇿 捷克 (Czech) 03 - xiaohe
+  - 🇨🇿 捷克 (Czech) 04 - xiaohe
+  - 🇨🇿 捷克 (Czech) 05 - xiaohe
 rules:
 - MATCH,PROXIES

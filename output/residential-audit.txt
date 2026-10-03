@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-10-02 22:01:33 UTC
+生成时间: 2026-10-03 03:40:16 UTC
 ==============================================================================
 
 说明:
@@ -15,7 +15,7 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 7
+本轮家宽节点数: 6
 
 [1] US  严格家宽  置信度 70
      exit_ip : 140.150.227.51
@@ -37,7 +37,17 @@
      ipapi.is: company=Netlen Internet asn=AS44620 Netlen Internet Hizmetleri Ltd. Sti.
      fraud   : 0  (-1 = 未取到评分)
 
-[3] TW  严格家宽  置信度 82
+[3] DE  严格家宽  置信度 82
+     exit_ip : 134.3.221.25
+     server  : 209.38.238.229:20202  (vless)
+     ASN     : AS3209 Vodafone GmbH
+     ISP     : Vodafone
+     ORG     : Vodafone BW GmbH
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Vodafone BW GmbH asn=AS3209 Vodafone GmbH
+     fraud   : 3  (-1 = 未取到评分)
+
+[4] TW  严格家宽  置信度 82
      exit_ip : 118.167.235.241
      server  : 118.167.235.241:24215  (vless)
      ASN     : AS3462 Data Communication Business Group
@@ -47,7 +57,17 @@
      ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
      fraud   : 0  (-1 = 未取到评分)
 
-[4] KZ  严格家宽  置信度 82
+[5] SG  严格家宽  置信度 71
+     exit_ip : 45.194.18.109
+     server  : 175.29.23.179:443  (vless)
+     ASN     : AS137535 JT TELECOM INTERNATIONAL PTE.LTD.
+     ISP     : JT TELECOM INTERNATIONAL PTE.LTD.
+     ORG     : Hong Kong Communications International Co., limited
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=HONG KONG COMMUNICATIONS INTERNATIONAL CO.,LIMITED asn=AS137535 JT TELECOM INTERNATIONAL PTE.LTD.
+     fraud   : 0  (-1 = 未取到评分)
+
+[6] KZ  严格家宽  置信度 82
      exit_ip : 89.218.15.90
      server  : 89.218.15.90:10002  (vless)
      ASN     : AS9198 JSC Kazakhtelecom
@@ -55,34 +75,4 @@
      ORG     : Nur-Sultan
      ip-api  : hosting=False proxy=False mobile=False reverse=-
      ipapi.is: company=Nur-Sultan asn=AS9198 JSC Kazakhtelecom
-     fraud   : 0  (-1 = 未取到评分)
-
-[5] US  严格家宽  置信度 71
-     exit_ip : 179.254.94.59
-     server  : 103.21.220.248:29608  (vless)
-     ASN     : AS209604 2E TELEKOMUNIKASYON LTD STI
-     ISP     : 2E TELEKOMUNIKASYON LTD STI
-     ORG     : 2E Telekomunikasyon LTD. STI
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=2E Telekomunikasyon LTD. STI. asn=AS209604 2E TELEKOMUNIKASYON LTD STI
-     fraud   : 0  (-1 = 未取到评分)
-
-[6] US  严格家宽  置信度 71
-     exit_ip : 179.254.94.59
-     server  : 211.229.56.86:30021  (vless)
-     ASN     : AS209604 2E TELEKOMUNIKASYON LTD STI
-     ISP     : 2E TELEKOMUNIKASYON LTD STI
-     ORG     : 2E Telekomunikasyon LTD. STI
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=2E Telekomunikasyon LTD. STI. asn=AS209604 2E TELEKOMUNIKASYON LTD STI
-     fraud   : 0  (-1 = 未取到评分)
-
-[7] US  严格家宽  置信度 71
-     exit_ip : 179.254.94.59
-     server  : 125.208.247.88:38241  (vless)
-     ASN     : AS209604 2E TELEKOMUNIKASYON LTD STI
-     ISP     : 2E TELEKOMUNIKASYON LTD STI
-     ORG     : 2E Telekomunikasyon LTD. STI
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=2E Telekomunikasyon LTD. STI. asn=AS209604 2E TELEKOMUNIKASYON LTD STI
      fraud   : 0  (-1 = 未取到评分)

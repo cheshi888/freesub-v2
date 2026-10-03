@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 144.31.212.253
-  port: 443
-  udp: true
-  type: hysteria2
-  password: cf83b611-6cba-4535-adcb-8da06c6a9146
-  sni: vps155-edge.kermemehori.ru
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 144.31.232.216
   port: 443
   udp: true
@@ -20,6 +12,18 @@ proxies:
   password: 06e88dd6-e264-4981-8c26-d7ab17348ab2
   sni: fi01.clgate.network
   skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  server: 95.216.27.15
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  tls: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 77.42.28.120
   port: 1280
@@ -32,17 +36,17 @@ proxies:
     headers:
       Host: is1-ssl.mzstatic.com
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 95.216.27.15
-  port: 2053
+  server: 151.241.137.132
+  port: 443
   udp: true
   type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  uuid: 5786d86f-7731-4174-b1a3-84297e54b015
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: chrome
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: finland.ali-bard.online
+  client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
   server: 170.168.4.52
   port: 443
@@ -54,55 +58,39 @@ proxies:
   reality-opts:
     public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
   servername: finl11.ali-bard.online
-  client-fingerprint: qq
+  client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  server: 34.88.172.173
+  server: 144.31.212.253
   port: 443
   udp: true
-  type: vless
-  uuid: 06e58eed-afc8-4cbf-a0bf-1b7b42e1a87f
-  tls: true
-  reality-opts:
-    public-key: wJwb5WExAnmGiq9mmjtMvoA8E-k10u5VvPegm9RomWU
-    short-id: d4b34bc6b3d2b5ab
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  type: hysteria2
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  sni: vps155-edge.kermemehori.ru
+  skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
-  server: 144.31.27.215
-  port: 43000
+  server: v3.tgphoenix.ir
+  port: 8443
   udp: true
   type: vless
-  uuid: 47f79fc1-0646-40e8-8a58-73e85d183d5a
-  flow: xtls-rprx-vision
+  uuid: 6414b234-957e-4777-b39f-9a30080ace9b
   tls: true
   reality-opts:
-    public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
-    short-id: 568d87a47271344e
-  servername: 144.31.27.215
-  client-fingerprint: edge
+    public-key: uYtexW4wx3Ql_q73x3PM2Vbc3xyKxBgEh5FUL0CmogM
+    short-id: 45d28a6346d04a99
+  servername: www.aparat.com
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
-  server: 185.166.154.111
-  port: 443
+  server: 81.94.148.120
+  port: 7449
   udp: true
   type: vless
-  uuid: 91d734be-a3d0-4d50-83ab-74cf7b6966fa
+  uuid: 2690c11f-7258-43fe-aeb9-d90f93a3c317
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: bQZcMViJWXus9rMSTOa-ZAaUJC0mIlPx7XmzrLp8GQU
-    short-id: 94f32cfc
-  servername: cdn.bulkavpn.top
-  client-fingerprint: random
-- name: 🇫🇮 芬兰 (Finland) 09 - xiaohe
-  server: fi.monkora.org
-  port: 443
-  udp: true
-  type: vless
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  tls: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: example.org
+    public-key: blW-TdkBvKRn4-lkM64Cn2QgfOqjCRYRQ9upE6RPt3c
+    short-id: c0c41dc21cf7c18e
+  servername: passport.yandex.ru
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -117,7 +105,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
   - 🇫🇮 芬兰 (Finland) 07 - xiaohe
   - 🇫🇮 芬兰 (Finland) 08 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -131,6 +118,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
   - 🇫🇮 芬兰 (Finland) 07 - xiaohe
   - 🇫🇮 芬兰 (Finland) 08 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 09 - xiaohe
 rules:
 - MATCH,PROXIES
