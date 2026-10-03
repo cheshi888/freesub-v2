@@ -13,30 +13,19 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇱🇰 斯里兰卡 (Sri Lanka) 02 - xiaohe
-  server: cdn.zoom.us
-  port: 80
-  udp: true
-  type: vless
-  uuid: 1eaed465-d720-400b-9f9f-439600a2d093
-  network: ws
-  ws-opts:
-    path: /
     headers:
-      Host: cloud.ghostdev.lk
+      Host: free.sahanwickramasinghe.me
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 02 - xiaohe
 rules:
 - MATCH,PROXIES
