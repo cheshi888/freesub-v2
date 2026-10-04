@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇪 格鲁吉亚 (Georgia) 01 - xiaohe
-  server: geo.shkola112.site
+  server: 172.67.159.161
   port: 443
   udp: true
   type: vless
@@ -16,6 +16,8 @@ proxies:
   network: ws
   ws-opts:
     path: /api-vless
+    headers:
+      Host: geo.shkola112.site
 proxy-groups:
 - name: PROXIES
   type: select

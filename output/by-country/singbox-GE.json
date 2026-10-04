@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇬🇪 格鲁吉亚 (Georgia) 01 - xiaohe",
-      "server": "geo.shkola112.site",
+      "server": "172.67.159.161",
       "server_port": 443,
       "uuid": "76ac91c5-ea82-4046-8ee7-2ffbb563ac94",
       "tls": {
@@ -16,7 +16,10 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/api-vless"
+        "path": "/api-vless",
+        "headers": {
+          "Host": "geo.shkola112.site"
+        }
       }
     },
     {

@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-10-03 21:07:20 UTC
+生成时间: 2026-10-04 03:59:23 UTC
 ==============================================================================
 
 说明:
@@ -15,19 +15,39 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 7
+本轮家宽节点数: 5
 
-[1] US  移动网络  置信度 85
-     exit_ip : 216.36.80.137
-     server  : 108.162.198.178:8080  (vless)
-     ASN     : AS3257 GTT Communications Inc.
-     ISP     : GTT Americas
+[1] JP  严格家宽  置信度 71
+     exit_ip : 177.3.89.196
+     server  : 129.151.64.169:31867  (vless)
+     ASN     : AS137535 JT TELECOM INTERNATIONAL PTE.LTD.
+     ISP     : Hong Kong Communications International CO
      ORG     : -
-     ip-api  : hosting=False proxy=False mobile=True reverse=-
-     ipapi.is: company=Private Customer asn=AS3257 GTT Communications Inc.
-     fraud   : 8  (-1 = 未取到评分)
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=JT TELECOM INTERNATIONAL PTE.LTD. asn=AS137535 JT TELECOM INTERNATIONAL PTE.LTD.
+     fraud   : 0  (-1 = 未取到评分)
 
 [2] TR  移动网络  置信度 85
+     exit_ip : 2a01:f900:12:1ce::1
+     server  : tutaim.azad0namah.ir:5566  (shadowsocks)
+     ASN     : AS44620 Netlen Internet Hizmetleri Ltd. Sti.
+     ISP     : Netlen Internet Hizmetleri Ltd. Sti.
+     ORG     : Netlen Internet Hizmetleri Ltd. Sti
+     ip-api  : hosting=False proxy=False mobile=True reverse=-
+     ipapi.is: company=Netlen Internet asn=AS44620 Netlen Internet Hizmetleri Ltd. Sti.
+     fraud   : 0  (-1 = 未取到评分)
+
+[3] TR  移动网络  置信度 85
+     exit_ip : 2a01:f900:12:1ce::1
+     server  : tutaim.azad0namah.ir:8080  (vless)
+     ASN     : AS44620 Netlen Internet Hizmetleri Ltd. Sti.
+     ISP     : Netlen Internet Hizmetleri Ltd. Sti.
+     ORG     : Netlen Internet Hizmetleri Ltd. Sti
+     ip-api  : hosting=False proxy=False mobile=True reverse=-
+     ipapi.is: company=Netlen Internet asn=AS44620 Netlen Internet Hizmetleri Ltd. Sti.
+     fraud   : 0  (-1 = 未取到评分)
+
+[4] TR  移动网络  置信度 85
      exit_ip : 2a01:f900:12:216::1
      server  : test.keoplentuio.xyz:2053  (vless)
      ASN     : AS44620 Netlen Internet Hizmetleri Ltd. Sti.
@@ -37,49 +57,9 @@
      ipapi.is: company=Netlen Internet asn=AS44620 Netlen Internet Hizmetleri Ltd. Sti.
      fraud   : 0  (-1 = 未取到评分)
 
-[3] HK  严格家宽  置信度 82
-     exit_ip : 112.120.221.250
-     server  : 7cf51189-tmm5c0-tqrqo1-8rja.hk3.hyhuawei.com:443  (hysteria2)
-     ASN     : AS4760 HKT Limited
-     ISP     : Hong Kong Telecommunications (HKT) Limited Mass Internet
-     ORG     : Hong Kong Telecommunications (HKT) Limited
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Hong Kong Telecommunications (HKT) Limited Mass Internet asn=AS4760 PCCW IMS Limited
-     fraud   : 0  (-1 = 未取到评分)
-
-[4] HK  严格家宽  置信度 82
-     exit_ip : 203.198.86.98
-     server  : 8a24f231-tmm5c0-tujecz-1qkeg.nw4.hyhuawei.com:443  (hysteria2)
-     ASN     : AS4760 HKT Limited
-     ISP     : Hong Kong Telecommunications (HKT) Limited Mass Internet
-     ORG     : Hong Kong Telecommunications (HKT) Limited
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Hong Kong Telecommunications (HKT) Limited Mass Internet asn=AS4760 PCCW IMS Limited
-     fraud   : 0  (-1 = 未取到评分)
-
-[5] SG  严格家宽  置信度 82
-     exit_ip : 202.156.27.133
-     server  : s3.huhiuh.space:18642  (hysteria2)
-     ASN     : AS4657 StarHub Ltd
-     ISP     : StarHub Cable Vision Ltd
-     ORG     : SGCABLEVISION
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=StarHub Cable Vision Ltd asn=AS4657 Starhub Ltd.
-     fraud   : 1  (-1 = 未取到评分)
-
-[6] TW  严格家宽  置信度 82
-     exit_ip : 60.249.28.58
-     server  : argo6.5671234.xyz:443  (vless)
-     ASN     : AS3462 Data Communication Business Group
-     ISP     : Chunghwa Telecom Co., Ltd.
-     ORG     : Chunghwa Telecom Co. Ltd.
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
-     fraud   : 0  (-1 = 未取到评分)
-
-[7] TW  严格家宽  置信度 82
-     exit_ip : 118.167.235.241
-     server  : hinet1.2yly.com:24215  (vless)
+[5] TW  严格家宽  置信度 82
+     exit_ip : 36.234.137.156
+     server  : sbgfgov.vip24.wogacnmnagfwgov.com:11224  (vmess)
      ASN     : AS3462 Data Communication Business Group
      ISP     : Chunghwa Telecom Co., Ltd.
      ORG     : Chunghwa Telecom Co. Ltd.
