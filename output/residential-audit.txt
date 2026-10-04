@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-10-04 03:59:23 UTC
+生成时间: 2026-10-04 12:06:16 UTC
 ==============================================================================
 
 说明:
@@ -15,39 +15,9 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 5
+本轮家宽节点数: 4
 
-[1] JP  严格家宽  置信度 71
-     exit_ip : 177.3.89.196
-     server  : 129.151.64.169:31867  (vless)
-     ASN     : AS137535 JT TELECOM INTERNATIONAL PTE.LTD.
-     ISP     : Hong Kong Communications International CO
-     ORG     : -
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=JT TELECOM INTERNATIONAL PTE.LTD. asn=AS137535 JT TELECOM INTERNATIONAL PTE.LTD.
-     fraud   : 0  (-1 = 未取到评分)
-
-[2] TR  移动网络  置信度 85
-     exit_ip : 2a01:f900:12:1ce::1
-     server  : tutaim.azad0namah.ir:5566  (shadowsocks)
-     ASN     : AS44620 Netlen Internet Hizmetleri Ltd. Sti.
-     ISP     : Netlen Internet Hizmetleri Ltd. Sti.
-     ORG     : Netlen Internet Hizmetleri Ltd. Sti
-     ip-api  : hosting=False proxy=False mobile=True reverse=-
-     ipapi.is: company=Netlen Internet asn=AS44620 Netlen Internet Hizmetleri Ltd. Sti.
-     fraud   : 0  (-1 = 未取到评分)
-
-[3] TR  移动网络  置信度 85
-     exit_ip : 2a01:f900:12:1ce::1
-     server  : tutaim.azad0namah.ir:8080  (vless)
-     ASN     : AS44620 Netlen Internet Hizmetleri Ltd. Sti.
-     ISP     : Netlen Internet Hizmetleri Ltd. Sti.
-     ORG     : Netlen Internet Hizmetleri Ltd. Sti
-     ip-api  : hosting=False proxy=False mobile=True reverse=-
-     ipapi.is: company=Netlen Internet asn=AS44620 Netlen Internet Hizmetleri Ltd. Sti.
-     fraud   : 0  (-1 = 未取到评分)
-
-[4] TR  移动网络  置信度 85
+[1] TR  移动网络  置信度 85
      exit_ip : 2a01:f900:12:216::1
      server  : test.keoplentuio.xyz:2053  (vless)
      ASN     : AS44620 Netlen Internet Hizmetleri Ltd. Sti.
@@ -57,12 +27,32 @@
      ipapi.is: company=Netlen Internet asn=AS44620 Netlen Internet Hizmetleri Ltd. Sti.
      fraud   : 0  (-1 = 未取到评分)
 
-[5] TW  严格家宽  置信度 82
-     exit_ip : 36.234.137.156
-     server  : sbgfgov.vip24.wogacnmnagfwgov.com:11224  (vmess)
+[2] TW  严格家宽  置信度 82
+     exit_ip : 60.249.28.58
+     server  : 172.66.152.4:443  (vless)
      ASN     : AS3462 Data Communication Business Group
      ISP     : Chunghwa Telecom Co., Ltd.
      ORG     : Chunghwa Telecom Co. Ltd.
      ip-api  : hosting=False proxy=False mobile=False reverse=-
      ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
+     fraud   : 0  (-1 = 未取到评分)
+
+[3] TR  移动网络  置信度 85
+     exit_ip : 2a01:f900:12:1ce::1
+     server  : tutaim.azad0namah.ir:5566  (shadowsocks)
+     ASN     : AS44620 Netlen Internet Hizmetleri Ltd. Sti.
+     ISP     : Netlen Internet Hizmetleri Ltd. Sti.
+     ORG     : Netlen Internet Hizmetleri Ltd. Sti
+     ip-api  : hosting=False proxy=False mobile=True reverse=-
+     ipapi.is: company=Netlen Internet asn=AS44620 Netlen Internet Hizmetleri Ltd. Sti.
+     fraud   : 0  (-1 = 未取到评分)
+
+[4] TR  移动网络  置信度 85
+     exit_ip : 2a01:f900:12:1ce::1
+     server  : tutaim.azad0namah.ir:8080  (vless)
+     ASN     : AS44620 Netlen Internet Hizmetleri Ltd. Sti.
+     ISP     : Netlen Internet Hizmetleri Ltd. Sti.
+     ORG     : Netlen Internet Hizmetleri Ltd. Sti
+     ip-api  : hosting=False proxy=False mobile=True reverse=-
+     ipapi.is: company=Netlen Internet asn=AS44620 Netlen Internet Hizmetleri Ltd. Sti.
      fraud   : 0  (-1 = 未取到评分)
