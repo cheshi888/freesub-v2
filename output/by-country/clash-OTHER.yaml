@@ -5,22 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: uwu.blueknightnet.qzz.io
-  port: 2052
+  server: 172.67.155.68
+  port: 443
   udp: true
   type: vless
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
+  uuid: a2c57a6c-dacb-44d1-9055-fb42d4c888a5
+  tls: true
+  servername: pew.dianawmoon.dpdns.org
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: httpupgrade
+  httpupgrade-opts:
+    path: /27729/dianahtupgd
     headers:
-      Host: uwu.blueknightnet.qzz.io
+      Host: pew.dianawmoon.dpdns.org
 - name: 🌐 其他地区 (Other) 02 - xiaohe
   server: hikvision-plus.com
   port: 2053
   udp: true
   type: vless
-  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
   tls: true
   servername: uwu.blueknightnet.qzz.io
   skip-cert-verify: false

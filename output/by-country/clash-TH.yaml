@@ -13,7 +13,7 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
-  server: support.zoom.us.v2ray.simspeedup.com
+  server: 103.86.49.57
   port: 80
   udp: true
   type: vless
@@ -22,9 +22,9 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: support.zoom.us.v2ray.simspeedup.com
+      Host: v2ray.simspeedup.com
 - name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
-  server: 188.114.97.6
+  server: 104.16.10.9
   port: 443
   udp: true
   type: vless
@@ -37,14 +37,6 @@ proxies:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
-- name: 🇹🇭 泰国 (Thailand) 04 - xiaohe
-  server: silversbgfgov.vip43.wogbcnmnagfwgov.com
-  port: 11243
-  udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,7 +45,6 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - xiaohe
   - 🇹🇭 泰国 (Thailand) 02 - xiaohe
   - 🇹🇭 泰国 (Thailand) 03 - xiaohe
-  - 🇹🇭 泰国 (Thailand) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,6 +53,5 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - xiaohe
   - 🇹🇭 泰国 (Thailand) 02 - xiaohe
   - 🇹🇭 泰国 (Thailand) 03 - xiaohe
-  - 🇹🇭 泰国 (Thailand) 04 - xiaohe
 rules:
 - MATCH,PROXIES

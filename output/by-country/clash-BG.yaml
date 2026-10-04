@@ -6,11 +6,11 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
   server: 213.183.63.60
-  port: 9061
+  port: 9085
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 4R3hUfZ2FHhDmNcP
+  password: 9ej82EKe2gq7gLAM
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
   server: 213.183.63.60
   port: 9030
@@ -20,53 +20,54 @@ proxies:
   password: GeregetR8cvQHzYr
 - name: 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
   server: 213.183.63.60
-  port: 9054
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: VcFuyXvND2yQWSFY
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
-  server: 213.183.63.60
-  port: 9064
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: cp8pRSUAyLhTfVWH
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
-  server: 213.183.63.60
   port: 9049
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: PRBf4BS2HvJqtWxY
-- name: 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
   server: 213.183.63.60
   port: 9028
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 9eeJ2fwnZA5Fxgz8
+- name: 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
+  server: 213.183.63.60
+  port: 9064
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: cp8pRSUAyLhTfVWH
+- name: 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
+  server: 213.183.63.60
+  port: 9054
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: VcFuyXvND2yQWSFY
 - name: 🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe
+  server: 213.183.63.60
+  port: 9098
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: aLpQtfEZe445QyHk
+- name: 🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe
   server: 213.183.63.60
   port: 9066
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 2KUaE2a8NWTvuCZ3
-- name: 🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe
-  server: 193.148.59.178
-  port: 443
-  udp: true
-  type: vless
-  uuid: 20d7c485-5d24-49b5-a5cc-bb7a7daf9908
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
-    short-id: e3daad69
-  servername: www.apple.com
-  client-fingerprint: chrome
 - name: 🇧🇬 保加利亚 (Bulgaria) 09 - xiaohe
+  server: 213.183.63.60
+  port: 9061
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 4R3hUfZ2FHhDmNcP
+- name: 🇧🇬 保加利亚 (Bulgaria) 10 - xiaohe
   server: 136.175.82.85
   port: 18775
   udp: true
@@ -79,13 +80,19 @@ proxies:
     short-id: 6ba85179e30d4fc2
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 10 - xiaohe
-  server: 213.183.63.60
-  port: 9085
+- name: 🇧🇬 保加利亚 (Bulgaria) 11 - xiaohe
+  server: 193.148.59.178
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 9ej82EKe2gq7gLAM
+  type: vless
+  uuid: 20d7c485-5d24-49b5-a5cc-bb7a7daf9908
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
+    short-id: e3daad69
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -101,6 +108,7 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 09 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 10 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -116,5 +124,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 09 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 10 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 11 - xiaohe
 rules:
 - MATCH,PROXIES
