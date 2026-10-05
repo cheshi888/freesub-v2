@@ -19,15 +19,41 @@ proxies:
   type: trojan
   password: UX82473651
   sni: sacred-anemone.rooster465.autos
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
+  server: 198.55.102.59
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 7f86f371-5a85-48be-babc-7af1ae7ffb75
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 9gYnZLxZAPxIKzu9e-cOLBpbCn9p9og9gBodOCh5HB8
+    short-id: ce6767c3f1
+  servername: vk.com
+  client-fingerprint: firefox
+- name: 🇮🇪 爱尔兰 (Ireland) 04 - xiaohe
+  server: 3.9.135.156
+  port: 51847
+  udp: true
+  type: vless
+  uuid: 391a01e9-b664-407b-9158-610fab3f5920
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc
+    short-id: 0eec442e7b34d2f2
+  servername: www.tesla.com
+  client-fingerprint: chrome
+- name: 🇮🇪 爱尔兰 (Ireland) 05 - xiaohe
   server: ie.tronsg.com
   port: 443
   udp: true
   type: trojan
   password: Trojan@82164024
   sni: ie.tronsg.com
-  skip-cert-verify: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +62,8 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
   - 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
   - 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 04 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +72,7 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
   - 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
   - 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 04 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 05 - xiaohe
 rules:
 - MATCH,PROXIES

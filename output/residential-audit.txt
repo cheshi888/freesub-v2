@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-10-05 13:30:51 UTC
+生成时间: 2026-10-05 23:53:10 UTC
 ==============================================================================
 
 说明:
@@ -15,11 +15,11 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 8
+本轮家宽节点数: 11
 
 [1] US  严格家宽  置信度 82
      exit_ip : 99.63.206.163
-     server  : 172.64.52.6:8080  (vless)
+     server  : 172.64.53.55:80  (vless)
      ASN     : AS7018 AT&T Enterprises, LLC
      ISP     : AT&T Enterprises, LLC
      ORG     : AT&T Corp
@@ -29,7 +29,7 @@
 
 [2] US  严格家宽  置信度 82
      exit_ip : 99.63.206.163
-     server  : 172.64.158.146:80  (vless)
+     server  : 172.64.154.8:8080  (vless)
      ASN     : AS7018 AT&T Enterprises, LLC
      ISP     : AT&T Enterprises, LLC
      ORG     : AT&T Corp
@@ -37,27 +37,7 @@
      ipapi.is: company=AT&T Enterprises, LLC asn=AS7018 AT&T Enterprises, LLC
      fraud   : 10  (-1 = 未取到评分)
 
-[3] US  严格家宽  置信度 82
-     exit_ip : 99.63.206.163
-     server  : 108.162.198.178:8880  (vless)
-     ASN     : AS7018 AT&T Enterprises, LLC
-     ISP     : AT&T Enterprises, LLC
-     ORG     : AT&T Corp
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=AT&T Enterprises, LLC asn=AS7018 AT&T Enterprises, LLC
-     fraud   : 10  (-1 = 未取到评分)
-
-[4] CA  严格家宽  置信度 60
-     exit_ip : 70.79.240.221
-     server  : 188.114.97.6:2086  (vless)
-     ASN     : AS6327 Shaw Communications
-     ISP     : Shaw Communications
-     ORG     : Shaw Communications
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Shaw Communications asn=AS6327 Shaw Communications
-     fraud   : 2  (-1 = 未取到评分)
-
-[5] AT  严格家宽  置信度 70
+[3] AT  严格家宽  置信度 70
      exit_ip : 157.173.29.8
      server  : 31.77.227.6:52006  (vless)
      ASN     : AS216416 Evolus IT Solutions GmbH
@@ -67,14 +47,34 @@
      ipapi.is: company=Evolusfibre AT asn=AS216416 Evolus IT Solutions GmbH
      fraud   : 0  (-1 = 未取到评分)
 
-[6] TW  严格家宽  置信度 82
-     exit_ip : 60.249.28.58
-     server  : 104.20.36.205:443  (vless)
+[4] TR  移动网络  置信度 85
+     exit_ip : 2a01:f900:12:216::1
+     server  : test.keoplentuio.xyz:2053  (vless)
+     ASN     : AS44620 Netlen Internet Hizmetleri Ltd. Sti.
+     ISP     : Netlen Internet Hizmetleri Ltd. Sti.
+     ORG     : Netlen Internet Hizmetleri Ltd. Sti
+     ip-api  : hosting=False proxy=False mobile=True reverse=-
+     ipapi.is: company=Netlen Internet asn=AS44620 Netlen Internet Hizmetleri Ltd. Sti.
+     fraud   : 0  (-1 = 未取到评分)
+
+[5] TW  严格家宽  置信度 82
+     exit_ip : 61.230.172.241
+     server  : hinet1.2yly.com:24215  (vless)
      ASN     : AS3462 Data Communication Business Group
      ISP     : Chunghwa Telecom Co., Ltd.
      ORG     : Chunghwa Telecom Co. Ltd.
      ip-api  : hosting=False proxy=False mobile=False reverse=-
      ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
+     fraud   : 0  (-1 = 未取到评分)
+
+[6] HK  严格家宽  置信度 82
+     exit_ip : 116.49.85.111
+     server  : c8dc0c18-tmrpc0-tt8rqc-jjv2.hk3.hyhuawei.com:443  (hysteria2)
+     ASN     : AS4760 HKT Limited
+     ISP     : Hong Kong Telecommunications (HKT) Limited Mass Internet
+     ORG     : Hong Kong Telecommunications (HKT) Limited
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Hong Kong Telecommunications (HKT) Limited Mass Internet asn=AS4760 PCCW IMS Limited
      fraud   : 0  (-1 = 未取到评分)
 
 [7] SG  严格家宽  置信度 82
@@ -88,8 +88,38 @@
      fraud   : 1  (-1 = 未取到评分)
 
 [8] TW  严格家宽  置信度 82
-     exit_ip : 36.227.198.230
-     server  : tw1.dexlos.com:8080  (tuic)
+     exit_ip : 60.249.28.58
+     server  : 45.192.201.140:443  (vless)
+     ASN     : AS3462 Data Communication Business Group
+     ISP     : Chunghwa Telecom Co., Ltd.
+     ORG     : Chunghwa Telecom Co. Ltd.
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
+     fraud   : 0  (-1 = 未取到评分)
+
+[9] TW  严格家宽  置信度 82
+     exit_ip : 36.234.129.163
+     server  : sbgfgov.vip23.wogacnmnagfwgov.com:11223  (vmess)
+     ASN     : AS3462 Data Communication Business Group
+     ISP     : Chunghwa Telecom Co., Ltd.
+     ORG     : Chunghwa Telecom Co. Ltd.
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
+     fraud   : 0  (-1 = 未取到评分)
+
+[10] TW  严格家宽  置信度 82
+     exit_ip : 36.234.129.163
+     server  : sbgfgov.vip24.wogacnmnagfwgov.com:11224  (vmess)
+     ASN     : AS3462 Data Communication Business Group
+     ISP     : Chunghwa Telecom Co., Ltd.
+     ORG     : Chunghwa Telecom Co. Ltd.
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
+     fraud   : 0  (-1 = 未取到评分)
+
+[11] TW  严格家宽  置信度 82
+     exit_ip : 118.168.214.242
+     server  : tw3.dexlos.com:8080  (tuic)
      ASN     : AS3462 Data Communication Business Group
      ISP     : Chunghwa Telecom Co., Ltd.
      ORG     : Chunghwa Telecom Co. Ltd.
