@@ -8,8 +8,12 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    timeout-minutes: 50
+    runs-on: ubuntu-24.04
+    # ★ 2026-10-05: 钉死 24.04 —— GitHub 10-19 起把 ubuntu-latest 逐步切到 26.04,
+    #   26.04 移除了部分预装工具, 自动迁移可能导致构建失败停更。
+    #   另: timeout 50→120 —— 实测单轮 38~46 分钟, 50 分钟超时曾导致跑一半被杀
+    #   ("罢工"式停更); 每 6 小时一轮, 120 分钟上限仍有充足余量。
+    timeout-minutes: 120
     permissions:
       contents: write
 

@@ -126,6 +126,30 @@ SPOOF = [
     # AS62610 Zenlayer rDNS 带 dsl.speakeasy.net 但 proxy=true → 硬否决 (旧版 #11 复发的防线)
     ({"query": "23.129.64.100", "hosting": False, "proxy": True, "mobile": False,
       "reverse": "dsl-129-064.speakeasy.net", "as": "AS62610 Zenlayer"}, "datacenter"),
+    # ★ 2026-10-05 新增: 借 "telecom" 名 / "Private Customer" 名混入严格家宽区的
+    #   转售商与小托管商 —— ASN 黑名单硬否决 (审计单实证)
+    ({"query": "179.254.94.59", "countryCode": "US", "hosting": False, "proxy": False,
+      "mobile": False, "as": "AS209604 2E TELEKOMUNIKASYON LTD STI",
+      "asname": "2E TELEKOMUNIKASYON LTD STI", "org": "2E Telekomunikasyon LTD. STI",
+      "isp": "2E TELEKOMUNIKASYON LTD STI"}, "datacenter"),  # 土耳其公司/US IP
+    ({"query": "177.3.89.196", "countryCode": "JP", "hosting": False, "proxy": False,
+      "mobile": False, "as": "AS137535 JT TELECOM INTERNATIONAL PTE.LTD.",
+      "asname": "JT TELECOM INTERNATIONAL PTE.LTD.",
+      "isp": "Hong Kong Communications International CO"}, "datacenter"),  # 新加坡注册/JP IP
+    ({"query": "194.38.11.86", "countryCode": "RU", "hosting": False, "proxy": False,
+      "mobile": False, "as": "AS199669 Okay-Telecom Ltd.",
+      "asname": "Okay-Telecom Ltd.", "org": "Park-Web LLC",
+      "isp": "Okay-Telecom Ltd."}, "datacenter"),  # ORG 是托管商 Park-Web
+    ({"query": "140.150.227.51", "countryCode": "US", "hosting": False, "proxy": False,
+      "mobile": False, "as": "AS29802 HIVELOCITY, Inc.",
+      "asname": "HIVELOCITY, Inc.", "isp": "Private Customer"}, "datacenter"),  # VPS 冒充
+    # ★ 2026-10-05 新增: 国家-ASN 错位否决 —— 公司后缀暴露注册国与 IP 地理国矛盾
+    ({"query": "90.200.100.60", "countryCode": "US", "hosting": False, "proxy": False,
+      "mobile": False, "as": "AS199997 FAKETEL", "asname": "FAKETEL",
+      "org": "Faketel Telekomunikasyon Ltd. Sti."}, "datacenter"),  # 土耳其后缀/US IP
+    ({"query": "90.200.100.61", "countryCode": "DE", "hosting": False, "proxy": False,
+      "mobile": False, "as": "AS199996 FAKETEL2", "asname": "FAKETEL2",
+      "org": "Faketel GmbH"}, "unknown"),  # 德国后缀/德国 IP 不错位, 但无线索 → unknown
 ]
 # ★ 召回增强的自证: ip-api 明确 hosting=false + proxy=false, 但白名单/关键词都无线索
 #   —— 这正是旧逻辑丢失真家宽的重灾区。
@@ -142,9 +166,13 @@ RECALL = [
     ({"query": "90.200.100.53", "hosting": False, "proxy": False, "mobile": False,
       "as": "AS199999 TINYISPAB", "asname": "TINYISP-AS", "org": "Tiny ISP Ltd",
       "reverse": "dhcp-100-53.tinyisp.example.net"}, mv.RESIDENTIAL_SOFT),
-    # 组织名含 telecom → 严格家宽
+    # 组织名含 telecom → 疑似家宽 (soft)
+    # ★ 2026-10-05 收紧: 光凭名字里的 telecom 不再给严格家宽
+    #   (2E Telekomunikasyon / JT TELECOM / Okay-Telecom 实测借此混入严格区)。
+    #   真民用运营商走 ASN 白名单/强关键词召回; 这里最多 soft, 高纯净优先。
     ({"query": "90.200.100.51", "hosting": False, "proxy": False, "mobile": False,
-      "as": "AS199998 TINYISPTEL", "asname": "TINYISP-AS", "org": "Tiny Telecom Ltd"}, "residential"),
+      "as": "AS199998 TINYISPTEL", "asname": "TINYISP-AS", "org": "Tiny Telecom Ltd"},
+     mv.RESIDENTIAL_SOFT),
     # rDNS 强家宽指纹 → 严格家宽
     ({"query": "90.200.100.52", "hosting": False, "proxy": False, "mobile": False,
       "as": "AS199997 X", "asname": "X", "org": "X",

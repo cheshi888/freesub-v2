@@ -133,7 +133,7 @@ OUTPUT_DIR = "output"
 COUNTRY_DIR = os.path.join(OUTPUT_DIR, "by-country")
 RESIDENTIAL_COUNTRY_DIR = os.path.join(OUTPUT_DIR, "residential-by-country")
 
-SINGBOX_VERSION = "v1.14.0"
+SINGBOX_VERSION = "v1.14.2"
 WORKDIR = os.path.dirname(os.path.abspath(__file__))          # scripts/
 BASEDIR = os.path.dirname(WORKDIR)                              # repo root
 RUNTIME_DIR = os.path.join(BASEDIR, "runtime")                  # kernels & db
@@ -271,6 +271,12 @@ DATACENTER_ASNS = {
     #   其云业务 IP 由 ip-api hosting=true 与 ipapi.is 交叉核验兜底, 不会误入家宽区。
     8342,  # Deltacomputers/Evrasia 类
     9009, 47692, 62041, 56630, 57502,  # Serverius/ProXmedia/Clouvider 类
+    # ★ 2026-10-05 补 (家宽审计实证: 借 "telecom" 名/ "Private Customer" 名混入
+    #   严格家宽区的转售商与小托管商; ip-api 对它们 hosting=false, 只能靠 ASN 硬否决)
+    29802,   # HIVELOCITY, Inc. (美国 VPS, ISP 常标 "Private Customer")
+    199669,  # Okay-Telecom Ltd. (ORG 常为 Park-Web LLC, 托管转售)
+    209604,  # 2E Telekomunikasyon (土耳其公司, IP 地理常标 US —— 跨国转售指纹)
+    137535,  # JT TELECOM INTERNATIONAL (新加坡注册, IP 地理常标 JP —— 跨国转售指纹)
 }
 
 # 民用宽带 ASN 白名单 (离线兜底; 关键国家主流运营商)
@@ -435,9 +441,12 @@ IDC_NAME_PATTERNS = [
 
 RESIDENTIAL_NAME_PATTERNS = [
     # 通用家宽特征
+    # ★ 2026-10-05 删掉 "cust" / "customer" / "subscriber": VPN/代理商常用
+    #   "Private Customer" 做 ISP 名 (实测 HIVELOCITY VPS 因此以 70 分混入严格家宽)。
+    #   真家宽 ISP 用 residential/home/broadband/dsl 等词, 不靠这三个泛词召回。
     "broadband", "pppoe", "pppoa", "dsl", "cable", "fiber", "ftth",
     "fibre", "dynamic", "dial", "dialup", "residential", "home",
-    "consumer", "cust", "customer", "subscriber", "pool", "dynamic-ip",
+    "consumer", "pool", "dynamic-ip",
     # 台湾
     "chunghwa", "hinet", "taiwanmobile", "twn", "aptg", "kbro",
     "tfn", "sparq", "seednet", "data communication business group",
@@ -479,6 +488,21 @@ RESIDENTIAL_NAME_PATTERNS = [
     "bigpond", "iinet", "optus", "tpg internet", "aussie broadband",
     "spark nz", "vodafone nz", "2degrees", "orcon", "slingshot",
 ]
+
+# 公司名后缀 → 注册国 (用于"国家-ASN 错位"检测; 后缀须足够独特, 避免误伤)
+# 原理: 跨国 VPN 转售商常用注册国公司主体运营他国 IP
+# (实测: 美国 IP 挂着土耳其 "LTD. STI." / 日本 IP 挂着新加坡 "PTE.")
+_FOREIGN_SUFFIX_CC = {
+    "ltd. sti": "TR", "ltd sti": "TR",  # 土耳其
+    "telekomunikasyon": "TR",           # 土耳其语拼写
+    "pte.": "SG",                      # 新加坡 PTE. LTD.
+    "s.r.o.": "CZ",                    # 捷克/斯洛伐克
+    "sp. z o.o": "PL",                 # 波兰
+    "gmbh": "DE",                      # 德国 (DE/AT/CH)
+    "s.a.r.l": "FR", "sarl": "FR",     # 法国
+    "ltda": "BR",                      # 巴西/葡萄牙
+    "pty": "AU",                       # 澳洲 Pty Ltd
+}
 
 # 协议 → 全称 (命名用)
 PROTOCOL_LABELS = {
@@ -1874,6 +1898,15 @@ def classify_network_type(ip: str, country: str, asn, org: str, ip_api_rec: dict
         # 6a) 机房迹象一票否决
         if any(kw in evidence for kw in IDC_NAME_PATTERNS):
             return "datacenter", 65
+        # 6a2) 国家-ASN 错位一票否决 (2026-10-05 新增)
+        #     公司名后缀暴露注册国, 与 IP 地理国矛盾 = 跨国转售指纹。
+        #     严格家宽区不收跨国转售 (真家宽一定是本国运营商本国 IP)。
+        _cc = country or (ip_api_rec.get("countryCode") if ip_api_rec else None)
+        if _cc and len(str(_cc)) == 2:
+            _cc = str(_cc).upper()
+            for suffix, suffix_cc in _FOREIGN_SUFFIX_CC.items():
+                if suffix in org_lower and _cc != suffix_cc:
+                    return "datacenter", 66
         # 6b) 强家宽指纹 → 与名单词同级的严格家宽
         strong_home = ("pppoe", "adsl", "vdsl", "sdsl", ".dsl", "dsl-", "dsl.",
                        "cable.", "-cable", "dyn-", "dynamic", "pool-", "-pool",
@@ -1881,14 +1914,15 @@ def classify_network_type(ip: str, country: str, asn, org: str, ip_api_rec: dict
                        "residential", ".home", "customer", "subscriber")
         if any(k in rdns for k in strong_home):
             return "residential", 72
-        # 6c) 运营商组织名本身就是消费者宽带/电信公司 → 严格家宽
-        #     (走到这里说明: 不在任何 ASN 表、无 rDNS、无关键词, 但 ip-api 说它不是机房)
-        #     2026-09-29 收紧: 去掉 "internet" / "communications" —— 太泛,
-        #     "XX Internet Services" 这类小机房会被误标成严格家宽。
-        #     保留 telecom/broadband 家族 (无机房词 + hosting=false 前提下可信度尚可)。
+        # 6c) 组织名含电信/宽带词 → 疑似家宽 (soft), 不再直接给严格家宽
+        #     2026-10-05 收紧 (用户要求高纯净): "XX Telecom/Telekom" 类名字被大量
+        #     VPN 转售商、小型托管商使用 —— 实测 2E Telekomunikasyon / JT TELECOM /
+        #     Okay-Telecom 均借此以 71 分混入严格家宽区, 这是误判主因。
+        #     真正的民用运营商走 ASN 白名单(③)/强关键词(④/6b) 已能召回;
+        #     光凭名字里的 telecom, 最多给 soft。
         consumer_hint = ("telecom", "telekom", "telefonica", "telco", "broadband")
         if any(k in org_lower for k in consumer_hint):
-            return "residential", 71
+            return RESIDENTIAL_SOFT, 55
         # 6d) 次级判定 (2026-09-29 收紧): "无罪推定"本身不是家宽证据。
         #     ip-api 的 hosting=false 对中小机房 / 未分类 ASN 覆盖不全, 无条件放行
         #     会把大量 VPS 标成"疑似家宽" (实测曾占家宽池八成以上)。
@@ -2253,6 +2287,107 @@ def ipapi_is_verify(ip: str) -> dict:
         return {}
 
 
+# ══════════════════════════════════════════════════════════════════
+# VPNGate 家宽情报 (志愿者 VPN 中继 —— 多为家庭宽带/个人服务器)
+# ══════════════════════════════════════════════════════════════════
+# 定位说明 (诚实边界, 写给维护者):
+#   VPNGate 给的是 OpenVPN/L2TP/SSTP 端点, 不是 vless/vmess/trojan 等代理 URI,
+#   无法直接进订阅 (Clash/Sing-box/V2Ray 订阅格式均不支持 OpenVPN)。
+#   这里产出的是"高纯净家宽 IP 情报": 志愿者 IP 经严格判定确认为家宽后,
+#   (1) 其民用 ASN 回填白名单 → 提升主池家宽召回;
+#   (2) 落盘 output/vpngate-residential-intel.txt 备查/人工复核。
+VPNGATE_API_URL = "http://www.vpngate.net/api/iphone/"
+VPNGATE_TOP_N = 60              # 按 Score 取前 N 个志愿者节点
+VPNGATE_MIN_SPEED = 10_000_000  # 10 Mbps (Speed 字段单位 bps)
+
+
+def fetch_vpngate_intel():
+    """抓取 VPNGate 志愿者节点并做高纯净家宽筛选.
+
+    返回 (verified, new_asns):
+      verified = [(ip, country, asn_int, org, confidence), ...]  # 仅严格家宽
+      new_asns = {asn_int, ...}  # verified 中不在白名单的民用 ASN
+    任何失败返回 ([], set()), 绝不抛异常阻断主流程.
+    """
+    try:
+        r = http_get(VPNGATE_API_URL, timeout=30)
+        if r.status_code != 200:
+            print(f"[!] VPNGate API HTTP {r.status_code}, 跳过情报抓取")
+            return [], set()
+        rows = []
+        for ln in r.text.splitlines():
+            ln = ln.strip()
+            if not ln or ln.startswith("*") or ln.startswith("#"):
+                continue
+            parts = ln.split(",")
+            if len(parts) < 15:
+                continue
+            try:
+                rows.append({
+                    "ip": parts[1].strip(),
+                    "score": int(parts[2] or 0),
+                    "ping": int(parts[3] or -1),
+                    "speed": int(parts[4] or 0),
+                })
+            except (ValueError, IndexError):
+                continue
+        if not rows:
+            print("[!] VPNGate API 返回空, 跳过情报抓取")
+            return [], set()
+        # 质量过滤: 有测速数据且延迟可用, 按 Score 取前 N
+        cand = [x for x in rows
+                if x["speed"] >= VPNGATE_MIN_SPEED and x["ping"] >= 0
+                and is_ip_literal(x["ip"])]
+        cand.sort(key=lambda x: -x["score"])
+        cand = cand[:VPNGATE_TOP_N]
+        ips = [x["ip"] for x in cand]
+        print(f"[*] VPNGate: {len(rows)} 个志愿者节点 → 质量过滤后 {len(ips)} 个候选")
+        if not ips:
+            return [], set()
+        info = ip_api_batch_lookup(ips)
+        verified, new_asns = [], set()
+        for x in cand:
+            rec = info.get(x["ip"])
+            if not rec or rec.get("status") != "success":
+                continue
+            # ★ 用收紧后的同一套判定器 —— 情报纯净度与主池严格家宽同标准
+            net, conf = classify_network_type(
+                x["ip"], rec.get("countryCode"), rec.get("as"),
+                rec.get("asname"), rec)
+            if net == "residential":
+                asn_int = None
+                m = re.match(r"AS(\d+)", str(rec.get("as") or ""))
+                if m:
+                    asn_int = int(m.group(1))
+                org = rec.get("org") or rec.get("isp") or ""
+                verified.append((x["ip"], rec.get("countryCode"),
+                                 asn_int, org, conf))
+                if asn_int and asn_int not in RESIDENTIAL_ASNS:
+                    new_asns.add(asn_int)
+        # 落盘情报文件 (审计用)
+        try:
+            ensure_directories()
+            p = os.path.join(OUTPUT_DIR, "vpngate-residential-intel.txt")
+            with open(p, "w", encoding="utf-8") as f:
+                f.write("# VPNGate 高纯净家宽 IP 情报\n")
+                f.write(f"# 生成时间: {datetime.now(timezone.utc).isoformat()}\n")
+                f.write("# 来源: VPNGate 志愿者 VPN 中继 (http://www.vpngate.net/api/iphone/)\n")
+                f.write("# 注意: 这些是 OpenVPN/L2TP 端点 IP, 非代理订阅节点; "
+                        "用途 = ASN 白名单回填 + 人工备查\n")
+                f.write("# 判定标准: 与主池严格家宽同一套 classify_network_type "
+                        "(仅 residential 入选)\n")
+                f.write(f"# 本轮验证通过: {len(verified)} 个\n#\n")
+                for ip, cc, asn, org, conf in verified:
+                    f.write(f"{ip}  {cc}  AS{asn}  {org}  conf={conf}\n")
+            print(f"[+] VPNGate 情报落盘: {p} ({len(verified)} 个高纯净家宽 IP)")
+        except Exception as e:
+            print(f"[!] VPNGate 情报落盘失败: {str(e)[:60]}")
+        return verified, new_asns
+    except Exception as e:
+        print(f"[!] VPNGate 抓取失败 (不影响主流程): {str(e)[:80]}")
+        return [], set()
+
+
 def classify_and_export(test_results: list):
     print("[*] 出口 IP 情报与分类 ...")
     # 收集全部出口 IP
@@ -2403,6 +2538,10 @@ def classify_and_export(test_results: list):
                 #   但 ipapi.is 给出 company="TakeHost OU" (AS204785) ——
                 #   这就是家宽专区里混进机房的典型, 现已一票否决。
                 "takehost", "hosting", "host ", " server", "servers",
+                # ★ 2026-10-05 补 (家宽审计实证的转售商/小托管商; ASN 黑名单为主防线,
+                #   这里是纵深 backup, 防换 ASN 马甲)
+                "hivelocity", "2e telekomunikasyon", "jt telecom", "okay-telecom",
+                "park-web", "private customer",
                 #   注意: 不要用 "colo" —— 会误伤 Colombia / Colorado 等地理名;
                 #   同理 "rack" 仅在末尾匹配更稳妥, 这里用 "rackspace" 精确名。
                 "vps", "dedicated", "datacenter", "data center", "colocation",
@@ -2929,6 +3068,18 @@ def main():
     print(f"==== 免费节点测活订阅池 v2 · 启动于 {datetime.now(timezone.utc).isoformat()} ====")
     ensure_directories()
     setup_environment()
+
+    # 1.5 ★ VPNGate 家宽情报 (志愿者节点多为家庭宽带)
+    #     验证通过的民用 ASN 回填白名单 → 提升主池家宽召回; 情报落盘备查。
+    #     失败绝不阻断主流程 (try/except 在函数内部已兜底)。
+    try:
+        _vg_verified, _vg_asns = fetch_vpngate_intel()
+        if _vg_asns:
+            RESIDENTIAL_ASNS |= _vg_asns
+            print(f"[+] VPNGate 回填民用 ASN: {sorted(_vg_asns)} "
+                  f"(白名单现 {len(RESIDENTIAL_ASNS)} 个)")
+    except Exception as e:
+        print(f"[!] VPNGate 情报异常 (已跳过): {str(e)[:80]}")
 
     # 1. 抓取
     raw_nodes = fetch_raw_nodes()
