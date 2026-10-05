@@ -4,74 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
-      "server": "45.205.26.194",
-      "server_port": 443,
-      "password": "66974838-ee71-481c-b9dd-172edbccece7",
-      "tls": {
-        "enabled": true,
-        "server_name": "node5.luoye.ee",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe",
-      "server": "45.95.96.176",
-      "server_port": 443,
-      "uuid": "635ac0f9-5e30-4f1d-a74b-604cbbfcf05c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "chat.rtnode.site",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fpYQ3Ml1YhTM0tbf4Ixxx03gxMtOno3iGaq3uoxIszs",
-          "short_id": "a7268acdcfef5862"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe",
-      "server": "45.205.27.78",
-      "server_port": 10443,
-      "password": "7bf59211-61ab-4775-863a-c8355f3027c7",
-      "tls": {
-        "enabled": true,
-        "server_name": "45.205.27.78",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe",
-      "server": "144.31.50.236",
-      "server_port": 443,
-      "uuid": "1c332eae-7e02-4acd-996d-4eb3e652401c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM",
-          "short_id": "bbe46bd8f6b96839"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 05 - xiaohe",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
       "server": "45.207.207.25",
       "server_port": 443,
       "method": "aes-256-gcm",
@@ -82,22 +16,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
-        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe",
-        "🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe",
-        "🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe",
-        "🇸🇨 塞舌尔 (Seychelles) 05 - xiaohe"
+        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
-        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe",
-        "🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe",
-        "🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe",
-        "🇸🇨 塞舌尔 (Seychelles) 05 - xiaohe"
+        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

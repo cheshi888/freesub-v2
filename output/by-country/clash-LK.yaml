@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
-  server: 51.75.67.209
+  server: support.zoom.us
   port: 80
   udp: true
   type: vless
@@ -13,6 +13,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
 proxy-groups:
 - name: PROXIES
   type: select

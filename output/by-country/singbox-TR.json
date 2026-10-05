@@ -4,26 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "93.190.8.158",
-      "server_port": 3090,
-      "uuid": "2f322254-c1e3-4ec1-80ac-822d44a2238a",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
-      "server": "212.74.39.235",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
       "server": "206.1.100.83",
       "server_port": 25178,
       "method": "2022-blake3-aes-256-gcm",
@@ -31,36 +13,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - xiaohe",
-      "server": "85.192.48.142",
-      "server_port": 443,
-      "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nvidia.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "short_id": "db04ce8bdb8900f1"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - xiaohe",
-      "server": "206.1.103.221",
-      "server_port": 14074,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "gc24/luU7zbPhMS6GH6mUzT1qZBjCXhKbAvgUjM4Yno=:NOerjaqxVAGVMkJfw/LwtWwz27auvlL0MNKBrjlTeV0="
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 06 - xiaohe",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
       "server": "78.135.73.47",
       "server_port": 443,
       "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
@@ -81,7 +34,26 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 07 - xiaohe",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
+      "server": "test.keoplentuio.xyz",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - xiaohe",
+      "server": "162.249.127.130",
+      "server_port": 8081,
+      "password": "9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z",
+      "tls": {
+        "enabled": true,
+        "server_name": "hop-germany-september.dynuddns.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - xiaohe",
       "server": "151.241.226.201",
       "server_port": 2053,
       "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
@@ -101,15 +73,50 @@
     },
     {
       "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 06 - xiaohe",
+      "server": "85.192.48.142",
+      "server_port": 443,
+      "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nvidia.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+          "short_id": "db04ce8bdb8900f1"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇷 土耳其 (Turkey) 07 - xiaohe",
+      "server": "206.1.103.221",
+      "server_port": 53281,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "ymykCy/7ioXKe7u60ZifNpAK+N4XKMYW7ljHu/e+h1Q=:tu4qvwMmFqKGRd3SAMGdHSD7G0MDWjHffAr+XSXc/Go="
+    },
+    {
+      "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 08 - xiaohe",
-      "server": "cookie.wookshop.ir",
-      "server_port": 43233,
-      "uuid": "568bcbbc-7a90-4164-8b5d-1c0bbeccfa38",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "cookie.wookshop.ir"
+      "server": "tr.xelnivo.ir",
+      "server_port": 5589,
+      "uuid": "e40131eb-087a-48e1-9d0d-c7db5049ce1f",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "rlWw1txOKfyTIegqGc5YUQo1CxqZEXBPeQZppA6H014",
+          "short_id": "8f798d413a5dbf01"
         }
       }
     },
