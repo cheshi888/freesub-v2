@@ -36,15 +36,7 @@ proxies:
     public-key: dcox8XXfkOCmKn3kgrloj6wY5o1_0brJOi2mczYmAT4
     short-id: 5ced03e42cc31aab
   servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇿🇦 南非 (South Africa) 05 - xiaohe
-  server: zfd-boardv2.kunlun01dns.com
-  port: 16266
-  udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,7 +46,6 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 02 - xiaohe
   - 🇿🇦 南非 (South Africa) 03 - xiaohe
   - 🇿🇦 南非 (South Africa) 04 - xiaohe
-  - 🇿🇦 南非 (South Africa) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,6 +55,5 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 02 - xiaohe
   - 🇿🇦 南非 (South Africa) 03 - xiaohe
   - 🇿🇦 南非 (South Africa) 04 - xiaohe
-  - 🇿🇦 南非 (South Africa) 05 - xiaohe
 rules:
 - MATCH,PROXIES

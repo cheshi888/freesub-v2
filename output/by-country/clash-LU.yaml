@@ -16,34 +16,17 @@ proxies:
     short-id: d758a643034ad90e
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇱🇺 卢森堡 (Luxembourg) 02 - xiaohe
-  server: lbeiggdz.smart-cats.ru
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8325bd97-b77c-4917-acaa-2446e9e8cc03
-  tls: true
-  reality-opts:
-    public-key: mzrVbIsEggpJfXR8M7yxki2vgv3sXWQdy1bGhXqatUY
-    short-id: 79651ae525860543
-  servername: vk.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: haknewhpjmv
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
-  - 🇱🇺 卢森堡 (Luxembourg) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
-  - 🇱🇺 卢森堡 (Luxembourg) 02 - xiaohe
 rules:
 - MATCH,PROXIES

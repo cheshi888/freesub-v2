@@ -5,21 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇿 阿塞拜疆 (Azerbaijan) 01 - xiaohe",
-      "server": "az.xelnivo.ir",
-      "server_port": 45642,
-      "uuid": "688fcedc-c730-47fb-9fc0-b5962a38788e",
+      "tag": "🇦🇱 AL 01 - xiaohe",
+      "server": "194.93.61.100",
+      "server_port": 443,
+      "uuid": "41e71ba7-d389-47aa-94f7-ed1f55fdbcdf",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "play.google.com",
+        "server_name": "cdnjs.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
-          "public_key": "rlWw1txOKfyTIegqGc5YUQo1CxqZEXBPeQZppA6H014",
-          "short_id": "8f798d413a5dbf01"
+          "public_key": "E1te_g9q6EWQVOCgjwI4PF-cml9qqW7OEAf33tYkUxQ",
+          "short_id": "17d334ad29b2ff40"
         }
       }
     },
@@ -28,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇿 阿塞拜疆 (Azerbaijan) 01 - xiaohe"
+        "🇦🇱 AL 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇿 阿塞拜疆 (Azerbaijan) 01 - xiaohe"
+        "🇦🇱 AL 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

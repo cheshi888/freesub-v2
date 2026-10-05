@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
+  tls: true
+  servername: novantunnel.tech
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /Novan-AE9
+    headers:
+      Host: novantunnel.tech
+- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   server: 130.49.161.70
   port: 443
   udp: true
@@ -14,15 +28,16 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
-  server: 217.60.33.215
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01
-  sni: streambox.wwwinternetvideo.click
-  skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
+  server: uae.unixzone.us
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   server: 146.70.102.82
   port: 443
   udp: true
@@ -35,17 +50,6 @@ proxies:
     short-id: 002fb4ec7b3088cc
   servername: www.datadoghq.com
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: 84.235.244.108
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select

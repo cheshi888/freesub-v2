@@ -4,8 +4,28 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe",
+      "server": "35.201.197.4",
+      "server_port": 443,
+      "uuid": "22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0",
+          "short_id": "32f66f37df3f58d2"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe",
       "server": "160.187.100.109",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -17,19 +37,39 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
       "server": "103.115.109.49",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/oneclickvpnkeys",
+        "server_name": "t.me",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe",
+      "server": "118.167.235.241",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 - xiaohe",
       "server": "130.211.240.128",
       "server_port": 443,
       "uuid": "31a40f42-4ad6-4a32-a760-71102b459584",
@@ -38,7 +78,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -48,13 +88,34 @@
       }
     },
     {
+      "type": "tuic",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 06 - xiaohe",
+      "server": "tw1.dexlos.com",
+      "server_port": 8080,
+      "uuid": "D7286728-678E-443B-B76B-B699654C66DD",
+      "password": "D7286728-678E-443B-B76B-B699654C66DD",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "tls": {
+        "enabled": true,
+        "server_name": "tw1.dexlos.com",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 05 - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 06 - xiaohe"
       ]
     },
     {
@@ -63,7 +124,10 @@
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 05 - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
