@@ -16,18 +16,28 @@ proxies:
     public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
     short-id: 7f1e29593aa94ad1
   servername: www.bing.com
-  client-fingerprint: chrome
+  client-fingerprint: random
+- name: 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
+  server: 211.20.156.191
+  port: 28164
+  udp: true
+  type: trojan
+  password: i99Cef
+  sni: ctldl.windowsupdate.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
+  - 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
+  - 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
 rules:
 - MATCH,PROXIES
