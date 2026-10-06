@@ -5,47 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 104.18.34.21
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 656bb400-3b7a-47e3-94b0-0362f3865072
-  tls: true
-  servername: socks5.revil-time3.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /socks5://128.140.46.169:13482
-    headers:
-      Host: socks5.revil-time3.workers.dev
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: www.speedtest.net
+  server: 212.87.220.98
   port: 443
   udp: true
   type: vless
-  uuid: b19419fa-8009-455b-b059-765e2856883a
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: akbarian34.j9z65ce2uyks.workers.dev
+  servername: fzo5i.ir46.90k.hh.ov0.kdns.fr
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /vl/3Qe9Fv1V2cqEtXyBQApZYi
+    path: /glasspanel/guest000_0_5de14443985f/
     headers:
-      Host: akbarian34.j9z65ce2uyks.workers.dev
+      Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
-  - 🇨🇿 捷克 (Czech) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
-  - 🇨🇿 捷克 (Czech) 02 - xiaohe
 rules:
 - MATCH,PROXIES

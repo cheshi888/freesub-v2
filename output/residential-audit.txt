@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-10-06 04:26:16 UTC
+生成时间: 2026-10-06 13:09:12 UTC
 ==============================================================================
 
 说明:
@@ -15,19 +15,9 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 7
+本轮家宽节点数: 3
 
-[1] US  移动网络  置信度 85
-     exit_ip : 192.80.63.4
-     server  : 104.24.31.89:443  (vless)
-     ASN     : AS11782 Perfecto Mobile Inc
-     ISP     : Perfecto Mobile Inc
-     ORG     : Perfecto Mobile Inc
-     ip-api  : hosting=False proxy=False mobile=True reverse=-
-     ipapi.is: company=Perfecto Mobile Inc asn=AS11782 Perfecto Mobile Inc
-     fraud   : 0  (-1 = 未取到评分)
-
-[2] AT  严格家宽  置信度 70
+[1] AT  严格家宽  置信度 70
      exit_ip : 157.173.29.8
      server  : 31.77.227.6:52006  (vless)
      ASN     : AS216416 Evolus IT Solutions GmbH
@@ -37,19 +27,9 @@
      ipapi.is: company=Evolusfibre AT asn=AS216416 Evolus IT Solutions GmbH
      fraud   : 0  (-1 = 未取到评分)
 
-[3] TR  移动网络  置信度 85
-     exit_ip : 2a01:f900:12:216::1
-     server  : test.keoplentuio.xyz:2053  (vless)
-     ASN     : AS44620 Netlen Internet Hizmetleri Ltd. Sti.
-     ISP     : Netlen Internet Hizmetleri Ltd. Sti.
-     ORG     : Netlen Internet Hizmetleri Ltd. Sti
-     ip-api  : hosting=False proxy=False mobile=True reverse=-
-     ipapi.is: company=Netlen Internet asn=AS44620 Netlen Internet Hizmetleri Ltd. Sti.
-     fraud   : 0  (-1 = 未取到评分)
-
-[4] TW  严格家宽  置信度 82
+[2] TW  严格家宽  置信度 82
      exit_ip : 60.249.28.58
-     server  : 45.192.201.140:443  (vless)
+     server  : 172.66.152.4:443  (vless)
      ASN     : AS3462 Data Communication Business Group
      ISP     : Chunghwa Telecom Co., Ltd.
      ORG     : Chunghwa Telecom Co. Ltd.
@@ -57,7 +37,7 @@
      ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
      fraud   : 0  (-1 = 未取到评分)
 
-[5] SG  严格家宽  置信度 82
+[3] SG  严格家宽  置信度 82
      exit_ip : 202.156.27.133
      server  : s3.huhiuh.space:18642  (hysteria2)
      ASN     : AS4657 StarHub Ltd
@@ -66,23 +46,3 @@
      ip-api  : hosting=False proxy=False mobile=False reverse=-
      ipapi.is: company=StarHub Cable Vision Ltd asn=AS4657 Starhub Ltd.
      fraud   : 1  (-1 = 未取到评分)
-
-[6] TW  严格家宽  置信度 82
-     exit_ip : 36.234.129.163
-     server  : sbgfgov.vip23.wogacnmnagfwgov.com:11223  (vmess)
-     ASN     : AS3462 Data Communication Business Group
-     ISP     : Chunghwa Telecom Co., Ltd.
-     ORG     : Chunghwa Telecom Co. Ltd.
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
-     fraud   : 0  (-1 = 未取到评分)
-
-[7] TW  严格家宽  置信度 82
-     exit_ip : 36.234.129.163
-     server  : sbgfgov.vip24.wogacnmnagfwgov.com:11224  (vmess)
-     ASN     : AS3462 Data Communication Business Group
-     ISP     : Chunghwa Telecom Co., Ltd.
-     ORG     : Chunghwa Telecom Co. Ltd.
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
-     fraud   : 0  (-1 = 未取到评分)

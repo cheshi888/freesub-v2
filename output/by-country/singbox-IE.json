@@ -4,30 +4,33 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
-      "server": "3.9.135.156",
-      "server_port": 51847,
-      "uuid": "391a01e9-b664-407b-9158-610fab3f5920",
-      "flow": "xtls-rprx-vision",
+      "server": "loved-shark.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
       "tls": {
         "enabled": true,
-        "server_name": "www.tesla.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc",
-          "short_id": "0eec442e7b34d2f2"
-        }
+        "server_name": "loved-shark.rooster465.autos",
+        "insecure": false
       }
     },
     {
       "type": "trojan",
       "tag": "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe",
-      "server": "ie.tronsg.com",
+      "server": "sacred-anemone.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "sacred-anemone.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇮🇪 爱尔兰 (Ireland) 03 - xiaohe",
+      "server": "3.255.76.207",
       "server_port": 443,
       "password": "Trojan@82164024",
       "tls": {
@@ -38,7 +41,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 03 - xiaohe",
+      "tag": "🇮🇪 爱尔兰 (Ireland) 04 - xiaohe",
       "server": "198.55.102.59",
       "server_port": 4443,
       "uuid": "7f86f371-5a85-48be-babc-7af1ae7ffb75",
@@ -58,30 +61,6 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 04 - xiaohe",
-      "server": "loved-shark.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "loved-shark.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 05 - xiaohe",
-      "server": "sacred-anemone.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "sacred-anemone.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -89,8 +68,7 @@
         "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
         "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe",
         "🇮🇪 爱尔兰 (Ireland) 03 - xiaohe",
-        "🇮🇪 爱尔兰 (Ireland) 04 - xiaohe",
-        "🇮🇪 爱尔兰 (Ireland) 05 - xiaohe"
+        "🇮🇪 爱尔兰 (Ireland) 04 - xiaohe"
       ]
     },
     {
@@ -100,8 +78,7 @@
         "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
         "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe",
         "🇮🇪 爱尔兰 (Ireland) 03 - xiaohe",
-        "🇮🇪 爱尔兰 (Ireland) 04 - xiaohe",
-        "🇮🇪 爱尔兰 (Ireland) 05 - xiaohe"
+        "🇮🇪 爱尔兰 (Ireland) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
