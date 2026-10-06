@@ -4,26 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇴🇲 OM 01 - xiaohe",
-      "server": "w7k2mf.5tencent.asia",
-      "server_port": 35016,
-      "method": "aes-128-gcm",
-      "password": "6ee847c4-04ef-4786-9720-eb6f73fbd80b"
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) R50 - xiaohe",
+      "server": "test.keoplentuio.xyz",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇴🇲 OM 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) R50 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇴🇲 OM 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) R50 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

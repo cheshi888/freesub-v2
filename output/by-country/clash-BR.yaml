@@ -18,27 +18,19 @@ proxies:
   network: ws
   ws-opts:
     path: /linkvws
-- name: 🇧🇷 巴西 (Brazil) 02 - xiaohe
-  server: brb.nnpy.org
-  port: 11100
-  udp: true
-  type: hysteria2
-  password: df8d55f9-fb51-442d-902a-bf8160dc051b
-  sni: brb.nnpy.org
-  skip-cert-verify: true
+    headers:
+      Host: aksai.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇧🇷 巴西 (Brazil) 01 - xiaohe
-  - 🇧🇷 巴西 (Brazil) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 巴西 (Brazil) 01 - xiaohe
-  - 🇧🇷 巴西 (Brazil) 02 - xiaohe
 rules:
 - MATCH,PROXIES
