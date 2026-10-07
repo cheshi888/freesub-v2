@@ -5,13 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
-  server: 103.115.109.49
-  port: 443
+  server: 165.154.195.38
+  port: 35034
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
-  skip-cert-verify: true
+  type: vmess
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   server: 160.187.100.109
   port: 443
@@ -21,13 +21,26 @@ proxies:
   sni: vpn-tw-002.fastervpn.world
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  server: sbgfgov.vip23.wogacnmnagfwgov.com
-  port: 11223
+  server: 103.115.109.49
+  port: 443
   udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
+  server: tw3.dexlos.com
+  port: 8080
+  udp: true
+  type: tuic
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  sni: tw3.dexlos.com
+  skip-cert-verify: true
+  congestion-controller: bbr
+  udp-relay-mode: native
+  alpn:
+  - h3
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +49,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +58,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
 rules:
 - MATCH,PROXIES

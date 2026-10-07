@@ -5,31 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - xiaohe
-  server: 185.193.30.30
-  port: 8880
+  server: 204.216.216.23
+  port: 10086
   udp: true
   type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime09.workers.dev
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
 - name: 🇮🇹 意大利 (Italy) 02 - xiaohe
   server: 91.201.65.122
-  port: 9059
+  port: 9092
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 9XwYyZsK8SNzQDtY
+  password: TyNkGmp9hs6eGpDK
 - name: 🇮🇹 意大利 (Italy) 03 - xiaohe
-  server: 91.201.65.122
-  port: 9070
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: bf7v334KKDV3YDhH
-- name: 🇮🇹 意大利 (Italy) 04 - xiaohe
   server: 57.131.38.163
   port: 2053
   udp: true
@@ -40,35 +28,42 @@ proxies:
     public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
     short-id: 5b8a942318178e7b
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇮🇹 意大利 (Italy) 05 - xiaohe
-  server: 91.201.65.122
-  port: 9053
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: SBM7R883jBmnqe6C
-- name: 🇮🇹 意大利 (Italy) 06 - xiaohe
-  server: 91.201.65.122
-  port: 9002
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: b8KkNDjEd5QqFyRm
-- name: 🇮🇹 意大利 (Italy) 07 - xiaohe
+  client-fingerprint: edge
+- name: 🇮🇹 意大利 (Italy) 04 - xiaohe
   server: 91.201.65.122
   port: 9074
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: p5wSkb2uM3pKSS3j
-- name: 🇮🇹 意大利 (Italy) 08 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 05 - xiaohe
   server: 91.201.65.122
-  port: 9092
+  port: 9065
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: TyNkGmp9hs6eGpDK
+  password: PeHSHm5SqEjBuEXE
+- name: 🇮🇹 意大利 (Italy) 06 - xiaohe
+  server: 91.201.65.122
+  port: 9059
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9XwYyZsK8SNzQDtY
+- name: 🇮🇹 意大利 (Italy) 07 - xiaohe
+  server: 91.201.65.122
+  port: 9039
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qYEN5HX4JKeVCdEC
+- name: 🇮🇹 意大利 (Italy) 08 - xiaohe
+  server: 91.201.65.122
+  port: 9053
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: SBM7R883jBmnqe6C
 - name: 🇮🇹 意大利 (Italy) 09 - xiaohe
   server: 82.118.16.187
   port: 443
@@ -81,35 +76,22 @@ proxies:
     public-key: R5ycsjJ-v024902dMSqTsSdqxUwCFEXMebdBEWFt9VU
     short-id: cd6065902eea7a02
   servername: www.cloudflare.com
-  client-fingerprint: ''
+  client-fingerprint: firefox
 - name: 🇮🇹 意大利 (Italy) 10 - xiaohe
-  server: 91.201.65.122
-  port: 9039
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qYEN5HX4JKeVCdEC
-- name: 🇮🇹 意大利 (Italy) 11 - xiaohe
   server: 91.201.65.122
   port: 9097
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: Sn5B7jTqr76aCJT8
-- name: 🇮🇹 意大利 (Italy) 12 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 11 - xiaohe
   server: 91.201.65.122
-  port: 9065
+  port: 9002
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: PeHSHm5SqEjBuEXE
-- name: 🇮🇹 意大利 (Italy) 13 - xiaohe
-  server: 204.216.216.23
-  port: 10086
-  udp: true
-  type: vless
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-- name: 🇮🇹 意大利 (Italy) 14 - xiaohe
+  password: b8KkNDjEd5QqFyRm
+- name: 🇮🇹 意大利 (Italy) 12 - xiaohe
   server: 204.216.216.23
   port: 1114
   udp: true
@@ -139,8 +121,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 10 - xiaohe
   - 🇮🇹 意大利 (Italy) 11 - xiaohe
   - 🇮🇹 意大利 (Italy) 12 - xiaohe
-  - 🇮🇹 意大利 (Italy) 13 - xiaohe
-  - 🇮🇹 意大利 (Italy) 14 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -158,7 +138,5 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 10 - xiaohe
   - 🇮🇹 意大利 (Italy) 11 - xiaohe
   - 🇮🇹 意大利 (Italy) 12 - xiaohe
-  - 🇮🇹 意大利 (Italy) 13 - xiaohe
-  - 🇮🇹 意大利 (Italy) 14 - xiaohe
 rules:
 - MATCH,PROXIES

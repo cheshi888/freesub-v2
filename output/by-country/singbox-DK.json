@@ -4,27 +4,18 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "172.66.44.124",
-      "server_port": 8443,
-      "uuid": "b2f2f9f2-1864-48ea-839b-22815faff1f1",
+      "type": "trojan",
+      "tag": "🇩🇰 丹麦 (Denmark) 01 - xiaohe",
+      "server": "77.74.123.108",
+      "server_port": 4443,
+      "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
       "tls": {
         "enabled": true,
-        "server_name": "stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev",
+        "server_name": "grape-test-italy.dynuddns.net",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "randomized"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev"
+          "fingerprint": "firefox"
         }
       }
     },
@@ -33,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - xiaohe"
+        "🇩🇰 丹麦 (Denmark) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - xiaohe"
+        "🇩🇰 丹麦 (Denmark) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
