@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
-      "server": "zfd-boardv2.kunlun01dns.com",
-      "server_port": 16298,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇮🇩 印尼 (Indonesia) 02 - xiaohe",
+      "tag": "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
       "server": "103.172.197.3",
       "server_port": 16006,
       "uuid": "f8c9d2a1-da40-4f90-b671-11772a0b13d6",
@@ -33,30 +25,18 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇩 印尼 (Indonesia) 03 - xiaohe",
-      "server": "103.160.63.199",
-      "server_port": 31348,
-      "method": "chacha20-ietf-poly1305",
-      "password": "8C5valhOd8vfwaTXUSZ6Zyb0Ip34lRR5z7P8az"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
-        "🇮🇩 印尼 (Indonesia) 02 - xiaohe",
-        "🇮🇩 印尼 (Indonesia) 03 - xiaohe"
+        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
-        "🇮🇩 印尼 (Indonesia) 02 - xiaohe",
-        "🇮🇩 印尼 (Indonesia) 03 - xiaohe"
+        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

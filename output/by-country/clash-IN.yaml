@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaohe
-  server: 144.24.109.215
-  port: 51000
-  udp: true
-  type: hysteria2
-  password: 06133d56-2d98-4ca5-b9d3-bbf2d65bc238
-  sni: cn.cremedelamer.com
-  skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 02 - xiaohe
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -23,8 +15,8 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 03 - xiaohe
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 02 - xiaohe
   server: 152.67.8.205
   port: 80
   udp: true
@@ -35,13 +27,27 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇮🇳 印度 (India) 04 - xiaohe
-  server: 172.105.39.124
-  port: 7002
+- name: 🇮🇳 印度 (India) 03 - xiaohe
+  server: 144.24.109.215
+  port: 51000
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
+  type: hysteria2
+  password: 06133d56-2d98-4ca5-b9d3-bbf2d65bc238
+  sni: cn.cremedelamer.com
+  skip-cert-verify: true
+- name: 🇮🇳 印度 (India) 04 - xiaohe
+  server: 148.113.5.44
+  port: 443
+  udp: true
+  type: vless
+  uuid: 72ea5a91-ffcc-43d2-9297-5993c3abf186
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI
+    short-id: 221873918e0bb74d
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
