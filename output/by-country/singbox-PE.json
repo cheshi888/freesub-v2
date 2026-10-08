@@ -4,30 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇧🇷 巴西 (Brazil) 01 - xiaohe",
-      "server": "brb.nnpy.org",
-      "server_port": 11100,
-      "password": "df8d55f9-fb51-442d-902a-bf8160dc051b",
-      "tls": {
-        "enabled": true,
-        "server_name": "brb.nnpy.org",
-        "insecure": true
-      }
+      "type": "vmess",
+      "tag": "🇵🇪 秘鲁 (Peru) 01 - xiaohe",
+      "server": "zfd-boardv2.kunlun01dns.com",
+      "server_port": 16322,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
+        "🇵🇪 秘鲁 (Peru) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
+        "🇵🇪 秘鲁 (Peru) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -25,19 +25,19 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
-  server: 82.38.64.229
-  port: 8443
+  server: 140.238.213.114
+  port: 50160
   udp: true
   type: hysteria2
-  password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
-  sni: hopp-swizland-new.mysynology.net
-  skip-cert-verify: false
+  password: 84a506ca5aca505696a454d828420b3f
+  sni: 140.238.213.114
+  skip-cert-verify: true
 - name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
   server: 138.124.63.94
   port: 443
   udp: true
   type: vless
-  uuid: 2b781b4a-5942-0018-a7f3-5a07b7b488c1
+  uuid: 2b781b4a-5942-48e0-a7f3-5a07b7b488c1
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -46,53 +46,14 @@ proxies:
   servername: lv-root.sworkingvpn.com
   client-fingerprint: firefox
 - name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
-  server: 104.165.205.40
+  server: 82.38.64.235
   port: 8443
   udp: true
   type: hysteria2
-  password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
-  sni: speedtestmark.com
-  skip-cert-verify: false
+  password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
+  sni: hopp-swizland-new.mysynology.net
+  skip-cert-verify: true
 - name: 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
-  server: 208.69.78.217
-  port: 8444
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
-  server: 140.238.213.114
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 84a506ca5aca505696a454d828420b3f
-  sni: 'off'
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
-  server: 208.69.78.217
-  port: 21000
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-  ports: 21000-21199,33000-33199
-- name: 🇨🇭 瑞士 (Switzerland) 09 - xiaohe
-  server: 152.67.75.161
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 3a702d4d1de4949005d8431220e040fb
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: c13f29db6a638ad2b211b9ce2669ef27
-- name: 🇨🇭 瑞士 (Switzerland) 10 - xiaohe
   server: 138.124.63.93
   port: 443
   udp: true
@@ -105,7 +66,7 @@ proxies:
     short-id: 15bcc0a77c3cacdf
   servername: lv-root.sworkingvpn.com
   client-fingerprint: firefox
-- name: 🇨🇭 瑞士 (Switzerland) 11 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
   server: 208.69.78.217
   port: 2053
   udp: true
@@ -117,6 +78,32 @@ proxies:
     short-id: ad86e2d52ff40ebd
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
+  server: sweth.ali-bard.online
+  port: 443
+  udp: true
+  type: vless
+  uuid: 15c9be2b-20f1-47b7-bf33-747ed1ff7fb7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: sweth.ali-bard.online
+  client-fingerprint: firefox
+- name: 🇨🇭 瑞士 (Switzerland) 09 - xiaohe
+  server: 188.120.236.239
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 4f4ba283-2dd7-4eda-9211-63ae357373cf
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: id.vk.com
+  client-fingerprint: safari
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless-grpc-reality
 proxy-groups:
 - name: PROXIES
   type: select
@@ -131,8 +118,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 09 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 10 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -147,7 +132,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 09 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 10 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 11 - xiaohe
 rules:
 - MATCH,PROXIES
