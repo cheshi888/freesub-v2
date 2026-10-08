@@ -4,17 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇧🇷 巴西 (Brazil) 01 - xiaohe",
-      "server": "135.84.72.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime06.workers.dev"
-        }
+      "server": "brb.nnpy.org",
+      "server_port": 11100,
+      "password": "df8d55f9-fb51-442d-902a-bf8160dc051b",
+      "tls": {
+        "enabled": true,
+        "server_name": "brb.nnpy.org",
+        "insecure": true
       }
     },
     {

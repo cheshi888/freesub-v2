@@ -12,11 +12,17 @@
       "tls": {
         "enabled": true,
         "server_name": "wss.zazazuza.ru",
-        "insecure": false
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/vpn-wss/fluxor/59011/"
+        "path": "/vpn-wss/fluxor/59011/",
+        "headers": {
+          "Host": "wss.zazazuza.ru"
+        }
       }
     },
     {

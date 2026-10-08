@@ -5,16 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - xiaohe
-  server: 135.84.72.30
-  port: 8880
+  server: brb.nnpy.org
+  port: 11100
   udp: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime06.workers.dev
+  type: hysteria2
+  password: df8d55f9-fb51-442d-902a-bf8160dc051b
+  sni: brb.nnpy.org
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
