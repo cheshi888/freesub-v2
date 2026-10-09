@@ -5,21 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: cz.h2.cleanersaz.help
+  server: 95.85.238.173
   port: 443
   udp: true
   type: hysteria2
   password: c-E0lamG8OnEj9M_uh3oJPmIXqYIVGctO-NHELF1TmNYs7Jl
   sni: cz.h2.cleanersaz.help
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 194.87.6.192
+  server: ger6.fytpn.com
   port: 2097
   udp: true
   type: trojan
   password: gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU
   sni: ger6.fytpn.com
-  skip-cert-verify: false
+  skip-cert-verify: true
+- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
+  server: ger6.fytpn.com
+  port: 56789
+  udp: true
+  type: vless
+  uuid: a889fba5-5472-4022-a6b4-9710157fda2f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: PDHRi_RRFsPhxLoH2C1l9A9HdL2y7g1uOzXmY0XnmzQ
+    short-id: a2aa
+  servername: ger6.fytpn.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -27,6 +40,7 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
+  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -34,5 +48,6 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
+  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 rules:
 - MATCH,PROXIES

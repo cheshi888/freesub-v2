@@ -4,29 +4,35 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇹🇭 泰国 (Thailand) 01 - xiaohe",
-      "server": "v2ray.simspeedup.com",
-      "server_port": 80,
-      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "ais.speedtest.net"
-        }
-      }
+      "server": "119.46.51.45",
+      "server_port": 37515,
+      "uuid": "9b76bc31-17a5-4454-934a-8d5fb602cd70",
+      "security": "auto"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇭 泰国 (Thailand) 02 - xiaohe",
+      "server": "103.107.52.106",
+      "server_port": 52351,
+      "method": "aes-256-gcm",
+      "password": "sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c="
     },
     {
       "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 02 - xiaohe",
-      "server": "104.19.32.166",
+      "tag": "🇹🇭 泰国 (Thailand) 03 - xiaohe",
+      "server": "104.16.10.185",
       "server_port": 443,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
       "tls": {
         "enabled": true,
         "server_name": "v2ray.simspeedup.com",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
@@ -37,12 +43,67 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 04 - xiaohe",
+      "server": "154.21.203.106",
+      "server_port": 21033,
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.kaidee.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4",
+          "short_id": "cbd39bea0805e2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 05 - xiaohe",
+      "server": "43.255.156.43",
+      "server_port": 25102,
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.kaidee.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4",
+          "short_id": "cbd39bea0805e2"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇭 泰国 (Thailand) 06 - xiaohe",
+      "server": "silversbgfgov.vip43.wogbcnmnagfwgov.com",
+      "server_port": 11243,
+      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
+      "security": "auto",
+      "alter_id": 2
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇭 泰国 (Thailand) 01 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 02 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 02 - xiaohe",
+        "🇹🇭 泰国 (Thailand) 03 - xiaohe",
+        "🇹🇭 泰国 (Thailand) 04 - xiaohe",
+        "🇹🇭 泰国 (Thailand) 05 - xiaohe",
+        "🇹🇭 泰国 (Thailand) 06 - xiaohe"
       ]
     },
     {
@@ -50,7 +111,11 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇭 泰国 (Thailand) 01 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 02 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 02 - xiaohe",
+        "🇹🇭 泰国 (Thailand) 03 - xiaohe",
+        "🇹🇭 泰国 (Thailand) 04 - xiaohe",
+        "🇹🇭 泰国 (Thailand) 05 - xiaohe",
+        "🇹🇭 泰国 (Thailand) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -6,28 +6,45 @@
     {
       "type": "hysteria2",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "cz.h2.cleanersaz.help",
+      "server": "95.85.238.173",
       "server_port": 443,
       "password": "c-E0lamG8OnEj9M_uh3oJPmIXqYIVGctO-NHELF1TmNYs7Jl",
       "tls": {
         "enabled": true,
         "server_name": "cz.h2.cleanersaz.help",
-        "insecure": false
+        "insecure": true
       }
     },
     {
       "type": "trojan",
       "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
-      "server": "194.87.6.192",
+      "server": "ger6.fytpn.com",
       "server_port": 2097,
       "password": "gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU",
       "tls": {
         "enabled": true,
         "server_name": "ger6.fytpn.com",
-        "insecure": false,
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 03 - xiaohe",
+      "server": "ger6.fytpn.com",
+      "server_port": 56789,
+      "uuid": "a889fba5-5472-4022-a6b4-9710157fda2f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ger6.fytpn.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PDHRi_RRFsPhxLoH2C1l9A9HdL2y7g1uOzXmY0XnmzQ",
+          "short_id": "a2aa"
         }
       }
     },
@@ -37,7 +54,8 @@
       "outbounds": [
         "auto",
         "🇨🇿 捷克 (Czech) 01 - xiaohe",
-        "🇨🇿 捷克 (Czech) 02 - xiaohe"
+        "🇨🇿 捷克 (Czech) 02 - xiaohe",
+        "🇨🇿 捷克 (Czech) 03 - xiaohe"
       ]
     },
     {
@@ -45,7 +63,8 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - xiaohe",
-        "🇨🇿 捷克 (Czech) 02 - xiaohe"
+        "🇨🇿 捷克 (Czech) 02 - xiaohe",
+        "🇨🇿 捷克 (Czech) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
