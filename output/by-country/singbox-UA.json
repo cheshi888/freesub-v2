@@ -13,9 +13,10 @@
         "enabled": true,
         "server_name": "z5n1.vpnpolar.online",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ]
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       },
       "transport": {
         "type": "ws",
@@ -26,38 +27,18 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 02 - xiaohe",
-      "server": "91.196.161.47",
-      "password": "81d953a0-f0cf-4452-a669-747d32efd6c1",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy.kirian.su",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "9VK3Nqd0bcXGPxcay9hRLY28HBtKo5"
-      },
-      "server_ports": [
-        "25000:25999"
-      ]
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
-        "🇺🇦 乌克兰 (Ukraine) 02 - xiaohe"
+        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
-        "🇺🇦 乌克兰 (Ukraine) 02 - xiaohe"
+        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -13,11 +13,10 @@ proxies:
   tls: true
   servername: wss.zazazuza.ru
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: wss.zazazuza.ru
 proxy-groups:
 - name: PROXIES
   type: select
