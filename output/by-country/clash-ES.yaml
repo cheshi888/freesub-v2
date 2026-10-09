@@ -5,20 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - xiaohe
-  server: 5.188.181.201
-  port: 9025
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: XPtzA9sCug3SPR4c
-- name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
   server: 108.181.121.226
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: WSyL4XTwNsdv
-- name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
+- name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
   server: 185.174.137.172
   port: 8446
   udp: true
@@ -26,7 +19,7 @@ proxies:
   password: e9dc02d400b67c727aca1620
   sni: 185.174.137.172
   skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
+- name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
   server: 212.227.235.66
   port: 2053
   udp: true
@@ -37,8 +30,8 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
+  client-fingerprint: firefox
+- name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
   server: 138.124.62.158
   port: 443
   udp: true
@@ -51,6 +44,21 @@ proxies:
     short-id: 15bcc0a77c3cacdf
   servername: es-root.sworkingvpn.com
   client-fingerprint: firefox
+- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
+  server: 185.220.249.44
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 6d1590ed-4c0f-4bbc-931d-2431737615dd
+  tls: true
+  servername: 185.220.249.44
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /ws-cdn1-vless
+    headers:
+      Host: es.fastmirror-labs.xyz
 - name: 🇪🇸 西班牙 (Spain) 06 - xiaohe
   server: 46.28.71.247
   port: 443
@@ -62,6 +70,19 @@ proxies:
   reality-opts:
     public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
     short-id: 0dfc23fe80778c00
+  servername: www.cloudflare.com
+  client-fingerprint: safari
+- name: 🇪🇸 西班牙 (Spain) 07 - xiaohe
+  server: 83.147.18.3
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
+    short-id: fd8cf7e1173f0edb
   servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
@@ -75,6 +96,7 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 04 - xiaohe
   - 🇪🇸 西班牙 (Spain) 05 - xiaohe
   - 🇪🇸 西班牙 (Spain) 06 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -86,5 +108,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 04 - xiaohe
   - 🇪🇸 西班牙 (Spain) 05 - xiaohe
   - 🇪🇸 西班牙 (Spain) 06 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 07 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -13,40 +13,33 @@ proxies:
   password: y9VURyNzJWNRYEGQ
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - xiaohe
   server: 195.238.126.20
-  port: 9012
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: xaupMUvhptwxdDUg
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaohe
-  server: 195.238.126.20
-  port: 9045
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: Lp27rqyJq72bZsqX
-- name: 🇱🇹 立陶宛 (Lithuania) 04 - xiaohe
-  server: 195.238.126.20
-  port: 9078
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: JCJpbRbQZNw9XFZG
-- name: 🇱🇹 立陶宛 (Lithuania) 05 - xiaohe
-  server: 195.238.126.20
   port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇹 立陶宛 (Lithuania) 06 - xiaohe
+- name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaohe
   server: 195.238.126.20
   port: 9002
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: b8KkNDjEd5QqFyRm
-- name: 🇱🇹 立陶宛 (Lithuania) 07 - xiaohe
+- name: 🇱🇹 立陶宛 (Lithuania) 04 - xiaohe
+  server: 195.238.126.20
+  port: 9012
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: xaupMUvhptwxdDUg
+- name: 🇱🇹 立陶宛 (Lithuania) 05 - xiaohe
+  server: 195.238.126.20
+  port: 9045
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: Lp27rqyJq72bZsqX
+- name: 🇱🇹 立陶宛 (Lithuania) 06 - xiaohe
   server: 195.238.126.20
   port: 9001
   udp: true
@@ -64,7 +57,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 04 - xiaohe
   - 🇱🇹 立陶宛 (Lithuania) 05 - xiaohe
   - 🇱🇹 立陶宛 (Lithuania) 06 - xiaohe
-  - 🇱🇹 立陶宛 (Lithuania) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -76,6 +68,5 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 04 - xiaohe
   - 🇱🇹 立陶宛 (Lithuania) 05 - xiaohe
   - 🇱🇹 立陶宛 (Lithuania) 06 - xiaohe
-  - 🇱🇹 立陶宛 (Lithuania) 07 - xiaohe
 rules:
 - MATCH,PROXIES

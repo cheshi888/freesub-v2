@@ -13,23 +13,35 @@ proxies:
   tls: true
   servername: z5n1.vpnpolar.online
   skip-cert-verify: false
-  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /beeline
     headers:
       Host: z5n1.vpnpolar.online
+- name: 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
+  server: 91.196.161.47
+  port: 25000
+  udp: true
+  type: hysteria2
+  password: 81d953a0-f0cf-4452-a669-747d32efd6c1
+  sni: hy.kirian.su
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 9VK3Nqd0bcXGPxcay9hRLY28HBtKo5
+  ports: 25000-25999
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
+  - 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
+  - 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
 rules:
 - MATCH,PROXIES

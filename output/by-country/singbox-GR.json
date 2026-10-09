@@ -6,21 +6,44 @@
     {
       "type": "vless",
       "tag": "🇬🇷 希腊 (Greece) 01 - xiaohe",
-      "server": "157.228.160.166",
+      "server": "85.90.197.220",
       "server_port": 443,
-      "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
+      "uuid": "8f704ed6-9a1a-4d04-94dd-1bff501716de",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "randomized"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
-          "public_key": "NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M",
-          "short_id": "3cef317b"
+          "public_key": "biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4",
+          "short_id": "94acb54627612d43"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇷 希腊 (Greece) 02 - xiaohe",
+      "server": "38.54.29.210",
+      "server_port": 2053,
+      "uuid": "b940be1b-3998-45d2-bf7b-06e7b6c4987a",
+      "tls": {
+        "enabled": true,
+        "server_name": "kkkk-xcd.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "kkkk-xcd.pages.dev"
         }
       }
     },
@@ -29,14 +52,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇷 希腊 (Greece) 01 - xiaohe"
+        "🇬🇷 希腊 (Greece) 01 - xiaohe",
+        "🇬🇷 希腊 (Greece) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇷 希腊 (Greece) 01 - xiaohe"
+        "🇬🇷 希腊 (Greece) 01 - xiaohe",
+        "🇬🇷 希腊 (Greece) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
