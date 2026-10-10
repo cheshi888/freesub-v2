@@ -5,7 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  server: 156.226.168.221
+  server: 45.13.186.133
+  port: 443
+  udp: true
+  type: vless
+  uuid: e937b92c-701f-420e-a621-3eb3b75de467
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: UXJLPiZERc6kP5cJ40BJVlmobrFc2ztp2aHkK1P-UAU
+    short-id: 0a816eb58c4e3fd9
+  servername: worki.puffixhosting.com
+  client-fingerprint: chrome
+- name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
+  server: 45.13.186.128
+  port: 443
+  udp: true
+  type: vless
+  uuid: e937b92c-701f-420e-a621-3eb3b75de467
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: -5wufXJa2wCUk8M2BV02BduMiOTKOQRyGbI8BPv4NGM
+    short-id: c69b7627dda6c4e6
+  servername: work.puffixhosting.com
+  client-fingerprint: chrome
+- name: 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
+  server: hk3n.wxgqlfx.vip
   port: 35193
   udp: true
   type: vless
@@ -17,7 +43,7 @@ proxies:
     short-id: e8daed2d
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
+- name: 🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe
   server: 144.31.50.236
   port: 443
   udp: true
@@ -29,7 +55,7 @@ proxies:
     public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
     short-id: bbe46bd8f6b96839
   servername: yandex.ru
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +63,8 @@ proxy-groups:
   - AUTO
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +72,7 @@ proxy-groups:
   proxies:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe
 rules:
 - MATCH,PROXIES
