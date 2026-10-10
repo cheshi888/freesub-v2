@@ -5,20 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
-  server: 172.67.221.230
+  server: 157.228.155.185
   port: 443
   udp: true
   type: vless
-  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  flow: xtls-rprx-vision
   tls: true
-  servername: novantunnel.tech
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /Novan-AE9
-    headers:
-      Host: novantunnel.tech
+  reality-opts:
+    public-key: 4q8nqNb-0c-akP3XqVmen67BLXJVlx48a_GDRw16nVg
+    short-id: 5ea112e8
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   server: 157.228.155.238
   port: 443
   udp: true
@@ -31,55 +40,7 @@ proxies:
     short-id: 6f76ad09
   servername: addons.mozilla.org
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  server: 130.49.161.70
-  port: 443
-  udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: 31.59.210.37
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
-  tls: true
-  reality-opts:
-    public-key: 5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4
-    short-id: 6dbf4931096f9890
-  servername: www.yandex.ru
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  server: 31.59.210.26
-  port: 2088
-  udp: true
-  type: vless
-  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
-  tls: true
-  reality-opts:
-    public-key: Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg
-    short-id: b1ad165f903c62fe
-  servername: www.yandex.ru
-  client-fingerprint: qq
-  network: grpc
-  grpc-opts:
-    grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  server: 103.126.51.57
-  port: 8081
-  udp: true
-  type: hysteria2
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: ocober-romania-new.yyuyy.com
-  skip-cert-verify: false
-- name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
   server: 31.59.210.24
   port: 2087
   udp: true
@@ -90,11 +51,11 @@ proxies:
     public-key: W2OLbQ682PLJ9yHQ21Q0nPJk9U8RuL5YnlP-U1fdQzI
     short-id: a11023050f134216
   servername: www.yandex.ru
-  client-fingerprint: safari
+  client-fingerprint: edge
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 (UAE) 08 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   server: 31.59.210.25
   port: 2087
   udp: true
@@ -109,8 +70,8 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 (UAE) 09 - xiaohe
-  server: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
+  server: 84.235.244.108
   port: 22573
   udp: true
   type: vless
@@ -118,7 +79,9 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇦🇪 阿联酋 (UAE) 10 - xiaohe
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
   server: 146.70.102.82
   port: 443
   udp: true
@@ -131,6 +94,36 @@ proxies:
     short-id: 002fb4ec7b3088cc
   servername: www.datadoghq.com
   client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 08 - xiaohe
+  server: 31.59.210.37
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
+  tls: true
+  reality-opts:
+    public-key: 5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4
+    short-id: 6dbf4931096f9890
+  servername: www.yandex.ru
+  client-fingerprint: ''
+  network: grpc
+  grpc-opts:
+    grpc-service-name: astracat
+- name: 🇦🇪 阿联酋 (UAE) 09 - xiaohe
+  server: 31.59.210.26
+  port: 2088
+  udp: true
+  type: vless
+  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
+  tls: true
+  reality-opts:
+    public-key: Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg
+    short-id: b1ad165f903c62fe
+  servername: www.yandex.ru
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: astracat
 proxy-groups:
 - name: PROXIES
   type: select
@@ -145,7 +138,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 07 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 08 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 09 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -160,6 +152,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 07 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 08 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 09 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 10 - xiaohe
 rules:
 - MATCH,PROXIES

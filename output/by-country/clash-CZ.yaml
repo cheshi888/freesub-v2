@@ -5,31 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 104.21.69.37
-  port: 443
-  udp: true
-  type: vless
-  uuid: 911b84e1-d046-4fbf-bfc0-c168791115ef
-  tls: true
-  servername: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vl/uWq9DFRgj8BwQiSXmZ46fp=chrome
-    headers:
-      Host: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 104.21.227.134
-  port: 80
-  udp: true
-  type: vless
-  uuid: 0991a0c4-0ee5-4213-af89-7ad589f853f3
-  network: ws
-  ws-opts:
-    path: /ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY
-    headers:
-      Host: elenaaaaaaaaaa.cloudns.pro
-- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
   server: 95.85.238.142
   port: 443
   udp: true
@@ -42,7 +17,7 @@ proxies:
     short-id: cd529c087b552f2f
   servername: bobr.puffixhosting.com
   client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 04 - xiaohe
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
   server: 95.85.238.173
   port: 443
   udp: true
@@ -50,27 +25,6 @@ proxies:
   password: c-E0lamG8OnEj9M_uh3oJPmIXqYIVGctO-NHELF1TmNYs7Jl
   sni: cz.h2.cleanersaz.help
   skip-cert-verify: true
-- name: 🇨🇿 捷克 (Czech) 05 - xiaohe
-  server: 194.87.6.192
-  port: 56789
-  udp: true
-  type: vless
-  uuid: a889fba5-5472-4022-a6b4-9710157fda2f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: PDHRi_RRFsPhxLoH2C1l9A9HdL2y7g1uOzXmY0XnmzQ
-    short-id: a2aa
-  servername: ger6.fytpn.com
-  client-fingerprint: firefox
-- name: 🇨🇿 捷克 (Czech) 06 - xiaohe
-  server: ger6.fytpn.com
-  port: 2097
-  udp: true
-  type: trojan
-  password: gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU
-  sni: ger6.fytpn.com
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -78,10 +32,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
-  - 🇨🇿 捷克 (Czech) 04 - xiaohe
-  - 🇨🇿 捷克 (Czech) 05 - xiaohe
-  - 🇨🇿 捷克 (Czech) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -89,9 +39,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
-  - 🇨🇿 捷克 (Czech) 04 - xiaohe
-  - 🇨🇿 捷克 (Czech) 05 - xiaohe
-  - 🇨🇿 捷克 (Czech) 06 - xiaohe
 rules:
 - MATCH,PROXIES

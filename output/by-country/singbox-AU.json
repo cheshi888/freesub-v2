@@ -6,29 +6,6 @@
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-      "server": "104.18.155.229",
-      "server_port": 443,
-      "uuid": "42026ed0-7d74-4585-8e46-0fe6aa4d665a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.genflix.co.id.r3xxe.eu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/au-do",
-        "headers": {
-          "Host": "www.genflix.co.id.r3xxe.eu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
       "server": "51.161.204.244",
       "server_port": 443,
       "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
@@ -38,7 +15,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -48,29 +25,20 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
-      "server": "51.161.204.242",
-      "server_port": 443,
-      "uuid": "a14b736b-a92a-48d6-a596-5d31f7378ded",
-      "flow": "xtls-rprx-vision",
+      "type": "trojan",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
+      "server": "sy2.australiacaregroup.site",
+      "server_port": 10003,
+      "password": "aec8e5e3-bb81-4b22-8802-0b88c54997b3",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "a2qGjvUPq6Nz5FTbn_MSHp-055q2h8YXqIL5VIJ5zwE",
-          "short_id": "d15c17cef9b2e456"
-        }
+        "server_name": "sy2.australiacaregroup.site",
+        "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
       "server": "152.67.115.203",
       "server_port": 443,
       "password": "633bc3be486b646190661ac2387c150a",
@@ -85,8 +53,38 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
+      "server": "sy2.australiacaregroup.site",
+      "server_port": 10002,
+      "uuid": "aec8e5e3-bb81-4b22-8802-0b88c54997b3",
+      "tls": {
+        "enabled": true,
+        "server_name": "sy2.australiacaregroup.site",
+        "insecure": false
+      }
+    },
+    {
       "type": "hysteria2",
       "tag": "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
+      "server": "137.23.2.56",
+      "password": "b42d90fa667942aebc734d60",
+      "tls": {
+        "enabled": true,
+        "server_name": "rmgyvpn.rest",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "b42d90fa667942aebc734d60"
+      },
+      "server_ports": [
+        "20000:30000"
+      ]
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 06 - xiaohe",
       "server": "vpn-au-001.fastervpn.world",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -105,7 +103,8 @@
         "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
+        "🇦🇺 澳大利亚 (Australia) 06 - xiaohe"
       ]
     },
     {
@@ -116,7 +115,8 @@
         "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
+        "🇦🇺 澳大利亚 (Australia) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

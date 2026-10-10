@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
-  server: master-possum.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: master-possum.rooster465.autos
-  skip-cert-verify: true
-- name: 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
   server: adapting-basilisk.rooster465.autos
   port: 443
   udp: true
@@ -20,14 +12,22 @@ proxies:
   password: UX82473651
   sni: adapting-basilisk.rooster465.autos
   skip-cert-verify: true
+- name: 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
+  server: master-possum.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: master-possum.rooster465.autos
+  skip-cert-verify: true
 - name: 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
-  server: 3.253.106.233
+  server: loved-shark.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: loved-shark.rooster465.autos
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇮🇪 爱尔兰 (Ireland) 04 - xiaohe
   server: 34.242.77.118
   port: 443
@@ -35,22 +35,9 @@ proxies:
   type: trojan
   password: UX82473651
   sni: sacred-anemone.rooster465.autos
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇮🇪 爱尔兰 (Ireland) 05 - xiaohe
-  server: 198.55.102.59
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 7f86f371-5a85-48be-babc-7af1ae7ffb75
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 9gYnZLxZAPxIKzu9e-cOLBpbCn9p9og9gBodOCh5HB8
-    short-id: ce6767c3f1
-  servername: vk.com
-  client-fingerprint: firefox
-- name: 🇮🇪 爱尔兰 (Ireland) 06 - xiaohe
-  server: ie.tronsg.com
+  server: 3.255.76.207
   port: 443
   udp: true
   type: trojan
@@ -67,7 +54,6 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
   - 🇮🇪 爱尔兰 (Ireland) 04 - xiaohe
   - 🇮🇪 爱尔兰 (Ireland) 05 - xiaohe
-  - 🇮🇪 爱尔兰 (Ireland) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -78,6 +64,5 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
   - 🇮🇪 爱尔兰 (Ireland) 04 - xiaohe
   - 🇮🇪 爱尔兰 (Ireland) 05 - xiaohe
-  - 🇮🇪 爱尔兰 (Ireland) 06 - xiaohe
 rules:
 - MATCH,PROXIES

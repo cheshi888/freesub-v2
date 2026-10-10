@@ -5,53 +5,42 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 188.114.97.6
-  port: 8080
+  server: 194.87.196.107
+  port: 40440
   udp: true
-  type: vless
-  uuid: ffa431ab-a59b-4092-a418-905fcb1e4d5f
-  network: ws
-  ws-opts:
-    path: /vl/rYScQPG1EEjxXdswdMEU2b3rM4?ed=2560
-    headers:
-      Host: s0p42f8wwpdde5tf7m4l6l.ab1x-sn9o4y3n7ondkrd.workers.dev
+  type: ss
+  cipher: aes-256-gcm
+  password: 4938e975724d0ed1
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 8.6.112.9
+  server: 91.196.32.163
   port: 443
   udp: true
-  type: vless
-  uuid: 11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf
-  tls: true
-  servername: ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: ancient-heart-60c5.dpccgizieb.workers.dev
+  type: hysteria2
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  sni: germany3.h2corp.local
+  skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: 66.81.247.155
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 6cc29a05-4828-4e48-a34a-20b7ada60e85
-  tls: true
-  servername: testmikonim.hydrymhmdamyn7.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /OAZko425kNFF0PpQ
-    headers:
-      Host: testmikonim.hydrymhmdamyn7.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   server: 194.38.11.86
   port: 65443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  server: 193.233.74.6
+  port: 8444
+  udp: true
+  type: vless
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+    short-id: 457fab2ac885dbe0
+  servername: github.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   server: 130.49.189.158
   port: 43558
@@ -60,12 +49,18 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: eicdhshSrFLCx/sZ1PSpuKyoVWGZpU95tFS4iGC1c04=
 - name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  server: 194.87.196.13
-  port: 40440
+  server: 81.177.215.175
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 4938e975724d0ed1
+  type: vless
+  uuid: 1c5ed2e1-56da-41ab-9a78-159d9892ec17
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
+    short-id: 9e4eced6e98ed4d4
+  servername: github.com
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   server: 94.198.54.132
   port: 443
@@ -75,6 +70,54 @@ proxies:
   sni: msk.frkn.org
   skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
+  server: du-rov.secureservice.top
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
+    short-id: 3cbc3d737fb9c4af
+  servername: du-rov.secureservice.top
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
+  server: 217.149.30.73
+  port: 8443
+  udp: true
+  type: vless
+  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: p87u9cOh91BaXsKS-HoCoOUXxHcOwkM6ByTWmz_6b2Y
+    short-id: 0da7e14db353e7d0
+  servername: time.nztvpn.com
+  client-fingerprint: safari
+- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
+  server: 139.28.168.126
+  port: 8080
+  udp: true
+  type: hysteria2
+  password: we_9m92rJZ93_m9Cj3KXB_mC9AS7Nx
+  sni: hopp-honkong-new.roxa.org
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
+  server: 153.80.241.206
+  port: 8444
+  udp: true
+  type: vless
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  servername: github.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
+- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
   server: 79.174.92.222
   port: 443
   udp: true
@@ -89,76 +132,34 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: ''
-- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
-  server: 5.42.99.64
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
-    short-id: 3cbc3d737fb9c4af
-  servername: du-rov.secureservice.top
-  client-fingerprint: random
-- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
-  server: 5.42.99.64
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
-    short-id: 3cbc3d737fb9c4af
-  servername: du-rov.secureservice.top
-  client-fingerprint: random
-- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
-  server: 5.42.99.64
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
-    short-id: 3cbc3d737fb9c4af
-  servername: du-rov.secureservice.top
-  client-fingerprint: random
-- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
-  server: 81.177.215.175
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1c5ed2e1-56da-41ab-9a78-159d9892ec17
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
-    short-id: 9e4eced6e98ed4d4
-  servername: github.com
-  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
-  server: 139.28.168.126
-  port: 8080
+  server: 5.42.99.64
+  port: 8443
   udp: true
-  type: hysteria2
-  password: we_9m92rJZ93_m9Cj3KXB_mC9AS7Nx
-  sni: hopp-honkong-new.roxa.org
-  skip-cert-verify: true
+  type: vless
+  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
+    short-id: 3cbc3d737fb9c4af
+  servername: du-rov.secureservice.top
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 14 - xiaohe
-  server: alb1337.zaebalsanoproxyklinus.lol
-  port: 28152
+  server: 5.42.99.64
+  port: 8443
   udp: true
-  type: hysteria2
-  password: 8bd04756-3beb-4348-82c9-d35453df50ce
-  sni: alb1337.zaebalsanoproxyklinus.lol
-  skip-cert-verify: false
+  type: vless
+  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
+    short-id: 3cbc3d737fb9c4af
+  servername: du-rov.secureservice.top
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 15 - xiaohe
-  server: du-rov.secureservice.top
+  server: 5.42.99.64
   port: 8443
   udp: true
   type: vless
