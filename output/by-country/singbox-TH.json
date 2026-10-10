@@ -14,17 +14,13 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 02 - xiaohe",
-      "server": "104.18.26.90",
+      "server": "162.159.192.125",
       "server_port": 443,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
       "tls": {
         "enabled": true,
         "server_name": "v2ray.simspeedup.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       },
       "transport": {
         "type": "ws",
@@ -64,6 +60,15 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇹🇭 泰国 (Thailand) 05 - xiaohe",
+      "server": "silversbgfgov.vip43.wogbcnmnagfwgov.com",
+      "server_port": 11243,
+      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
+      "security": "auto",
+      "alter_id": 2
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -71,7 +76,8 @@
         "🇹🇭 泰国 (Thailand) 01 - xiaohe",
         "🇹🇭 泰国 (Thailand) 02 - xiaohe",
         "🇹🇭 泰国 (Thailand) 03 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 04 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 04 - xiaohe",
+        "🇹🇭 泰国 (Thailand) 05 - xiaohe"
       ]
     },
     {
@@ -81,7 +87,8 @@
         "🇹🇭 泰国 (Thailand) 01 - xiaohe",
         "🇹🇭 泰国 (Thailand) 02 - xiaohe",
         "🇹🇭 泰国 (Thailand) 03 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 04 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 04 - xiaohe",
+        "🇹🇭 泰国 (Thailand) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
