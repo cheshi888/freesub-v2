@@ -24,18 +24,32 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇧🇷 巴西 (Brazil) 02 - xiaohe",
+      "server": "brb.nnpy.org",
+      "server_port": 11100,
+      "password": "df8d55f9-fb51-442d-902a-bf8160dc051b",
+      "tls": {
+        "enabled": true,
+        "server_name": "brb.nnpy.org",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
