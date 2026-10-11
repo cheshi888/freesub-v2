@@ -5,27 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: 94.183.170.135
-  port: 443
+  server: 185.209.15.100
+  port: 8443
   udp: true
   type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  server: 185.252.177.216
-  port: 443
-  udp: true
-  type: vless
-  uuid: 616c7b3b-41f4-4038-88c6-d6fedd0ae4a7
-  flow: xtls-rprx-vision
+  uuid: c6db98c5-9959-425e-9340-300779fc4e4b
   tls: true
-  reality-opts:
-    public-key: PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs
-    short-id: 9ea74b83f4993ca9
-  servername: est-1.ardesnode.ru
-  client-fingerprint: chrome
+  servername: n1.vimeostream.online
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: nl1grpc
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  server: 178.214.113.10
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c6db98c5-9959-425e-9340-300779fc4e4b
+  tls: true
+  servername: n2.vimeostream.online
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: nl1grpc
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   server: 109.206.241.10
   port: 449
@@ -35,21 +39,29 @@ proxies:
   sni: russiapower.accesscam.org
   skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
-  server: ee-1-1.unturned-rust-dead.lol
+  server: 185.209.15.100
   port: 443
   udp: true
   type: vless
-  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
+  uuid: c6db98c5-9959-425e-9340-300779fc4e4b
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk
-  servername: ee-1-1.unturned-rust-dead.lol
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ee-grpc
+    public-key: kK2a0QSYg0XQIMQOvDI7lJJvJcMH0-52RB90FivhVmM
+    short-id: c334408a1056aaf8
+  servername: n1.vimeostream.online
+  client-fingerprint: chrome
 - name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  server: 77.72.85.247
+  server: 94.183.170.135
+  port: 443
+  udp: true
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
+  server: 77.72.85.246
   port: 8443
   udp: true
   type: vless
@@ -63,7 +75,20 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
-- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
+  server: est-1.ardesnode.ru
+  port: 443
+  udp: true
+  type: vless
+  uuid: 616c7b3b-41f4-4038-88c6-d6fedd0ae4a7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs
+    short-id: 9ea74b83f4993ca9
+  servername: est-1.ardesnode.ru
+  client-fingerprint: random
+- name: 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
   server: 94.183.170.135
   port: 8443
   udp: true
@@ -72,8 +97,8 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
-  server: 212.87.190.93
+- name: 🇪🇪 爱沙尼亚 (Estonia) 09 - xiaohe
+  server: ee.h1cloud.net
   port: 25895
   udp: true
   type: vless
@@ -84,6 +109,33 @@ proxies:
     short-id: a73f0410d728c823
   servername: www.samsung.com
   client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 10 - xiaohe
+  server: 93.89.220.37
+  port: 443
+  udp: true
+  type: vless
+  uuid: 185e2bb3-2934-48d0-bbd5-dd20d16e83ee
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g
+    short-id: e88cb983f3c97528
+  servername: ibm.com
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 11 - xiaohe
+  server: ee-1-1.unturned-rust-dead.lol
+  port: 443
+  udp: true
+  type: vless
+  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
+  tls: true
+  reality-opts:
+    public-key: aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk
+  servername: ee-1-1.unturned-rust-dead.lol
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ee-grpc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -96,6 +148,10 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 09 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 10 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -108,5 +164,9 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 09 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 10 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 11 - xiaohe
 rules:
 - MATCH,PROXIES
