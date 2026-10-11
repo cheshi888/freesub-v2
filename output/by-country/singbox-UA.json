@@ -26,46 +26,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 02 - xiaohe",
-      "server": "172.67.136.163",
-      "server_port": 2087,
-      "uuid": "33594cb3-8a7d-420a-aa0a-70394740d362",
-      "tls": {
-        "enabled": true,
-        "server_name": "g3.milchanim.xyz",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/a222003ee81a",
-        "headers": {
-          "Host": "g3.milchanim.xyz"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
-        "🇺🇦 乌克兰 (Ukraine) 02 - xiaohe"
+        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
-        "🇺🇦 乌克兰 (Ukraine) 02 - xiaohe"
+        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

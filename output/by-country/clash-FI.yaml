@@ -35,65 +35,80 @@ proxies:
   tls: true
   servername: northerntrail.gazette.help
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: random
   network: grpc
   grpc-opts:
     grpc-service-name: trail-grpc
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: 95.216.27.15
-  port: 2053
+  server: 65.108.3.59
+  port: 443
   udp: true
   type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  tls: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: random
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  server: 144.31.27.215
-  port: 43000
-  udp: true
-  type: vless
-  uuid: 47f79fc1-0646-40e8-8a58-73e85d183d5a
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
-    short-id: 568d87a47271344e
-  servername: 144.31.27.215
-  client-fingerprint: random
-- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  servername: web.eitaa.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
   server: edge10.cyrionflare.com
   port: 2052
   udp: true
   type: vless
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
-  server: 177.3.218.191
-  port: 20326
-  udp: true
-  type: hysteria2
-  password: 8bd04756-3beb-4348-82c9-d35453df50ce
-  sni: finkawwwbroy5.qcloud.surf
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 09 - xiaohe
-  server: 91.107.126.228
-  port: 2096
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  server: fi-p1.h1cloud.net
+  port: 25481
   udp: true
   type: vless
-  uuid: f13b36ac-3765-4458-8a4d-08575038c463
+  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
   tls: true
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: id.vk.com
+    public-key: mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E
+    short-id: 3b84fc70657725af
+  servername: www.bing.com
   client-fingerprint: random
   network: grpc
   grpc-opts:
-    grpc-service-name: vless-grpc-reality
+    grpc-service-name: 8cb5baa18cd7
+- name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
+  server: 109.172.54.135
+  port: 8444
+  udp: true
+  type: vless
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  servername: github.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
+- name: 🇫🇮 芬兰 (Finland) 09 - xiaohe
+  server: finkawwwbroy5.qcloud.surf
+  port: 20326
+  udp: true
+  type: hysteria2
+  password: f83ce3c4-07d9-4895-bd14-cb74abbcab37
+  sni: finkawwwbroy5.qcloud.surf
+  skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 10 - xiaohe
-  server: 144.31.156.82
+  server: specific3.kandnet.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 621bcb9e-7df5-427b-a9d4-6e87223c8bca
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0eWdILjmoRVSJFDMiQskgkKG2Fc4TEMZ3XEPJ8ez9Hw
+  servername: specific3.kandnet.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 11 - xiaohe
+  server: fi.pythonsetupbib.online
   port: 443
   udp: true
   type: vless
@@ -104,8 +119,22 @@ proxies:
     public-key: ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg
     short-id: bdf5852d1423e694
   servername: fi.pythonsetupbib.online
-  client-fingerprint: random
-- name: 🇫🇮 芬兰 (Finland) 11 - xiaohe
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 12 - xiaohe
+  server: 65.109.188.155
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9f9b66ba-e964-4e0e-be38-293134868a67
+  tls: true
+  servername: gadfather.zovip2.ir
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /gropcdn
+    headers:
+      Host: gadfather.zovip2.ir
+- name: 🇫🇮 芬兰 (Finland) 13 - xiaohe
   server: van2.ragnarok-it.xyz
   port: 8446
   udp: true
@@ -118,18 +147,17 @@ proxies:
     short-id: 7bac4b112d30d1
   servername: amd.com
   client-fingerprint: edge
-- name: 🇫🇮 芬兰 (Finland) 12 - xiaohe
-  server: 65.108.3.59
-  port: 443
+- name: 🇫🇮 芬兰 (Finland) 14 - xiaohe
+  server: p1tun0.greewebservices.ir
+  port: 38820
   udp: true
   type: vless
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
-  flow: xtls-rprx-vision
+  uuid: ff3b79c1-1fd9-4e86-95a5-cf3863b3d162
   tls: true
   reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  servername: web.eitaa.com
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+    short-id: 66ded2
+  servername: play.google.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -148,6 +176,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 10 - xiaohe
   - 🇫🇮 芬兰 (Finland) 11 - xiaohe
   - 🇫🇮 芬兰 (Finland) 12 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 13 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 14 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -165,5 +195,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 10 - xiaohe
   - 🇫🇮 芬兰 (Finland) 11 - xiaohe
   - 🇫🇮 芬兰 (Finland) 12 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 13 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 14 - xiaohe
 rules:
 - MATCH,PROXIES

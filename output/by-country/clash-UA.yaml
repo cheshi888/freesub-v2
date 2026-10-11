@@ -18,34 +18,17 @@ proxies:
     path: /beeline
     headers:
       Host: z5n1.vpnpolar.online
-- name: 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
-  server: 172.67.136.163
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 33594cb3-8a7d-420a-aa0a-70394740d362
-  tls: true
-  servername: g3.milchanim.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /a222003ee81a
-    headers:
-      Host: g3.milchanim.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
-  - 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
-  - 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
 rules:
 - MATCH,PROXIES

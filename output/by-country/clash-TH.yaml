@@ -5,15 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - xiaohe
-  server: 119.46.51.45
-  port: 37515
-  udp: true
-  type: vmess
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
-- name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
-  server: support.zoom.us.v2ray.simspeedup.com
+  server: 103.86.49.57
   port: 80
   udp: true
   type: vless
@@ -21,8 +13,10 @@ proxies:
   network: ws
   ws-opts:
     path: /ws
-- name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
-  server: 104.18.26.90
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
+  server: 104.16.10.2
   port: 443
   udp: true
   type: vless
@@ -30,14 +24,13 @@ proxies:
   tls: true
   servername: v2ray.simspeedup.com
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
-- name: 🇹🇭 泰国 (Thailand) 04 - xiaohe
-  server: 154.21.203.106
+- name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
+  server: dghk2610.supertoolify.com
   port: 21033
   udp: true
   type: vless
@@ -48,8 +41,23 @@ proxies:
     public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
     short-id: cbd39bea0805e2
   servername: www.kaidee.com
-  client-fingerprint: firefox
+  client-fingerprint: random
+- name: 🇹🇭 泰国 (Thailand) 04 - xiaohe
+  server: 119.46.51.45
+  port: 37515
+  udp: true
+  type: vmess
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
 - name: 🇹🇭 泰国 (Thailand) 05 - xiaohe
+  server: pphfree2.mvpnpvpn.de5.net
+  port: 52351
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
+- name: 🇹🇭 泰国 (Thailand) 06 - xiaohe
   server: silversbgfgov.vip43.wogbcnmnagfwgov.com
   port: 11243
   udp: true
@@ -57,13 +65,6 @@ proxies:
   uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
   alterId: 2
   cipher: auto
-- name: 🇹🇭 泰国 (Thailand) 06 - xiaohe
-  server: 103.107.52.106
-  port: 52351
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
 proxy-groups:
 - name: PROXIES
   type: select
