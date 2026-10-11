@@ -11,15 +11,15 @@ proxies:
   type: trojan
   password: UX82473651
   sni: adapting-basilisk.rooster465.autos
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
-  server: loved-shark.rooster465.autos
+  server: master-possum.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: loved-shark.rooster465.autos
-  skip-cert-verify: false
+  sni: master-possum.rooster465.autos
+  skip-cert-verify: true
 - name: 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
   server: 34.242.77.118
   port: 443
@@ -29,12 +29,12 @@ proxies:
   sni: sacred-anemone.rooster465.autos
   skip-cert-verify: true
 - name: 🇮🇪 爱尔兰 (Ireland) 04 - xiaohe
-  server: master-possum.rooster465.autos
+  server: loved-shark.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: master-possum.rooster465.autos
+  sni: loved-shark.rooster465.autos
   skip-cert-verify: false
 - name: 🇮🇪 爱尔兰 (Ireland) 05 - xiaohe
   server: 198.55.102.59
@@ -48,15 +48,7 @@ proxies:
     public-key: 9gYnZLxZAPxIKzu9e-cOLBpbCn9p9og9gBodOCh5HB8
     short-id: ce6767c3f1
   servername: vk.com
-  client-fingerprint: random
-- name: 🇮🇪 爱尔兰 (Ireland) 06 - xiaohe
-  server: ie.tronsg.com
-  port: 443
-  udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: ie.tronsg.com
-  skip-cert-verify: true
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,7 +59,6 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
   - 🇮🇪 爱尔兰 (Ireland) 04 - xiaohe
   - 🇮🇪 爱尔兰 (Ireland) 05 - xiaohe
-  - 🇮🇪 爱尔兰 (Ireland) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -78,6 +69,5 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
   - 🇮🇪 爱尔兰 (Ireland) 04 - xiaohe
   - 🇮🇪 爱尔兰 (Ireland) 05 - xiaohe
-  - 🇮🇪 爱尔兰 (Ireland) 06 - xiaohe
 rules:
 - MATCH,PROXIES

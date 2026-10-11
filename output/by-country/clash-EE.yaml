@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: 185.209.15.100
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c6db98c5-9959-425e-9340-300779fc4e4b
-  tls: true
-  servername: n1.vimeostream.online
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: nl1grpc
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: 178.214.113.10
   port: 8443
   udp: true
@@ -30,15 +17,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: nl1grpc
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  server: 109.206.241.10
-  port: 449
-  udp: true
-  type: trojan
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: russiapower.accesscam.org
-  skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: 185.209.15.100
   port: 443
   udp: true
@@ -51,7 +30,15 @@ proxies:
     short-id: c334408a1056aaf8
   servername: n1.vimeostream.online
   client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+  server: 109.206.241.10
+  port: 449
+  udp: true
+  type: trojan
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  sni: 109.206.241.10
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   server: 94.183.170.135
   port: 443
   udp: true
@@ -60,23 +47,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
-  server: 77.72.85.246
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
-  tls: true
-  servername: fdghyt.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: fdghyt.com
-- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
-  server: est-1.ardesnode.ru
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
+  server: 185.252.177.216
   port: 443
   udp: true
   type: vless
@@ -87,29 +59,8 @@ proxies:
     public-key: PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs
     short-id: 9ea74b83f4993ca9
   servername: est-1.ardesnode.ru
-  client-fingerprint: random
-- name: 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
-  server: 94.183.170.135
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  tls: true
-  servername: estproxy4.lockdwn.com
-  skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 (Estonia) 09 - xiaohe
-  server: ee.h1cloud.net
-  port: 25895
-  udp: true
-  type: vless
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
-  tls: true
-  reality-opts:
-    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
-    short-id: a73f0410d728c823
-  servername: www.samsung.com
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 10 - xiaohe
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
   server: 93.89.220.37
   port: 443
   udp: true
@@ -122,20 +73,68 @@ proxies:
     short-id: e88cb983f3c97528
   servername: ibm.com
   client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 11 - xiaohe
-  server: ee-1-1.unturned-rust-dead.lol
+- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
+  server: 212.87.190.93
+  port: 25895
+  udp: true
+  type: vless
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  tls: true
+  reality-opts:
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+    short-id: a73f0410d728c823
+  servername: www.samsung.com
+  client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
+  server: u5.luxcloud.space
   port: 443
   udp: true
   type: vless
-  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
+  uuid: fc87e0d6-0f6a-423a-828e-1fed7e7ef29c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: u5.luxcloud.space
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 09 - xiaohe
+  server: 143.246.41.31
+  port: 443
+  udp: true
+  type: vless
+  uuid: 43212c32-01f2-4356-b216-67dc1c178262
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk
-  servername: ee-1-1.unturned-rust-dead.lol
-  client-fingerprint: random
+    public-key: h1xVB_-djXL6A7tvnnVbjV4bYKplHOuN0bgmFJQE6AE
+    short-id: 7f3a91c2d8e640ab
+  servername: ees92.shhflow.xyz
+  client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 10 - xiaohe
+  server: 185.31.242.61
+  port: 443
+  udp: true
+  type: vless
+  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 7mRrVzTchVLWWBru5fCgTvtdkL7lVJ_qRj9HW8Rd8X0
+    short-id: 0da7e14db353e7d0
+  servername: est.nztvpn.com
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 11 - xiaohe
+  server: 185.209.15.100
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c6db98c5-9959-425e-9340-300779fc4e4b
+  tls: true
+  servername: n1.vimeostream.online
+  skip-cert-verify: false
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
-    grpc-service-name: ee-grpc
+    grpc-service-name: nl1grpc
 proxy-groups:
 - name: PROXIES
   type: select
