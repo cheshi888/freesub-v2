@@ -17,14 +17,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇧🇷 巴西 (Brazil) 02 - xiaohe
-  server: brb.nnpy.org
-  port: 11100
-  udp: true
-  type: hysteria2
-  password: df8d55f9-fb51-442d-902a-bf8160dc051b
-  sni: brb.nnpy.org
-  skip-cert-verify: true
-- name: 🇧🇷 巴西 (Brazil) 03 - xiaohe
   server: 147.15.23.247
   port: 20000
   udp: true
@@ -42,7 +34,6 @@ proxy-groups:
   - AUTO
   - 🇧🇷 巴西 (Brazil) 01 - xiaohe
   - 🇧🇷 巴西 (Brazil) 02 - xiaohe
-  - 🇧🇷 巴西 (Brazil) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -50,6 +41,5 @@ proxy-groups:
   proxies:
   - 🇧🇷 巴西 (Brazil) 01 - xiaohe
   - 🇧🇷 巴西 (Brazil) 02 - xiaohe
-  - 🇧🇷 巴西 (Brazil) 03 - xiaohe
 rules:
 - MATCH,PROXIES

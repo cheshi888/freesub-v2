@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
-  server: 38.107.234.57
+  server: 3h-kazakhstan1.09vpn.com
   port: 80
   udp: true
   type: vmess
@@ -16,33 +16,8 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+      Host: 3h-kazakhstan1.09vpn.com
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
-  server: 206.223.249.90
-  port: 33891
-  udp: true
-  type: vless
-  uuid: 9977ba41-b6aa-4033-9492-2f6abfcade31
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fj5f0rWTOAgd2gqCCWgag3oAGwb6MCef3OFNdnQLWW8
-    short-id: f5bc6788
-  servername: browser.yandex.com
-  client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
-  server: 178.236.16.98
-  port: 35728
-  udp: true
-  type: vless
-  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
-  tls: true
-  reality-opts:
-    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
-    short-id: 69a2
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
   server: 83.222.23.81
   port: 38065
   udp: true
@@ -54,7 +29,7 @@ proxies:
     short-id: fa
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
   server: 5.252.33.175
   port: 9882
   udp: true
@@ -77,8 +52,6 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -87,7 +60,5 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
 rules:
 - MATCH,PROXIES

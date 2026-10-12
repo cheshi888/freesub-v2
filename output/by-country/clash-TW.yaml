@@ -10,7 +10,7 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/oneclickvpnkeys
+  sni: t.me
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   server: vpn-tw-002.fastervpn.world
@@ -18,8 +18,16 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-tw-002.fastervpn.world\u0026insecure=1\u0026allowinsecure=1
+  sni: css.rbxcdn.com
   skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
+  server: sbgfgov.vip23.wogacnmnagfwgov.com
+  port: 11223
+  udp: true
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -27,6 +35,7 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -34,5 +43,6 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
 rules:
 - MATCH,PROXIES
