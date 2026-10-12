@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-10-11 21:40:16 UTC
+生成时间: 2026-10-12 03:47:57 UTC
 ==============================================================================
 
 说明:
@@ -15,10 +15,70 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 3
+本轮家宽节点数: 8
 
-[1] TW  严格家宽  置信度 82
-     exit_ip : 61.224.73.137
+[1] KR  严格家宽  置信度 82
+     exit_ip : 218.237.185.234
+     server  : 218.237.185.234:4652  (shadowsocks)
+     ASN     : AS9318 SK Broadband Co Ltd
+     ISP     : SK Broadband Co Ltd
+     ORG     : broadNnet
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=SK Broadband Co Ltd asn=AS9318 SK Broadband Co Ltd
+     fraud   : 2  (-1 = 未取到评分)
+
+[2] KR  严格家宽  置信度 82
+     exit_ip : 49.254.204.133
+     server  : 49.254.204.133:1774  (shadowsocks)
+     ASN     : AS4766 Korea Telecom
+     ISP     : Korea Telecom
+     ORG     : Haionnet
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=HAIonNet asn=AS4766 Korea Telecom
+     fraud   : 0  (-1 = 未取到评分)
+
+[3] HK  严格家宽  置信度 82
+     exit_ip : 42.200.173.5
+     server  : 42.200.173.5:443  (vless)
+     ASN     : AS4760 HKT Limited
+     ISP     : PCCW IMSBiz
+     ORG     : Hong Kong Telecommunications (HKT) Limited
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Hong Kong Telecommunications (HKT) Limited Business Internet asn=AS4760 PCCW IMS Limited
+     fraud   : 0  (-1 = 未取到评分)
+
+[4] SE  严格家宽  置信度 70
+     exit_ip : 185.154.110.120
+     server  : 5.129.206.155:443  (vless)
+     ASN     : AS49770 Internetport Sweden AB
+     ISP     : Internetport Sweden AB
+     ORG     : Highspeed Broadband IPY2
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Highspeed Broadband IPY2 asn=AS49770 Internetport Sweden AB
+     fraud   : 0  (-1 = 未取到评分)
+
+[5] TR  移动网络  置信度 85
+     exit_ip : 2a01:f900:12:216::1
+     server  : test.keoplentuio.xyz:2053  (vless)
+     ASN     : AS44620 Netlen Internet Hizmetleri Ltd. Sti.
+     ISP     : Netlen Internet Hizmetleri Ltd. Sti.
+     ORG     : Netlen Internet Hizmetleri Ltd. Sti
+     ip-api  : hosting=False proxy=False mobile=True reverse=-
+     ipapi.is: company=Netlen Internet asn=AS44620 Netlen Internet Hizmetleri Ltd. Sti.
+     fraud   : 33  (-1 = 未取到评分)
+
+[6] TW  严格家宽  置信度 82
+     exit_ip : 118.167.248.243
+     server  : 118.167.248.243:24215  (vless)
+     ASN     : AS3462 Data Communication Business Group
+     ISP     : Chunghwa Telecom Co., Ltd.
+     ORG     : Chunghwa Telecom Co. Ltd.
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
+     fraud   : 0  (-1 = 未取到评分)
+
+[7] TW  严格家宽  置信度 82
+     exit_ip : 61.224.65.209
      server  : 654168416355441.d6f54hd1j.cc:443  (vmess)
      ASN     : AS3462 Data Communication Business Group
      ISP     : Chunghwa Telecom Co., Ltd.
@@ -27,18 +87,8 @@
      ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
      fraud   : 0  (-1 = 未取到评分)
 
-[2] TR  移动网络  置信度 85
-     exit_ip : 2a01:f900:12:1ce::1
-     server  : tumspr.azad0namah.ir:5566  (shadowsocks)
-     ASN     : AS44620 Netlen Internet Hizmetleri Ltd. Sti.
-     ISP     : Netlen Internet Hizmetleri Ltd. Sti.
-     ORG     : Netlen Internet Hizmetleri Ltd. Sti
-     ip-api  : hosting=False proxy=False mobile=True reverse=-
-     ipapi.is: company=Netlen Internet asn=AS44620 Netlen Internet Hizmetleri Ltd. Sti.
-     fraud   : 33  (-1 = 未取到评分)
-
-[3] TW  严格家宽  置信度 82
-     exit_ip : 111.246.10.43
+[8] TW  严格家宽  置信度 82
+     exit_ip : 111.246.24.123
      server  : 24864168545164.d6f54hd1j.cc:443  (vmess)
      ASN     : AS3462 Data Communication Business Group
      ISP     : Chunghwa Telecom Co., Ltd.
