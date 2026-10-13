@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇮🇩 印尼 (Indonesia) 02 - xiaohe
   server: 103.172.197.2
   port: 29172
@@ -27,31 +27,7 @@ proxies:
   reality-opts:
     public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
   servername: aws.amazon.com
-  client-fingerprint: chrome
-- name: 🇮🇩 印尼 (Indonesia) 03 - xiaohe
-  server: 154.21.203.106
-  port: 46984
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: XBntt77MdH3EMkPXibOAO_NSBrL_aqwiLItU98rqlHE
-    short-id: 9c3c0f8ec8b4af12
-  servername: www.lamer.com.sg
-  client-fingerprint: random
-- name: 🇮🇩 印尼 (Indonesia) 04 - xiaohe
-  server: 104.21.70.21
-  port: 443
-  udp: true
-  type: trojan
-  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
-  sni: id1.nathaya.web.id
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /trojan
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,8 +35,6 @@ proxy-groups:
   - AUTO
   - 🇮🇩 印尼 (Indonesia) 01 - xiaohe
   - 🇮🇩 印尼 (Indonesia) 02 - xiaohe
-  - 🇮🇩 印尼 (Indonesia) 03 - xiaohe
-  - 🇮🇩 印尼 (Indonesia) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -68,7 +42,5 @@ proxy-groups:
   proxies:
   - 🇮🇩 印尼 (Indonesia) 01 - xiaohe
   - 🇮🇩 印尼 (Indonesia) 02 - xiaohe
-  - 🇮🇩 印尼 (Indonesia) 03 - xiaohe
-  - 🇮🇩 印尼 (Indonesia) 04 - xiaohe
 rules:
 - MATCH,PROXIES
