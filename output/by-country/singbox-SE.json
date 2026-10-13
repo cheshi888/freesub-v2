@@ -4,148 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
-      "server": "77.110.96.201",
-      "server_port": 36264,
-      "password": "Telegram-vpnjey",
-      "tls": {
-        "enabled": true,
-        "server_name": "se.vpnjey2.dpdns.org",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "Telegram@vpnjey"
-      }
+      "server": "70.34.212.124",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "AxIYWtskJWIIaefW"
     },
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
-      "server": "se1.h1cloud.net",
-      "server_port": 26226,
-      "uuid": "ec572cf0-1337-4c51-b4ec-ff2f538c1f4c",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.dn.se",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zsSr4H-YgykAOYdIYFaAnFQtIguRhP825FodeKSoxjA",
-          "short_id": "2ddf3f1151012c98"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "69effd3120f4"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
-      "server": "62.60.159.81",
-      "server_port": 2053,
-      "uuid": "fc00adfb-232a-46ce-8b93-0c70e516aa8a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw",
-          "short_id": "d0ea1847066af5a6"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpce5bb9e71"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
-      "server": "swe.wizard.select",
-      "server_port": 443,
-      "uuid": "3db6eb7e-c548-11f1-9902-a337233c6cda",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "swe.wizard.select",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0",
-          "short_id": "3b20e438da99"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
-      "server": "94.143.231.146",
-      "server_port": 443,
-      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
-      "tls": {
-        "enabled": true,
-        "server_name": "sub.merky.top",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/merky-connect/de6/",
-        "headers": {
-          "Host": "sub.merky.top"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - xiaohe",
-      "server": "sweedenqfds777.qcloud.surf",
-      "server_port": 21223,
-      "password": "4ad3dbf5-2005-4d96-b56c-a0ca9905cab6",
-      "tls": {
-        "enabled": true,
-        "server_name": "sweedenqfds777.qcloud.surf",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 07 - xiaohe",
-      "server": "se1.h1cloud.net",
-      "server_port": 26100,
-      "uuid": "68c3d665-b2b5-4ffb-9f37-9f3d8c47324d",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1uuvuG2Jl_o6yoVvOYm3hEboArh2Znu7zCy4Tqj36TI",
-          "short_id": "8045087bda646f1b"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 08 - xiaohe",
       "server": "136.148.211.209",
       "server_port": 25119,
       "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
@@ -166,23 +34,88 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 09 - xiaohe",
-      "server": "cape.flowzari.info",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
+      "server": "193.27.200.200",
       "server_port": 443,
-      "uuid": "6c21cf57-a9a9-4075-ad9f-631152bd911e",
+      "uuid": "3db6eb7e-c548-11f1-9902-a337233c6cda",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cape.flowzari.info",
+        "server_name": "swe.wizard.select",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0",
+          "short_id": "3b20e438da99"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
+      "server": "77.110.96.201",
+      "server_port": 36264,
+      "password": "Telegram-vpnjey",
+      "tls": {
+        "enabled": true,
+        "server_name": "se.vpnjey2.dpdns.org",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "Telegram@vpnjey"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
+      "server": "swe.wizard.select",
+      "server_port": 443,
+      "uuid": "3db6eb7e-c548-11f1-9902-a337233c6cda",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "swe.wizard.select",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "5DdSLIpnYjqYTI4-yC-ulr8PGMA8YML_EWdKvOjdinc",
-          "short_id": "693e339ad3613446"
+          "public_key": "Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0",
+          "short_id": "3b20e438da99"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - xiaohe",
+      "server": "sub.merky.top",
+      "server_port": 443,
+      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
+      "tls": {
+        "enabled": true,
+        "server_name": "sub.merky.top",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/merky-connect/de6/"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 07 - xiaohe",
+      "server": "sweedenqfds777.qcloud.surf",
+      "server_port": 21223,
+      "password": "8bd04756-3beb-4348-82c9-d35453df50ce",
+      "tls": {
+        "enabled": true,
+        "server_name": "127.0.0.1",
+        "insecure": true
       }
     },
     {
@@ -196,9 +129,7 @@
         "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 06 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 07 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 08 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 09 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 07 - xiaohe"
       ]
     },
     {
@@ -211,9 +142,7 @@
         "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 06 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 07 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 08 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 09 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 07 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

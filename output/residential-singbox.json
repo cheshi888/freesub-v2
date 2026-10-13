@@ -4,16 +4,33 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe",
-      "server": "218.237.185.234",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
+      "server": "v10.zgtfqs.click",
+      "server_port": 30807,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe",
+      "server": "googol.wookshop.ir",
+      "server_port": 17915,
+      "uuid": "439628ee-ef8e-4a3e-ba0f-091b7376dcb8",
+      "tls": {
+        "enabled": true,
+        "server_name": "googol.wookshop.ir",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
       "server": "118.167.248.243",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -22,35 +39,12 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
           "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
           "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 03 (家宽) - xiaohe",
-      "server": "209.38.238.229",
-      "server_port": 20202,
-      "uuid": "d18c6897-2849-456a-8c46-d7ecece47c20",
-      "tls": {
-        "enabled": true,
-        "server_name": "wzs.echo.net.eu.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=",
-        "headers": {
-          "Host": "wzs.echo.net.eu.org"
         }
       }
     },
@@ -62,24 +56,34 @@
       "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe",
+      "server": "p141.panda001.net",
+      "server_port": 4652,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
-        "🇩🇪 德国 (Germany) 03 (家宽) - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe",
+        "🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
-        "🇩🇪 德国 (Germany) 03 (家宽) - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe",
+        "🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

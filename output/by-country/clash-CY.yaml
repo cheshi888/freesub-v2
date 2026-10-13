@@ -15,9 +15,9 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
-  server: 185.166.154.111
+  server: cdn.bulkavpn.top
   port: 443
   udp: true
   type: vless
@@ -28,7 +28,7 @@ proxies:
     public-key: bQZcMViJWXus9rMSTOa-ZAaUJC0mIlPx7XmzrLp8GQU
     short-id: 94f32cfc
   servername: cdn.bulkavpn.top
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
   server: 185.76.241.49
   port: 443
@@ -52,7 +52,7 @@ proxies:
   tls: true
   servername: co-pl.speedtec.ru
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇨🇾 塞浦路斯 (Cyprus) 05 - xiaohe
   server: 5.253.30.99
   port: 40443
@@ -67,7 +67,7 @@ proxies:
   servername: deepl.com
   client-fingerprint: qq
 - name: 🇨🇾 塞浦路斯 (Cyprus) 06 - xiaohe
-  server: 5.253.28.240
+  server: hydra.yokkastars.com
   port: 2443
   udp: true
   type: vless
@@ -77,23 +77,10 @@ proxies:
     public-key: h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg
     short-id: 92c32de179e5d908
   servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: rex-eb0bf76b710ce763
-- name: 🇨🇾 塞浦路斯 (Cyprus) 07 - xiaohe
-  server: 81.94.148.50
-  port: 7449
-  udp: true
-  type: vless
-  uuid: 7ac594a4-fabc-486c-9a91-5662c09e63cd
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbSuvgEeMrvFIV7C3tLaJhEADo_2RQdGvwFFrfJJQE0
-    short-id: 7abd137540629e9d
-  servername: passport.yandex.ru
-  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -105,7 +92,6 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 05 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 06 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -117,6 +103,5 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 05 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 06 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 07 - xiaohe
 rules:
 - MATCH,PROXIES

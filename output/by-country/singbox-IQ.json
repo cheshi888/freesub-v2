@@ -6,37 +6,26 @@
     {
       "type": "vless",
       "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "courses.mftplus.qzz.io",
-      "server_port": 2096,
-      "uuid": "b9ede7a5-5b4b-4aee-ac37-2c307e587e47",
+      "server": "www.speedtest.net",
+      "server_port": 443,
+      "uuid": "3423809a-08e5-4b93-bd76-c6cdcbfd9b52",
       "tls": {
         "enabled": true,
-        "server_name": "courses.mftplus.qzz.io",
-        "insecure": false
+        "server_name": "bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇶 IQ 02 - xiaohe",
-      "server": "178.17.57.120",
-      "server_port": 40443,
-      "uuid": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4",
-          "short_id": "db46e2946fc466fd"
+        "path": "/vl/qAuPpP8UsUmtA5NiXmiGs",
+        "headers": {
+          "Host": "bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev"
         }
       }
     },
@@ -45,16 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - xiaohe",
-        "🇮🇶 IQ 02 - xiaohe"
+        "🇮🇶 IQ 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - xiaohe",
-        "🇮🇶 IQ 02 - xiaohe"
+        "🇮🇶 IQ 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

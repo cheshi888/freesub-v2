@@ -4,28 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 172.67.195.79
-  port: 2052
+- name: 🇮🇷 IR 01 - xiaohe
+  server: dtun.codmaxx.ir
+  port: 5050
   udp: true
   type: vless
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  uuid: 1ac4358d-76de-477b-9400-1bbef47814ad
+  tls: true
+  servername: dpt.codmaxx.ir
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
+    path: video
     headers:
-      Host: uwu.blueknightnet.qzz.io
+      Host: dpt.codmaxx.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇮🇷 IR 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇮🇷 IR 01 - xiaohe
 rules:
 - MATCH,PROXIES

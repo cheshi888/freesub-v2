@@ -5,14 +5,18 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 01 (家宽) - xiaohe",
-      "server": "209.38.238.229",
-      "server_port": 20202,
-      "uuid": "d18c6897-2849-456a-8c46-d7ecece47c20",
+      "tag": "🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe",
+      "server": "185.147.27.68",
+      "server_port": 443,
+      "uuid": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
       "tls": {
         "enabled": true,
-        "server_name": "wzs.echo.net.eu.org",
+        "server_name": "ap2.directly.chat",
         "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -20,9 +24,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=",
+        "path": "/md/1",
         "headers": {
-          "Host": "wzs.echo.net.eu.org"
+          "Host": "ap2.directly.chat"
         }
       }
     },
@@ -31,14 +35,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 德国 (Germany) 01 (家宽) - xiaohe"
+        "🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 德国 (Germany) 01 (家宽) - xiaohe"
+        "🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

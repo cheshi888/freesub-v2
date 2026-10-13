@@ -5,20 +5,20 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇪 比利时 (Belgium) 01 - xiaohe",
-      "server": "141.227.137.177",
-      "server_port": 2053,
-      "uuid": "b940be1b-3998-45d2-bf7b-06e7b6c4987a",
+      "tag": "🇮🇷 IR 01 - xiaohe",
+      "server": "dtun.codmaxx.ir",
+      "server_port": 5050,
+      "uuid": "1ac4358d-76de-477b-9400-1bbef47814ad",
       "tls": {
         "enabled": true,
-        "server_name": "kkkk-xcd.pages.dev",
+        "server_name": "dpt.codmaxx.ir",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/fp=chrome",
+        "path": "video",
         "headers": {
-          "Host": "kkkk-xcd.pages.dev"
+          "Host": "dpt.codmaxx.ir"
         }
       }
     },
@@ -27,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇪 比利时 (Belgium) 01 - xiaohe"
+        "🇮🇷 IR 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇪 比利时 (Belgium) 01 - xiaohe"
+        "🇮🇷 IR 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

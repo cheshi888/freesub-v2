@@ -4,31 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇪 比利时 (Belgium) 01 - xiaohe
-  server: 141.227.137.177
-  port: 2053
+- name: 🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe
+  server: 185.147.27.68
+  port: 443
   udp: true
   type: vless
-  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
   tls: true
-  servername: kkkk-xcd.pages.dev
+  servername: ap2.directly.chat
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /md/1
     headers:
-      Host: kkkk-xcd.pages.dev
+      Host: ap2.directly.chat
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇪 比利时 (Belgium) 01 - xiaohe
+  - 🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇪 比利时 (Belgium) 01 - xiaohe
+  - 🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe
 rules:
 - MATCH,PROXIES
