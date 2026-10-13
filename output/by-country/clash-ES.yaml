@@ -25,19 +25,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
-  server: 46.28.71.247
-  port: 443
-  udp: true
-  type: vless
-  uuid: 12c53e32-e589-47d6-b857-e4132294f767
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
-    short-id: 0dfc23fe80778c00
-  servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
   server: 193.238.154.78
   port: 443
   udp: true
@@ -50,18 +37,14 @@ proxies:
     short-id: e93d46ee3735069e
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
-  server: es3.h1cloud.net
-  port: 25136
+- name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
+  server: spainspeedboostjbl88.qcloud.surf
+  port: 27313
   udp: true
-  type: vless
-  uuid: c1c13ef7-affa-47e1-8967-25cc67679c10
-  tls: true
-  reality-opts:
-    public-key: nkmfL3QCskKAfBUk-OiTgcWyIXGmXrZVtDEoio0Qo1w
-    short-id: f78838fbd85e59ae
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  type: hysteria2
+  password: 4ad3dbf5-2005-4d96-b56c-a0ca9905cab6
+  sni: spainspeedboostjbl88.qcloud.surf
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -71,7 +54,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - xiaohe
   - 🇪🇸 西班牙 (Spain) 03 - xiaohe
   - 🇪🇸 西班牙 (Spain) 04 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -81,6 +63,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - xiaohe
   - 🇪🇸 西班牙 (Spain) 03 - xiaohe
   - 🇪🇸 西班牙 (Spain) 04 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 05 - xiaohe
 rules:
 - MATCH,PROXIES
