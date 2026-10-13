@@ -13,6 +13,19 @@ proxies:
   sni: 185.174.137.172
   skip-cert-verify: true
 - name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
+  server: 83.147.18.3
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
+    short-id: fd8cf7e1173f0edb
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
   server: 212.227.235.66
   port: 2053
   udp: true
@@ -23,8 +36,8 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
   server: 46.28.71.247
   port: 443
   udp: true
@@ -37,7 +50,19 @@ proxies:
     short-id: 0dfc23fe80778c00
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
+- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
+  server: 196.245.52.146
+  port: 25535
+  udp: true
+  type: vless
+  uuid: c379d8e4-c67d-42ec-a3ed-ca99d1ad0546
+  tls: true
+  reality-opts:
+    public-key: Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4
+    short-id: 7642ce57308852e7
+  servername: www.microsoft.com
+  client-fingerprint: firefox
+- name: 🇪🇸 西班牙 (Spain) 06 - xiaohe
   server: 193.238.154.78
   port: 443
   udp: true
@@ -50,27 +75,19 @@ proxies:
     short-id: e93d46ee3735069e
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
-  server: spainspeedboostjbl88.qcloud.surf
-  port: 27313
-  udp: true
-  type: hysteria2
-  password: 8bd04756-3beb-4348-82c9-d35453df50ce
-  sni: spainspeedboostjbl88.qcloud.surf
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 06 - xiaohe
-  server: 83.147.18.3
+- name: 🇪🇸 西班牙 (Spain) 07 - xiaohe
+  server: 185.76.241.87
   port: 443
   udp: true
   type: vless
-  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
+  uuid: 9ee57d03-dcf5-488b-aff7-305301879353
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
-    short-id: fd8cf7e1173f0edb
-  servername: www.cloudflare.com
-  client-fingerprint: random
+    public-key: DcdLu5TEodox9cSq7WLfV-47vURmKkRc1BO19KJvgkM
+    short-id: 861215e33e8dba4f
+  servername: ru-in-es-4vp.movietop24.site
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,6 +99,7 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 04 - xiaohe
   - 🇪🇸 西班牙 (Spain) 05 - xiaohe
   - 🇪🇸 西班牙 (Spain) 06 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -93,5 +111,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 04 - xiaohe
   - 🇪🇸 西班牙 (Spain) 05 - xiaohe
   - 🇪🇸 西班牙 (Spain) 06 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 07 - xiaohe
 rules:
 - MATCH,PROXIES
