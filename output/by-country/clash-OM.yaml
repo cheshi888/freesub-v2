@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇱 智利 (Chile) 01 - xiaohe
-  server: 64.176.2.21
-  port: 8388
+- name: 🇴🇲 OM 01 - xiaohe
+  server: ruot.ayucloudservices.nl
+  port: 35016
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: xBStBEVqvGwHPocc
+  cipher: aes-128-gcm
+  password: 9c51ca33-a332-4de5-8677-5624e940097c
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇱 智利 (Chile) 01 - xiaohe
+  - 🇴🇲 OM 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇱 智利 (Chile) 01 - xiaohe
+  - 🇴🇲 OM 01 - xiaohe
 rules:
 - MATCH,PROXIES

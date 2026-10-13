@@ -6,42 +6,21 @@
     {
       "type": "vless",
       "tag": "🇦🇱 AL 01 - xiaohe",
-      "server": "144.31.131.38",
+      "server": "83.166.238.57",
       "server_port": 443,
-      "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+      "uuid": "a16a3e32-8d63-4dec-8c67-1361388a64ca",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "prod.pl-node-01.security-sbrf.ru",
+        "server_name": "eh3.vk.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "short_id": "db04ce8bdb8900f1"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇱 AL 02 - xiaohe",
-      "server": "144.31.131.38",
-      "server_port": 443,
-      "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "prod.pl-node-01.security-sbrf.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "short_id": "db04ce8bdb8900f1"
+          "public_key": "QXw5YbUfPssdgGZIfAol5PonYGWSjlWsWpoij93VU20",
+          "short_id": "b276e04195d77f6b"
         }
       }
     },
@@ -50,16 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇱 AL 01 - xiaohe",
-        "🇦🇱 AL 02 - xiaohe"
+        "🇦🇱 AL 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇱 AL 01 - xiaohe",
-        "🇦🇱 AL 02 - xiaohe"
+        "🇦🇱 AL 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,44 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇱 AL 01 - xiaohe
-  server: 144.31.131.38
+  server: 83.166.238.57
   port: 443
   udp: true
   type: vless
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
+  uuid: a16a3e32-8d63-4dec-8c67-1361388a64ca
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  servername: prod.pl-node-01.security-sbrf.ru
-  client-fingerprint: chrome
-- name: 🇦🇱 AL 02 - xiaohe
-  server: 144.31.131.38
-  port: 443
-  udp: true
-  type: vless
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  servername: prod.pl-node-01.security-sbrf.ru
-  client-fingerprint: chrome
+    public-key: QXw5YbUfPssdgGZIfAol5PonYGWSjlWsWpoij93VU20
+    short-id: b276e04195d77f6b
+  servername: eh3.vk.ru
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇱 AL 01 - xiaohe
-  - 🇦🇱 AL 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇦🇱 AL 01 - xiaohe
-  - 🇦🇱 AL 02 - xiaohe
 rules:
 - MATCH,PROXIES

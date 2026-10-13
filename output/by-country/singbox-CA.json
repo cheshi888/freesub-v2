@@ -4,17 +4,17 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vmess",
       "tag": "🇨🇦 加拿大 (Canada) 01 - xiaohe",
-      "server": "35.183.81.9",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
+      "server": "134.195.196.211",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
     },
     {
       "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 02 - xiaohe",
-      "server": "15.175.220.220",
+      "server": "3.99.161.236",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -22,34 +22,42 @@
     {
       "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 03 - xiaohe",
-      "server": "3.96.192.203",
+      "server": "15.223.201.180",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇨🇦 加拿大 (Canada) 04 - xiaohe",
-      "server": "16.52.153.34",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
+      "server": "148.113.196.75",
+      "server_port": 8443,
+      "uuid": "08f96221-9b7b-4e6f-8ffe-aee8b9c9b504",
+      "tls": {
+        "enabled": true,
+        "server_name": "ov-canada1.09vpn.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless/"
+      }
     },
     {
       "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 05 - xiaohe",
-      "server": "137.184.174.93",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
+      "server": "3.97.11.240",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
       "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 06 - xiaohe",
-      "server": "138.197.141.58",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
+      "server": "3.99.191.16",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
       "type": "vless",
@@ -62,7 +70,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -74,7 +82,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 08 - xiaohe",
-      "server": "3.96.202.28",
+      "server": "35.183.81.9",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -82,7 +90,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 09 - xiaohe",
-      "server": "99.79.45.227",
+      "server": "3.96.202.28",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -90,38 +98,111 @@
     {
       "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 10 - xiaohe",
-      "server": "51.222.200.165",
-      "server_port": 5000,
-      "method": "aes-256-gcm",
-      "password": "Y6R9pAtvxxzmGC"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 11 - xiaohe",
       "server": "149.22.95.183",
       "server_port": 443,
       "method": "aes-128-gcm",
       "password": "shadowsocks"
     },
     {
-      "type": "vmess",
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 11 - xiaohe",
+      "server": "99.79.45.227",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "trojan",
       "tag": "🇨🇦 加拿大 (Canada) 12 - xiaohe",
-      "server": "23.162.200.198",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
+      "server": "ca.tronsg.com",
+      "server_port": 443,
+      "password": "Trojan@82164024",
+      "tls": {
+        "enabled": true,
+        "server_name": "ca.tronsg.com",
+        "insecure": true
+      }
     },
     {
       "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 13 - xiaohe",
-      "server": "3.97.11.240",
+      "server": "16.52.153.34",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 14 - xiaohe",
+      "server": "137.184.174.93",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 15 - xiaohe",
+      "server": "209.200.246.148",
+      "server_port": 443,
+      "uuid": "ca52e2b6-fb9f-4dac-b6dc-49da9923f251",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk",
+          "short_id": "f98843107912e782"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 16 - xiaohe",
+      "server": "51.222.155.32",
+      "server_port": 5003,
+      "method": "aes-256-gcm",
+      "password": "g5MeD6Ft3CWlJId"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 17 - xiaohe",
+      "server": "15.175.220.220",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 18 - xiaohe",
+      "server": "15.223.120.64",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 19 - xiaohe",
+      "server": "3.96.192.203",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 20 - xiaohe",
+      "server": "35.183.67.225",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 14 - xiaohe",
+      "tag": "🇨🇦 加拿大 (Canada) 21 - xiaohe",
       "server": "51.79.31.36",
       "server_port": 31146,
       "uuid": "f0466557-2fd5-442e-94cb-12c6b764155e",
@@ -142,76 +223,23 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 15 - xiaohe",
-      "server": "3.99.191.16",
+      "tag": "🇨🇦 加拿大 (Canada) 22 - xiaohe",
+      "server": "138.197.141.58",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 23 - xiaohe",
+      "server": "3.96.190.88",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
     },
     {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 16 - xiaohe",
-      "server": "148.113.196.75",
-      "server_port": 8443,
-      "uuid": "08f96221-9b7b-4e6f-8ffe-aee8b9c9b504",
-      "tls": {
-        "enabled": true,
-        "server_name": "ov-canada1.09vpn.com",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vless/"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇨🇦 加拿大 (Canada) 17 - xiaohe",
-      "server": "134.195.196.211",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 18 - xiaohe",
-      "server": "51.222.155.32",
-      "server_port": 5003,
-      "method": "aes-256-gcm",
-      "password": "g5MeD6Ft3CWlJId"
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 19 - xiaohe",
-      "server": "209.200.246.148",
-      "server_port": 443,
-      "uuid": "ca52e2b6-fb9f-4dac-b6dc-49da9923f251",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk",
-          "short_id": "f98843107912e782"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 20 - xiaohe",
-      "server": "51.222.136.236",
-      "server_port": 8882,
-      "method": "aes-256-gcm",
-      "password": "kDWvXYZoTBcGkC4"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 21 - xiaohe",
+      "tag": "🇨🇦 加拿大 (Canada) 24 - xiaohe",
       "server": "51.222.12.127",
       "server_port": 445,
       "method": "aes-256-gcm",
@@ -219,19 +247,35 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 22 - xiaohe",
-      "server": "51.79.49.116",
+      "tag": "🇨🇦 加拿大 (Canada) 25 - xiaohe",
+      "server": "51.222.136.236",
       "server_port": 8882,
       "method": "aes-256-gcm",
       "password": "kDWvXYZoTBcGkC4"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 23 - xiaohe",
-      "server": "51.222.141.125",
-      "server_port": 445,
+      "tag": "🇨🇦 加拿大 (Canada) 26 - xiaohe",
+      "server": "51.79.64.198",
+      "server_port": 8119,
       "method": "aes-256-gcm",
-      "password": "zDNVedRFPQexG9v"
+      "password": "cdBIDV42DCwnfIN"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 27 - xiaohe",
+      "server": "51.222.200.165",
+      "server_port": 5000,
+      "method": "aes-256-gcm",
+      "password": "Y6R9pAtvxxzmGC"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 28 - xiaohe",
+      "server": "51.222.155.113",
+      "server_port": 5601,
+      "method": "aes-256-gcm",
+      "password": "Y6R9pAtvxxzmGC"
     },
     {
       "type": "selector",
@@ -260,7 +304,12 @@
         "🇨🇦 加拿大 (Canada) 20 - xiaohe",
         "🇨🇦 加拿大 (Canada) 21 - xiaohe",
         "🇨🇦 加拿大 (Canada) 22 - xiaohe",
-        "🇨🇦 加拿大 (Canada) 23 - xiaohe"
+        "🇨🇦 加拿大 (Canada) 23 - xiaohe",
+        "🇨🇦 加拿大 (Canada) 24 - xiaohe",
+        "🇨🇦 加拿大 (Canada) 25 - xiaohe",
+        "🇨🇦 加拿大 (Canada) 26 - xiaohe",
+        "🇨🇦 加拿大 (Canada) 27 - xiaohe",
+        "🇨🇦 加拿大 (Canada) 28 - xiaohe"
       ]
     },
     {
@@ -289,7 +338,12 @@
         "🇨🇦 加拿大 (Canada) 20 - xiaohe",
         "🇨🇦 加拿大 (Canada) 21 - xiaohe",
         "🇨🇦 加拿大 (Canada) 22 - xiaohe",
-        "🇨🇦 加拿大 (Canada) 23 - xiaohe"
+        "🇨🇦 加拿大 (Canada) 23 - xiaohe",
+        "🇨🇦 加拿大 (Canada) 24 - xiaohe",
+        "🇨🇦 加拿大 (Canada) 25 - xiaohe",
+        "🇨🇦 加拿大 (Canada) 26 - xiaohe",
+        "🇨🇦 加拿大 (Canada) 27 - xiaohe",
+        "🇨🇦 加拿大 (Canada) 28 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
