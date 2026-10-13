@@ -1437,8 +1437,14 @@ def test_single_node(item, keep_alive_check=True):
         if alive_hits == 0:
             return None
 
-        # --- 2) 真实出口 IP (多路冗余) ---
+        # --- 2) 真实出口 IP (多路冗余 + 交叉验证) ---
+        # ★ 2026-10-13 修复: 原实现取首个成功的回显源即信任, 不同回显源返回
+        #   不同 IP 时 (anycast/负载均衡/异常代理) 静默采用第一个, 导致后续
+        #   家宽判定基于错误的出口 IP。现在要求多源共识: 至少 2 个源一致才采信;
+        #   若多源成功但互不一致, 判定为出口不稳定, 淘汰该节点。
         exit_ip, exit_country, exit_asn, exit_asn_org, exit_isp = None, None, None, None, None
+        _echo_ips = []  # [(url, ip)]
+        _meta = {}      # url -> parsed metadata dict
         for url in IP_ECHO_URLS:
             try:
                 r = PROBE_SESSION.get(url, proxies=proxies, timeout=IP_ECHO_TIMEOUT)
@@ -1448,28 +1454,66 @@ def test_single_node(item, keep_alive_check=True):
                 ip = (j.get("ip") or j.get("query") or j.get("your_ip") or "").strip()
                 if not ip:
                     continue
-                exit_ip = ip
+                # 基础合法性校验: 必须是合法 IP 字面量
+                try:
+                    ipaddress.ip_address(ip)
+                except ValueError:
+                    continue
+                _echo_ips.append((url, ip))
+                _meta[url] = j
+            except Exception:
+                continue
+        if _echo_ips:
+            from collections import Counter
+            _cnt = Counter(ip for _, ip in _echo_ips)
+            _top_ip, _top_n = _cnt.most_common(1)[0]
+            if _top_n >= 2 or len(_echo_ips) == 1:
+                # 共识达成 (≥2 源一致) 或仅 1 源成功 → 采信
+                exit_ip = _top_ip
+                if len(_echo_ips) == 1:
+                    print_once(f"echo_single_{_top_ip}",
+                               f"[!] 出口 IP 仅单源回显 ({_echo_ips[0][0]}), 可信度降级: {_top_ip}")
+            else:
+                # 多源成功但无共识 → 出口不稳定, 淘汰
+                print_once(f"echo_mismatch_{task_id}",
+                           f"[!] 出口 IP 多源不一致 {[(u.split('/')[2], ip) for u, ip in _echo_ips]}, 淘汰节点")
+                return None
+            # 用达成共识的源解析元数据 (优先 api.ip.sb, 其次 ipinfo, 最后 ip-api)
+            for url, ip in _echo_ips:
+                if ip != exit_ip:
+                    continue
+                j = _meta[url]
                 if url.startswith("https://api.ip.sb"):
                     exit_country = j.get("country_code")
                     exit_asn = j.get("asn")
                     exit_asn_org = (j.get("asn_organization") or j.get("organization") or "")
                     exit_isp = (j.get("isp") or j.get("organization") or "")
-                elif url.startswith("https://ipinfo.io"):
-                    exit_country = exit_country or (j.get("country") or "").upper()
-                    org = j.get("org") or ""
-                    if org and not exit_asn:
-                        mm = re.match(r"^AS(\d+)\s+(.*)", org)
-                        if mm:
-                            exit_asn, exit_asn_org = int(mm.group(1)), mm.group(2)
-                    exit_isp = exit_isp or org
-                elif "ip-api.com" in url:
-                    exit_country = exit_country or (j.get("countryCode") or "").upper()
-                    exit_asn = exit_asn or j.get("as")
-                    exit_asn_org = exit_asn_org or j.get("asname") or j.get("org") or ""
-                    exit_isp = exit_isp or j.get("isp") or j.get("org") or ""
-                break
-            except Exception:
-                continue
+                    break
+            if not exit_country:
+                for url, ip in _echo_ips:
+                    if ip != exit_ip:
+                        continue
+                    j = _meta[url]
+                    if url.startswith("https://ipinfo.io"):
+                        exit_country = (j.get("country") or "").upper()
+                        org = j.get("org") or ""
+                        if org and not exit_asn:
+                            mm = re.match(r"^AS(\d+)\s+(.*)", org)
+                            if mm:
+                                exit_asn, exit_asn_org = int(mm.group(1)), mm.group(2)
+                        exit_isp = exit_isp or org
+                        break
+            if not exit_country:
+                for url, ip in _echo_ips:
+                    if ip != exit_ip:
+                        continue
+                    j = _meta[url]
+                    if "ip-api.com" in url:
+                        exit_country = (j.get("countryCode") or "").upper()
+                        exit_asn = exit_asn or j.get("as")
+                        exit_asn_org = exit_asn_org or j.get("asname") or j.get("org") or ""
+                        exit_isp = exit_isp or j.get("isp") or j.get("org") or ""
+                        break
 
         # --- 3) MITM 劫持检测 (轻量: 复用活性首击的 gstatic 请求已验证证书链) ---
         # 3a) 独立复检一次带 verify=True 的请求: SSLError = TLS 拦截
@@ -1719,14 +1763,21 @@ def chain_retest(test_results: list) -> list:
 # ═══════════════════════════════════════════N═══════════════════════
 
 def ip_api_batch_lookup(ip_list: list) -> dict:
-    """ip-api.com batch (免费 HTTP, ≤100/req, 15 req/min → 1500 IP/min)"""
+    """ip-api.com batch (免费 HTTP, ≤100/req, 15 req/min → 1500 IP/min)
+
+    ★ 2026-10-13 修复: 原实现 chunk 三次重试全失败时静默丢弃, 无任何告警,
+      导致这些 IP 的 hosting/proxy/mobile 最高可信信号缺失, 分类器只能走
+      弱信号兜底 → 误判。现在显式统计并告警失败 chunk。"""
     info = {}
+    failed_chunks = 0
+    failed_ips = 0
     session = requests.Session()
     session.trust_env = True  # 直连即可; ip-api.com 免费层全球可达 (CI 无代理/本地走系统代理均可)
     total_batches = (len(ip_list) + IP_API_BATCH_SIZE - 1) // IP_API_BATCH_SIZE
     for bi, i in enumerate(range(0, len(ip_list), IP_API_BATCH_SIZE), 1):
         chunk = ip_list[i:i + IP_API_BATCH_SIZE]
         payload = [{"query": ip} for ip in chunk]
+        ok = False
         for attempt in range(3):
             try:
                 r = session.post(IP_API_BATCH_URL, json=payload, timeout=20)
@@ -1735,6 +1786,7 @@ def ip_api_batch_lookup(ip_list: list) -> dict:
                         q = rec.get("query")
                         if q:
                             info[q] = rec
+                    ok = True
                     break
                 elif r.status_code == 429:
                     time.sleep(4 + attempt * 3)
@@ -1742,9 +1794,17 @@ def ip_api_batch_lookup(ip_list: list) -> dict:
                     time.sleep(2)
             except Exception:
                 time.sleep(2)
+        if not ok:
+            failed_chunks += 1
+            failed_ips += len(chunk)
+            print(f"[!] ip-api 批 {bi}/{total_batches} 三次重试均失败, "
+                  f"{len(chunk)} 个 IP 缺少在线情报 (将降级走离线判定)")
         if total_batches >= 3 and (bi % 5 == 0 or bi == total_batches):
             print(f"[*] ip-api 进度: 批 {bi}/{total_batches} ({len(info)} IP 已查)")
         time.sleep(IP_API_BATCH_RPS_INTERVAL)
+    if failed_chunks:
+        print(f"[!] ip-api 批量完成但 {failed_chunks}/{total_batches} 批失败, "
+              f"共 {failed_ips} 个 IP 无在线情报 — 本轮家宽判定可信度下降")
     return info
 
 
@@ -2570,6 +2630,26 @@ def classify_and_export(test_results: list):
     if downgraded:
         print(f"[*] 高 fraud 分 (≥75) 家宽候选降级: {downgraded} 个")
 
+    # ★ 2026-10-13: fraud 查询失败的家宽候选必须显式标记, 不能静默当"干净"处理。
+    #   原逻辑 sc=-1 (查询失败) 时 if sc>=75 为假, 节点保留家宽身份 ——
+    #   Scamalytics 若限流/屏蔽 CI 出口 IP, 整轮家宽名单将未经任何风控验证,
+    #   "高纯净"承诺即落空。现在标记 fraud_unknown, 审计单可见; 失败率过高则告警。
+    fraud_unknown_cnt = 0
+    for n in safe_nodes:
+        if _is_res_like(n["net_type"]):
+            sc = n.get("fraud_score", -1)
+            if sc < 0:
+                n["fraud_unknown"] = True
+                fraud_unknown_cnt += 1
+            else:
+                n["fraud_unknown"] = False
+    if fraud_unknown_cnt:
+        _res_like_total = sum(1 for n in safe_nodes if _is_res_like(n["net_type"]))
+        print(f"[!] {fraud_unknown_cnt}/{_res_like_total} 个家宽候选 fraud 评分查询失败"
+              f" (标记为未验证, 非已验证干净)")
+        if _res_like_total and fraud_unknown_cnt / _res_like_total > 0.5:
+            print("[!] 严重: 超过半数家宽候选未经 fraud 验证, 本轮名单可信度下降")
+
     # ── 去重 (同出口IP+端口 只留最快) ──
     best_by_key = {}
     for n in safe_nodes:
@@ -2731,7 +2811,8 @@ def export_residential_audit(residential, filepath):
             f"     ip-api  : hosting={rec.get('hosting')} proxy={rec.get('proxy')} "
             f"mobile={rec.get('mobile')} reverse={rec.get('reverse') or '-'}",
             f"     ipapi.is: company={vrf.get('company') or '-'} asn={vrf.get('asn') or '-'}",
-            f"     fraud   : {n.get('fraud_score', -1)}  (-1 = 未取到评分)",
+            f"     fraud   : {n.get('fraud_score', -1)}"
+            f"{'  ⚠ 未验证(查询失败), 非已验证干净' if n.get('fraud_unknown') else '  (-1 = 未取到评分)'}",
             "",
         ]
     if not residential:
