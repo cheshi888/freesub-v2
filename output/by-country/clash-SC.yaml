@@ -5,20 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  server: hk3n.wxgqlfx.vip
-  port: 35193
+  server: 45.205.27.78
+  port: 10443
   udp: true
-  type: vless
-  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
-    short-id: e8daed2d
-  servername: www.apple.com
-  client-fingerprint: chrome
+  type: trojan
+  password: 8c3db80a-0aba-4c22-84e5-e8b7539db6f7
+  sni: 45.205.27.78
+  skip-cert-verify: true
 - name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  server: 144.31.50.236
+  server: prep.wwwinternetvideo.click
   port: 443
   udp: true
   type: vless
@@ -29,7 +24,7 @@ proxies:
     public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
     short-id: bbe46bd8f6b96839
   servername: yandex.ru
-  client-fingerprint: chrome
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select

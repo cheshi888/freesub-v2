@@ -6,32 +6,32 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
   server: 213.183.63.60
+  port: 9029
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: dU3DSNS8wYPXzEKw
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
+  server: 213.183.63.60
   port: 9066
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 2KUaE2a8NWTvuCZ3
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
-  server: 213.183.63.60
-  port: 9085
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 9ej82EKe2gq7gLAM
 - name: 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
   server: 213.183.63.60
-  port: 9028
+  port: 9030
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 9eeJ2fwnZA5Fxgz8
+  password: GeregetR8cvQHzYr
 - name: 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
   server: 213.183.63.60
-  port: 9064
+  port: 9054
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: cp8pRSUAyLhTfVWH
+  password: VcFuyXvND2yQWSFY
 - name: 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
   server: 213.183.63.60
   port: 9049
@@ -48,46 +48,25 @@ proxies:
   password: aLpQtfEZe445QyHk
 - name: 🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe
   server: 213.183.63.60
-  port: 9061
+  port: 9085
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 4R3hUfZ2FHhDmNcP
+  password: 9ej82EKe2gq7gLAM
 - name: 🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe
   server: 213.183.63.60
-  port: 9054
+  port: 9028
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: VcFuyXvND2yQWSFY
+  password: 9eeJ2fwnZA5Fxgz8
 - name: 🇧🇬 保加利亚 (Bulgaria) 09 - xiaohe
-  server: 195.123.226.21
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6589c320-db68-43cd-a273-b46299bab355
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: rabtI-ymNXBUvYYRwAw8DiR-1pdP7U0WPIaCBHEkgzo
-    short-id: 77bb0d07bddbc832
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 10 - xiaohe
   server: 213.183.63.60
-  port: 9030
+  port: 9064
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: GeregetR8cvQHzYr
-- name: 🇧🇬 保加利亚 (Bulgaria) 11 - xiaohe
-  server: 188.121.120.86
-  port: 42143
-  udp: true
-  type: vmess
-  uuid: 874a6b6d-d569-4b64-b9a6-32d594e61325
-  alterId: 0
-  cipher: auto
+  password: cp8pRSUAyLhTfVWH
 proxy-groups:
 - name: PROXIES
   type: select
@@ -102,8 +81,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 09 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 10 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -118,7 +95,5 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 09 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 10 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 11 - xiaohe
 rules:
 - MATCH,PROXIES

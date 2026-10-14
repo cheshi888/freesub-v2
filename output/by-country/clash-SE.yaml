@@ -12,45 +12,21 @@ proxies:
   cipher: aes-256-gcm
   password: AxIYWtskJWIIaefW
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: 5.157.10.149
-  port: 443
+  server: se1.h1cloud.net
+  port: 26128
   udp: true
   type: vless
-  uuid: ace33fb8-c593-4b17-8f72-f3359b6e9638
-  flow: xtls-rprx-vision
+  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
   tls: true
   reality-opts:
-    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
-    short-id: fb442438e2223836
-  servername: swerka.loknietotop.digital
+    public-key: sACiHit5lNtPRK_eFP6jT8dMPUZ4kQRsfPj_LL5p7Uk
+    short-id: 13ac4d3bdadf1ea1
+  servername: www.icloud.com
   client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: df50147201bf
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: se3.h1cloud.net
-  port: 25119
-  udp: true
-  type: vless
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
-    short-id: 10f517
-  servername: www.samsung.com
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  server: 46.246.125.153
-  port: 443
-  udp: true
-  type: vless
-  uuid: a16a3e32-8d63-4dec-8c67-1361388a64ca
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ftglT-Ghp2FPiPlwyEAldfiAE1IL_AJ9UCkfCj0zk2I
-    short-id: a83b77e064761e3c
-  servername: res.cdn.office.net
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   server: 94.143.231.146
   port: 443
   udp: true
@@ -65,7 +41,45 @@ proxies:
     path: /merky-connect/de6/
     headers:
       Host: sub.merky.top
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  server: 46.246.125.153
+  port: 443
+  udp: true
+  type: vless
+  uuid: a16a3e32-8d63-4dec-8c67-1361388a64ca
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ftglT-Ghp2FPiPlwyEAldfiAE1IL_AJ9UCkfCj0zk2I
+    short-id: a83b77e064761e3c
+  servername: res.cdn.office.net
+  client-fingerprint: ''
+- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  server: se1.h1cloud.net
+  port: 26100
+  udp: true
+  type: vless
+  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
+  tls: true
+  reality-opts:
+    public-key: 1uuvuG2Jl_o6yoVvOYm3hEboArh2Znu7zCy4Tqj36TI
+    short-id: 8045087bda646f1b
+  servername: www.icloud.com
+  client-fingerprint: ios
 - name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  server: se3.h1cloud.net
+  port: 25119
+  udp: true
+  type: vless
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
+    short-id: 10f517
+  servername: www.samsung.com
+  client-fingerprint: ios
+- name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
   server: sweedenqfds777.qcloud.surf
   port: 21223
   udp: true
@@ -73,6 +87,16 @@ proxies:
   password: 4ad3dbf5-2005-4d96-b56c-a0ca9905cab6
   sni: sweedenqfds777.qcloud.surf
   skip-cert-verify: true
+- name: 🇸🇪 瑞典 (Sweden) 08 - xiaohe
+  server: 77.110.96.201
+  port: 36264
+  udp: true
+  type: hysteria2
+  password: Telegram-vpnjey
+  sni: se.vpnjey2.dpdns.org
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: Telegram@vpnjey
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,6 +108,8 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -95,5 +121,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 08 - xiaohe
 rules:
 - MATCH,PROXIES
