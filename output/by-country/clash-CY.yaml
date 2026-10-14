@@ -12,8 +12,11 @@ proxies:
   uuid: 019fbe0f-2d9f-4b89-9f81-e1e36129892a
   flow: xtls-rprx-vision
   tls: true
+  reality-opts:
+    public-key: EBISh6QAVskJ_nvet-Qio9jS2yqxe9de6GMScYlbjhI
+    short-id: 226509f017e4c36d
   servername: co-pl.speedtec.ru
-  skip-cert-verify: false
+  client-fingerprint: random
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
   server: 5.253.28.240
   port: 40443
@@ -26,7 +29,7 @@ proxies:
     public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
     short-id: 88b6
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
   server: 5.253.28.240
   port: 2443

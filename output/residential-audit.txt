@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-10-13 22:27:36 UTC
+生成时间: 2026-10-14 03:06:31 UTC
 ==============================================================================
 
 说明:
@@ -15,9 +15,19 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 1
+本轮家宽节点数: 2
 
-[1] KR  严格家宽  置信度 82
+[1] FI  严格家宽  置信度 70
+     exit_ip : 169.40.34.2
+     server  : 152.233.71.81:443  (vless)
+     ASN     : AS9304 HGC Global Communications Limited
+     ISP     : HGC Global Communications Limited
+     ORG     : -
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Internet Utilities Europe and Asia Limited asn=AS198077 Need, L.L.C.-FZ
+     fraud   : 33  (-1 = 未取到评分)
+
+[2] KR  严格家宽  置信度 82
      exit_ip : 218.237.185.234
      server  : 218.237.185.234:4652  (shadowsocks)
      ASN     : AS9318 SK Broadband Co Ltd
