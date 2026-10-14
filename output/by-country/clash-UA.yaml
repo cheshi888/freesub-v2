@@ -16,18 +16,34 @@ proxies:
     public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
     short-id: 7f1e29593aa94ad1
   servername: www.bing.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
+- name: 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
+  server: 45.158.185.172
+  port: 443
+  udp: true
+  type: vless
+  uuid: 49e4b91a-bd15-4e54-9b51-41a3380afb51
+  tls: true
+  servername: z5n1.vpnpolar.online
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /beeline
+    headers:
+      Host: z5n1.vpnpolar.online
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
+  - 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
+  - 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
 rules:
 - MATCH,PROXIES
