@@ -5,13 +5,19 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇨🇳 CN 01 - xiaohe",
-      "server": "39.108.113.127",
-      "server_port": 10086,
-      "uuid": "2b910c43-51e3-4b15-9be8-b658106ba35e",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
+      "server": "fujrdt.d6f54hd1j.cc",
+      "server_port": 443,
+      "uuid": "d877dc6f-7323-4b47-a7dd-14228cbae854",
       "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "fujrdt.d6f54hd1j.cc",
+        "insecure": false
+      },
       "transport": {
-        "type": "ws"
+        "type": "ws",
+        "path": "/"
       }
     },
     {
@@ -19,14 +25,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 CN 01 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 CN 01 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

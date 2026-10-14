@@ -42,16 +42,18 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: 193.188.21.253
-  port: 14430
+  server: 152.233.71.81
+  port: 443
   udp: true
   type: vless
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 193.188.21.253
+  uuid: 741809be-e44e-000b-b411-bf66f0ae3860
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
+    short-id: 1c3e8241a8743df9
+  servername: brointelengence.com
+  client-fingerprint: random
 - name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
   server: 109.172.54.135
   port: 8444
@@ -62,51 +64,62 @@ proxies:
   reality-opts:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
   servername: github.com
-  client-fingerprint: random
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
-  server: fi1server.rabstvo.shop
+  server: 87.242.95.77
+  port: 8449
+  udp: true
+  type: vless
+  uuid: 30292475-4666-4c26-bcb2-338a0919958b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WBkO_JIRKVjfwh7GlIIACmAJaVFobgm_EebPZgk7ijU
+    short-id: c374306818a47741
+  servername: meadow.lalibobi.online
+  client-fingerprint: edge
+- name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
+  server: 193.188.21.253
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.188.21.253
+- name: 🇫🇮 芬兰 (Finland) 09 - xiaohe
+  server: 65.108.3.59
   port: 443
   udp: true
-  type: hysteria2
-  password: 9yOIR2_QAChKs26rYaiX_aoNnOALd0aU
-  sni: fi1server.rabstvo.shop
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
-  server: edge10.cyrionflare.com
-  port: 2052
-  udp: true
   type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇫🇮 芬兰 (Finland) 09 - xiaohe
-  server: 79.175.136.238
-  port: 7879
-  udp: true
-  type: vless
-  uuid: bd5ea9bc-16ec-408e-b933-4219ed022de1
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 0PVs0FZprxXi0bV-YX-SkyAx6a_9GHjSZ6hpCpa1lnE
-    short-id: 63ca289314edc51b
-  servername: account.samsung.com
-  client-fingerprint: chrome
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  servername: web.eitaa.com
+  client-fingerprint: ''
 - name: 🇫🇮 芬兰 (Finland) 10 - xiaohe
-  server: 62.60.159.81
-  port: 2053
+  server: 36a466g.fi1.h1clayd.click
+  port: 443
   udp: true
   type: vless
-  uuid: fc00adfb-232a-46ce-8b93-0c70e516aa8a
+  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
   tls: true
   reality-opts:
-    public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
-    short-id: d0ea1847066af5a6
-  servername: www.samsung.com
-  client-fingerprint: safari
+    public-key: pAgrBKJCmuSJHIzYkEJTqsOBOVBK_DMtEqFPo-PaTkg
+    short-id: b3c9d0c6bdd114a6
+  servername: 36a466g.fi1.h1clayd.click
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
-    grpc-service-name: grpce5bb9e71
+    grpc-service-name: 0adb9638509b
 proxy-groups:
 - name: PROXIES
   type: select

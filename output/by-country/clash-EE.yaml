@@ -5,28 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: 94.183.170.135
-  port: 443
+  server: 109.206.241.10
+  port: 449
   udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  network: ws
-  ws-opts:
-    path: /
+  type: trojan
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  sni: russiapower.accesscam.org
+  skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  server: 185.31.242.61
-  port: 443
-  udp: true
-  type: vless
-  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 7mRrVzTchVLWWBru5fCgTvtdkL7lVJ_qRj9HW8Rd8X0
-    short-id: 0da7e14db353e7d0
-  servername: est.nztvpn.com
-  client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   server: ee-1-1.unturned-rust-dead.lol
   port: 443
   udp: true
@@ -40,7 +26,32 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: ee-grpc
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+  server: lalibobi.online
+  port: 443
+  udp: true
+  type: vless
+  uuid: 30292475-4666-4c26-bcb2-338a0919958b
+  tls: true
+  servername: lalibobi.online
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: lalibobi.orbit.v3.Connect
 - name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+  server: 93.89.220.37
+  port: 443
+  udp: true
+  type: vless
+  uuid: 185e2bb3-2934-48d0-bbd5-dd20d16e83ee
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g
+    short-id: e88cb983f3c97528
+  servername: ibm.com
+  client-fingerprint: edge
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   server: eu3.998998.best
   port: 443
   udp: true
@@ -56,31 +67,32 @@ proxies:
     path: /aiaiai
     headers:
       Host: server40.9966338.xyz
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  server: 93.89.220.37
+- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
+  server: 143.246.41.31
   port: 443
   udp: true
   type: vless
-  uuid: 185e2bb3-2934-48d0-bbd5-dd20d16e83ee
+  uuid: 43212c32-01f2-4356-b216-67dc1c178262
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g
-    short-id: e88cb983f3c97528
-  servername: ibm.com
-  client-fingerprint: qq
-- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
-  server: lalibobi.online
+    public-key: h1xVB_-djXL6A7tvnnVbjV4bYKplHOuN0bgmFJQE6AE
+    short-id: 7f3a91c2d8e640ab
+  servername: ees92.shhflow.xyz
+  client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
+  server: ees92.shhflow.xyz
   port: 443
   udp: true
   type: vless
-  uuid: 30292475-4666-4c26-bcb2-338a0919958b
+  uuid: 43212c32-01f2-4356-b216-67dc1c178262
+  flow: xtls-rprx-vision
   tls: true
-  servername: lalibobi.online
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: lalibobi.orbit.v3.Connect
+  reality-opts:
+    public-key: h1xVB_-djXL6A7tvnnVbjV4bYKplHOuN0bgmFJQE6AE
+    short-id: 7f3a91c2d8e640ab
+  servername: ees92.shhflow.xyz
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,6 +104,7 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -103,5 +116,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
 rules:
 - MATCH,PROXIES

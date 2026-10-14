@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
+  server: fi1server.rabstvo.shop
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 9yOIR2_QAChKs26rYaiX_aoNnOALd0aU
+  sni: fi1server.rabstvo.shop
+  skip-cert-verify: false
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
   server: 109.248.170.119
   port: 13447
   udp: true
@@ -15,18 +23,34 @@ proxies:
     public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
     short-id: '83'
   servername: yahoo.com
-  client-fingerprint: firefox
+  client-fingerprint: edge
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
+  server: 178.236.16.98
+  port: 35728
+  udp: true
+  type: vless
+  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
+  tls: true
+  reality-opts:
+    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
+    short-id: 69a2
+  servername: yahoo.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
 rules:
 - MATCH,PROXIES

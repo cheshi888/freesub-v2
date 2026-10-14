@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
+  server: 157.228.155.238
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I
+    short-id: 6f76ad09
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   server: 157.228.155.185
   port: 443
   udp: true
@@ -16,20 +29,7 @@ proxies:
     public-key: 4q8nqNb-0c-akP3XqVmen67BLXJVlx48a_GDRw16nVg
     short-id: 5ea112e8
   servername: addons.mozilla.org
-  client-fingerprint: randomized
-- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
-  server: 157.228.155.238
-  port: 443
-  udp: true
-  type: vless
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I
-    short-id: 6f76ad09
-  servername: addons.mozilla.org
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   server: 130.49.161.70
   port: 443
@@ -52,54 +52,8 @@ proxies:
     public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
     short-id: 06e00e7c
   servername: addons.mozilla.org
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  server: 31.59.210.25
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
-  tls: true
-  reality-opts:
-    public-key: KDBhxT2YMtMjDEC9VdoDEISdCwxd6KFrSE8uyUaHcTY
-    short-id: ed435c242097fd05
-  servername: www.yandex.ru
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  server: 95.174.68.188
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  network: ws
-  ws-opts:
-    path: /vless
-- name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
-  server: uae.unixzone.us
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇦🇪 阿联酋 (UAE) 08 - xiaohe
-  server: 146.70.102.82
-  port: 443
-  udp: true
-  type: vless
-  uuid: 31fd2fde-ca69-450e-8c03-eaad819b06b9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k
-    short-id: 002fb4ec7b3088cc
-  servername: www.datadoghq.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 09 - xiaohe
   server: 31.59.210.26
   port: 2088
   udp: true
@@ -114,7 +68,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 (UAE) 10 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
   server: 31.59.210.32
   port: 443
   udp: true
@@ -125,10 +79,60 @@ proxies:
     public-key: qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA
     short-id: 7ec4374ffc6308fd
   servername: www.yandex.ru
-  client-fingerprint: ''
+  client-fingerprint: safari
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
+- name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
+  server: 31.59.210.25
+  port: 2087
+  udp: true
+  type: vless
+  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
+  tls: true
+  reality-opts:
+    public-key: KDBhxT2YMtMjDEC9VdoDEISdCwxd6KFrSE8uyUaHcTY
+    short-id: ed435c242097fd05
+  servername: www.yandex.ru
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: astracat
+- name: 🇦🇪 阿联酋 (UAE) 08 - xiaohe
+  server: 95.174.68.188
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 09 - xiaohe
+  server: uae.unixzone.us
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 10 - xiaohe
+  server: 146.70.102.82
+  port: 443
+  udp: true
+  type: vless
+  uuid: 31fd2fde-ca69-450e-8c03-eaad819b06b9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k
+    short-id: 002fb4ec7b3088cc
+  servername: www.datadoghq.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
