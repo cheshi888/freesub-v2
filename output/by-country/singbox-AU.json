@@ -6,6 +6,24 @@
     {
       "type": "hysteria2",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
+      "server": "192.9.175.191",
+      "password": "a34f3990b69f44bfa0d32385",
+      "tls": {
+        "enabled": true,
+        "server_name": "rmgyvpn.rest",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "a34f3990b69f44bfa0d32385"
+      },
+      "server_ports": [
+        "20000:30000"
+      ]
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
       "server": "vpn-au-001.fastervpn.world",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -13,26 +31,6 @@
         "enabled": true,
         "server_name": "vpn-au-001.fastervpn.world",
         "insecure": true
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
-      "server": "172.67.195.146",
-      "server_port": 443,
-      "uuid": "f5f0babe-aea2-4f07-a1fc-3c9820253f49",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "aus.lovehk.xyz",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/Sydney3",
-        "headers": {
-          "Host": "aus.lovehk.xyz"
-        }
       }
     },
     {
