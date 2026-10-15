@@ -1,0 +1,31 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+  server: 62.lwdh.us
+  port: 12952
+  udp: true
+  type: vless
+  uuid: d68fbc96-5187-4b8f-965e-eecd7a699e81
+  flow: xtls-rprx-vision
+  tls: true
+  servername: 62.lwdh.us
+  skip-cert-verify: false
+  client-fingerprint: edge
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+rules:
+- MATCH,PROXIES
