@@ -12,8 +12,15 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇮🇹 意大利 (Italy) 02 - xiaohe",
+      "server": "204.216.216.23",
+      "server_port": 10086,
+      "uuid": "9f0285ee-20ca-4953-bcdb-86a920652923"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 03 - xiaohe",
       "server": "57.131.48.45",
       "server_port": 8388,
       "method": "aes-256-gcm",
@@ -21,7 +28,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 03 - xiaohe",
+      "tag": "🇮🇹 意大利 (Italy) 04 - xiaohe",
       "server": "31.59.180.155",
       "server_port": 443,
       "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
@@ -31,7 +38,7 @@
         "server_name": "italynew.nztvpn.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -42,7 +49,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 04 - xiaohe",
+      "tag": "🇮🇹 意大利 (Italy) 05 - xiaohe",
       "server": "57.131.38.163",
       "server_port": 2053,
       "uuid": "d4b08cd6-0903-411a-9dac-45dbdf5c9712",
@@ -51,7 +58,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -61,32 +68,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 05 - xiaohe",
-      "server": "204.216.216.23",
-      "server_port": 10086,
-      "uuid": "9f0285ee-20ca-4953-bcdb-86a920652923"
-    },
-    {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 06 - xiaohe",
-      "server": "82.118.16.189",
-      "server_port": 443,
-      "uuid": "d5e5f5a1-0f23-4c49-af9f-4be445bf9d8e",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SjGkzJQ9I6ZZjC3V73atcPMczhMm0oiTrB8mUQXz1HY",
-          "short_id": "37fbf155c7a9f3ff"
-        }
-      }
+      "server": "91.201.65.122",
+      "server_port": 9053,
+      "method": "aes-256-cfb",
+      "password": "SBM7R883jBmnqe6C"
     },
     {
       "type": "selector",
