@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: 143.246.41.31
-  port: 443
-  udp: true
-  type: vless
-  uuid: 43212c32-01f2-4356-b216-67dc1c178262
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: h1xVB_-djXL6A7tvnnVbjV4bYKplHOuN0bgmFJQE6AE
-    short-id: 7f3a91c2d8e640ab
-  servername: ees92.shhflow.xyz
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: ee-1-1.unturned-rust-dead.lol
   port: 443
   udp: true
@@ -31,20 +18,20 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: ee-grpc
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  server: 93.89.220.37
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  server: 143.246.41.31
   port: 443
   udp: true
   type: vless
-  uuid: 185e2bb3-2934-48d0-bbd5-dd20d16e83ee
+  uuid: 43212c32-01f2-4356-b216-67dc1c178262
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g
-    short-id: e88cb983f3c97528
-  servername: ibm.com
-  client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+    public-key: h1xVB_-djXL6A7tvnnVbjV4bYKplHOuN0bgmFJQE6AE
+    short-id: 7f3a91c2d8e640ab
+  servername: ees92.shhflow.xyz
+  client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   server: ees92.shhflow.xyz
   port: 5443
   udp: true
@@ -52,21 +39,22 @@ proxies:
   password: 43212c32-01f2-4356-b216-67dc1c178262
   sni: ees92.shhflow.xyz
   skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  server: 83.147.216.223
-  port: 4433
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+  server: eu3.998998.best
+  port: 443
   udp: true
-  type: vless
-  uuid: 660174a2-d32d-4521-840d-d1853bfc80b8
+  type: vmess
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+  servername: server40.9966338.xyz
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /aiaiai
     headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+      Host: server40.9966338.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -76,7 +64,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -86,6 +73,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
 rules:
 - MATCH,PROXIES

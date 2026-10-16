@@ -6,26 +6,47 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
-      "server": "88.216.223.66",
+      "server": "193.27.200.200",
       "server_port": 443,
-      "uuid": "244d9eab-3311-40c7-b47f-4968dc3088a6",
+      "uuid": "3db6eb7e-c548-11f1-9902-a337233c6cda",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "tcpswed1.figurapn.ru",
+        "server_name": "swe.wizard.select",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "short_id": "868419504747f6de"
+          "public_key": "Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0",
+          "short_id": "3b20e438da99"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
+      "server": "se1.h1cloud.net",
+      "server_port": 26100,
+      "uuid": "68c3d665-b2b5-4ffb-9f37-9f3d8c47324d",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1uuvuG2Jl_o6yoVvOYm3hEboArh2Znu7zCy4Tqj36TI",
+          "short_id": "8045087bda646f1b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
       "server": "5.178.109.174",
       "server_port": 14430,
       "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
@@ -38,58 +59,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
-      "server": "94.143.231.146",
-      "server_port": 443,
-      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
-      "tls": {
-        "enabled": true,
-        "server_name": "sub.merky.top",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/merky-connect/de6/",
-        "headers": {
-          "Host": "sub.merky.top"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
-      "server": "swe.wizard.select",
-      "server_port": 443,
-      "uuid": "3db6eb7e-c548-11f1-9902-a337233c6cda",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "swe.wizard.select",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0",
-          "short_id": "3b20e438da99"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 04 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 03 - xiaohe"
       ]
     },
     {
@@ -98,8 +74,7 @@
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 04 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

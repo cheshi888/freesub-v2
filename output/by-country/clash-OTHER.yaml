@@ -1,0 +1,83 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🌐 其他地区 (Other) 01 - xiaohe
+  server: 108.162.194.134
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🌐 其他地区 (Other) 02 - xiaohe
+  server: 108.162.194.134
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🌐 其他地区 (Other) 03 - xiaohe
+  server: 108.162.194.134
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🌐 其他地区 (Other) 04 - xiaohe
+  server: 104.21.5.128
+  port: 2052
+  udp: true
+  type: vless
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🌐 其他地区 (Other) 05 - xiaohe
+  server: 104.16.71.213
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🌐 其他地区 (Other) 02 - xiaohe
+  - 🌐 其他地区 (Other) 03 - xiaohe
+  - 🌐 其他地区 (Other) 04 - xiaohe
+  - 🌐 其他地区 (Other) 05 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🌐 其他地区 (Other) 02 - xiaohe
+  - 🌐 其他地区 (Other) 03 - xiaohe
+  - 🌐 其他地区 (Other) 04 - xiaohe
+  - 🌐 其他地区 (Other) 05 - xiaohe
+rules:
+- MATCH,PROXIES
