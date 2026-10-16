@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 108.162.194.134
+  server: 190.93.245.148
   port: 443
   udp: true
   type: trojan
@@ -16,7 +16,7 @@ proxies:
   ws-opts:
     path: /assignment
 - name: 🌐 其他地区 (Other) 02 - xiaohe
-  server: 108.162.194.134
+  server: 190.93.245.148
   port: 443
   udp: true
   type: trojan
@@ -27,29 +27,7 @@ proxies:
   ws-opts:
     path: /assignment
 - name: 🌐 其他地区 (Other) 03 - xiaohe
-  server: 108.162.194.134
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.pleadcourt.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🌐 其他地区 (Other) 04 - xiaohe
-  server: 104.21.5.128
-  port: 2052
-  udp: true
-  type: vless
-  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🌐 其他地区 (Other) 05 - xiaohe
-  server: 104.16.71.213
+  server: 172.64.152.23
   port: 443
   udp: true
   type: trojan
@@ -59,6 +37,28 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
+- name: 🌐 其他地区 (Other) 04 - xiaohe
+  server: 172.64.152.23
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🌐 其他地区 (Other) 05 - xiaohe
+  server: 104.18.57.149
+  port: 2052
+  udp: true
+  type: vless
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
 proxy-groups:
 - name: PROXIES
   type: select

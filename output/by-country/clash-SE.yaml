@@ -18,18 +18,6 @@ proxies:
   servername: swe.wizard.select
   client-fingerprint: firefox
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: se1.h1cloud.net
-  port: 26100
-  udp: true
-  type: vless
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
-  tls: true
-  reality-opts:
-    public-key: 1uuvuG2Jl_o6yoVvOYm3hEboArh2Znu7zCy4Tqj36TI
-    short-id: 8045087bda646f1b
-  servername: www.icloud.com
-  client-fingerprint: qq
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -40,6 +28,14 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  server: hy-se.bypassme.online
+  port: 443
+  udp: true
+  type: hysteria2
+  password: e625f8ef-f935-4c7d-a259-0f154b6842fd
+  sni: hy-se.bypassme.online
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
