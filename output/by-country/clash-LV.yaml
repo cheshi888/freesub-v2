@@ -18,20 +18,7 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
-  server: 195.123.213.28
-  port: 443
-  udp: true
-  type: vless
-  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
-    short-id: 5c256336e3b673fa
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
-  server: lv.aiage.work
+  server: 185.220.223.25
   port: 443
   udp: true
   type: vless
@@ -43,6 +30,26 @@ proxies:
     short-id: 3c6afdc4124d0560
   servername: lv.aiage.work
   client-fingerprint: firefox
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
+  server: 185.135.86.175
+  port: 9086
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
+  server: 185.220.223.24
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ds-U8G06uZvV9qFhAeO16dwS9Nkcw_coYr_4puEUGFg
+    short-id: 3c6afdc4124d0560
+  servername: lv.aiage.work
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,6 +58,7 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,5 +67,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
 rules:
 - MATCH,PROXIES
