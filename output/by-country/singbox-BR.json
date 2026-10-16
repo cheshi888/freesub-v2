@@ -24,8 +24,26 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇧🇷 巴西 (Brazil) 02 - xiaohe",
+      "server": "137.131.171.249",
+      "password": "CyG0RFxMjzs41uQD4OLuHQ==",
+      "tls": {
+        "enabled": true,
+        "server_name": "rmgyvpn.rest",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "CyG0RFxMjzs41uQD4OLuHQ=="
+      },
+      "server_ports": [
+        "20000:30000"
+      ]
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 03 - xiaohe",
       "server": "platform101.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -43,7 +61,8 @@
       "outbounds": [
         "auto",
         "🇧🇷 巴西 (Brazil) 01 - xiaohe",
-        "🇧🇷 巴西 (Brazil) 02 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 02 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 03 - xiaohe"
       ]
     },
     {
@@ -51,7 +70,8 @@
       "tag": "auto",
       "outbounds": [
         "🇧🇷 巴西 (Brazil) 01 - xiaohe",
-        "🇧🇷 巴西 (Brazil) 02 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 02 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

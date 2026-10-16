@@ -7,25 +7,46 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
       "server": "195.238.126.20",
-      "server_port": 9002,
+      "server_port": 9086,
       "method": "aes-256-cfb",
-      "password": "b8KkNDjEd5QqFyRm"
+      "password": "37Z4TFCYhfxcpc9Q"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe",
       "server": "195.238.126.20",
-      "server_port": 9011,
+      "server_port": 9045,
       "method": "aes-256-cfb",
-      "password": "M3t2ZEQcMGRWBjRa"
+      "password": "Lp27rqyJq72bZsqX"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 03 - xiaohe",
       "server": "195.238.126.20",
-      "server_port": 9045,
+      "server_port": 9002,
       "method": "aes-256-cfb",
-      "password": "Lp27rqyJq72bZsqX"
+      "password": "b8KkNDjEd5QqFyRm"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - xiaohe",
+      "server": "84.32.109.20",
+      "server_port": 443,
+      "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "litv.nztvpn.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3jySGemfaqPZ2vM66Qtzo5SotO3eoRn1FeGaKp6KBQ4",
+          "short_id": "0da7e14db353e7d0"
+        }
+      }
     },
     {
       "type": "selector",
@@ -34,7 +55,8 @@
         "auto",
         "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
         "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe",
-        "🇱🇹 立陶宛 (Lithuania) 03 - xiaohe"
+        "🇱🇹 立陶宛 (Lithuania) 03 - xiaohe",
+        "🇱🇹 立陶宛 (Lithuania) 04 - xiaohe"
       ]
     },
     {
@@ -43,7 +65,8 @@
       "outbounds": [
         "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
         "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe",
-        "🇱🇹 立陶宛 (Lithuania) 03 - xiaohe"
+        "🇱🇹 立陶宛 (Lithuania) 03 - xiaohe",
+        "🇱🇹 立陶宛 (Lithuania) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

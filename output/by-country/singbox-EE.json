@@ -4,15 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
-      "server": "109.206.241.10",
-      "server_port": 449,
-      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
+      "server": "143.246.41.31",
+      "server_port": 443,
+      "uuid": "43212c32-01f2-4356-b216-67dc1c178262",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "109.206.241.10",
-        "insecure": true
+        "server_name": "ees92.shhflow.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "h1xVB_-djXL6A7tvnnVbjV4bYKplHOuN0bgmFJQE6AE",
+          "short_id": "7f3a91c2d8e640ab"
+        }
       }
     },
     {
@@ -40,22 +49,58 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
-      "server": "eu3.998998.best",
+      "server": "93.89.220.37",
       "server_port": 443,
-      "uuid": "5504eaa8-1395-402f-8e0e-75ecd762e627",
-      "security": "auto",
+      "uuid": "185e2bb3-2934-48d0-bbd5-dd20d16e83ee",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "server40.9966338.xyz",
+        "server_name": "ibm.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g",
+          "short_id": "e88cb983f3c97528"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe",
+      "server": "ees92.shhflow.xyz",
+      "server_port": 5443,
+      "password": "43212c32-01f2-4356-b216-67dc1c178262",
+      "tls": {
+        "enabled": true,
+        "server_name": "ees92.shhflow.xyz",
         "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe",
+      "server": "83.147.216.223",
+      "server_port": 4433,
+      "uuid": "660174a2-d32d-4521-840d-d1853bfc80b8",
+      "tls": {
+        "enabled": true,
+        "server_name": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/aiaiai",
+        "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "server40.9966338.xyz"
+          "Host": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev"
         }
       }
     },
@@ -66,7 +111,9 @@
         "auto",
         "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
+        "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe",
+        "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe"
       ]
     },
     {
@@ -75,7 +122,9 @@
       "outbounds": [
         "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
+        "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe",
+        "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
