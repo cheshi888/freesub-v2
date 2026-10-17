@@ -1,0 +1,28 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇩🇪 德国 (Germany) 01 (疑似家宽) - xiaohe
+  server: ger8.fytpn.com
+  port: 443
+  udp: true
+  type: trojan
+  password: -VbTw-xqE7XYmEsoZTE7ShJoYLCjdBMQ
+  sni: ger1.fytpn.com
+  skip-cert-verify: false
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇩🇪 德国 (Germany) 01 (疑似家宽) - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 (Germany) 01 (疑似家宽) - xiaohe
+rules:
+- MATCH,PROXIES
