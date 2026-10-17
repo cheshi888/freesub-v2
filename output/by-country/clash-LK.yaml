@@ -5,7 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
-  server: centurylink.es
+  server: free.sahanwickramasinghe.me
+  port: 80
+  udp: true
+  type: vless
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 02 - xiaohe
+  server: 104.17.71.206
   port: 8443
   udp: true
   type: vless
@@ -13,17 +24,6 @@ proxies:
   tls: true
   servername: free.sahanwickramasinghe.me
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 斯里兰卡 (Sri Lanka) 02 - xiaohe
-  server: support.zoom.us
-  port: 80
-  udp: true
-  type: vless
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
   network: ws
   ws-opts:
     path: /

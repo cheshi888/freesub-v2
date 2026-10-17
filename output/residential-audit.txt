@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-10-17 15:04:08 UTC
+生成时间: 2026-10-17 20:21:40 UTC
 ==============================================================================
 
 说明:
@@ -15,39 +15,19 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 4
+本轮家宽节点数: 3
 
-[1] FI  严格家宽  置信度 70
-     exit_ip : 169.40.34.2
-     server  : 152.233.71.81:443  (vless)
-     ASN     : AS9304 HGC Global Communications Limited
-     ISP     : HGC Global Communications Limited
-     ORG     : -
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Internet Utilities Europe and Asia Limited asn=AS198077 Need, L.L.C.-FZ
-     fraud   : 20  (-1 = 未取到评分)
-
-[2] DE  疑似家宽  置信度 55
-     exit_ip : 94.26.41.164
-     server  : ger8.fytpn.com:443  (trojan)
-     ASN     : -
-     ISP     : Telco power Ltd
-     ORG     : Telco power Ltd
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=DEDIK SERVICES LIMITED asn=AS207043 DEDIK SERVICES LIMITED
+[1] TW  移动网络  置信度 85
+     exit_ip : 211.20.18.215
+     server  : tw0.zhujue.us:11000  (vless)
+     ASN     : AS3462 Data Communication Business Group
+     ISP     : Chunghwa Telecom Co., Ltd.
+     ORG     : Chunghwa Telecom Co. Ltd.
+     ip-api  : hosting=False proxy=False mobile=True reverse=-
+     ipapi.is: company=Chunghwa Telecom Co.,Ltd. asn=AS3462 Chunghwa Telecom Co., Ltd.
      fraud   : 0  (-1 = 未取到评分)
 
-[3] KR  严格家宽  置信度 82
-     exit_ip : 183.109.131.75
-     server  : 183.109.131.75:20086  (vmess)
-     ASN     : AS4766 Korea Telecom
-     ISP     : Korea Telecom
-     ORG     : Kornet
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Korea Telecom asn=AS4766 Korea Telecom
-     fraud   : 3  (-1 = 未取到评分)
-
-[4] TW  严格家宽  置信度 82
+[2] TW  严格家宽  置信度 82
      exit_ip : 118.167.219.24
      server  : 118.167.219.24:24215  (vless)
      ASN     : AS3462 Data Communication Business Group
@@ -55,4 +35,14 @@
      ORG     : Chunghwa Telecom Co. Ltd.
      ip-api  : hosting=False proxy=False mobile=False reverse=-
      ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
+     fraud   : 0  (-1 = 未取到评分)
+
+[3] DE  疑似家宽  置信度 55
+     exit_ip : 94.26.41.164
+     server  : ger8.fytpn.com:443  (trojan)
+     ASN     : -
+     ISP     : Telco power Ltd
+     ORG     : Telco power Ltd
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=DEDIK SERVICES LIMITED asn=AS207043 DEDIK SERVICES LIMITED
      fraud   : 0  (-1 = 未取到评分)
