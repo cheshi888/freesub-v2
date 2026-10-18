@@ -17,28 +17,6 @@ proxies:
   servername: www.google.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 193.188.21.253
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 193.188.21.253
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   server: 31.77.199.147
   port: 4443
   udp: true
@@ -51,18 +29,54 @@ proxies:
     short-id: 7da2eae792187ab9
   servername: images.unsplash.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: 213.176.92.168
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  server: 45.144.234.157
   port: 14430
   udp: true
   type: vless
-  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   network: ws
   ws-opts:
     path: /vless
     headers:
-      Host: 213.176.92.168
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  server: 212.87.222.10
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 8afeb33c-b686-43e9-a629-0d98f991ec28
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: f25sygANXTpzdc9YPCwkggwSmm3piA3BluSeHdfG-hg
+  servername: www.nokia.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  server: 152.233.71.81
+  port: 443
+  udp: true
+  type: vless
+  uuid: 741809be-e44e-000b-b411-bf66f0ae3860
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
+    short-id: 1c3e8241a8743df9
+  servername: brointelengence.com
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  server: 193.188.21.253
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.188.21.253
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
   server: 62.60.159.81
   port: 2053
   udp: true
@@ -73,11 +87,11 @@ proxies:
     public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
     short-id: d0ea1847066af5a6
   servername: www.samsung.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
   network: grpc
   grpc-opts:
     grpc-service-name: grpce5bb9e71
-- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
   server: 109.172.54.135
   port: 8444
   udp: true
@@ -91,20 +105,31 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
-  server: 152.233.71.81
-  port: 443
+- name: 🇫🇮 芬兰 (Finland) 09 - xiaohe
+  server: 213.176.92.168
+  port: 14430
   udp: true
   type: vless
-  uuid: 741809be-e44e-000b-b411-bf66f0ae3860
+  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 213.176.92.168
+- name: 🇫🇮 芬兰 (Finland) 10 - xiaohe
+  server: 193.188.21.253
+  port: 10444
+  udp: true
+  type: vless
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
-    short-id: 1c3e8241a8743df9
-  servername: brointelengence.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 09 - xiaohe
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: video.yandex.ru
+  client-fingerprint: safari
+- name: 🇫🇮 芬兰 (Finland) 11 - xiaohe
   server: 213.176.92.168
   port: 10444
   udp: true
@@ -116,7 +141,7 @@ proxies:
     public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
     short-id: 8debcf36f1cc69ff
   servername: video.yandex.ru
-  client-fingerprint: firefox
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -131,6 +156,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 07 - xiaohe
   - 🇫🇮 芬兰 (Finland) 08 - xiaohe
   - 🇫🇮 芬兰 (Finland) 09 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 10 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -145,5 +172,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 07 - xiaohe
   - 🇫🇮 芬兰 (Finland) 08 - xiaohe
   - 🇫🇮 芬兰 (Finland) 09 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 10 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 11 - xiaohe
 rules:
 - MATCH,PROXIES

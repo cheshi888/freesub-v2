@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-10-17 20:21:40 UTC
+生成时间: 2026-10-18 02:42:32 UTC
 ==============================================================================
 
 说明:
@@ -17,32 +17,32 @@
 
 本轮家宽节点数: 3
 
-[1] TW  移动网络  置信度 85
-     exit_ip : 211.20.18.215
-     server  : tw0.zhujue.us:11000  (vless)
-     ASN     : AS3462 Data Communication Business Group
-     ISP     : Chunghwa Telecom Co., Ltd.
-     ORG     : Chunghwa Telecom Co. Ltd.
+[1] KR  严格家宽  置信度 82
+     exit_ip : 183.109.131.75
+     server  : 183.109.131.75:20086  (vmess)
+     ASN     : AS4766 Korea Telecom
+     ISP     : Korea Telecom
+     ORG     : Kornet
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Korea Telecom asn=AS4766 Korea Telecom
+     fraud   : 3  (-1 = 未取到评分)
+
+[2] TR  移动网络  置信度 85
+     exit_ip : 206.1.96.108
+     server  : me17.msjia8844.site:7443  (hysteria2)
+     ASN     : AS44620 Netlen Internet Hizmetleri Ltd. Sti.
+     ISP     : Netlen Internet Hizmetleri Ltd. Sti.
+     ORG     : -
      ip-api  : hosting=False proxy=False mobile=True reverse=-
-     ipapi.is: company=Chunghwa Telecom Co.,Ltd. asn=AS3462 Chunghwa Telecom Co., Ltd.
+     ipapi.is: company=Netlen Internet Hizmetleri Ltd. Sti. asn=AS44620 Netlen Internet Hizmetleri Ltd. Sti.
      fraud   : 0  (-1 = 未取到评分)
 
-[2] TW  严格家宽  置信度 82
-     exit_ip : 118.167.219.24
-     server  : 118.167.219.24:24215  (vless)
-     ASN     : AS3462 Data Communication Business Group
-     ISP     : Chunghwa Telecom Co., Ltd.
-     ORG     : Chunghwa Telecom Co. Ltd.
+[3] SG  严格家宽  置信度 70
+     exit_ip : 43.230.99.117
+     server  : 152.70.253.44:443  (vless)
+     ASN     : AS18106 Viewqwest Pte Ltd
+     ISP     : ViewQwest Sdn. Bhd
+     ORG     : Viewqwest Pte Ltd
      ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
-     fraud   : 0  (-1 = 未取到评分)
-
-[3] DE  疑似家宽  置信度 55
-     exit_ip : 94.26.41.164
-     server  : ger8.fytpn.com:443  (trojan)
-     ASN     : -
-     ISP     : Telco power Ltd
-     ORG     : Telco power Ltd
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=DEDIK SERVICES LIMITED asn=AS207043 DEDIK SERVICES LIMITED
+     ipapi.is: company=Viewqwest Pte Ltd asn=AS18106 Viewqwest Pte Ltd
      fraud   : 0  (-1 = 未取到评分)

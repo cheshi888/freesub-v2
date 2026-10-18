@@ -5,27 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇭 菲律宾 (Philippines) 01 - xiaohe
-  server: platform103.golnamakcert.top
+  server: platform107.golnamakcert.top
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform103
-    headers:
-      Host: platform103.halalkhor.info
+    path: /platform107
 - name: 🇵🇭 菲律宾 (Philippines) 02 - xiaohe
-  server: platform108.golnamakcert.top
+  server: platform101.golnamakcert.top
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform108
+    path: /platform101
     headers:
-      Host: platform108.halalkhor.info
+      Host: platform101.halalkhor.info
 - name: 🇵🇭 菲律宾 (Philippines) 03 - xiaohe
   server: platform102.golnamakcert.top
   port: 80
@@ -38,39 +36,28 @@ proxies:
     headers:
       Host: platform102.halalkhor.info
 - name: 🇵🇭 菲律宾 (Philippines) 04 - xiaohe
-  server: platform101.golnamakcert.top
+  server: platform103.golnamakcert.top
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform101
+    path: /platform103
     headers:
-      Host: platform101.halalkhor.info
+      Host: platform103.halalkhor.info
 - name: 🇵🇭 菲律宾 (Philippines) 05 - xiaohe
-  server: platform109.golnamakcert.top
+  server: platform108.golnamakcert.top
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform109
+    path: /platform108
     headers:
-      Host: platform109.halalkhor.info
+      Host: platform108.halalkhor.info
 - name: 🇵🇭 菲律宾 (Philippines) 06 - xiaohe
-  server: platform107.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform107
-    headers:
-      Host: platform107.halalkhor.info
-- name: 🇵🇭 菲律宾 (Philippines) 07 - xiaohe
   server: platform106.golnamakcert.top
   port: 80
   udp: true
@@ -81,6 +68,17 @@ proxies:
     path: /platform106
     headers:
       Host: platform106.halalkhor.info
+- name: 🇵🇭 菲律宾 (Philippines) 07 - xiaohe
+  server: platform109.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform109
+    headers:
+      Host: platform109.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select

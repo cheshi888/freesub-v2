@@ -5,20 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: ee-1-1.unturned-rust-dead.lol
+  server: 109.206.241.10
+  port: 449
+  udp: true
+  type: trojan
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  sni: russiapower.accesscam.org
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  server: 143.246.41.31
   port: 443
   udp: true
   type: vless
-  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
+  uuid: 43212c32-01f2-4356-b216-67dc1c178262
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk
-  servername: ee-1-1.unturned-rust-dead.lol
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ee-grpc
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+    public-key: h1xVB_-djXL6A7tvnnVbjV4bYKplHOuN0bgmFJQE6AE
+    short-id: 7f3a91c2d8e640ab
+  servername: ees92.shhflow.xyz
+  client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   server: ee.h1cloud.net
   port: 25895
   udp: true
@@ -30,6 +37,71 @@ proxies:
     short-id: a73f0410d728c823
   servername: www.samsung.com
   client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+  server: ees92.shhflow.xyz
+  port: 443
+  udp: true
+  type: vless
+  uuid: 43212c32-01f2-4356-b216-67dc1c178262
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: h1xVB_-djXL6A7tvnnVbjV4bYKplHOuN0bgmFJQE6AE
+    short-id: 7f3a91c2d8e640ab
+  servername: ees92.shhflow.xyz
+  client-fingerprint: random
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
+  server: 83.147.216.223
+  port: 4433
+  udp: true
+  type: vless
+  uuid: 55889b09-e315-4640-9404-e10834e7728e
+  tls: true
+  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
+  server: ees92.shhflow.xyz
+  port: 5443
+  udp: true
+  type: hysteria2
+  password: 43212c32-01f2-4356-b216-67dc1c178262
+  sni: ees92.shhflow.xyz
+  skip-cert-verify: false
+- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
+  server: eu3.998998.best
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: server40.9966338.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /aiaiai
+    headers:
+      Host: server40.9966338.xyz
+- name: 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
+  server: 77.110.105.122
+  port: 443
+  udp: true
+  type: vless
+  uuid: 019fbe0f-2d9f-4b89-9f81-e1e36129892a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: EBISh6QAVskJ_nvet-Qio9jS2yqxe9de6GMScYlbjhI
+    short-id: 226509f017e4c36d
+  servername: co-es.speedtec.ru
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +109,12 @@ proxy-groups:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +122,11 @@ proxy-groups:
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
 rules:
 - MATCH,PROXIES

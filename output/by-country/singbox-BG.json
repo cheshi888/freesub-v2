@@ -7,21 +7,38 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
       "server": "213.183.63.60",
-      "server_port": 9066,
+      "server_port": 9085,
       "method": "aes-256-cfb",
-      "password": "2KUaE2a8NWTvuCZ3"
+      "password": "9ej82EKe2gq7gLAM"
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe",
-      "server": "189.74.114.2",
-      "server_port": 54183,
-      "password": "082f5694-9019-4110-b67b-8125dbb9bab8",
+      "server": "195.123.226.21",
+      "server_port": 443,
+      "uuid": "6589c320-db68-43cd-a273-b46299bab355",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "outh.yandex-cloud.org",
-        "insecure": false
+        "server_name": "gateway.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "rabtI-ymNXBUvYYRwAw8DiR-1pdP7U0WPIaCBHEkgzo",
+          "short_id": "77bb0d07bddbc832"
+        }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe",
+      "server": "213.183.63.60",
+      "server_port": 9061,
+      "method": "aes-256-cfb",
+      "password": "4R3hUfZ2FHhDmNcP"
     },
     {
       "type": "selector",
@@ -29,7 +46,8 @@
       "outbounds": [
         "auto",
         "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
-        "🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe"
+        "🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe",
+        "🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe"
       ]
     },
     {
@@ -37,7 +55,8 @@
       "tag": "auto",
       "outbounds": [
         "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
-        "🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe"
+        "🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe",
+        "🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,21 +5,75 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: se1.h1cloud.net
-  port: 26128
+  server: 88.216.223.66
+  port: 443
   udp: true
   type: vless
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
+  uuid: 244d9eab-3311-40c7-b47f-4968dc3088a6
   tls: true
   reality-opts:
-    public-key: sACiHit5lNtPRK_eFP6jT8dMPUZ4kQRsfPj_LL5p7Uk
-    short-id: 13ac4d3bdadf1ea1
-  servername: www.icloud.com
-  client-fingerprint: random
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  servername: tcpswed1.figurapn.ru
+  client-fingerprint: chrome
+- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
+  server: edge-lab-b.10media.top
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
+  tls: true
+  servername: edge-lab-b.10media.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
-    grpc-service-name: df50147201bf
-- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
+    grpc-service-name: swedenfeed
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  server: sub.merky.top
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  tls: true
+  servername: sub.merky.top
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  server: ru6.my-cdn.org
+  port: 23688
+  udp: true
+  type: vless
+  uuid: c19ecc7f-8312-4d9d-90c9-1a997d82d3c5
+  tls: true
+  reality-opts:
+    public-key: kbITklNKTdfvB6e3xy97pTV7gjl3Z3irv246oRZ5Gnk
+    short-id: f679b4f2
+  servername: apple.com
+  client-fingerprint: qq
+  network: grpc
+  grpc-opts:
+    grpc-service-name: awarecricketer
+- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  server: 89.22.224.146
+  port: 43788
+  udp: true
+  type: vless
+  uuid: 6fbd9bd1-ccd4-4e2f-a918-a0f871965763
+  tls: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
   server: se3.h1cloud.net
   port: 25119
   udp: true
@@ -32,28 +86,44 @@ proxies:
     short-id: 10f517
   servername: www.samsung.com
   client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: 45.12.63.219
-  port: 443
+- name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
+  server: 5.178.109.174
+  port: 14430
   udp: true
   type: vless
-  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 瑞典 (Sweden) 08 - xiaohe
+  server: se1.h1cloud.net
+  port: 26100
+  udp: true
+  type: vless
+  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
   tls: true
-  servername: edge-lab-b.10media.top
-  skip-cert-verify: false
+  reality-opts:
+    public-key: 1uuvuG2Jl_o6yoVvOYm3hEboArh2Znu7zCy4Tqj36TI
+    short-id: 8045087bda646f1b
+  servername: www.icloud.com
+  client-fingerprint: qq
+- name: 🇸🇪 瑞典 (Sweden) 09 - xiaohe
+  server: se1.h1cloud.net
+  port: 26128
+  udp: true
+  type: vless
+  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
+  tls: true
+  reality-opts:
+    public-key: sACiHit5lNtPRK_eFP6jT8dMPUZ4kQRsfPj_LL5p7Uk
+    short-id: 13ac4d3bdadf1ea1
+  servername: www.icloud.com
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
-    grpc-service-name: swedenfeed
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  server: 77.110.96.201
-  port: 36264
-  udp: true
-  type: hysteria2
-  password: Telegram-vpnjey
-  sni: se.vpnjey2.dpdns.org
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: Telegram@vpnjey
+    grpc-service-name: df50147201bf
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,6 +133,11 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 08 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -72,5 +147,10 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 08 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 09 - xiaohe
 rules:
 - MATCH,PROXIES
