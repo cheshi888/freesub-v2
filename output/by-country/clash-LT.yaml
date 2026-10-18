@@ -19,6 +19,20 @@ proxies:
   cipher: aes-256-cfb
   password: M3t2ZEQcMGRWBjRa
 - name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaohe
+  server: 195.238.126.20
+  port: 9001
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: UkXRsXvR6buDMG2Y
+- name: 🇱🇹 立陶宛 (Lithuania) 04 - xiaohe
+  server: 195.238.126.20
+  port: 9002
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: b8KkNDjEd5QqFyRm
+- name: 🇱🇹 立陶宛 (Lithuania) 05 - xiaohe
   server: 84.32.109.20
   port: 443
   udp: true
@@ -31,14 +45,7 @@ proxies:
     short-id: 0da7e14db353e7d0
   servername: litv.nztvpn.com
   client-fingerprint: chrome
-- name: 🇱🇹 立陶宛 (Lithuania) 04 - xiaohe
-  server: 195.238.126.84
-  port: 9039
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qYEN5HX4JKeVCdEC
-- name: 🇱🇹 立陶宛 (Lithuania) 05 - xiaohe
+- name: 🇱🇹 立陶宛 (Lithuania) 06 - xiaohe
   server: b58e68t.lt1.h1clayd.click
   port: 443
   udp: true
@@ -49,18 +56,6 @@ proxies:
     public-key: MbRONgV8ADD5B_aKDBv15LAW2a8QZok5bkkZexRRVAs
     short-id: 2301ac8aee8bf6d4
   servername: b58e68t.lt1.h1clayd.click
-  client-fingerprint: safari
-- name: 🇱🇹 立陶宛 (Lithuania) 06 - xiaohe
-  server: lt.e-bobr.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: fae6f649-e47d-49a1-85e4-7d95b1f65b47
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 4TKYDfkXjtoQhWC1ySfmN2kiXMoP2ntp1CrQjehwtk4
-  servername: at.e-bobr.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES

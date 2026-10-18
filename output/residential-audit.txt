@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-10-18 02:42:32 UTC
+生成时间: 2026-10-18 10:35:01 UTC
 ==============================================================================
 
 说明:
@@ -17,7 +17,17 @@
 
 本轮家宽节点数: 3
 
-[1] KR  严格家宽  置信度 82
+[1] FI  严格家宽  置信度 70
+     exit_ip : 169.40.34.9
+     server  : 152.233.71.81:443  (vless)
+     ASN     : AS9304 HGC Global Communications Limited
+     ISP     : HGC Global Communications Limited
+     ORG     : -
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Need L.L.C-FZ asn=AS198077 Need, L.L.C.-FZ
+     fraud   : 20  (-1 = 未取到评分)
+
+[2] KR  严格家宽  置信度 82
      exit_ip : 183.109.131.75
      server  : 183.109.131.75:20086  (vmess)
      ASN     : AS4766 Korea Telecom
@@ -27,7 +37,7 @@
      ipapi.is: company=Korea Telecom asn=AS4766 Korea Telecom
      fraud   : 3  (-1 = 未取到评分)
 
-[2] TR  移动网络  置信度 85
+[3] TR  移动网络  置信度 85
      exit_ip : 206.1.96.108
      server  : me17.msjia8844.site:7443  (hysteria2)
      ASN     : AS44620 Netlen Internet Hizmetleri Ltd. Sti.
@@ -35,14 +45,4 @@
      ORG     : -
      ip-api  : hosting=False proxy=False mobile=True reverse=-
      ipapi.is: company=Netlen Internet Hizmetleri Ltd. Sti. asn=AS44620 Netlen Internet Hizmetleri Ltd. Sti.
-     fraud   : 0  (-1 = 未取到评分)
-
-[3] SG  严格家宽  置信度 70
-     exit_ip : 43.230.99.117
-     server  : 152.70.253.44:443  (vless)
-     ASN     : AS18106 Viewqwest Pte Ltd
-     ISP     : ViewQwest Sdn. Bhd
-     ORG     : Viewqwest Pte Ltd
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Viewqwest Pte Ltd asn=AS18106 Viewqwest Pte Ltd
      fraud   : 0  (-1 = 未取到评分)

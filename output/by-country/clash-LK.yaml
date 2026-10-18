@@ -5,16 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
-  server: free.sahanwickramasinghe.me
-  port: 80
-  udp: true
-  type: vless
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇱🇰 斯里兰卡 (Sri Lanka) 02 - xiaohe
-  server: free.sahanwickramasinghe.me
+  server: 104.17.70.206
   port: 8443
   udp: true
   type: vless
@@ -22,7 +13,6 @@ proxies:
   tls: true
   servername: free.sahanwickramasinghe.me
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
@@ -34,13 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 02 - xiaohe
 rules:
 - MATCH,PROXIES
