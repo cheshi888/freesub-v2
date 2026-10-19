@@ -5,20 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇻🇳 越南 (Vietnam) 01 - xiaohe
-  server: 172.67.168.158
-  port: 2087
+  server: 150.95.109.109
+  port: 2086
   udp: true
   type: vless
-  uuid: 1d0e8e53-6999-4752-ac21-c0c54ff5bc09
-  tls: true
-  servername: vn11vina.210z.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vlessvina
-    headers:
-      Host: vn11vina.210z.dev
+  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
 proxy-groups:
 - name: PROXIES
   type: select

@@ -16,9 +16,22 @@ proxies:
     public-key: mPzNFHO4pZMzFviRkIhRd7xDUz4dMHyI-flZLOrgDVg
     short-id: f8379ce795f2e5ed
   servername: hu1.aiage.work
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇭🇺 匈牙利 (Hungary) 02 - xiaohe
-  server: 85.155.242.38
+  server: hu1.aiage.work
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: mPzNFHO4pZMzFviRkIhRd7xDUz4dMHyI-flZLOrgDVg
+    short-id: f8379ce795f2e5ed
+  servername: hu1.aiage.work
+  client-fingerprint: random
+- name: 🇭🇺 匈牙利 (Hungary) 03 - xiaohe
+  server: 85.155.242.37
   port: 443
   udp: true
   type: vless
@@ -37,6 +50,7 @@ proxy-groups:
   - AUTO
   - 🇭🇺 匈牙利 (Hungary) 01 - xiaohe
   - 🇭🇺 匈牙利 (Hungary) 02 - xiaohe
+  - 🇭🇺 匈牙利 (Hungary) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +58,6 @@ proxy-groups:
   proxies:
   - 🇭🇺 匈牙利 (Hungary) 01 - xiaohe
   - 🇭🇺 匈牙利 (Hungary) 02 - xiaohe
+  - 🇭🇺 匈牙利 (Hungary) 03 - xiaohe
 rules:
 - MATCH,PROXIES
