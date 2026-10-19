@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-10-19 12:21:13 UTC
+生成时间: 2026-10-19 18:51:46 UTC
 ==============================================================================
 
 说明:
@@ -15,24 +15,14 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 2
+本轮家宽节点数: 1
 
-[1] HK  严格家宽  置信度 82
-     exit_ip : 116.49.85.111
-     server  : 74a598d0-tnhmo0-toktib-1hhyy.hk3.hyhuawei.com:443  (hysteria2)
-     ASN     : AS4760 HKT Limited
-     ISP     : Hong Kong Telecommunications (HKT) Limited Mass Internet
-     ORG     : Hong Kong Telecommunications (HKT) Limited
+[1] KR  严格家宽  置信度 82
+     exit_ip : 183.109.131.75
+     server  : 183.109.131.75:20086  (vmess)
+     ASN     : AS4766 Korea Telecom
+     ISP     : Korea Telecom
+     ORG     : Kornet
      ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Hong Kong Telecommunications (HKT) Limited Mass Internet asn=AS4760 PCCW IMS Limited
-     fraud   : 0  (-1 = 未取到评分)
-
-[2] US  严格家宽  置信度 70
-     exit_ip : 38.92.26.70
-     server  : 4c2d5151.266nets.com:12031  (trojan)
-     ASN     : AS26042 FiberState, LLC
-     ISP     : FiberState, LLC
-     ORG     : Fiberstate LLC
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Fiberstate LLC asn=AS26042 FiberState, LLC
-     fraud   : 46  (-1 = 未取到评分)
+     ipapi.is: company=Korea Telecom asn=AS4766 Korea Telecom
+     fraud   : 3  (-1 = 未取到评分)

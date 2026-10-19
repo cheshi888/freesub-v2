@@ -4,8 +4,32 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
+      "server": "195.238.126.20",
+      "server_port": 9086,
+      "method": "aes-256-cfb",
+      "password": "37Z4TFCYhfxcpc9Q"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe",
+      "server": "195.238.126.20",
+      "server_port": 9001,
+      "method": "aes-256-cfb",
+      "password": "UkXRsXvR6buDMG2Y"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - xiaohe",
+      "server": "195.238.126.20",
+      "server_port": 9078,
+      "method": "aes-256-cfb",
+      "password": "JCJpbRbQZNw9XFZG"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - xiaohe",
       "server": "212.24.105.101",
       "server_port": 443,
       "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
@@ -14,7 +38,7 @@
         "server_name": "b58e68t.lt1.h1clayd.click",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
@@ -24,33 +48,14 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe",
-      "server": "84.32.109.20",
-      "server_port": 443,
-      "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "litv.nztvpn.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "3jySGemfaqPZ2vM66Qtzo5SotO3eoRn1FeGaKp6KBQ4",
-          "short_id": "0da7e14db353e7d0"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
-        "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe"
+        "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe",
+        "🇱🇹 立陶宛 (Lithuania) 03 - xiaohe",
+        "🇱🇹 立陶宛 (Lithuania) 04 - xiaohe"
       ]
     },
     {
@@ -58,7 +63,9 @@
       "tag": "auto",
       "outbounds": [
         "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
-        "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe"
+        "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe",
+        "🇱🇹 立陶宛 (Lithuania) 03 - xiaohe",
+        "🇱🇹 立陶宛 (Lithuania) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

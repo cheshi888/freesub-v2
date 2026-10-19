@@ -5,18 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇻🇳 越南 (Vietnam) 01 - xiaohe
-  server: funagfrdfs.alixxplay.com
-  port: 55688
+  server: 172.67.168.158
+  port: 2087
   udp: true
   type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
+  uuid: 1d0e8e53-6999-4752-ac21-c0c54ff5bc09
   tls: true
-  reality-opts:
-    public-key: KeV1nArisy7FO5DjqTSmn0hBnlNd38rzhbIMMpe-MBw
-    short-id: a46bb5972cf50671
-  servername: bilibili-vn.biliimg.com
-  client-fingerprint: firefox
+  servername: vn11vina.210z.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vlessvina
+    headers:
+      Host: vn11vina.210z.dev
 proxy-groups:
 - name: PROXIES
   type: select
