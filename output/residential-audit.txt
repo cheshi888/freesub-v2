@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-10-18 20:28:32 UTC
+生成时间: 2026-10-19 02:58:53 UTC
 ==============================================================================
 
 说明:
@@ -15,6 +15,44 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 0
+本轮家宽节点数: 4
 
-(本轮无节点通过家宽判定)
+[1] KR  严格家宽  置信度 82
+     exit_ip : 218.237.185.234
+     server  : 218.237.185.234:4652  (shadowsocks)
+     ASN     : AS9318 SK Broadband Co Ltd
+     ISP     : SK Broadband Co Ltd
+     ORG     : broadNnet
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=SK Broadband Co Ltd asn=AS9318 SK Broadband Co Ltd
+     fraud   : 1  (-1 = 未取到评分)
+
+[2] DE  严格家宽  置信度 82
+     exit_ip : 134.3.221.25
+     server  : 209.38.238.229:20202  (vless)
+     ASN     : AS3209 Vodafone GmbH
+     ISP     : Vodafone
+     ORG     : Vodafone BW GmbH
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Vodafone BW GmbH asn=AS3209 Vodafone GmbH
+     fraud   : 4  (-1 = 未取到评分)
+
+[3] SG  严格家宽  置信度 70
+     exit_ip : 43.230.99.117
+     server  : 152.70.253.44:443  (vless)
+     ASN     : AS18106 Viewqwest Pte Ltd
+     ISP     : ViewQwest Sdn. Bhd
+     ORG     : Viewqwest Pte Ltd
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Viewqwest Pte Ltd asn=AS18106 Viewqwest Pte Ltd
+     fraud   : 0  (-1 = 未取到评分)
+
+[4] TW  严格家宽  置信度 82
+     exit_ip : 61.230.160.34
+     server  : 61.230.160.34:24215  (vless)
+     ASN     : AS3462 Data Communication Business Group
+     ISP     : Chunghwa Telecom Co., Ltd.
+     ORG     : Chunghwa Telecom Co. Ltd.
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
+     fraud   : 0  (-1 = 未取到评分)
