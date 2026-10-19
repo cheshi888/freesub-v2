@@ -5,117 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: 84.32.106.243
-  port: 443
+  server: 70.34.212.124
+  port: 8388
   udp: true
-  type: vless
-  uuid: 1ab9e166-5a54-48b9-a07f-79d1d840ae21
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AepHS1WcdKNVjau3-RYZ4PefoPAw-i07pqrl66RPD2s
-    short-id: b09535a0ea97b4ed
-  servername: se.nurcloud.org
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: 5.178.109.174
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: se3.h1cloud.net
-  port: 25119
-  udp: true
-  type: vless
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
-    short-id: 10f517
-  servername: www.samsung.com
-  client-fingerprint: edge
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  server: se1.h1cloud.net
-  port: 26128
-  udp: true
-  type: vless
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
-  tls: true
-  reality-opts:
-    public-key: sACiHit5lNtPRK_eFP6jT8dMPUZ4kQRsfPj_LL5p7Uk
-    short-id: 13ac4d3bdadf1ea1
-  servername: www.icloud.com
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: df50147201bf
-- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
-  server: se1.h1cloud.net
-  port: 26100
-  udp: true
-  type: vless
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
-  tls: true
-  reality-opts:
-    public-key: 1uuvuG2Jl_o6yoVvOYm3hEboArh2Znu7zCy4Tqj36TI
-    short-id: 8045087bda646f1b
-  servername: www.icloud.com
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
-  server: 94.143.231.146
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  tls: true
-  servername: sub.merky.top
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-- name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
-  server: edge-lab-b.10media.top
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
-  tls: true
-  servername: edge-lab-b.10media.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: swedenfeed
+  type: ss
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -1,0 +1,28 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇺🇸 美国 (United States) 01 (家宽) R46 - xiaohe
+  server: 4c2d5151.266nets.com
+  port: 12031
+  udp: true
+  type: trojan
+  password: bad06c3525a6eaee1757b34776b83892
+  sni: ixigua.com
+  skip-cert-verify: true
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇺🇸 美国 (United States) 01 (家宽) R46 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 (United States) 01 (家宽) R46 - xiaohe
+rules:
+- MATCH,PROXIES

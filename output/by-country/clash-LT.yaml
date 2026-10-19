@@ -5,21 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - xiaohe
-  server: 195.238.126.20
-  port: 9086
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇹 立陶宛 (Lithuania) 02 - xiaohe
-  server: 195.238.126.20
-  port: 9078
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: JCJpbRbQZNw9XFZG
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaohe
-  server: b58e68t.lt1.h1clayd.click
+  server: 212.24.105.101
   port: 443
   udp: true
   type: vless
@@ -30,27 +16,7 @@ proxies:
     short-id: 2301ac8aee8bf6d4
   servername: b58e68t.lt1.h1clayd.click
   client-fingerprint: qq
-- name: 🇱🇹 立陶宛 (Lithuania) 04 - xiaohe
-  server: lt.api.nurcloud.org
-  port: 443
-  udp: true
-  type: vless
-  uuid: 387c31cc-09fb-4e5c-a16a-0fd251ad2763
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: xz_Q2MZsSsZT0LToJoodq42SJZvExuLHgNrUzl15oQM
-    short-id: b6e0543c11efc367
-  servername: lt.api.nurcloud.org
-  client-fingerprint: firefox
-- name: 🇱🇹 立陶宛 (Lithuania) 05 - xiaohe
-  server: 195.238.126.20
-  port: 9011
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: M3t2ZEQcMGRWBjRa
-- name: 🇱🇹 立陶宛 (Lithuania) 06 - xiaohe
+- name: 🇱🇹 立陶宛 (Lithuania) 02 - xiaohe
   server: 84.32.109.20
   port: 443
   udp: true
@@ -62,7 +28,7 @@ proxies:
     public-key: 3jySGemfaqPZ2vM66Qtzo5SotO3eoRn1FeGaKp6KBQ4
     short-id: 0da7e14db353e7d0
   servername: litv.nztvpn.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -70,10 +36,6 @@ proxy-groups:
   - AUTO
   - 🇱🇹 立陶宛 (Lithuania) 01 - xiaohe
   - 🇱🇹 立陶宛 (Lithuania) 02 - xiaohe
-  - 🇱🇹 立陶宛 (Lithuania) 03 - xiaohe
-  - 🇱🇹 立陶宛 (Lithuania) 04 - xiaohe
-  - 🇱🇹 立陶宛 (Lithuania) 05 - xiaohe
-  - 🇱🇹 立陶宛 (Lithuania) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -81,9 +43,5 @@ proxy-groups:
   proxies:
   - 🇱🇹 立陶宛 (Lithuania) 01 - xiaohe
   - 🇱🇹 立陶宛 (Lithuania) 02 - xiaohe
-  - 🇱🇹 立陶宛 (Lithuania) 03 - xiaohe
-  - 🇱🇹 立陶宛 (Lithuania) 04 - xiaohe
-  - 🇱🇹 立陶宛 (Lithuania) 05 - xiaohe
-  - 🇱🇹 立陶宛 (Lithuania) 06 - xiaohe
 rules:
 - MATCH,PROXIES

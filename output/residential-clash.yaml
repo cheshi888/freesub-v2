@@ -4,71 +4,35 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  server: 218.237.185.234
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇩🇪 德国 (Germany) 02 (家宽) - xiaohe
-  server: 209.38.238.229
-  port: 20202
-  udp: true
-  type: vless
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  tls: true
-  servername: wzs.echo.net.eu.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=
-    headers:
-      Host: wzs.echo.net.eu.org
-- name: 🇸🇬 新加坡 (Singapore) 03 (家宽) - xiaohe
-  server: 152.70.253.44
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+  server: 74a598d0-tnhmo0-toktib-1hhyy.hk3.hyhuawei.com
   port: 443
   udp: true
-  type: vless
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  tls: true
-  servername: wzs.echo.net.eu.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HV1ZNVwcHTQsJSgAJVBQUG0dCQEwWAx4AAg4c
-    headers:
-      Host: wzs.echo.net.eu.org
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
-  server: 61.230.160.34
-  port: 24215
+  type: hysteria2
+  password: c594c7ec-8b10-11ef-a2b8-f23c9164ca5d
+  sni: 74a598d0-tnhmo0-toktib-1hhyy.hk3.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 02 (家宽) R46 - xiaohe
+  server: 4c2d5151.266nets.com
+  port: 12031
   udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: firefox
+  type: trojan
+  password: bad06c3525a6eaee1757b34776b83892
+  sni: ixigua.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇩🇪 德国 (Germany) 02 (家宽) - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 03 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 02 (家宽) R46 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇩🇪 德国 (Germany) 02 (家宽) - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 03 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 02 (家宽) R46 - xiaohe
 rules:
 - MATCH,PROXIES
