@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaohe
-  server: 172.105.39.124
-  port: 7002
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: 🇮🇳 印度 (India) 02 - xiaohe
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -23,6 +16,17 @@ proxies:
     short-id: 9980e0609b0d3891
   servername: www.apple.com
   client-fingerprint: firefox
+- name: 🇮🇳 印度 (India) 02 - xiaohe
+  server: 13.140.56.100
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 03 - xiaohe
   server: in.tronsg.com
   port: 443
@@ -42,19 +46,13 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: in-152.67.8.205-0184
 - name: 🇮🇳 印度 (India) 05 - xiaohe
-  server: 13.140.56.100
-  port: 14430
+  server: 139.84.166.47
+  port: 8388
   udp: true
-  type: vless
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
+  type: ss
+  cipher: aes-256-gcm
+  password: GEdoeeqLZtkJRgSa
 proxy-groups:
 - name: PROXIES
   type: select
