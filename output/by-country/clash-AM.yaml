@@ -5,13 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
-  server: 57.131.168.202
-  port: 53183
+  server: 88.218.95.88
+  port: 443
   udp: true
-  type: vmess
-  uuid: 2cb092f6-d62c-4e8c-a9f2-db9d46f42de7
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: b8df3f50-ffef-4c7e-9ef3-d5b156a47c02
+  tls: true
+  reality-opts:
+    public-key: rRg3JiP2006ldJYh2TDPAn7dtlXLcSHdgHgkGI_HZTE
+    short-id: 43adea0ec9f97a0a
+  servername: www.google.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
 proxy-groups:
 - name: PROXIES
   type: select
