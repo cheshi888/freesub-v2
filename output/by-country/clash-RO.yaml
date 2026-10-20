@@ -26,7 +26,7 @@ proxies:
     public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
     short-id: fe24f8a0a560056e
   servername: www.datadoghq.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
   server: de1.dedushka.top
   port: 443
@@ -34,16 +34,8 @@ proxies:
   type: trojan
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   sni: de1.dedushka.top
-  skip-cert-verify: false
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
-  server: 185.156.44.99
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: google.com
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   server: bogging-eyeteeth-fly.freesocks.work
   port: 443
   udp: true
@@ -59,7 +51,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,6 +60,5 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
 rules:
 - MATCH,PROXIES

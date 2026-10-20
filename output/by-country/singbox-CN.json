@@ -1,0 +1,42 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vmess",
+      "tag": "🇨🇳 CN 01 - xiaohe",
+      "server": "39.108.113.127",
+      "server_port": 10086,
+      "uuid": "7547daaa-1577-49b0-9519-bd1823add1a7",
+      "security": "auto",
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇨🇳 CN 01 - xiaohe"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇨🇳 CN 01 - xiaohe"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

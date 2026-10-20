@@ -16,36 +16,18 @@ proxies:
     public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
-  server: 66.235.200.145
-  port: 8443
-  udp: true
-  type: vmess
-  uuid: 6006c9a2-c0a2-4cda-80f2-405b0d790fc8
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: aus.frnhk.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /Sydney3
-    headers:
-      Host: aus.frnhk.xyz
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
 rules:
 - MATCH,PROXIES

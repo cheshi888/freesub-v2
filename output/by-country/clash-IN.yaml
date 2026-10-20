@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaohe
+  server: 13.140.56.100
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 02 - xiaohe
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -16,26 +27,7 @@ proxies:
     short-id: 9980e0609b0d3891
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 02 - xiaohe
-  server: 13.140.56.100
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 03 - xiaohe
-  server: in.tronsg.com
-  port: 443
-  udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: in.tronsg.com
-  skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 04 - xiaohe
   server: 152.67.8.205
   port: 80
   udp: true
@@ -46,13 +38,14 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇮🇳 印度 (India) 05 - xiaohe
-  server: 139.84.166.47
-  port: 8388
+- name: 🇮🇳 印度 (India) 04 - xiaohe
+  server: in.tronsg.com
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: GEdoeeqLZtkJRgSa
+  type: trojan
+  password: Trojan@82164024
+  sni: in.tronsg.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,7 +55,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - xiaohe
   - 🇮🇳 印度 (India) 03 - xiaohe
   - 🇮🇳 印度 (India) 04 - xiaohe
-  - 🇮🇳 印度 (India) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -72,6 +64,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - xiaohe
   - 🇮🇳 印度 (India) 03 - xiaohe
   - 🇮🇳 印度 (India) 04 - xiaohe
-  - 🇮🇳 印度 (India) 05 - xiaohe
 rules:
 - MATCH,PROXIES

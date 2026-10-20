@@ -4,15 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
-      "server": "109.206.241.10",
-      "server_port": 449,
-      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
+      "server": "93.89.220.37",
+      "server_port": 443,
+      "uuid": "185e2bb3-2934-48d0-bbd5-dd20d16e83ee",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "109.206.241.10",
-        "insecure": true
+        "server_name": "ibm.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g",
+          "short_id": "e88cb983f3c97528"
+        }
       }
     },
     {
