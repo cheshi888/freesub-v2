@@ -6,61 +6,60 @@ log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
   server: 185.135.86.175
-  port: 9068
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
-  server: 185.135.86.175
-  port: 9034
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: Yg4MbdXFQ9HFFVY6
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
-  server: 185.135.86.175
-  port: 9036
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: hbtvgUz5uNYyB3Rf
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
-  server: 185.135.86.175
-  port: 9033
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: UTJA57ypk2XKQpnm
-- name: 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
-  server: 185.135.86.175
   port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe
+- name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
+  server: 185.135.86.175
+  port: 9068
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: mwgRg9hRq3b4Qnwb
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
+  server: 185.135.86.175
+  port: 9017
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: HAVAdE3nXhqA5nHp
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
   server: 185.135.86.175
   port: 9082
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 45xgMgm386pjWjTx
-- name: 🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe
+- name: 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
+  server: 185.135.86.175
+  port: 9094
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: rpgbNnU9rDDU4aWZ
+- name: 🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe
   server: 185.135.86.175
   port: 9007
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: kSPmvwdFzGMMW5pY
-- name: 🇱🇻 拉脱维亚 (Latvia) 08 - xiaohe
-  server: lv1.dedushka.top
-  port: 443
+- name: 🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe
+  server: 185.135.86.175
+  port: 9036
   udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: lv1.dedushka.top
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-cfb
+  password: hbtvgUz5uNYyB3Rf
+- name: 🇱🇻 拉脱维亚 (Latvia) 08 - xiaohe
+  server: 185.135.86.175
+  port: 9034
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: Yg4MbdXFQ9HFFVY6
 - name: 🇱🇻 拉脱维亚 (Latvia) 09 - xiaohe
   server: 138.124.180.137
   port: 443
@@ -73,8 +72,16 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇱🇻 拉脱维亚 (Latvia) 10 - xiaohe
+  server: lv1.dedushka.top
+  port: 443
+  udp: true
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: lv1.dedushka.top
+  skip-cert-verify: true
+- name: 🇱🇻 拉脱维亚 (Latvia) 11 - xiaohe
   server: 195.123.213.28
   port: 443
   udp: true
@@ -87,7 +94,7 @@ proxies:
     short-id: 5c256336e3b673fa
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 11 - xiaohe
+- name: 🇱🇻 拉脱维亚 (Latvia) 12 - xiaohe
   server: 195.123.208.32
   port: 443
   udp: true
@@ -100,21 +107,13 @@ proxies:
     short-id: 757b9e1ef18e60f0
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 12 - xiaohe
-  server: us.mediabox12wrr.site
-  port: 8443
+- name: 🇱🇻 拉脱维亚 (Latvia) 13 - xiaohe
+  server: 185.135.86.175
+  port: 9033
   udp: true
-  type: vless
-  uuid: 1566a6e1-8181-41ef-894c-6d6d0d482470
-  tls: true
-  servername: us.mediabox12wrr.site
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /dfefc609ed724b3d8647ed29
-    headers:
-      Host: us.mediabox12wrr.site
+  type: ss
+  cipher: aes-256-cfb
+  password: UTJA57ypk2XKQpnm
 proxy-groups:
 - name: PROXIES
   type: select
@@ -132,6 +131,7 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 10 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 11 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 12 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -149,5 +149,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 10 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 11 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 12 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 13 - xiaohe
 rules:
 - MATCH,PROXIES

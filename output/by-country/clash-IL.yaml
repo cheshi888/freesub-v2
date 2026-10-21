@@ -16,18 +16,50 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
+  client-fingerprint: random
+- name: 🇮🇱 以色列 (Israel) 02 - xiaohe
+  server: 193.202.10.233
+  port: 8444
+  udp: true
+  type: vless
+  uuid: a346c521-7a7f-452b-9356-a4893feb5982
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  servername: github.com
   client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
+- name: 🇮🇱 以色列 (Israel) 03 - xiaohe
+  server: 94.103.2.23
+  port: 8459
+  udp: true
+  type: vless
+  uuid: a346c521-7a7f-452b-9356-a4893feb5982
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  servername: github.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇱 以色列 (Israel) 01 - xiaohe
+  - 🇮🇱 以色列 (Israel) 02 - xiaohe
+  - 🇮🇱 以色列 (Israel) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇱 以色列 (Israel) 01 - xiaohe
+  - 🇮🇱 以色列 (Israel) 02 - xiaohe
+  - 🇮🇱 以色列 (Israel) 03 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -5,30 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
-  server: 83.147.18.75
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
-    short-id: 7f1e29593aa94ad1
-  servername: www.bing.com
-  client-fingerprint: random
-- name: 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
   server: staging.lastilhame.monster
   port: 443
   udp: true
   type: vless
-  uuid: 594d466e-8ac3-4fda-b1d1-eeb817853518
+  uuid: de38389f-5651-4f2f-8276-5aabf3b861c9
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
-    short-id: 5a018643df03
-  servername: www.microsoft.com
+    short-id: 225e930cfd4d
+  servername: www.hollywoodreporter.com
   client-fingerprint: random
 proxy-groups:
 - name: PROXIES
@@ -36,13 +23,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
-  - 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
-  - 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
 rules:
 - MATCH,PROXIES
