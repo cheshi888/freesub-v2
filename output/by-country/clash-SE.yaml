@@ -5,33 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: se1.h1cloud.net
-  port: 26128
-  udp: true
-  type: vless
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
-  tls: true
-  reality-opts:
-    public-key: sACiHit5lNtPRK_eFP6jT8dMPUZ4kQRsfPj_LL5p7Uk
-    short-id: 13ac4d3bdadf1ea1
-  servername: www.icloud.com
-  client-fingerprint: safari
-  network: grpc
-  grpc-opts:
-    grpc-service-name: df50147201bf
-- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: se1.h1cloud.net
-  port: 26100
-  udp: true
-  type: vless
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
-  tls: true
-  reality-opts:
-    public-key: 1uuvuG2Jl_o6yoVvOYm3hEboArh2Znu7zCy4Tqj36TI
-    short-id: 8045087bda646f1b
-  servername: www.icloud.com
-  client-fingerprint: edge
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -42,20 +15,16 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  server: sub.merky.top
-  port: 443
+- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
+  server: 77.110.96.201
+  port: 36264
   udp: true
-  type: vless
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  tls: true
-  servername: sub.merky.top
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
+  type: hysteria2
+  password: Telegram-vpnjey
+  sni: se.vpnjey2.dpdns.org
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: Telegram@vpnjey
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,8 +32,6 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -72,7 +39,5 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
 rules:
 - MATCH,PROXIES
