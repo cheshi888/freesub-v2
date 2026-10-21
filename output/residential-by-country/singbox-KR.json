@@ -12,14 +12,31 @@
       "password": "qwerREWQ@@"
     },
     {
-      "type": "vmess",
+      "type": "shadowsocks",
       "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe",
+      "server": "49.254.204.133",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe",
+      "server": "115.161.136.145",
+      "server_port": 10099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "12242"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe",
       "server": "183.109.131.75",
       "server_port": 20086,
       "uuid": "b26c4803-0bca-467c-a245-c9a80bdd72ec",
       "security": "auto",
       "transport": {
-        "type": "ws"
+        "type": "ws",
+        "path": "/"
       }
     },
     {
@@ -28,7 +45,9 @@
       "outbounds": [
         "auto",
         "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe"
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe",
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe",
+        "🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe"
       ]
     },
     {
@@ -36,7 +55,9 @@
       "tag": "auto",
       "outbounds": [
         "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe"
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe",
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe",
+        "🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

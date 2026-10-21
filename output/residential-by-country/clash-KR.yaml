@@ -12,6 +12,20 @@ proxies:
   cipher: aes-256-cfb
   password: qwerREWQ@@
 - name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  server: 49.254.204.133
+  port: 1774
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
+  server: 115.161.136.145
+  port: 10099
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: '12242'
+- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
   server: 183.109.131.75
   port: 20086
   udp: true
@@ -29,6 +43,8 @@ proxy-groups:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -36,5 +52,7 @@ proxy-groups:
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

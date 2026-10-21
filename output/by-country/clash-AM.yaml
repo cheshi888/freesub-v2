@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe
-  server: 81.208.170.142
-  port: 1500
+- name: 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
+  server: 88.218.95.88
+  port: 443
   udp: true
   type: vless
-  uuid: e332f028-d343-5b44-8016-b3130f39e133
+  uuid: b8df3f50-ffef-4c7e-9ef3-d5b156a47c02
   tls: true
   reality-opts:
-    public-key: VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE
-    short-id: 775eb6408888248e
-  servername: www.ebay.com
+    public-key: rRg3JiP2006ldJYh2TDPAn7dtlXLcSHdgHgkGI_HZTE
+    short-id: 43adea0ec9f97a0a
+  servername: www.google.com
   client-fingerprint: chrome
   network: grpc
   grpc-opts:
-    grpc-service-name: ''
+    grpc-service-name: grpc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe
+  - 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe
+  - 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
 rules:
 - MATCH,PROXIES

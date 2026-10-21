@@ -6,20 +6,6 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
       "server": "se1.h1cloud.net",
       "server_port": 26128,
       "uuid": "68c3d665-b2b5-4ffb-9f37-9f3d8c47324d",
@@ -42,12 +28,67 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
+      "server": "se1.h1cloud.net",
+      "server_port": 26100,
+      "uuid": "68c3d665-b2b5-4ffb-9f37-9f3d8c47324d",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1uuvuG2Jl_o6yoVvOYm3hEboArh2Znu7zCy4Tqj36TI",
+          "short_id": "8045087bda646f1b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
+      "server": "sub.merky.top",
+      "server_port": 443,
+      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
+      "tls": {
+        "enabled": true,
+        "server_name": "sub.merky.top",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/merky-connect/de6/",
+        "headers": {
+          "Host": "sub.merky.top"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 02 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
+        "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
+        "🇸🇪 瑞典 (Sweden) 04 - xiaohe"
       ]
     },
     {
@@ -55,7 +96,9 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 02 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
+        "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
+        "🇸🇪 瑞典 (Sweden) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
