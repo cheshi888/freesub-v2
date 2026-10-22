@@ -14,26 +14,18 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
-- name: 🇧🇷 巴西 (Brazil) 02 - xiaohe
-  server: 216.128.168.190
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: owVdNnQcdPgthSyX
+  ports: 20000-30000,20000-20000
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇧🇷 巴西 (Brazil) 01 - xiaohe
-  - 🇧🇷 巴西 (Brazil) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 巴西 (Brazil) 01 - xiaohe
-  - 🇧🇷 巴西 (Brazil) 02 - xiaohe
 rules:
 - MATCH,PROXIES

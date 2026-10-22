@@ -5,16 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
-  server: hy2-new.aspidnet.xyz
+  server: 162.249.125.133
   port: 443
   udp: true
   type: hysteria2
   password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
   sni: hy2-new.aspidnet.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
+  server: 152.237.230.30
+  port: 443
+  udp: true
+  type: vless
+  uuid: e3026ffb-cde6-4cfe-b4b7-f76d5264e969
+  tls: true
+  reality-opts:
+    public-key: 9Wh7M-tz9D_1WBaQhz2wIJian960Ffcx66NH8HAidDI
+    short-id: 61a0eb582ed4f2b5
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
   server: de1.dedushka.top
   port: 443
   udp: true
@@ -22,19 +34,6 @@ proxies:
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   sni: de1.dedushka.top
   skip-cert-verify: false
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
-  server: 82.117.255.174
-  port: 443
-  udp: true
-  type: vless
-  uuid: 679439c5-28f2-485e-af5f-60a5fcd9c36c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0QDBHaCRO2dPeeSVy3B3R_U12ZOvbvWl1JTFW_ZcpD0
-    short-id: 31e91d43e553bf32
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   server: it1.dedushka.top
   port: 443
@@ -44,20 +43,20 @@ proxies:
   sni: it1.dedushka.top
   skip-cert-verify: false
 - name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
-  server: 185.156.44.99
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: 185.156.44.99
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
   server: bogging-eyeteeth-fly.freesocks.work
   port: 443
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: QFWzCw2uX9B9i6qAYeFBIE
+- name: 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
+  server: 185.156.44.99
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: css.rbxcdn.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
