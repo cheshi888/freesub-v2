@@ -5,22 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe",
-      "server": "185.105.108.176",
-      "server_port": 443,
-      "uuid": "689a62e4-37e7-41de-9e6a-f2a56368c9e2",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
+      "server": "61.230.160.34",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
         "enabled": true,
-        "server_name": "www.google.co.uk",
+        "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "U9O1sbuPwoTowF3Ka7CIgUZlRjokulxSwsYohEGCLA8",
-          "short_id": "0d87fec579"
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
         }
       }
     },
@@ -29,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

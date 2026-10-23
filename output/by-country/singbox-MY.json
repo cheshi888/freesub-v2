@@ -1,0 +1,82 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
+      "server": "111.90.143.184",
+      "server_port": 61111,
+      "uuid": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jT5prLDhvJ86zZVz5pDX907oQbeZ0Hyb_VcDSiJxQQU",
+          "short_id": "1378f725da558887"
+        }
+      },
+      "transport": {
+        "type": "grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 02 - xiaohe",
+      "server": "188.114.98.0",
+      "server_port": 443,
+      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.cintaku.qzz.io",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vlessws",
+        "headers": {
+          "Host": "vpn.cintaku.qzz.io"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
+        "🇲🇾 马来西亚 (Malaysia) 02 - xiaohe"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
+        "🇲🇾 马来西亚 (Malaysia) 02 - xiaohe"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

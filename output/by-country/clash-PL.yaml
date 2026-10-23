@@ -5,14 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: 31.133.0.182
-  port: 443
+  server: 217.30.10.44
+  port: 9042
   udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: pl1.dedushka.top
-  skip-cert-verify: false
+  type: ss
+  cipher: aes-256-cfb
+  password: S7KwUu7yBy58S3Ga
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  server: 78.17.128.153
+  port: 35076
+  udp: true
+  type: hysteria2
+  password: b4c8ee9caa74b7ba0a61
+  sni: scrap.halyvanedorogo.ru
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
   server: 82.118.22.161
   port: 443
   udp: true
@@ -24,36 +31,7 @@ proxies:
     public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
     short-id: fa3ea655619a3e78
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: 31.133.0.186
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: pl2.dedushka.top
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  server: 54.37.131.126
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
-  server: 78.17.128.153
-  port: 35076
-  udp: true
-  type: hysteria2
-  password: b4c8ee9caa74b7ba0a61
-  sni: scrap.halyvanedorogo.ru
-  skip-cert-verify: true
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,8 +40,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
-  - 🇵🇱 波兰 (Poland) 04 - xiaohe
-  - 🇵🇱 波兰 (Poland) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -72,7 +48,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
-  - 🇵🇱 波兰 (Poland) 04 - xiaohe
-  - 🇵🇱 波兰 (Poland) 05 - xiaohe
 rules:
 - MATCH,PROXIES

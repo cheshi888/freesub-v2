@@ -6,13 +6,13 @@
     {
       "type": "hysteria2",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
-      "server": "hy2.aspidnet.xyz",
+      "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
       "tls": {
         "enabled": true,
         "server_name": "hy2.aspidnet.xyz",
-        "insecure": false
+        "insecure": true
       },
       "obfs": {
         "type": "salamander",
@@ -27,7 +27,10 @@
       "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
       "transport": {
         "type": "ws",
-        "path": "/vless"
+        "path": "/vless",
+        "headers": {
+          "Host": "95.174.68.188"
+        }
       }
     },
     {
@@ -45,13 +48,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - xiaohe",
+      "server": "84.235.244.108",
+      "server_port": 22573,
+      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "uae.unixzone.us"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
         "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 03 - xiaohe"
+        "🇦🇪 阿联酋 (UAE) 03 - xiaohe",
+        "🇦🇪 阿联酋 (UAE) 04 - xiaohe"
       ]
     },
     {
@@ -60,7 +77,8 @@
       "outbounds": [
         "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
         "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 03 - xiaohe"
+        "🇦🇪 阿联酋 (UAE) 03 - xiaohe",
+        "🇦🇪 阿联酋 (UAE) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
