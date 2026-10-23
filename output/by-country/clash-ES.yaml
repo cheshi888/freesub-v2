@@ -12,18 +12,12 @@ proxies:
   cipher: aes-128-gcm
   password: 882dd5b0e0f2cf05bb5de75f59bbe953
 - name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
-  server: 83.147.18.3
-  port: 443
+  server: 193.148.19.212
+  port: 12796
   udp: true
-  type: vless
-  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
-    short-id: fd8cf7e1173f0edb
-  servername: www.cloudflare.com
-  client-fingerprint: random
+  type: ss
+  cipher: aes-128-gcm
+  password: 905470106f6c49d68e90a5c55c020190
 - name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
   server: 46.28.71.247
   port: 443
@@ -49,7 +43,7 @@ proxies:
     public-key: 4eE3K8Eac-ELze-LwRyJolqmhPqgCVqwQM1DKu6i0Ts
     short-id: e93d46ee3735069e
   servername: gateway.icloud.com
-  client-fingerprint: chrome
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
