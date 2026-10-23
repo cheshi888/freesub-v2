@@ -6,26 +6,14 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
-      "server": "media.vik.lalibobi.online",
-      "server_port": 443,
-      "uuid": "21ffcccd-8fbe-43fb-9dd1-24452fdfa8ad",
-      "tls": {
-        "enabled": true,
-        "server_name": "media.vik.lalibobi.online",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
       "transport": {
         "type": "ws",
-        "path": "/live/showroom",
+        "path": "/vless",
         "headers": {
-          "Host": "media.vik.lalibobi.online"
+          "Host": "5.178.109.174"
         }
       }
     },
@@ -48,15 +36,21 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "server": "94.143.231.146",
+      "server_port": 443,
+      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
+      "tls": {
+        "enabled": true,
+        "server_name": "sub.merky.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
+        "path": "/merky-connect/de6/"
       }
     },
     {

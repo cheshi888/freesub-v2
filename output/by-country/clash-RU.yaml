@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 113.30.154.239
-  port: 8443
-  udp: true
-  type: vless
-  uuid: dc4512bd-44d8-4211-9559-f2e165bb34b0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: apple.com
-  client-fingerprint: qq
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   server: 45.128.78.178
   port: 443
   udp: true
@@ -28,7 +16,26 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: ozon.ru
   client-fingerprint: ''
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  server: 113.30.154.239
+  port: 8443
+  udp: true
+  type: vless
+  uuid: dc4512bd-44d8-4211-9559-f2e165bb34b0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: apple.com
+  client-fingerprint: qq
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: nQeEoXC5Yl5PZnPLvKUpFTU9cyQcNG902zpibWkwGbo=
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   server: 193.233.253.180
   port: 8444
   udp: true
@@ -42,20 +49,19 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 195.58.49.34
-  port: 18443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  server: 130.49.189.158
-  port: 43558
+  server: 5.42.99.64
+  port: 8443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: nQeEoXC5Yl5PZnPLvKUpFTU9cyQcNG902zpibWkwGbo=
+  type: vless
+  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
+    short-id: 3cbc3d737fb9c4af
+  servername: du-rov.secureservice.top
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   server: 46.254.17.88
   port: 30065
@@ -69,7 +75,19 @@ proxies:
   servername: a3.eosapp.net
   client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  server: 45.91.52.28
+  server: 45.12.75.242
+  port: 26424
+  udp: true
+  type: vless
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  tls: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
+  server: 9f6635t.msk1.h1clayd.click
   port: 443
   udp: true
   type: vless
@@ -79,7 +97,7 @@ proxies:
     public-key: aovrqfVIxA_POvJorIg05wBQJM9nZ859c0fsNL7v9RM
     short-id: 0ea5f9d7955c3971
   servername: 9f6635t.msk1.h1clayd.click
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,6 +110,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -104,5 +123,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
 rules:
 - MATCH,PROXIES

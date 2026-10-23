@@ -5,20 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: media.vik.lalibobi.online
-  port: 443
+  server: 5.178.109.174
+  port: 14430
   udp: true
   type: vless
-  uuid: 21ffcccd-8fbe-43fb-9dd1-24452fdfa8ad
-  tls: true
-  servername: media.vik.lalibobi.online
-  skip-cert-verify: false
-  client-fingerprint: firefox
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
   network: ws
   ws-opts:
-    path: /live/showroom
+    path: /vless
     headers:
-      Host: media.vik.lalibobi.online
+      Host: 5.178.109.174
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   server: 77.110.96.201
   port: 36264
@@ -30,16 +26,18 @@ proxies:
   obfs: salamander
   obfs-password: Telegram@vpnjey
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: 5.178.109.174
-  port: 14430
+  server: 94.143.231.146
+  port: 443
   udp: true
   type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  tls: true
+  servername: sub.merky.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
+    path: /merky-connect/de6/
 proxy-groups:
 - name: PROXIES
   type: select
