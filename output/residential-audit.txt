@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-10-23 16:29:39 UTC
+生成时间: 2026-10-23 21:09:51 UTC
 ==============================================================================
 
 说明:
@@ -15,9 +15,19 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 1
+本轮家宽节点数: 3
 
-[1] TW  严格家宽  置信度 82
+[1] KR  严格家宽  置信度 82
+     exit_ip : 218.237.185.234
+     server  : 218.237.185.234:4652  (shadowsocks)
+     ASN     : AS9318 SK Broadband Co Ltd
+     ISP     : SK Broadband Co Ltd
+     ORG     : broadNnet
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=SK Broadband Co Ltd asn=AS9318 SK Broadband Co Ltd
+     fraud   : 2  (-1 = 未取到评分)
+
+[2] TW  严格家宽  置信度 82
      exit_ip : 61.230.160.34
      server  : 61.230.160.34:24215  (vless)
      ASN     : AS3462 Data Communication Business Group
@@ -26,3 +36,13 @@
      ip-api  : hosting=False proxy=False mobile=False reverse=-
      ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
      fraud   : 0  (-1 = 未取到评分)
+
+[3] IN  严格家宽  置信度 82
+     exit_ip : 122.176.216.52
+     server  : 122.176.216.52:443  (vless)
+     ASN     : AS24560 Bharti Airtel Ltd., Telemedia Services
+     ISP     : Bharti Airtel
+     ORG     : Bharti Telenet Ltd.
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=BHARTI TELENET LTD. NEW DELHI asn=AS24560 Bharti Airtel Limited
+     fraud   : 1  (-1 = 未取到评分)

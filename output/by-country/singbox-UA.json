@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
+      "server": "staging.lastilhame.monster",
+      "server_port": 49917,
+      "method": "chacha20-ietf-poly1305",
+      "password": "G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇦 乌克兰 (Ukraine) 02 - xiaohe",
       "server": "83.147.18.75",
       "server_port": 443,
       "uuid": "5de0c218-0138-45d8-94d2-c2c3f37a1a6d",
@@ -15,7 +23,7 @@
         "server_name": "www.bing.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -25,51 +33,23 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 02 - xiaohe",
-      "server": "staging.lastilhame.monster",
-      "server_port": 49917,
-      "method": "chacha20-ietf-poly1305",
-      "password": "G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP"
-    },
-    {
       "type": "vless",
       "tag": "🇺🇦 乌克兰 (Ukraine) 03 - xiaohe",
-      "server": "netx.smrtai.top",
+      "server": "104.253.216.227",
       "server_port": 443,
-      "uuid": "d8b58872-cc25-4bb2-badb-b86399c075fa",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk",
-          "short_id": "d8b58872"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 04 - xiaohe",
-      "server": "staging.lastilhame.monster",
-      "server_port": 443,
-      "uuid": "2ba7f500-017b-4891-87a0-e4e62a4ad52d",
+      "uuid": "de38389f-5651-4f2f-8276-5aabf3b861c9",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.microsoft.com",
+        "server_name": "www.hollywoodreporter.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
           "public_key": "FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg",
-          "short_id": "9409f73c2fd7"
+          "short_id": "225e930cfd4d"
         }
       }
     },
@@ -80,8 +60,7 @@
         "auto",
         "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
         "🇺🇦 乌克兰 (Ukraine) 02 - xiaohe",
-        "🇺🇦 乌克兰 (Ukraine) 03 - xiaohe",
-        "🇺🇦 乌克兰 (Ukraine) 04 - xiaohe"
+        "🇺🇦 乌克兰 (Ukraine) 03 - xiaohe"
       ]
     },
     {
@@ -90,8 +69,7 @@
       "outbounds": [
         "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
         "🇺🇦 乌克兰 (Ukraine) 02 - xiaohe",
-        "🇺🇦 乌克兰 (Ukraine) 03 - xiaohe",
-        "🇺🇦 乌克兰 (Ukraine) 04 - xiaohe"
+        "🇺🇦 乌克兰 (Ukraine) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

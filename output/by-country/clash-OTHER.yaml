@@ -5,56 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.17.71.206
-  port: 8443
+  server: 104.21.7.133
+  port: 80
   udp: true
-  type: vless
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  tls: true
-  servername: free.sahanwickramasinghe.me
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🌐 其他地区 (Other) 02 - xiaohe
-  server: 104.21.65.43
-  port: 2052
-  udp: true
-  type: vless
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
+    path: /ws
     headers: &id001
-      Host: uwu.blueknightnet.qzz.io
-- name: 🌐 其他地区 (Other) 03 - xiaohe
-  server: 104.21.65.43
-  port: 2052
-  udp: true
-  type: vless
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers: *id001
-- name: 🌐 其他地区 (Other) 04 - xiaohe
-  server: 172.67.187.145
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /ws
-    headers: &id002
       Host: vmess.lbw666.dpdns.org
-- name: 🌐 其他地区 (Other) 05 - xiaohe
-  server: 172.67.187.145
+- name: 🌐 其他地区 (Other) 02 - xiaohe
+  server: 104.21.7.133
   port: 80
   udp: true
   type: vmess
@@ -64,7 +28,7 @@ proxies:
   network: ws
   ws-opts:
     path: /ws
-    headers: *id002
+    headers: *id001
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,9 +36,6 @@ proxy-groups:
   - AUTO
   - 🌐 其他地区 (Other) 01 - xiaohe
   - 🌐 其他地区 (Other) 02 - xiaohe
-  - 🌐 其他地区 (Other) 03 - xiaohe
-  - 🌐 其他地区 (Other) 04 - xiaohe
-  - 🌐 其他地区 (Other) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -82,8 +43,5 @@ proxy-groups:
   proxies:
   - 🌐 其他地区 (Other) 01 - xiaohe
   - 🌐 其他地区 (Other) 02 - xiaohe
-  - 🌐 其他地区 (Other) 03 - xiaohe
-  - 🌐 其他地区 (Other) 04 - xiaohe
-  - 🌐 其他地区 (Other) 05 - xiaohe
 rules:
 - MATCH,PROXIES
