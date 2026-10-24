@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: ee1.mycloud1.org
+  server: 194.26.141.223
   port: 443
   udp: true
   type: vless
@@ -17,49 +17,17 @@ proxies:
     short-id: afee962d
   servername: ee1.mycloud1.org
   client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  server: 79.98.37.106
-  port: 443
-  udp: true
-  type: vless
-  uuid: 846cedee-2a52-0001-a0b9-11850ead6a8b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: USSepsAbvP9LpByHLV2xD2H8dq8GAJ6G0fINEqD4PAw
-  servername: ee-central.v8x2b.lol
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  server: eu3.998998.best
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: server40.9966338.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /aiaiai
-    headers:
-      Host: server40.9966338.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
 rules:
 - MATCH,PROXIES
