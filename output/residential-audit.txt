@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-10-23 21:09:51 UTC
+生成时间: 2026-10-24 02:58:16 UTC
 ==============================================================================
 
 说明:
@@ -15,9 +15,19 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 3
+本轮家宽节点数: 5
 
 [1] KR  严格家宽  置信度 82
+     exit_ip : 49.254.204.133
+     server  : 49.254.204.133:1774  (shadowsocks)
+     ASN     : AS4766 Korea Telecom
+     ISP     : Korea Telecom
+     ORG     : Haionnet
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=HAIonNet asn=AS4766 Korea Telecom
+     fraud   : 0  (-1 = 未取到评分)
+
+[2] KR  严格家宽  置信度 82
      exit_ip : 218.237.185.234
      server  : 218.237.185.234:4652  (shadowsocks)
      ASN     : AS9318 SK Broadband Co Ltd
@@ -27,7 +37,7 @@
      ipapi.is: company=SK Broadband Co Ltd asn=AS9318 SK Broadband Co Ltd
      fraud   : 2  (-1 = 未取到评分)
 
-[2] TW  严格家宽  置信度 82
+[3] TW  严格家宽  置信度 82
      exit_ip : 61.230.160.34
      server  : 61.230.160.34:24215  (vless)
      ASN     : AS3462 Data Communication Business Group
@@ -37,12 +47,22 @@
      ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
      fraud   : 0  (-1 = 未取到评分)
 
-[3] IN  严格家宽  置信度 82
-     exit_ip : 122.176.216.52
-     server  : 122.176.216.52:443  (vless)
-     ASN     : AS24560 Bharti Airtel Ltd., Telemedia Services
-     ISP     : Bharti Airtel
-     ORG     : Bharti Telenet Ltd.
+[4] DE  严格家宽  置信度 82
+     exit_ip : 134.3.221.25
+     server  : 209.38.238.229:20202  (vless)
+     ASN     : AS3209 Vodafone GmbH
+     ISP     : Vodafone
+     ORG     : Vodafone BW GmbH
      ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=BHARTI TELENET LTD. NEW DELHI asn=AS24560 Bharti Airtel Limited
-     fraud   : 1  (-1 = 未取到评分)
+     ipapi.is: company=Vodafone BW GmbH asn=AS3209 Vodafone GmbH
+     fraud   : 4  (-1 = 未取到评分)
+
+[5] SG  严格家宽  置信度 70
+     exit_ip : 43.230.99.117
+     server  : wzs.echo.net.eu.org:443  (vless)
+     ASN     : AS18106 Viewqwest Pte Ltd
+     ISP     : ViewQwest Sdn. Bhd
+     ORG     : Viewqwest Pte Ltd
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Viewqwest Pte Ltd asn=AS18106 Viewqwest Pte Ltd
+     fraud   : 0  (-1 = 未取到评分)
