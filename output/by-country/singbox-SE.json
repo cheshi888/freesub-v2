@@ -6,7 +6,7 @@
     {
       "type": "hysteria2",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
-      "server": "promo.betust.net",
+      "server": "50.7.38.243",
       "server_port": 443,
       "password": "d4ca9415f0eac7897472e1e5b86d2e96",
       "tls": {
@@ -16,18 +16,31 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
+        "🇸🇪 瑞典 (Sweden) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
+        "🇸🇪 瑞典 (Sweden) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

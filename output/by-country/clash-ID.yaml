@@ -4,25 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
-  server: 47.250.84.25
-  port: 443
+- name: 🇮🇩 印尼 (Indonesia) 01 - xiaohe
+  server: 202.155.14.134
+  port: 55555
   udp: true
-  type: trojan
-  password: 5931134d1cde66bf83a54acdfebe7ab2
-  sni: 47.250.84.25
+  type: hysteria2
+  password: 78585441-c8b3-40fb-9b94-15edd312fdcf
+  sni: www.bing.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
+  - 🇮🇩 印尼 (Indonesia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
+  - 🇮🇩 印尼 (Indonesia) 01 - xiaohe
 rules:
 - MATCH,PROXIES

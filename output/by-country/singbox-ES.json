@@ -4,29 +4,48 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 01 - xiaohe",
-      "server": "46.28.71.247",
-      "server_port": 443,
-      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
-          "short_id": "0dfc23fe80778c00"
-        }
-      }
+      "server": "5.188.181.201",
+      "server_port": 9025,
+      "method": "aes-256-cfb",
+      "password": "XPtzA9sCug3SPR4c"
     },
     {
       "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 02 - xiaohe",
+      "server": "212.227.235.66",
+      "server_port": 2053,
+      "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk",
+          "short_id": "29e8dcd2b37aaa7f"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇪🇸 西班牙 (Spain) 03 - xiaohe",
+      "server": "es1.xiaoliyu.cyou",
+      "server_port": 18333,
+      "password": "672445a0-a669-4978-8eb1-cfa5e6cdead4",
+      "tls": {
+        "enabled": true,
+        "server_name": "es1.xiaoliyu.cyou",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 04 - xiaohe",
       "server": "193.238.154.78",
       "server_port": 443,
       "uuid": "897d47f8-4dd5-42a1-bcd0-bef19caff55a",
@@ -46,32 +65,14 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 03 - xiaohe",
-      "server": "142.91.101.39",
-      "server_port": 627,
-      "uuid": "50f7f0fe-32be-4d5a-9432-095160ff7775",
-      "tls": {
-        "enabled": true,
-        "server_name": "7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇪🇸 西班牙 (Spain) 01 - xiaohe",
         "🇪🇸 西班牙 (Spain) 02 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 03 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 03 - xiaohe",
+        "🇪🇸 西班牙 (Spain) 04 - xiaohe"
       ]
     },
     {
@@ -80,7 +81,8 @@
       "outbounds": [
         "🇪🇸 西班牙 (Spain) 01 - xiaohe",
         "🇪🇸 西班牙 (Spain) 02 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 03 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 03 - xiaohe",
+        "🇪🇸 西班牙 (Spain) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

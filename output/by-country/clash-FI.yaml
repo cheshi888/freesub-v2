@@ -5,13 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 2.26.3.75
-  port: 443
+  server: 95.216.27.15
+  port: 2053
   udp: true
-  type: hysteria2
-  password: d5530551-5e9a-4ac5-8539-cee87e38d9e2
-  sni: fi.67chat.ru
-  skip-cert-verify: false
+  type: vless
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  tls: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 185.119.81.7
   port: 443
@@ -24,41 +28,28 @@ proxies:
     public-key: 9BUlinkTIxNgD2Em4KShtEbXOjBKvz2mDwT1VqoeR1k
     short-id: 80c4e0bda641d6c9
   servername: ht689zw45oor.cloudydigital.net
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 95.216.27.15
-  port: 2053
+  server: 2.26.3.75
+  port: 443
   udp: true
-  type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  tls: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: firefox
+  type: hysteria2
+  password: d5530551-5e9a-4ac5-8539-cee87e38d9e2
+  sni: fi.67chat.ru
+  skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 193.188.21.253
+  server: 45.144.234.157
   port: 14430
   udp: true
   type: vless
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  network: ws
-  ws-opts:
-    path: /vless
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: 213.176.92.168
-  port: 14430
-  udp: true
-  type: vless
-  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   network: ws
   ws-opts:
     path: /vless
     headers:
-      Host: 213.176.92.168
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  server: hw3.divarkhaghazi.com
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  server: hw3.divarkhaghazi.com.
   port: 465
   udp: true
   type: vless
@@ -72,43 +63,16 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
-  server: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  server: 193.188.21.253
   port: 14430
   udp: true
   type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
-  server: 213.176.92.168
-  port: 10444
-  udp: true
-  type: vless
-  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: video.yandex.ru
-  client-fingerprint: safari
-- name: 🇫🇮 芬兰 (Finland) 09 - xiaohe
-  server: 177.3.214.156
-  port: 443
-  udp: true
-  type: vless
-  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 6lZ5dkQN2sH9tYca374W4N1n9eCanD_F2FfghcksKSo
-  servername: finlandlanzarotte.live
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 10 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
   server: 193.188.21.253
   port: 10444
   udp: true
@@ -121,6 +85,42 @@ proxies:
     short-id: 8debcf36f1cc69ff
   servername: video.yandex.ru
   client-fingerprint: safari
+- name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
+  server: 213.176.92.168
+  port: 10444
+  udp: true
+  type: vless
+  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: video.yandex.ru
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 09 - xiaohe
+  server: 213.176.92.168
+  port: 14430
+  udp: true
+  type: vless
+  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 213.176.92.168
+- name: 🇫🇮 芬兰 (Finland) 10 - xiaohe
+  server: 177.3.214.156
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 6lZ5dkQN2sH9tYca374W4N1n9eCanD_F2FfghcksKSo
+  servername: finlandlanzarotte.live
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
