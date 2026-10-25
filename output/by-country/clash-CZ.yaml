@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 67.159.18.34
-  port: 17001
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: I6o9NnialYLMEjVt28RF4dpjmr9wMvNL
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
   server: 195.123.245.241
   port: 443
   udp: true
@@ -23,19 +16,19 @@ proxies:
     public-key: hlY5ce1UsVIgE46y5PlEZhUsSaXUnCtoDLLaGrhInjw
     short-id: 23d0950d60bc0d5b
   servername: gateway.icloud.com
-  client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
+  client-fingerprint: firefox
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
   server: 193.124.17.190
   port: 443
   udp: true
   type: vless
-  uuid: ed042cf7-efe0-49bd-848b-8d7e655111ff
+  uuid: 68cf8d29-5aa0-44b3-88a9-f1a576b6e84c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: 1036b2383b72
-  servername: www.mozilla.org
+    short-id: 73a9e631a09b
+  servername: www.microsoft.com
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -44,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -25,77 +25,8 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
-      "server": "152.67.115.203",
-      "server_port": 443,
-      "password": "633bc3be486b646190661ac2387c150a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "850a3fb1cd33a28f12d837578ae1a2e7"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
-      "server": "158.178.137.129",
-      "server_port": 20000,
-      "password": "b42d90fa667942aebc734d60",
-      "tls": {
-        "enabled": true,
-        "server_name": "rmgyvpn.rest",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "b42d90fa667942aebc734d60"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
-      "server": "137.23.3.91",
-      "server_port": 20000,
-      "password": "a34f3990b69f44bfa0d32385",
-      "tls": {
-        "enabled": true,
-        "server_name": "rmgyvpn.rest",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "a34f3990b69f44bfa0d32385"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
-      "server": "forwarded.frnhk.xyz",
-      "server_port": 2083,
-      "uuid": "f5f0babe-aea2-4f07-a1fc-3c9820253f49",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.uni-frankfurt.de",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zDMINFaRxcXKIpCvVD7UW7PJ5ZSYb_DQ3hkGobU07Ro",
-          "short_id": "43ec82"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 06 - xiaohe",
       "server": "51.161.204.244",
       "server_port": 443,
       "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
@@ -115,6 +46,41 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
+      "server": "158.178.137.129",
+      "password": "b42d90fa667942aebc734d60",
+      "tls": {
+        "enabled": true,
+        "server_name": "rmgyvpn.rest",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "b42d90fa667942aebc734d60"
+      },
+      "server_ports": [
+        "20000:30000",
+        "20000:20000"
+      ]
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
+      "server": "152.67.115.203",
+      "server_port": 443,
+      "password": "633bc3be486b646190661ac2387c150a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "850a3fb1cd33a28f12d837578ae1a2e7"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -122,9 +88,7 @@
         "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 06 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 04 - xiaohe"
       ]
     },
     {
@@ -134,9 +98,7 @@
         "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 06 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -11,24 +11,31 @@ proxies:
   type: vless
   uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: 82.118.22.161
+  server: 54.37.131.126
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
+  server: 150.251.113.34
   port: 443
   udp: true
   type: vless
-  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
+  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
-    short-id: fa3ea655619a3e78
+    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
+    short-id: 150a627d15154cf2
   servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: edge10.cyrionflare.com
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 04 - xiaohe
   server: site.teslamotor.site
   port: 20001
@@ -48,6 +55,26 @@ proxies:
   grpc-opts:
     grpc-service-name: beru-pl
 - name: 🇵🇱 波兰 (Poland) 06 - xiaohe
+  server: pl1.h1cloud.net
+  port: 27591
+  udp: true
+  type: vless
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  tls: true
+  reality-opts:
+    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
+    short-id: 6c5c7900406a1ae7
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
+  server: scrap.halyvanedorogo.ru
+  port: 35076
+  udp: true
+  type: hysteria2
+  password: b4c8ee9caa74b7ba0a61
+  sni: scrap.halyvanedorogo.ru
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 08 - xiaohe
   server: mix2.998998.best
   port: 443
   udp: true
@@ -63,6 +90,31 @@ proxies:
     path: /rthiugoyretdsuigg
     headers:
       Host: server10.9966338.xyz
+- name: 🇵🇱 波兰 (Poland) 09 - xiaohe
+  server: 45.12.63.81
+  port: 443
+  udp: true
+  type: vless
+  uuid: 32daf25d-9ffa-4f43-b6a3-2ebc21014681
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MN2XIVlIusdWaGwyyrGZ7Ti3jzqjDlpMmc12WcrV1nU
+  servername: www.vk.ru
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 10 - xiaohe
+  server: 82.118.22.161
+  port: 443
+  udp: true
+  type: vless
+  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
+    short-id: fa3ea655619a3e78
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,6 +126,10 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
   - 🇵🇱 波兰 (Poland) 05 - xiaohe
   - 🇵🇱 波兰 (Poland) 06 - xiaohe
+  - 🇵🇱 波兰 (Poland) 07 - xiaohe
+  - 🇵🇱 波兰 (Poland) 08 - xiaohe
+  - 🇵🇱 波兰 (Poland) 09 - xiaohe
+  - 🇵🇱 波兰 (Poland) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -85,5 +141,9 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
   - 🇵🇱 波兰 (Poland) 05 - xiaohe
   - 🇵🇱 波兰 (Poland) 06 - xiaohe
+  - 🇵🇱 波兰 (Poland) 07 - xiaohe
+  - 🇵🇱 波兰 (Poland) 08 - xiaohe
+  - 🇵🇱 波兰 (Poland) 09 - xiaohe
+  - 🇵🇱 波兰 (Poland) 10 - xiaohe
 rules:
 - MATCH,PROXIES

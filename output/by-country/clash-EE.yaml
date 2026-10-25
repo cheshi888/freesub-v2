@@ -5,6 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  server: 79.98.37.106
+  port: 443
+  udp: true
+  type: vless
+  uuid: 846cedee-2a52-0001-a0b9-11850ead6a8b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: USSepsAbvP9LpByHLV2xD2H8dq8GAJ6G0fINEqD4PAw
+  servername: ee-central.v8x2b.lol
+  client-fingerprint: edge
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: 194.26.141.223
   port: 443
   udp: true
@@ -16,18 +28,6 @@ proxies:
     public-key: Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E
     short-id: afee962d
   servername: ee1.mycloud1.org
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  server: ee-central.v8x2b.lol
-  port: 443
-  udp: true
-  type: vless
-  uuid: 846cedee-2a52-0001-a0b9-11850ead6a8b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: USSepsAbvP9LpByHLV2xD2H8dq8GAJ6G0fINEqD4PAw
-  servername: ee-central.v8x2b.lol
   client-fingerprint: firefox
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   server: 93.89.220.37

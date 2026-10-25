@@ -5,37 +5,36 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
-  server: 83.147.18.75
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
-    short-id: 7f1e29593aa94ad1
-  servername: www.bing.com
-  client-fingerprint: qq
-- name: 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
   server: staging.lastilhame.monster
   port: 49917
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP
+- name: 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
+  server: netx.smrtai.top
+  port: 443
+  udp: true
+  type: vless
+  uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
+  tls: true
+  reality-opts:
+    public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
+    short-id: d8b58872
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇺🇦 乌克兰 (Ukraine) 03 - xiaohe
   server: staging.lastilhame.monster
   port: 443
   udp: true
   type: vless
-  uuid: 2f6e2b17-4d5e-4a12-8979-f53fdd347580
+  uuid: 2ba7f500-017b-4891-87a0-e4e62a4ad52d
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
-    short-id: 5c8a8e6c615b
-  servername: www.mozilla.org
+    short-id: 9409f73c2fd7
+  servername: www.microsoft.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES

@@ -4,8 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
+      "server": "tjyg.m2k699.com",
+      "server_port": 24999,
+      "password": "29086912-33e4-4e06-ba2b-60f1a195864f",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.itunes.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe",
       "server": "165.154.63.139",
       "server_port": 443,
       "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
@@ -26,7 +38,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - xiaohe",
       "server": "202.146.222.174",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -38,19 +50,19 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - xiaohe",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - xiaohe",
       "server": "202.146.222.89",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2fclashv8%f0%9f%87%a8%f0%9f%87%b3",
+        "server_name": "202.146.222.89",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - xiaohe",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - xiaohe",
       "server": "151.242.85.236",
       "server_port": 443,
       "uuid": "7aec627e-a258-4ded-9fd9-fbd7c024f950",
@@ -70,137 +82,29 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - xiaohe",
-      "server": "202.146.222.29",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https://t.me/wangcai2",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 06 - xiaohe",
-      "server": "47.243.65.243",
+      "server": "82.29.36.250",
       "server_port": 443,
-      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
-      "security": "auto",
+      "uuid": "41a7af38-0bb1-4493-aa8d-634af0c2548b",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "lcv8v9l7oyamxxfz.v.3dns.vip",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess",
-        "headers": {
-          "Host": "lcv8v9l7oyamxxfz.v.3dns.vip"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - xiaohe",
-      "server": "47.76.57.83",
-      "server_port": 443,
-      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "VAH4URdZL3jDX5r2.v.3dns.vip",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess",
-        "headers": {
-          "Host": "VAH4URdZL3jDX5r2.v.3dns.vip"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - xiaohe",
-      "server": "8.210.24.181",
-      "server_port": 443,
-      "uuid": "f23bb427c1f94373876c2f43e9f790f3",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "6jdvarazgu3qqr6q.v.3dns.vip",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess",
-        "headers": {
-          "Host": "6jdvarazgu3qqr6q.v.3dns.vip"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - xiaohe",
-      "server": "ex1ogt73nzpqkac2.v.3dns.vip",
-      "server_port": 443,
-      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "ex1ogt73nzpqkac2.v.3dns.vip",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 10 - xiaohe",
-      "server": "6jdvarazgu3qqr6q.v.3dns.vip",
-      "server_port": 443,
-      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "6jdvarazgu3qqr6q.v.3dns.vip",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess",
-        "headers": {
-          "Host": "6jdvarazgu3qqr6q.v.3dns.vip"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 11 - xiaohe",
-      "server": "6jdvarazgu3qqr6q.v.3dns.vip",
-      "server_port": 443,
-      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "6jdvarazgu3qqr6q.v.3dns.vip",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess",
-        "headers": {
-          "Host": "6jdvarazgu3qqr6q.v.3dns.vip"
+        "server_name": "aws.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g",
+          "short_id": "09353d6dc5b789"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 12 - xiaohe",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - xiaohe",
       "server": "50.7.44.28",
       "server_port": 2091,
       "uuid": "76b6a658-ce80-4500-b24d-404c94639ac6",
@@ -221,14 +125,14 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 13 - xiaohe",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - xiaohe",
       "server": "nas.aizhzo.com",
       "server_port": 5010,
       "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
       "tls": {
         "enabled": true,
-        "server_name": "127.0.0.1",
-        "insecure": true
+        "server_name": "nas.aizhzo.com",
+        "insecure": false
       },
       "obfs": {
         "type": "salamander",
@@ -236,30 +140,48 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 14 - xiaohe",
-      "server": "zfd-hkv1.kunlun01dns.com",
-      "server_port": 16114,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 15 - xiaohe",
-      "server": "champion.xn--kivt58h.lol",
-      "server_port": 80,
-      "uuid": "ed2864f9-37b3-4222-8c54-014aedc400a2",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "ak.mcdonaldshamburgergoodgoodgood.xyz"
+      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - xiaohe",
+      "server": "526.150333.xyz",
+      "server_port": 21002,
+      "uuid": "52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo",
+          "short_id": "f0e6a8bb98db3efd"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 16 - xiaohe",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 10 - xiaohe",
+      "server": "526.150333.xyz",
+      "server_port": 21003,
+      "uuid": "52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo",
+          "short_id": "eb9539689690d35c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 11 - xiaohe",
       "server": "526.150333.xyz",
       "server_port": 21004,
       "uuid": "52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a",
@@ -278,48 +200,8 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 17 - xiaohe",
-      "server": "2b9hwy8ocx7q74nm.v.3dns.vip",
-      "server_port": 443,
-      "uuid": "f23bb427c1f94373876c2f43e9f790f3",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "2b9hwY8oCx7Q74NM.v.3dns.vip",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess",
-        "headers": {
-          "Host": "2b9hwY8oCx7Q74NM.v.3dns.vip"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 18 - xiaohe",
-      "server": "526.150333.xyz",
-      "server_port": 21002,
-      "uuid": "52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo",
-          "short_id": "f0e6a8bb98db3efd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 19 - xiaohe",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 12 - xiaohe",
       "server": "526.150333.xyz",
       "server_port": 21001,
       "uuid": "52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a",
@@ -328,7 +210,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -339,81 +221,21 @@
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 20 - xiaohe",
-      "server": "526.150333.xyz",
-      "server_port": 21003,
-      "uuid": "52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 13 - xiaohe",
+      "server": "47.238.210.5",
+      "server_port": 13779,
+      "uuid": "928e6cce-8ced-4243-9a48-a6642edd09b0",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "tesla.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo",
-          "short_id": "eb9539689690d35c"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 21 - xiaohe",
-      "server": "47.243.194.125",
-      "server_port": 443,
-      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "nycqg19zkwacpm1b.v.3dns.vip",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess",
-        "headers": {
-          "Host": "nycqg19zkwacpm1b.v.3dns.vip"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 22 - xiaohe",
-      "server": "47.243.153.153",
-      "server_port": 443,
-      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "i2psm3knof5qjjix.v.3dns.vip",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess",
-        "headers": {
-          "Host": "i2psm3knof5qjjix.v.3dns.vip"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 23 - xiaohe",
-      "server": "qtkdr8jxe3wefxjm.v.3dns.vip",
-      "server_port": 443,
-      "uuid": "f23bb427c1f94373876c2f43e9f790f3",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "qTKDR8jXE3wEFxJM.v.3dns.vip",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess",
-        "headers": {
-          "Host": "qTKDR8jXE3wEFxJM.v.3dns.vip"
+          "public_key": "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg",
+          "short_id": "af1bdd293097b664"
         }
       }
     },
@@ -434,17 +256,7 @@
         "🇭🇰 中国香港 (Hong Kong) 10 - xiaohe",
         "🇭🇰 中国香港 (Hong Kong) 11 - xiaohe",
         "🇭🇰 中国香港 (Hong Kong) 12 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 13 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 14 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 15 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 16 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 17 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 18 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 19 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 20 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 21 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 22 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 23 - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 13 - xiaohe"
       ]
     },
     {
@@ -463,17 +275,7 @@
         "🇭🇰 中国香港 (Hong Kong) 10 - xiaohe",
         "🇭🇰 中国香港 (Hong Kong) 11 - xiaohe",
         "🇭🇰 中国香港 (Hong Kong) 12 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 13 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 14 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 15 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 16 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 17 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 18 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 19 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 20 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 21 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 22 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 23 - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 13 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
