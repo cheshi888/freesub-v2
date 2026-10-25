@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-10-25 10:47:40 UTC
+生成时间: 2026-10-25 15:40:04 UTC
 ==============================================================================
 
 说明:
@@ -15,11 +15,21 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 2
+本轮家宽节点数: 3
 
-[1] TW  严格家宽  置信度 82
-     exit_ip : 61.230.160.34
-     server  : hinet1.2yly.com:24215  (vless)
+[1] HK  移动网络  置信度 85
+     exit_ip : 81.168.109.166
+     server  : zfd-hkv1.kunlun01dns.com:16114  (vmess)
+     ASN     : AS9304 HGC Global Communications Limited
+     ISP     : HGC Global Communications Limited
+     ORG     : -
+     ip-api  : hosting=False proxy=False mobile=True reverse=-
+     ipapi.is: company=Company 6822f4faxZKZlk2L asn=AS9304 HGC Global Communications Limited
+     fraud   : 0  (-1 = 未取到评分)
+
+[2] TW  严格家宽  置信度 82
+     exit_ip : 59.125.68.205
+     server  : 6aa21c4d-11d4-45bf-ba55-59512593692c.7b63595a-1119-4080-80e1-3f638120be58.smartprivatelink.com:443  (vless)
      ASN     : AS3462 Data Communication Business Group
      ISP     : Chunghwa Telecom Co., Ltd.
      ORG     : Chunghwa Telecom Co. Ltd.
@@ -27,9 +37,9 @@
      ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
      fraud   : 0  (-1 = 未取到评分)
 
-[2] HK  严格家宽  置信度 82
-     exit_ip : 116.49.85.111
-     server  : b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com:443  (hysteria2)
+[3] HK  严格家宽  置信度 82
+     exit_ip : 112.120.47.105
+     server  : hkgb707.ifastcdncache.com:60852  (vmess)
      ASN     : AS4760 HKT Limited
      ISP     : Hong Kong Telecommunications (HKT) Limited Mass Internet
      ORG     : Hong Kong Telecommunications (HKT) Limited
