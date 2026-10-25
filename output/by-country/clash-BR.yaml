@@ -5,15 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - xiaohe
-  server: 147.15.108.14
-  port: 20000
+  server: 92.53.119.212
+  port: 40849
   udp: true
-  type: hysteria2
-  password: CyG0RFxMjzs41uQD4OLuHQ==
-  sni: rmgyvpn.rest
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
+  type: vless
+  uuid: 1ef7d97f-3aa5-0001-8521-84cf4794bf7a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: jkVcZ_b3iWs2FcSjC8Mb1NoRuwPgCH9HpeOOYAXBSU0
+  servername: ru-hub10.lovely.my
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
