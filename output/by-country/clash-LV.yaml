@@ -18,6 +18,19 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
+  server: 195.123.213.28
+  port: 443
+  udp: true
+  type: vless
+  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
+    short-id: 5c256336e3b673fa
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
   server: 195.123.208.32
   port: 443
   udp: true
@@ -37,6 +50,7 @@ proxy-groups:
   - AUTO
   - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +58,6 @@ proxy-groups:
   proxies:
   - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
 rules:
 - MATCH,PROXIES

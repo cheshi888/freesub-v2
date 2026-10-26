@@ -12,7 +12,7 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇹 奥地利 (Austria) 02 - xiaohe
-  server: au6.pad-sservice.lat
+  server: 62.83.41.69
   port: 8443
   udp: true
   type: vless
@@ -20,11 +20,70 @@ proxies:
   tls: true
   servername: au6.pad-sservice.lat
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /AU6W
     headers:
       Host: au6.pad-sservice.lat
+- name: 🇦🇹 奥地利 (Austria) 03 - xiaohe
+  server: 62.83.19.186
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  tls: true
+  servername: au7.pad-sservice.lat
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /AU7W
+    headers:
+      Host: au7.pad-sservice.lat
+- name: 🇦🇹 奥地利 (Austria) 04 - xiaohe
+  server: 146.19.143.218
+  port: 443
+  udp: true
+  type: vless
+  uuid: ca14493b-b984-4ffb-bc0e-9cb5da969e15
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: l1mx_plNc2oiWxJCcZLh3SGfFU-5QxYpgQ__Ea59WEg
+    short-id: 4a7b1c8d
+  servername: tau1.freerunet.online
+  client-fingerprint: firefox
+- name: 🇦🇹 奥地利 (Austria) 05 - xiaohe
+  server: 159.195.253.15
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  tls: true
+  servername: au1.pad-sservice.lat
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /au1
+    headers:
+      Host: au1.pad-service.com
+- name: 🇦🇹 奥地利 (Austria) 06 - xiaohe
+  server: 152.53.1.40
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  tls: true
+  servername: au4.pad-sservice.lat
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /A14U
+    headers:
+      Host: au4.pad-service.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +91,10 @@ proxy-groups:
   - AUTO
   - 🇦🇹 奥地利 (Austria) 01 - xiaohe
   - 🇦🇹 奥地利 (Austria) 02 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 03 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 04 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 05 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -39,5 +102,9 @@ proxy-groups:
   proxies:
   - 🇦🇹 奥地利 (Austria) 01 - xiaohe
   - 🇦🇹 奥地利 (Austria) 02 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 03 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 04 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 05 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 06 - xiaohe
 rules:
 - MATCH,PROXIES

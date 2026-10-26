@@ -5,20 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
-  server: 5.253.28.240
-  port: 2443
+  server: 216.24.57.225
+  port: 2087
   udp: true
   type: vless
-  uuid: 5e679ccd-1586-4d5f-b87b-48251046cad8
+  uuid: 825a76ef-053f-41eb-ba81-411e29494251
   tls: true
-  reality-opts:
-    public-key: h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg
-    short-id: 92c32de179e5d908
-  servername: deepl.com
-  client-fingerprint: qq
-  network: grpc
-  grpc-opts:
-    grpc-service-name: rex-eb0bf76b710ce763
+  servername: busstop.zandix.ir
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /wss
+    headers:
+      Host: busstop.zandix.ir
 proxy-groups:
 - name: PROXIES
   type: select
