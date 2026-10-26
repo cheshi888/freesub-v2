@@ -6,27 +6,6 @@
     {
       "type": "vless",
       "tag": "🇲🇽 墨西哥 (Mexico) 01 - xiaohe",
-      "server": "147.78.1.73",
-      "server_port": 443,
-      "uuid": "caf3d607-95c9-4ea0-98b5-864027056ba0",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "mx1.accessboy.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1TtWNQhTJr_3H7-ypMw4EiLzVxy22AzUtMiE5JmQMl4",
-          "short_id": "1c5869a95671bcb0"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇲🇽 墨西哥 (Mexico) 02 - xiaohe",
       "server": "149.104.90.21",
       "server_port": 19167,
       "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
@@ -39,6 +18,14 @@
           "fingerprint": "firefox"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇲🇽 墨西哥 (Mexico) 02 - xiaohe",
+      "server": "64.177.90.30",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "BWyPPTusFKhGgzKh"
     },
     {
       "type": "selector",

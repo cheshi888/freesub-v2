@@ -5,18 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - xiaohe
-  server: 109.104.155.121
-  port: 443
+  server: 147.15.108.14
+  port: 20000
   udp: true
-  type: vless
-  uuid: caf3d607-95c9-4ea0-98b5-864027056ba0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1TtWNQhTJr_3H7-ypMw4EiLzVxy22AzUtMiE5JmQMl4
-    short-id: 1c5869a95671bcb0
-  servername: br1.accessboy.com
-  client-fingerprint: firefox
+  type: hysteria2
+  password: CyG0RFxMjzs41uQD4OLuHQ==
+  sni: rmgyvpn.rest
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
+  ports: 20000-30000,20000-20000
 proxy-groups:
 - name: PROXIES
   type: select

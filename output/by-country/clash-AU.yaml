@@ -5,13 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
-  server: au.tronsg.com
+  server: 51.161.204.244
   port: 443
   udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: au.tronsg.com
-  skip-cert-verify: true
+  type: vless
+  uuid: 36e89875-9c53-482b-bc41-d3890e9da176
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
+    short-id: 0ad08b47f498efd2
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   server: 152.67.115.203
   port: 443
@@ -34,18 +39,26 @@ proxies:
   obfs-password: b42d90fa667942aebc734d60
   ports: 20000-30000,20000-20000
 - name: 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
-  server: 88.216.211.130
+  server: au.tronsg.com
   port: 443
   udp: true
+  type: trojan
+  password: Trojan@82164024
+  sni: au.tronsg.com
+  skip-cert-verify: true
+- name: 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
+  server: funagfrdfs.alixxplay.com
+  port: 54528
+  udp: true
   type: vless
-  uuid: caf3d607-95c9-4ea0-98b5-864027056ba0
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 1TtWNQhTJr_3H7-ypMw4EiLzVxy22AzUtMiE5JmQMl4
-    short-id: 1c5869a95671bcb0
-  servername: au1.accessboy.com
-  client-fingerprint: firefox
+    public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
+    short-id: 54cca3c1c1c7
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,6 +68,7 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,5 +78,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
 rules:
 - MATCH,PROXIES

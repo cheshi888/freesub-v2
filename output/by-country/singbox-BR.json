@@ -4,25 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇧🇷 巴西 (Brazil) 01 - xiaohe",
-      "server": "109.104.155.121",
-      "server_port": 443,
-      "uuid": "caf3d607-95c9-4ea0-98b5-864027056ba0",
-      "flow": "xtls-rprx-vision",
+      "server": "147.15.108.14",
+      "password": "CyG0RFxMjzs41uQD4OLuHQ==",
       "tls": {
         "enabled": true,
-        "server_name": "br1.accessboy.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1TtWNQhTJr_3H7-ypMw4EiLzVxy22AzUtMiE5JmQMl4",
-          "short_id": "1c5869a95671bcb0"
-        }
-      }
+        "server_name": "rmgyvpn.rest",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "CyG0RFxMjzs41uQD4OLuHQ=="
+      },
+      "server_ports": [
+        "20000:30000",
+        "20000:20000"
+      ]
     },
     {
       "type": "selector",

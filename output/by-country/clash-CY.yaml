@@ -5,31 +5,46 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
-  server: 216.24.57.225
-  port: 2087
+  server: 5.253.28.240
+  port: 2443
   udp: true
   type: vless
-  uuid: 825a76ef-053f-41eb-ba81-411e29494251
+  uuid: 5e679ccd-1586-4d5f-b87b-48251046cad8
   tls: true
-  servername: busstop.zandix.ir
-  skip-cert-verify: true
+  reality-opts:
+    public-key: h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg
+    short-id: 92c32de179e5d908
+  servername: deepl.com
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: rex-eb0bf76b710ce763
+- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
+  server: 5.253.30.99
+  port: 40443
+  udp: true
+  type: vless
+  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
+    short-id: 88b6
+  servername: deepl.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /wss
-    headers:
-      Host: busstop.zandix.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
 rules:
 - MATCH,PROXIES
