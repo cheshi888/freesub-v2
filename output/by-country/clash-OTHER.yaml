@@ -5,34 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.16.10.22
-  port: 443
+  server: 172.67.133.118
+  port: 2053
   udp: true
   type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
   tls: true
-  servername: jp3.yohototo.top
+  servername: uwu.blueknightnet.qzz.io
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /tyxyws
-    headers: &id001
-      Host: jp3.yohototo.top
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
 - name: 🌐 其他地区 (Other) 02 - xiaohe
-  server: 104.16.10.22
-  port: 443
+  server: cctvhikvision.center
+  port: 2053
   udp: true
   type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
   tls: true
-  servername: jp3.yohototo.top
+  servername: uwu.blueknightnet.qzz.io
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /tyxyws
-    headers: *id001
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
 proxy-groups:
 - name: PROXIES
   type: select

@@ -5,18 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇪 秘鲁 (Peru) 01 - xiaohe
-  server: 134.185.81.5
-  port: 47881
+  server: 172.65.90.41
+  port: 2053
   udp: true
   type: vless
-  uuid: 59b203b2-b1bc-4e9c-a9e5-ccb8f691bf72
-  flow: xtls-rprx-vision
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
   tls: true
-  reality-opts:
-    public-key: 6XmXX1QXGodmtqU37Zx9CDHnCnPtonRdq8ieLmt__g4
-    short-id: 38d72071
-  servername: www.tesla.com
+  servername: wzs.echo.net.eu.org
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: '/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlNSSwUEURwBVwcWUQYJGxsPQldGTQ8OBgJWFUU= '
+    headers:
+      Host: wzs.echo.net.eu.org
 proxy-groups:
 - name: PROXIES
   type: select

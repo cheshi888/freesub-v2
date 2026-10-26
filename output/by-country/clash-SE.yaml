@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: 70.34.212.124
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   server: 50.7.38.243
   port: 443
   udp: true
@@ -19,8 +12,19 @@ proxies:
   password: d4ca9415f0eac7897472e1e5b86d2e96
   sni: promo.betust.net
   skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
+  server: 5.178.109.174
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: se14-node.rumedia-cdn.com
+  server: 191.44.114.179
   port: 2096
   udp: true
   type: vless
@@ -34,18 +38,7 @@ proxies:
     headers:
       Host: st33614.rumedia-cdn.com
 - name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  server: 5.178.109.174
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
-  server: se13-node.rumedia-cdn.com
+  server: 191.44.114.154
   port: 2096
   udp: true
   type: vless
@@ -56,8 +49,20 @@ proxies:
   network: ws
   ws-opts:
     path: /cdn/v3/live
+- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  server: 89.22.224.146
+  port: 43788
+  udp: true
+  type: vless
+  uuid: acc10ba5-a222-44b3-8a1a-4f247ffc6466
+  tls: true
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
     headers:
-      Host: st5ff8a.rumedia-cdn.com
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
