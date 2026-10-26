@@ -12,14 +12,6 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇹 奥地利 (Austria) 02 - xiaohe
-  server: 68.210.96.82
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: krdyzYNnXFQqyPtjiXw9lQ
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇦🇹 奥地利 (Austria) 03 - xiaohe
   server: au6.pad-sservice.lat
   port: 8443
   udp: true
@@ -33,35 +25,6 @@ proxies:
     path: /AU6W
     headers:
       Host: au6.pad-sservice.lat
-- name: 🇦🇹 奥地利 (Austria) 04 - xiaohe
-  server: au5.pad-sservice.lat
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
-  tls: true
-  servername: au5.pad-sservice.lat
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /AU5W
-    headers:
-      Host: au5.pad-sservice.lat
-- name: 🇦🇹 奥地利 (Austria) 05 - xiaohe
-  server: au2.pad-sservice.lat
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
-  tls: true
-  servername: au2.pad-sservice.lat
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /A11U
-    headers:
-      Host: au2.pad-service.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,9 +32,6 @@ proxy-groups:
   - AUTO
   - 🇦🇹 奥地利 (Austria) 01 - xiaohe
   - 🇦🇹 奥地利 (Austria) 02 - xiaohe
-  - 🇦🇹 奥地利 (Austria) 03 - xiaohe
-  - 🇦🇹 奥地利 (Austria) 04 - xiaohe
-  - 🇦🇹 奥地利 (Austria) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -79,8 +39,5 @@ proxy-groups:
   proxies:
   - 🇦🇹 奥地利 (Austria) 01 - xiaohe
   - 🇦🇹 奥地利 (Austria) 02 - xiaohe
-  - 🇦🇹 奥地利 (Austria) 03 - xiaohe
-  - 🇦🇹 奥地利 (Austria) 04 - xiaohe
-  - 🇦🇹 奥地利 (Austria) 05 - xiaohe
 rules:
 - MATCH,PROXIES

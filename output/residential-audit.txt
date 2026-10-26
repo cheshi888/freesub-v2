@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-10-26 02:53:10 UTC
+生成时间: 2026-10-26 12:17:51 UTC
 ==============================================================================
 
 说明:
@@ -15,6 +15,44 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 0
+本轮家宽节点数: 4
 
-(本轮无节点通过家宽判定)
+[1] KR  严格家宽  置信度 82
+     exit_ip : 49.254.204.133
+     server  : 49.254.204.133:1774  (shadowsocks)
+     ASN     : AS4766 Korea Telecom
+     ISP     : Korea Telecom
+     ORG     : Haionnet
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=HAIonNet asn=AS4766 Korea Telecom
+     fraud   : 0  (-1 = 未取到评分)
+
+[2] TW  严格家宽  置信度 60
+     exit_ip : 211.76.176.119
+     server  : kw119.zxmm.eu.org:20031  (trojan)
+     ASN     : AS131642 Pittqiao Network Information Co.,Ltd.
+     ISP     : Pittqiao Network Information Co., Ltd.
+     ORG     : -
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Pittqiao Network Information Co.,Ltd. asn=AS131642 Pittqiao Network Information Co.,Ltd.
+     fraud   : 0  (-1 = 未取到评分)
+
+[3] IN  严格家宽  置信度 82
+     exit_ip : 122.176.216.52
+     server  : 122.176.216.52:443  (vless)
+     ASN     : AS24560 Bharti Airtel Ltd., Telemedia Services
+     ISP     : Bharti Airtel
+     ORG     : Bharti Telenet Ltd.
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=BHARTI TELENET LTD. NEW DELHI asn=AS24560 Bharti Airtel Limited
+     fraud   : 1  (-1 = 未取到评分)
+
+[4] TW  严格家宽  置信度 82
+     exit_ip : 118.167.211.77
+     server  : hinet1.2yly.com:24215  (vless)
+     ASN     : AS3462 Data Communication Business Group
+     ISP     : Chunghwa Telecom Co., Ltd.
+     ORG     : Chunghwa Telecom Co. Ltd.
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
+     fraud   : 0  (-1 = 未取到评分)

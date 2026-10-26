@@ -5,7 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇽 墨西哥 (Mexico) 01 - xiaohe
-  server: mx001.zestapp778.com
+  server: 64.177.90.30
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: BWyPPTusFKhGgzKh
+- name: 🇲🇽 墨西哥 (Mexico) 02 - xiaohe
+  server: 149.104.90.21
   port: 19167
   udp: true
   type: vless
@@ -13,18 +20,20 @@ proxies:
   tls: true
   servername: mx001.zestapp778.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇲🇽 墨西哥 (Mexico) 01 - xiaohe
+  - 🇲🇽 墨西哥 (Mexico) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇲🇽 墨西哥 (Mexico) 01 - xiaohe
+  - 🇲🇽 墨西哥 (Mexico) 02 - xiaohe
 rules:
 - MATCH,PROXIES
