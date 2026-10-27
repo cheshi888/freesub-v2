@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇮 斯洛文尼亚 (Slovenia) 01 - xiaohe
-  server: 92.42.201.102
+  server: 92.42.201.107
   port: 443
   udp: true
   type: vless
@@ -15,10 +15,10 @@ proxies:
   reality-opts:
     public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
     short-id: 88d9dc52ef39c8bd
-  servername: node-slo01.rkitman.ru
-  client-fingerprint: firefox
+  servername: node-slo02.rkitman.ru
+  client-fingerprint: ''
 - name: 🇸🇮 斯洛文尼亚 (Slovenia) 02 - xiaohe
-  server: node-slo05.rkitman.ru
+  server: 92.42.201.155
   port: 443
   udp: true
   type: vless
@@ -28,8 +28,8 @@ proxies:
   reality-opts:
     public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
     short-id: 88d9dc52ef39c8bd
-  servername: node-slo05.rkitman.ru
-  client-fingerprint: safari
+  servername: node-slo04.rkitman.ru
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select

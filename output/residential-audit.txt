@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-10-27 11:44:11 UTC
+生成时间: 2026-10-27 17:25:47 UTC
 ==============================================================================
 
 说明:
@@ -15,14 +15,24 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 1
+本轮家宽节点数: 2
 
-[1] HK  移动网络  置信度 85
-     exit_ip : 81.168.109.187
-     server  : dog-hk.kunlun01dns.com:21022  (vmess)
-     ASN     : AS9304 HGC Global Communications Limited
-     ISP     : HGC Global Communications Limited
-     ORG     : -
-     ip-api  : hosting=False proxy=False mobile=True reverse=-
-     ipapi.is: company=Company 6822f4faxZKZlk2L asn=AS9304 HGC Global Communications Limited
+[1] KR  严格家宽  置信度 82
+     exit_ip : 49.254.204.133
+     server  : 49.254.204.133:1774  (shadowsocks)
+     ASN     : AS4766 Korea Telecom
+     ISP     : Korea Telecom
+     ORG     : Haionnet
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=HAIonNet asn=AS4766 Korea Telecom
+     fraud   : 0  (-1 = 未取到评分)
+
+[2] TW  严格家宽  置信度 82
+     exit_ip : 125.227.86.44
+     server  : 125.227.86.45:443  (trojan)
+     ASN     : AS3462 Data Communication Business Group
+     ISP     : Chunghwa Telecom Co., Ltd.
+     ORG     : Chunghwa Telecom Co. Ltd.
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Chunghwa Telecom Co.,Ltd. asn=AS3462 Chunghwa Telecom Co., Ltd.
      fraud   : 0  (-1 = 未取到评分)
