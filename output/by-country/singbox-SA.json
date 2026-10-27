@@ -5,23 +5,25 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe",
-      "server": "185.105.108.176",
-      "server_port": 443,
-      "uuid": "689a62e4-37e7-41de-9e6a-f2a56368c9e2",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe",
+      "server": "81.208.170.142",
+      "server_port": 1500,
+      "uuid": "e332f028-d343-5b44-8016-b3130f39e133",
       "tls": {
         "enabled": true,
-        "server_name": "www.google.co.uk",
+        "server_name": "www.ebay.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "U9O1sbuPwoTowF3Ka7CIgUZlRjokulxSwsYohEGCLA8",
-          "short_id": "0d87fec579"
+          "public_key": "VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE",
+          "short_id": "775eb6408888248e"
         }
+      },
+      "transport": {
+        "type": "grpc"
       }
     },
     {
@@ -29,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe"
+        "🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe"
+        "🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

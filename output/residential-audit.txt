@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-10-27 03:19:57 UTC
+生成时间: 2026-10-27 11:44:11 UTC
 ==============================================================================
 
 说明:
@@ -15,34 +15,14 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 3
+本轮家宽节点数: 1
 
-[1] KR  严格家宽  置信度 82
-     exit_ip : 218.237.185.234
-     server  : 218.237.185.234:4652  (shadowsocks)
-     ASN     : AS9318 SK Broadband Co Ltd
-     ISP     : SK Broadband Co Ltd
-     ORG     : broadNnet
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=SK Broadband Co Ltd asn=AS9318 SK Broadband Co Ltd
-     fraud   : 2  (-1 = 未取到评分)
-
-[2] TW  严格家宽  置信度 60
-     exit_ip : 211.76.176.119
-     server  : kw119.zxmm.eu.org:20031  (trojan)
-     ASN     : AS131642 Pittqiao Network Information Co.,Ltd.
-     ISP     : Pittqiao Network Information Co., Ltd.
+[1] HK  移动网络  置信度 85
+     exit_ip : 81.168.109.187
+     server  : dog-hk.kunlun01dns.com:21022  (vmess)
+     ASN     : AS9304 HGC Global Communications Limited
+     ISP     : HGC Global Communications Limited
      ORG     : -
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Pittqiao Network Information Co.,Ltd. asn=AS131642 Pittqiao Network Information Co.,Ltd.
-     fraud   : 0  (-1 = 未取到评分)
-
-[3] SG  严格家宽  置信度 70
-     exit_ip : 43.230.99.117
-     server  : 144.24.140.37:443  (vless)
-     ASN     : AS18106 Viewqwest Pte Ltd
-     ISP     : ViewQwest Sdn. Bhd
-     ORG     : Viewqwest Pte Ltd
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Viewqwest Pte Ltd asn=AS18106 Viewqwest Pte Ltd
+     ip-api  : hosting=False proxy=False mobile=True reverse=-
+     ipapi.is: company=Company 6822f4faxZKZlk2L asn=AS9304 HGC Global Communications Limited
      fraud   : 0  (-1 = 未取到评分)

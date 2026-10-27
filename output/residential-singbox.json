@@ -4,65 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe",
-      "server": "218.237.185.234",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
-    },
-    {
-      "type": "trojan",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
-      "server": "kw119.zxmm.eu.org",
-      "server_port": 20031,
-      "password": "00a72bf349e6479b",
-      "tls": {
-        "enabled": true,
-        "server_name": "kw119.zxmm.eu.org",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 03 (家宽) - xiaohe",
-      "server": "144.24.140.37",
-      "server_port": 443,
-      "uuid": "d18c6897-2849-456a-8c46-d7ecece47c20",
-      "tls": {
-        "enabled": true,
-        "server_name": "wzs.echo.net.eu.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HV1ZNVwcHTQsJSgAJVBQUG0dCQEwWAx4AAg4c",
-        "headers": {
-          "Host": "wzs.echo.net.eu.org"
-        }
-      }
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - xiaohe",
+      "server": "dog-hk.kunlun01dns.com",
+      "server_port": 21022,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 03 (家宽) - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 03 (家宽) - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

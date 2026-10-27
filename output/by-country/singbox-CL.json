@@ -4,30 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
-      "server": "kw119.zxmm.eu.org",
-      "server_port": 20031,
-      "password": "00a72bf349e6479b",
-      "tls": {
-        "enabled": true,
-        "server_name": "kw119.zxmm.eu.org",
-        "insecure": true
-      }
+      "type": "shadowsocks",
+      "tag": "🇨🇱 智利 (Chile) 01 - xiaohe",
+      "server": "64.176.2.21",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "xBStBEVqvGwHPocc"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
+        "🇨🇱 智利 (Chile) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
+        "🇨🇱 智利 (Chile) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
