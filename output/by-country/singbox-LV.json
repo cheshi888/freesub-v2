@@ -15,7 +15,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -67,53 +67,13 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe",
-      "server": "94.158.219.126",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.pleadcourt.org",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.pleadcourt.org"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe",
-      "server": "94.158.219.126",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.pleadcourt.org",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.pleadcourt.org"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
         "🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe"
+        "🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe"
       ]
     },
     {
@@ -122,9 +82,7 @@
       "outbounds": [
         "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
         "🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe"
+        "🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

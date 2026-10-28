@@ -23,16 +23,16 @@ proxies:
   sni: forshynewh.duckdns.org
   skip-cert-verify: false
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  server: 84.235.244.108
-  port: 22573
+  server: 185.253.116.33
+  port: 14430
   udp: true
   type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
   network: ws
   ws-opts:
-    path: /
+    path: /vless
     headers:
-      Host: uae.unixzone.us
+      Host: 185.253.116.33
 proxy-groups:
 - name: PROXIES
   type: select

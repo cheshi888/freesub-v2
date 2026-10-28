@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - xiaohe
-  server: 45.154.26.63
-  port: 443
-  udp: true
-  type: vless
-  uuid: ff85e702-b605-4109-884d-2c1f065d0954
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: MiQ5B4j6In71lWvCi0vO_DkVSDb7sii34bh5efBMswk
-    short-id: 3c032a7e
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
   server: th001.zestapp778.com
   port: 22222
   udp: true
@@ -26,48 +13,17 @@ proxies:
   tls: true
   servername: th001.zestapp778.com
   skip-cert-verify: false
-- name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
-  server: 104.16.111.193
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  tls: true
-  servername: v2ray.simspeedup.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 泰国 (Thailand) 04 - xiaohe
-  server: 103.86.49.57
-  port: 80
-  udp: true
-  type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: aIs.SpEeDtEsT.nEt
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇭 泰国 (Thailand) 01 - xiaohe
-  - 🇹🇭 泰国 (Thailand) 02 - xiaohe
-  - 🇹🇭 泰国 (Thailand) 03 - xiaohe
-  - 🇹🇭 泰国 (Thailand) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇭 泰国 (Thailand) 01 - xiaohe
-  - 🇹🇭 泰国 (Thailand) 02 - xiaohe
-  - 🇹🇭 泰国 (Thailand) 03 - xiaohe
-  - 🇹🇭 泰国 (Thailand) 04 - xiaohe
 rules:
 - MATCH,PROXIES

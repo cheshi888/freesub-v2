@@ -11,16 +11,16 @@ proxies:
   type: vless
   uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
 - name: 🇧🇾 白俄罗斯 (Belarus) 02 - xiaohe
-  server: 178.172.227.124
+  server: 178.172.227.228
   port: 14430
   udp: true
   type: vless
-  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
   network: ws
   ws-opts:
     path: /vless
     headers:
-      Host: 178.172.227.124
+      Host: 178.172.227.228
 - name: 🇧🇾 白俄罗斯 (Belarus) 03 - xiaohe
   server: 95.128.71.79
   port: 14430
@@ -33,17 +33,6 @@ proxies:
     headers:
       Host: 95.128.71.79
 - name: 🇧🇾 白俄罗斯 (Belarus) 04 - xiaohe
-  server: 178.172.227.228
-  port: 14430
-  udp: true
-  type: vless
-  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 178.172.227.228
-- name: 🇧🇾 白俄罗斯 (Belarus) 05 - xiaohe
   server: 95.128.71.79
   port: 10444
   udp: true
@@ -56,12 +45,23 @@ proxies:
     short-id: 8debcf36f1cc69ff
   servername: ads.x5.ru
   client-fingerprint: chrome
-- name: 🇧🇾 白俄罗斯 (Belarus) 06 - xiaohe
+- name: 🇧🇾 白俄罗斯 (Belarus) 05 - xiaohe
   server: 178.172.227.124
-  port: 10444
+  port: 14430
   udp: true
   type: vless
   uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 178.172.227.124
+- name: 🇧🇾 白俄罗斯 (Belarus) 06 - xiaohe
+  server: 178.172.227.228
+  port: 10444
+  udp: true
+  type: vless
+  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -70,11 +70,11 @@ proxies:
   servername: ads.x5.ru
   client-fingerprint: safari
 - name: 🇧🇾 白俄罗斯 (Belarus) 07 - xiaohe
-  server: 178.172.227.228
+  server: 178.172.227.124
   port: 10444
   udp: true
   type: vless
-  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
