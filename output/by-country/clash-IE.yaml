@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
-  server: ir-new-ded.failspace.top
+  server: 50.7.5.188
   port: 443
   udp: true
   type: vless
@@ -14,17 +14,27 @@ proxies:
   tls: true
   servername: ir-new-ded.failspace.top
   skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
+  server: dns22.m3hrzd.ir
+  port: 1347
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: U5Jk0BhRNKjb5wQBBOXx2wwkWZ_yWU0N
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
 rules:
 - MATCH,PROXIES
