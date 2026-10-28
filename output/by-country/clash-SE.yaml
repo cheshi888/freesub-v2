@@ -5,15 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: promo.betust.net
-  port: 443
-  udp: true
-  type: hysteria2
-  password: d4ca9415f0eac7897472e1e5b86d2e96
-  sni: promo.betust.net
-  skip-cert-verify: true
-- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: se1-cl3.vless-fiberstasis.top
+  server: 136.148.211.243
   port: 443
   udp: true
   type: vless
@@ -23,19 +15,19 @@ proxies:
     public-key: qJja_3vaCxm3As6alnqjpIIThwGm4e4m_MOluQBNFgo
     short-id: 11d37dd92940329e
   servername: se1-cl3.vless-fiberstasis.top
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-se-3
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: swe2.obxodvpn.us
-  port: 4443
+- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
+  server: promo.betust.net
+  port: 443
   udp: true
   type: hysteria2
-  password: 146d567c-6335-4e63-a8aa-7ec068642440
-  sni: nl1.obxodvpn.us
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  password: d4ca9415f0eac7897472e1e5b86d2e96
+  sni: promo.betust.net
+  skip-cert-verify: true
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   server: 191.44.114.154
   port: 8443
   udp: true
@@ -46,6 +38,18 @@ proxies:
   reality-opts:
     public-key: ndQzAcG4g-2OhvFb8EjFnZyxJ2lhawiulTLJOZrK8lY
     short-id: c4359f3827231250
+  servername: www.wikipedia.org
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  server: 191.44.114.179
+  port: 8443
+  udp: true
+  type: vless
+  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WEHGKyXsOD5i2kNCJ3GrjeNZQBsrzH76OrPDJ7x2YwY
   servername: www.wikipedia.org
   client-fingerprint: firefox
 - name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
@@ -74,12 +78,17 @@ proxies:
     headers:
       Host: 5.178.109.174
 - name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
-  server: 70.34.212.124
-  port: 8388
+  server: se3.h1cloud.net
+  port: 25387
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
+  type: vless
+  uuid: 5a519754-a673-4462-83f6-5eb25d2af141
+  tls: true
+  reality-opts:
+    public-key: _nrnGiJUdyeLv2afSwe6P4j02AMayY34WFMjUJp5Kwc
+    short-id: 9608a9c65d315d52
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

@@ -11,14 +11,6 @@ proxies:
   type: vless
   uuid: 6aed42ba-cd2d-4671-87d9-c949b6876888
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
-  server: hys-eu.letsconnectpoint.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 4b1be712-774c-4b65-8491-a3339e124a70
-  sni: hys-eu.letsconnectpoint.com
-  skip-cert-verify: false
-- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
   server: 171.22.119.74
   port: 8446
   udp: true
@@ -29,6 +21,29 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-video-call
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
+  server: hys-eu.letsconnectpoint.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 4b1be712-774c-4b65-8491-a3339e124a70
+  sni: hys-eu.letsconnectpoint.com
+  skip-cert-verify: false
+- name: 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
+  server: 5.253.28.240
+  port: 2443
+  udp: true
+  type: vless
+  uuid: 5e679ccd-1586-4d5f-b87b-48251046cad8
+  tls: true
+  reality-opts:
+    public-key: h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg
+    short-id: 92c32de179e5d908
+  servername: deepl.com
+  client-fingerprint: ios
+  network: grpc
+  grpc-opts:
+    grpc-service-name: rex-eb0bf76b710ce763
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +52,7 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -45,5 +61,6 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
 rules:
 - MATCH,PROXIES

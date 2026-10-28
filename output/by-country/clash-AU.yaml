@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
-  server: 45.63.30.142
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: 45.63.30.142
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   server: 51.161.204.242
   port: 443
   udp: true
@@ -25,6 +17,14 @@ proxies:
     short-id: d15c17cef9b2e456
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
+  server: 45.63.30.142
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: connectwithemployerstohireyouridealteam.com
+  skip-cert-verify: false
 - name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   server: au.tronsg.com
   port: 443
@@ -32,7 +32,7 @@ proxies:
   type: trojan
   password: Trojan@82164024
   sni: au.tronsg.com
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
   server: 51.161.204.244
   port: 443
@@ -45,19 +45,6 @@ proxies:
     public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
-  server: 88.216.211.130
-  port: 443
-  udp: true
-  type: vless
-  uuid: caf3d607-95c9-4ea0-98b5-864027056ba0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1TtWNQhTJr_3H7-ypMw4EiLzVxy22AzUtMiE5JmQMl4
-    short-id: 1c5869a95671bcb0
-  servername: au1.accessboy.com
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -68,7 +55,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -78,6 +64,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
 rules:
 - MATCH,PROXIES
