@@ -16,8 +16,20 @@ proxies:
     public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
     short-id: 7f1e29593aa94ad1
   servername: www.bing.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
+  server: netx.smrtai.top
+  port: 443
+  udp: true
+  type: vless
+  uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
+  tls: true
+  reality-opts:
+    public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
+    short-id: d8b58872
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇺🇦 乌克兰 (Ukraine) 03 - xiaohe
   server: 216.24.57.225
   port: 2083
   udp: true
@@ -31,18 +43,18 @@ proxies:
     path: /wss
     headers:
       Host: pol.netvia.ir
-- name: 🇺🇦 乌克兰 (Ukraine) 03 - xiaohe
+- name: 🇺🇦 乌克兰 (Ukraine) 04 - xiaohe
   server: staging.lastilhame.monster
   port: 443
   udp: true
   type: vless
-  uuid: aded66f1-de12-4c3c-af9e-a21d6e7d9c96
+  uuid: de38389f-5651-4f2f-8276-5aabf3b861c9
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
-    short-id: 2a80364e93d9
-  servername: www.foxsports.com
+    short-id: 225e930cfd4d
+  servername: www.hollywoodreporter.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -52,6 +64,7 @@ proxy-groups:
   - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
   - 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
   - 🇺🇦 乌克兰 (Ukraine) 03 - xiaohe
+  - 🇺🇦 乌克兰 (Ukraine) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,5 +73,6 @@ proxy-groups:
   - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
   - 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
   - 🇺🇦 乌克兰 (Ukraine) 03 - xiaohe
+  - 🇺🇦 乌克兰 (Ukraine) 04 - xiaohe
 rules:
 - MATCH,PROXIES
