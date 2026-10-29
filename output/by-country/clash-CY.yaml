@@ -16,6 +16,19 @@ proxies:
   grpc-opts:
     grpc-service-name: grpc-video-call
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
+  server: 5.253.28.240
+  port: 40443
+  udp: true
+  type: vless
+  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
+    short-id: 88b6
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
   server: 5.253.29.253
   port: 443
   udp: true
@@ -24,22 +37,10 @@ proxies:
   tls: true
   servername: indi.qikbro.com
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: assets
-- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
-  server: 5.253.30.99
-  port: 40443
-  udp: true
-  type: vless
-  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
-  servername: deepl.com
-  client-fingerprint: qq
 - name: 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
   server: 5.253.28.240
   port: 2443
@@ -51,7 +52,7 @@ proxies:
     public-key: h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg
     short-id: 92c32de179e5d908
   servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: ios
   network: grpc
   grpc-opts:
     grpc-service-name: rex-eb0bf76b710ce763

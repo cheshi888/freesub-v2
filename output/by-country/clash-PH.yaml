@@ -6,6 +6,14 @@ log-level: info
 proxies:
 - name: 🇵🇭 菲律宾 (Philippines) 01 - xiaohe
   server: ph001.zestapp778.com
+  port: 46293
+  udp: true
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: ph001.zestapp778.com
+  skip-cert-verify: false
+- name: 🇵🇭 菲律宾 (Philippines) 02 - xiaohe
+  server: ph001.zestapp778.com
   port: 15656
   udp: true
   type: vless
@@ -13,14 +21,7 @@ proxies:
   tls: true
   servername: ph001.zestapp778.com
   skip-cert-verify: false
-- name: 🇵🇭 菲律宾 (Philippines) 02 - xiaohe
-  server: ph001.zestapp778.com
-  port: 46293
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: ph001.zestapp778.com
-  skip-cert-verify: true
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
