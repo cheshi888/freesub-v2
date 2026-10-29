@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇽 墨西哥 (Mexico) 01 - xiaohe
-  server: 216.238.80.100
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: connectwithtopemployersandfindidealjobs.com
-  skip-cert-verify: false
-- name: 🇲🇽 墨西哥 (Mexico) 02 - xiaohe
   server: 38.60.224.173
   port: 32153
   udp: true
@@ -20,29 +12,14 @@ proxies:
   uuid: 5cf1f470-3f70-4589-a2a4-4657ea3a1edf
   alterId: 0
   cipher: auto
-- name: 🇲🇽 墨西哥 (Mexico) 03 - xiaohe
-  server: 147.78.1.73
+- name: 🇲🇽 墨西哥 (Mexico) 02 - xiaohe
+  server: 216.238.80.100
   port: 443
   udp: true
-  type: vless
-  uuid: caf3d607-95c9-4ea0-98b5-864027056ba0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1TtWNQhTJr_3H7-ypMw4EiLzVxy22AzUtMiE5JmQMl4
-    short-id: 1c5869a95671bcb0
-  servername: mx1.accessboy.com
-  client-fingerprint: firefox
-- name: 🇲🇽 墨西哥 (Mexico) 04 - xiaohe
-  server: mx001.zestapp778.com
-  port: 19167
-  udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: mx001.zestapp778.com
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: connectwithtopemployersandfindidealjobs.com
   skip-cert-verify: false
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,8 +27,6 @@ proxy-groups:
   - AUTO
   - 🇲🇽 墨西哥 (Mexico) 01 - xiaohe
   - 🇲🇽 墨西哥 (Mexico) 02 - xiaohe
-  - 🇲🇽 墨西哥 (Mexico) 03 - xiaohe
-  - 🇲🇽 墨西哥 (Mexico) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,7 +34,5 @@ proxy-groups:
   proxies:
   - 🇲🇽 墨西哥 (Mexico) 01 - xiaohe
   - 🇲🇽 墨西哥 (Mexico) 02 - xiaohe
-  - 🇲🇽 墨西哥 (Mexico) 03 - xiaohe
-  - 🇲🇽 墨西哥 (Mexico) 04 - xiaohe
 rules:
 - MATCH,PROXIES
