@@ -1,0 +1,28 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  server: 13.143.239.127
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 2a0fc918-9c61-451b-a9ad-e8f796e70f52
+  sni: nl1.obxodvpn.us
+  skip-cert-verify: false
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+rules:
+- MATCH,PROXIES

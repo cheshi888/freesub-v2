@@ -5,7 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
-  server: hydra.yokkastars.com
+  server: 171.22.119.74
+  port: 8446
+  udp: true
+  type: trojan
+  password: Pass-Client-1
+  sni: 171.22.119.74
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-video-call
+- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
+  server: 5.253.28.240
+  port: 40443
+  udp: true
+  type: vless
+  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
+    short-id: 88b6
+  servername: deepl.com
+  client-fingerprint: random
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
+  server: 5.253.28.240
   port: 2443
   udp: true
   type: vless
@@ -25,11 +49,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -16,34 +16,20 @@
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
-      "server": "192.142.23.46",
+      "server": "70.34.207.14",
       "server_port": 443,
-      "password": "a0052f4f-4c63-0002-a16f-ab2d5d718cd3",
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "diffoscope.com",
+        "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
         "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
       "server": "31.172.65.4",
       "server_port": 8443,
       "uuid": "9c6e83fc-b755-4ad4-9b0a-14b610153d8f",
@@ -63,6 +49,41 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
+      "server": "swidenafterlanzerotte.space",
+      "server_port": 443,
+      "uuid": "50a87e21-f0e2-4b53-a787-91adfe748f63",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "swidenafterlanzerotte.space",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM",
+          "short_id": ""
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -70,7 +91,8 @@
         "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 04 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
+        "🇸🇪 瑞典 (Sweden) 05 - xiaohe"
       ]
     },
     {
@@ -80,7 +102,8 @@
         "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 04 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
+        "🇸🇪 瑞典 (Sweden) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
