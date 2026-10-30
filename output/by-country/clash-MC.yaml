@@ -1,0 +1,33 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇲🇨 MC 01 - xiaohe
+  server: 104.194.148.125
+  port: 443
+  udp: true
+  type: vless
+  uuid: 167539f8-88ff-46b3-955c-4c8f7bf0f296
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 5Xgf3UO6yZb7gCK3R3GULk8jyNIp7Sr-26YXZfSW71c
+    short-id: 13975a8e0bd50e7c
+  servername: suffolkprimarycare.uk
+  client-fingerprint: qq
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇲🇨 MC 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇲🇨 MC 01 - xiaohe
+rules:
+- MATCH,PROXIES
