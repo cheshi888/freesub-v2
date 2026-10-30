@@ -18,15 +18,20 @@ proxies:
   servername: vikt659.isgood.host
   client-fingerprint: ''
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
-  server: 104.165.205.21
-  port: 9443
+  server: 195.123.213.28
+  port: 443
   udp: true
-  type: hysteria2
-  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
-  sni: onecloudstream.com
-  skip-cert-verify: false
+  type: vless
+  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
+    short-id: 5c256336e3b673fa
+  servername: www.cloudflare.com
+  client-fingerprint: random
 - name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
-  server: 104.165.205.142
+  server: 104.165.205.21
   port: 9443
   udp: true
   type: hysteria2
@@ -45,8 +50,29 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
+  server: 104.165.205.142
+  port: 9443
+  udp: true
+  type: hysteria2
+  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  sni: onecloudstream.com
+  skip-cert-verify: false
+- name: 🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe
+  server: 195.123.208.32
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1ebcb694-875c-4be7-b6a2-d53c8208991b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ICrsmE5hqN7IsDIyHPG2WkDUUFK_VEj9yobLv8zuDwk
+    short-id: 757b9e1ef18e60f0
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
+- name: 🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe
   server: 31.58.171.53
   port: 443
   udp: true
@@ -59,32 +85,6 @@ proxies:
     short-id: f77f3068
   servername: dl.google.com
   client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe
-  server: 195.123.213.28
-  port: 443
-  udp: true
-  type: vless
-  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
-    short-id: 5c256336e3b673fa
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe
-  server: 195.123.208.32
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1ebcb694-875c-4be7-b6a2-d53c8208991b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ICrsmE5hqN7IsDIyHPG2WkDUUFK_VEj9yobLv8zuDwk
-    short-id: 757b9e1ef18e60f0
-  servername: gateway.icloud.com
-  client-fingerprint: ios
 - name: 🇱🇻 拉脱维亚 (Latvia) 08 - xiaohe
   server: 45.38.143.210
   port: 30584
