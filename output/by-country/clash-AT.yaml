@@ -24,6 +24,17 @@ proxies:
     short-id: 8f0f92607e5b353c
   servername: aezau1.uni-plan.com
   client-fingerprint: ''
+- name: 🇦🇹 奥地利 (Austria) 03 - xiaohe
+  server: 212.113.117.172
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2f7aeef7-6b91-48e6-a44c-304b65a0442b
+  flow: xtls-rprx-vision
+  tls: true
+  servername: de1.duck-proxy.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -31,6 +42,7 @@ proxy-groups:
   - AUTO
   - 🇦🇹 奥地利 (Austria) 01 - xiaohe
   - 🇦🇹 奥地利 (Austria) 02 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -38,5 +50,6 @@ proxy-groups:
   proxies:
   - 🇦🇹 奥地利 (Austria) 01 - xiaohe
   - 🇦🇹 奥地利 (Austria) 02 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 03 - xiaohe
 rules:
 - MATCH,PROXIES
