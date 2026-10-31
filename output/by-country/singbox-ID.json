@@ -4,21 +4,17 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "n04.jinggai.online",
-      "server_port": 8443,
-      "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
-      "tls": {
-        "enabled": true,
-        "server_name": "n04.jinggai.online",
-        "insecure": false
-      },
+      "type": "vmess",
+      "tag": "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
+      "server": "az-1.linkaa.xyz",
+      "server_port": 55386,
+      "uuid": "6E571484-4166-4699-8F58-B34A1823691F",
+      "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/nvl-n04-ws/e0577fe8fd7c8823",
+        "path": "/game/resources",
         "headers": {
-          "Host": "n04.jinggai.online"
+          "Host": "az-1.linkaa.xyz"
         }
       }
     },
@@ -27,14 +23,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
