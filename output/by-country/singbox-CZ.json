@@ -6,27 +6,6 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "195.123.245.241",
-      "server_port": 443,
-      "uuid": "7c053ca8-38cc-45e2-930c-eda1fd66f903",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "gateway.icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "hlY5ce1UsVIgE46y5PlEZhUsSaXUnCtoDLLaGrhInjw",
-          "short_id": "23d0950d60bc0d5b"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
       "server": "212.102.38.25",
       "server_port": 443,
       "uuid": "b34a52cb-cd52-49a8-9362-b8e97c151d49",
@@ -47,8 +26,73 @@
     },
     {
       "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
+      "server": "195.123.245.241",
+      "server_port": 443,
+      "uuid": "7c053ca8-38cc-45e2-930c-eda1fd66f903",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gateway.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "hlY5ce1UsVIgE46y5PlEZhUsSaXUnCtoDLLaGrhInjw",
+          "short_id": "23d0950d60bc0d5b"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 03 - xiaohe",
-      "server": "31.77.13.22",
+      "server": "155.212.240.10",
+      "server_port": 443,
+      "uuid": "f27b6f65-6e59-4f89-b929-afa397ca587f",
+      "tls": {
+        "enabled": true,
+        "server_name": "n.bitpulse.me",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/019bcbad-3813-7cce-8786-3ac0e418f128",
+        "headers": {
+          "Host": "n.bitpulse.me"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 04 - xiaohe",
+      "server": "193.124.17.190",
+      "server_port": 443,
+      "uuid": "ed042cf7-efe0-49bd-848b-8d7e655111ff",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
+          "short_id": "1036b2383b72"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 05 - xiaohe",
+      "server": "cz-prg.dontblockmepls.com",
       "server_port": 2063,
       "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
       "flow": "xtls-rprx-vision",
@@ -68,48 +112,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 04 - xiaohe",
-      "server": "155.212.240.10",
+      "tag": "🇨🇿 捷克 (Czech) 06 - xiaohe",
+      "server": "server.slavkiti.monster",
       "server_port": 443,
-      "uuid": "f27b6f65-6e59-4f89-b929-afa397ca587f",
-      "tls": {
-        "enabled": true,
-        "server_name": "n.bitpulse.me",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/019bcbad-3813-7cce-8786-3ac0e418f128",
-        "headers": {
-          "Host": "n.bitpulse.me"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 05 - xiaohe",
-      "server": "193.124.17.190",
-      "server_port": 443,
-      "uuid": "68cf8d29-5aa0-44b3-88a9-f1a576b6e84c",
+      "uuid": "d84c13b2-c2b9-4a7c-838f-05ac09ee422e",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.microsoft.com",
+        "server_name": "www.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
           "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "73a9e631a09b"
+          "short_id": "2a2ce9e42980"
         }
       }
     },
@@ -122,7 +140,8 @@
         "🇨🇿 捷克 (Czech) 02 - xiaohe",
         "🇨🇿 捷克 (Czech) 03 - xiaohe",
         "🇨🇿 捷克 (Czech) 04 - xiaohe",
-        "🇨🇿 捷克 (Czech) 05 - xiaohe"
+        "🇨🇿 捷克 (Czech) 05 - xiaohe",
+        "🇨🇿 捷克 (Czech) 06 - xiaohe"
       ]
     },
     {
@@ -133,7 +152,8 @@
         "🇨🇿 捷克 (Czech) 02 - xiaohe",
         "🇨🇿 捷克 (Czech) 03 - xiaohe",
         "🇨🇿 捷克 (Czech) 04 - xiaohe",
-        "🇨🇿 捷克 (Czech) 05 - xiaohe"
+        "🇨🇿 捷克 (Czech) 05 - xiaohe",
+        "🇨🇿 捷克 (Czech) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

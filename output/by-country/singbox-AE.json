@@ -12,7 +12,7 @@
       "tls": {
         "enabled": true,
         "server_name": "hy2.aspidnet.xyz",
-        "insecure": false
+        "insecure": true
       },
       "obfs": {
         "type": "salamander",
@@ -22,14 +22,21 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
-      "server": "84.235.244.108",
-      "server_port": 22573,
-      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "uae.unixzone.us"
+      "server": "130.49.162.137",
+      "server_port": 443,
+      "uuid": "689a62e4-37e7-41de-9e6a-f2a56368c9e2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sk3.speedtestinternet.link",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
         }
       }
     },
@@ -48,35 +55,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 04 - xiaohe",
-      "server": "app-mi-26.spbstudentlife.com",
-      "server_port": 443,
-      "uuid": "07680ffb-0666-4836-b6ad-ec0de62bc38f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "assets-mi-26.spbstudentlife.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "randomized"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "cYtAkO6yUCuRTxHvF8EH76bybk1yfS005KLls-at2yc",
-          "short_id": "a7856800c2deb7b2"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
         "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 03 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 04 - xiaohe"
+        "🇦🇪 阿联酋 (UAE) 03 - xiaohe"
       ]
     },
     {
@@ -85,8 +70,7 @@
       "outbounds": [
         "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
         "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 03 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 04 - xiaohe"
+        "🇦🇪 阿联酋 (UAE) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

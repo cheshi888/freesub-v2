@@ -5,32 +5,94 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.21.0.1
-  port: 2083
+  server: www.ubuntuupdates.com
+  port: 443
   udp: true
   type: vmess
-  uuid: ac251237-576f-40c8-a543-554960c958b1
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
   alterId: 0
   cipher: auto
   tls: true
-  servername: or3.sfacg.uk
+  servername: www.ubuntuupdates.com
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /or3
-    headers:
-      Host: or3.sfacg.uk
+    path: /truth
+- name: 🌐 其他地区 (Other) 02 - xiaohe
+  server: www.ubuntuupdates.com
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: www.ubuntuupdates.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /truth
+- name: 🌐 其他地区 (Other) 03 - xiaohe
+  server: www.ubuntuupdates.com
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: www.ubuntuupdates.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /truth
+- name: 🌐 其他地区 (Other) 04 - xiaohe
+  server: www.ubuntuupdates.com
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: www.ubuntuupdates.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /truth
+- name: 🌐 其他地区 (Other) 05 - xiaohe
+  server: www.ubuntuupdates.com
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: www.ubuntuupdates.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /truth
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🌐 其他地区 (Other) 02 - xiaohe
+  - 🌐 其他地区 (Other) 03 - xiaohe
+  - 🌐 其他地区 (Other) 04 - xiaohe
+  - 🌐 其他地区 (Other) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🌐 其他地区 (Other) 02 - xiaohe
+  - 🌐 其他地区 (Other) 03 - xiaohe
+  - 🌐 其他地区 (Other) 04 - xiaohe
+  - 🌐 其他地区 (Other) 05 - xiaohe
 rules:
 - MATCH,PROXIES

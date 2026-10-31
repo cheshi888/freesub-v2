@@ -6,21 +6,86 @@
     {
       "type": "vmess",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.21.0.1",
-      "server_port": 2083,
-      "uuid": "ac251237-576f-40c8-a543-554960c958b1",
+      "server": "www.ubuntuupdates.com",
+      "server_port": 443,
+      "uuid": "83b09a64-1eaf-4c4d-89ed-866d4b6b8115",
       "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "or3.sfacg.uk",
+        "server_name": "www.ubuntuupdates.com",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/or3",
-        "headers": {
-          "Host": "or3.sfacg.uk"
-        }
+        "path": "/truth"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 02 - xiaohe",
+      "server": "www.ubuntuupdates.com",
+      "server_port": 443,
+      "uuid": "83b09a64-1eaf-4c4d-89ed-866d4b6b8115",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ubuntuupdates.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/truth"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 03 - xiaohe",
+      "server": "www.ubuntuupdates.com",
+      "server_port": 443,
+      "uuid": "83b09a64-1eaf-4c4d-89ed-866d4b6b8115",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ubuntuupdates.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/truth"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 04 - xiaohe",
+      "server": "www.ubuntuupdates.com",
+      "server_port": 443,
+      "uuid": "83b09a64-1eaf-4c4d-89ed-866d4b6b8115",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ubuntuupdates.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/truth"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 05 - xiaohe",
+      "server": "www.ubuntuupdates.com",
+      "server_port": 443,
+      "uuid": "83b09a64-1eaf-4c4d-89ed-866d4b6b8115",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ubuntuupdates.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/truth"
       }
     },
     {
@@ -28,14 +93,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe",
+        "🌐 其他地区 (Other) 02 - xiaohe",
+        "🌐 其他地区 (Other) 03 - xiaohe",
+        "🌐 其他地区 (Other) 04 - xiaohe",
+        "🌐 其他地区 (Other) 05 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe",
+        "🌐 其他地区 (Other) 02 - xiaohe",
+        "🌐 其他地区 (Other) 03 - xiaohe",
+        "🌐 其他地区 (Other) 04 - xiaohe",
+        "🌐 其他地区 (Other) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
-  server: 185.156.44.99
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: speedtest.tinkoff.ru
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
   server: hy2-new.aspidnet.xyz
   port: 443
   udp: true
@@ -22,20 +14,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
-  server: 46.28.67.55
-  port: 443
-  udp: true
-  type: vless
-  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
-    short-id: d06d78e974491b6e
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
   server: 82.117.255.174
   port: 443
   udp: true
@@ -48,13 +27,40 @@ proxies:
     short-id: 31e91d43e553bf32
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
-  server: bogging-eyeteeth-fly.freesocks.work
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
+  server: app-ms-90.next-gen-shopping.com
   port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  type: vless
+  uuid: 07680ffb-0666-4836-b6ad-ec0de62bc38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: HA8RX24k72lyACy0T1mCDeYcUQh22XRlT4wuhj3Onl4
+    short-id: 36b707a341db758d
+  servername: assets-ms-90.next-gen-shopping.com
+  client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
+  server: 185.156.44.99
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: speedtest.tinkoff.ru
+  skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
+  server: 46.28.67.55
+  port: 443
+  udp: true
+  type: vless
+  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
+    short-id: d06d78e974491b6e
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
