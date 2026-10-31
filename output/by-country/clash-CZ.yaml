@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 212.102.38.25
-  port: 443
-  udp: true
-  type: vless
-  uuid: b34a52cb-cd52-49a8-9362-b8e97c151d49
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 23cb4W9THzBKsrECsLh-A_FcKZfkAtUONoDze8-GnQE
-    short-id: e90360ec7cc61b20
-  servername: udemy.com
-  client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
   server: 195.123.245.241
   port: 443
   udp: true
@@ -30,22 +17,20 @@ proxies:
     short-id: 23d0950d60bc0d5b
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
-  server: 155.212.240.10
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
+  server: 212.102.38.25
   port: 443
   udp: true
   type: vless
-  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
+  uuid: b34a52cb-cd52-49a8-9362-b8e97c151d49
+  flow: xtls-rprx-vision
   tls: true
-  servername: n.bitpulse.me
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /019bcbad-3813-7cce-8786-3ac0e418f128
-    headers:
-      Host: n.bitpulse.me
-- name: 🇨🇿 捷克 (Czech) 04 - xiaohe
+  reality-opts:
+    public-key: 23cb4W9THzBKsrECsLh-A_FcKZfkAtUONoDze8-GnQE
+    short-id: e90360ec7cc61b20
+  servername: udemy.com
+  client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
   server: 193.124.17.190
   port: 443
   udp: true
@@ -58,7 +43,7 @@ proxies:
     short-id: 1036b2383b72
   servername: www.mozilla.org
   client-fingerprint: firefox
-- name: 🇨🇿 捷克 (Czech) 05 - xiaohe
+- name: 🇨🇿 捷克 (Czech) 04 - xiaohe
   server: cz-prg.dontblockmepls.com
   port: 2063
   udp: true
@@ -69,9 +54,22 @@ proxies:
   reality-opts:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
   servername: rusbid.de
+  client-fingerprint: firefox
+- name: 🇨🇿 捷克 (Czech) 05 - xiaohe
+  server: server.slavkiti.monster
+  port: 443
+  udp: true
+  type: vless
+  uuid: 13aef2e0-b3fb-4322-a0e9-c10b908ce6b5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: 87f895f23064
+  servername: www.techradar.com
   client-fingerprint: chrome
 - name: 🇨🇿 捷克 (Czech) 06 - xiaohe
-  server: server.slavkiti.monster
+  server: 193.124.17.190
   port: 443
   udp: true
   type: vless
