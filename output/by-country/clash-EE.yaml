@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  server: 13.143.239.127
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 2a0fc918-9c61-451b-a9ad-e8f796e70f52
+  sni: nl1.obxodvpn.us
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: ee.h1cloud.net
   port: 25895
   udp: true
@@ -15,15 +23,20 @@ proxies:
     public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
     short-id: a73f0410d728c823
   servername: www.samsung.com
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  server: 13.143.239.127
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+  server: 185.225.205.53
   port: 443
   udp: true
-  type: hysteria2
-  password: 2a0fc918-9c61-451b-a9ad-e8f796e70f52
-  sni: nl1.obxodvpn.us
-  skip-cert-verify: false
+  type: vless
+  uuid: 7a0348d6-55d3-4c23-b22f-6277fcb2264c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 2XyUS3_ONl5REQ7NiwikdJphAe7oJ61-21zuqnN67y8
+    short-id: 2e82d7ac
+  servername: addons.mozilla.org
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -31,6 +44,7 @@ proxy-groups:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -38,5 +52,6 @@ proxy-groups:
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
 rules:
 - MATCH,PROXIES

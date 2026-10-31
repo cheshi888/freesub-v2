@@ -4,8 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇹🇭 泰国 (Thailand) 01 - xiaohe",
+      "server": "th001.zestapp778.com",
+      "server_port": 33079,
+      "password": "5t6i121em5lkmsmk",
+      "tls": {
+        "enabled": true,
+        "server_name": "th001.zestapp778.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 02 - xiaohe",
       "server": "45.154.26.63",
       "server_port": 443,
       "uuid": "ff85e702-b605-4109-884d-2c1f065d0954",
@@ -22,18 +38,6 @@
           "public_key": "MiQ5B4j6In71lWvCi0vO_DkVSDb7sii34bh5efBMswk",
           "short_id": "3c032a7e"
         }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇹🇭 泰国 (Thailand) 02 - xiaohe",
-      "server": "th001.zestapp778.com",
-      "server_port": 33079,
-      "password": "5t6i121em5lkmsmk",
-      "tls": {
-        "enabled": true,
-        "server_name": "th001.zestapp778.com",
-        "insecure": false
       }
     },
     {

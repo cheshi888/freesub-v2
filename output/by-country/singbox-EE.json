@@ -4,8 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
+      "server": "13.143.239.127",
+      "server_port": 443,
+      "password": "2a0fc918-9c61-451b-a9ad-e8f796e70f52",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl1.obxodvpn.us",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
       "server": "ee.h1cloud.net",
       "server_port": 25895,
       "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
@@ -14,7 +26,7 @@
         "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -24,15 +36,24 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
-      "server": "13.143.239.127",
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
+      "server": "185.225.205.53",
       "server_port": 443,
-      "password": "2a0fc918-9c61-451b-a9ad-e8f796e70f52",
+      "uuid": "7a0348d6-55d3-4c23-b22f-6277fcb2264c",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "nl1.obxodvpn.us",
-        "insecure": false
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "2XyUS3_ONl5REQ7NiwikdJphAe7oJ61-21zuqnN67y8",
+          "short_id": "2e82d7ac"
+        }
       }
     },
     {
@@ -41,7 +62,8 @@
       "outbounds": [
         "auto",
         "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe"
       ]
     },
     {
@@ -49,7 +71,8 @@
       "tag": "auto",
       "outbounds": [
         "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
