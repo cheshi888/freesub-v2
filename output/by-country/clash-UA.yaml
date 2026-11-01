@@ -5,31 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
-  server: 83.147.18.75
+  server: netx.smrtai.top
   port: 443
   udp: true
   type: vless
-  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
-  flow: xtls-rprx-vision
+  uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
   tls: true
   reality-opts:
-    public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
-    short-id: 7f1e29593aa94ad1
-  servername: www.bing.com
+    public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
+    short-id: d8b58872
+  servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
-  server: staging.lastilhame.monster
+  server: 104.253.216.227
   port: 443
   udp: true
   type: vless
-  uuid: 455cfdc6-9abf-4e40-863f-5ff6cc63457c
+  uuid: 317bc783-340f-453c-afb5-b6bf637c0b23
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
-    short-id: 18e4d2d21241
-  servername: www.microsoft.com
-  client-fingerprint: chrome
+    short-id: fc994ae7eb10
+  servername: www.tradingview.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

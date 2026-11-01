@@ -18,18 +18,6 @@ proxies:
   servername: gateway.icloud.com
   client-fingerprint: chrome
 - name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 31.77.13.22
-  port: 2063
-  udp: true
-  type: vless
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
-  client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
   server: 212.102.38.25
   port: 443
   udp: true
@@ -42,18 +30,30 @@ proxies:
     short-id: e90360ec7cc61b20
   servername: udemy.com
   client-fingerprint: ios
+- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
+  server: cz-prg.dontblockmepls.com
+  port: 2063
+  udp: true
+  type: vless
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
+  client-fingerprint: firefox
 - name: 🇨🇿 捷克 (Czech) 04 - xiaohe
   server: 193.124.17.190
   port: 443
   udp: true
   type: vless
-  uuid: 68cf8d29-5aa0-44b3-88a9-f1a576b6e84c
+  uuid: d84c13b2-c2b9-4a7c-838f-05ac09ee422e
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: 73a9e631a09b
-  servername: www.microsoft.com
+    short-id: 2a2ce9e42980
+  servername: www.mozilla.org
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
