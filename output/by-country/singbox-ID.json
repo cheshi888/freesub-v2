@@ -20,18 +20,41 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇮🇩 印尼 (Indonesia) 02 - xiaohe",
+      "server": "id.huahua.wiki",
+      "server_port": 443,
+      "uuid": "1d08ca28-9c86-43c6-9eff-7d3c13df06a8",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "O_f5yv1Cb3_4Rk2MKYpjnpCEyPNY4_GPUTJYi9usUzc",
+          "short_id": "b6343f999147d133"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
+        "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
+        "🇮🇩 印尼 (Indonesia) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
+        "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
+        "🇮🇩 印尼 (Indonesia) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
