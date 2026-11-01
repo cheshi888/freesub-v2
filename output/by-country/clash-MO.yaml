@@ -1,0 +1,33 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇲🇴 MO 01 - xiaohe
+  server: mo01.dw.sh-cloudflare.sbs
+  port: 11107
+  udp: true
+  type: vless
+  uuid: c86efa7e-f7fb-47d6-b832-6b44cf5e8b71
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: cIAvdh9g8o4OWaCs4yY1aKxz32F0N73O7kQpqp3oQHg
+    short-id: 9433bfa1
+  servername: cdn-dynmedia-1.microsoft.com
+  client-fingerprint: safari
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇲🇴 MO 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇲🇴 MO 01 - xiaohe
+rules:
+- MATCH,PROXIES
