@@ -25,18 +25,6 @@ proxies:
     short-id: 2e82d7ac
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  server: 79.182.39.232
-  port: 25895
-  udp: true
-  type: vless
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
-  tls: true
-  reality-opts:
-    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
-    short-id: a73f0410d728c823
-  servername: www.samsung.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
 rules:
 - MATCH,PROXIES

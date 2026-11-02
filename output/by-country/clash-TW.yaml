@@ -5,36 +5,44 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
-  server: vpn-tw-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-tw-002.fastervpn.world\u0026insecure=1\u0026allowinsecure=1
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   server: 103.115.109.49
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/oneclickvpnkeys
+  sni: https://t.me/wangcai2
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
+  server: 160.187.100.109
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 127.0.0.1
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  server: ench-snet-app.w-ctrip.cn
-  port: 47786
+  server: 47.129.112.129
+  port: 20000
   udp: true
-  type: trojan
-  password: b17e9b52db9623bd6c16eea3d7adb5b3
-  sni: cm.g.doubleclick.net
+  type: hysteria2
+  password: CQUPACy34t6Tjx8FdQdkCiYW
+  sni: sg-transit-3.nebulacloud.win
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
-  server: ench-snet-app.w-ctrip.cn
-  port: 45503
+  server: er8u54dh.df6h451rh.xin
+  port: 443
   udp: true
-  type: trojan
-  password: b17e9b52db9623bd6c16eea3d7adb5b3
-  sni: ench-snet-app.w-ctrip.cn
+  type: anytls
+  password: 0324fbc29561
+  sni: px.ads.linkedin.com
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
+  server: 684616s4.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: 0324fbc29561
+  sni: px.ads.linkedin.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -45,6 +53,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +63,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-11-02 03:40:46 UTC
+生成时间: 2026-11-02 14:30:59 UTC
 ==============================================================================
 
 说明:
@@ -15,7 +15,7 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 5
+本轮家宽节点数: 4
 
 [1] US  移动网络  置信度 85
      exit_ip : 130.94.19.95
@@ -27,42 +27,32 @@
      ipapi.is: company=LIGHT NODE LIMITED asn=AS154177 LIGHT NODE LIMITED
      fraud   : 0  (-1 = 未取到评分)
 
-[2] KR  严格家宽  置信度 82
-     exit_ip : 49.254.204.133
-     server  : 49.254.204.133:1774  (shadowsocks)
-     ASN     : AS4766 Korea Telecom
-     ISP     : Korea Telecom
-     ORG     : Haionnet
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=HAIonNet asn=AS4766 Korea Telecom
+[2] US  移动网络  置信度 85
+     exit_ip : 130.94.18.21
+     server  : us001.zestapp778.com:57277  (trojan)
+     ASN     : AS154177 LIGHT NODE LIMITED
+     ISP     : Light Node Limited
+     ORG     : -
+     ip-api  : hosting=False proxy=False mobile=True reverse=-
+     ipapi.is: company=LIGHT NODE LIMITED asn=AS154177 LIGHT NODE LIMITED
      fraud   : 0  (-1 = 未取到评分)
 
-[3] HK  严格家宽  置信度 82
-     exit_ip : 203.218.231.16
-     server  : e0064cf5-tmm5c0-to0mym-z93q.hk3.hyhuawei.com:443  (hysteria2)
-     ASN     : AS4760 HKT Limited
-     ISP     : Hong Kong Telecommunications (HKT) Limited Mass Internet
-     ORG     : Hong Kong Telecommunications (HKT) Limited
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Hong Kong Telecommunications (HKT) Limited Mass Internet asn=AS4760 PCCW IMS Limited
+[3] TR  移动网络  置信度 85
+     exit_ip : 206.1.99.201
+     server  : tr2.h1cloud.net:25021  (vless)
+     ASN     : AS44620 Netlen Internet Hizmetleri Ltd. Sti.
+     ISP     : Netlen Internet Hizmetleri Ltd. Sti.
+     ORG     : -
+     ip-api  : hosting=False proxy=False mobile=True reverse=-
+     ipapi.is: company=Netlen Internet Hizmetleri Ltd. Sti. asn=AS44620 Netlen Internet Hizmetleri Ltd. Sti.
      fraud   : 0  (-1 = 未取到评分)
 
 [4] TW  严格家宽  置信度 82
-     exit_ip : 60.248.219.52
-     server  : 60.248.219.78:443  (vless)
+     exit_ip : 125.227.86.44
+     server  : 125.227.86.45:443  (trojan)
      ASN     : AS3462 Data Communication Business Group
      ISP     : Chunghwa Telecom Co., Ltd.
      ORG     : Chunghwa Telecom Co. Ltd.
      ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
-     fraud   : 0  (-1 = 未取到评分)
-
-[5] KR  疑似家宽  置信度 55
-     exit_ip : 203.227.188.13
-     server  : ench-snet-app.w-ctrip.cn:29628  (trojan)
-     ASN     : AS9848 SEJONG NETWORKS
-     ISP     : Sejong Networks
-     ORG     : MOACK
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=MOACK asn=AS9848 SEJONG NETWORKS
+     ipapi.is: company=Chunghwa Telecom Co.,Ltd. asn=AS3462 Chunghwa Telecom Co., Ltd.
      fraud   : 0  (-1 = 未取到评分)
