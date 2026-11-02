@@ -12,16 +12,8 @@
       "password": "KnJGad3FqTvjqbaX"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 02 - xiaohe",
-      "server": "5.188.181.201",
-      "server_port": 9027,
-      "method": "aes-256-cfb",
-      "password": "EXN3S3eQpjE7EJu8"
-    },
-    {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 03 - xiaohe",
+      "tag": "🇪🇸 西班牙 (Spain) 02 - xiaohe",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -41,7 +33,76 @@
     },
     {
       "type": "trojan",
+      "tag": "🇪🇸 西班牙 (Spain) 03 - xiaohe",
+      "server": "66.163.118.166",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "learn.discovergreatjobsandadvanceyourcareer.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
       "tag": "🇪🇸 西班牙 (Spain) 04 - xiaohe",
+      "server": "66.163.118.62",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "courses.discovergreatjobsandadvanceyourcareer.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 05 - xiaohe",
+      "server": "46.28.71.247",
+      "server_port": 443,
+      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
+          "short_id": "0dfc23fe80778c00"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 06 - xiaohe",
+      "server": "156.252.229.159",
+      "server_port": 8443,
+      "uuid": "3e21e3d3-6d26-4155-b851-764dd8e8c6b5",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.googleapis.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "7jPluypHwPilf_Mq7JOY96SwKkbK35WuIlN1HwGQ_0A",
+          "short_id": "974f7f8f"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇪🇸 西班牙 (Spain) 07 - xiaohe",
       "server": "ench-snet-app.w-ctrip.cn",
       "server_port": 22100,
       "password": "b17e9b52db9623bd6c16eea3d7adb5b3",
@@ -49,26 +110,6 @@
         "enabled": true,
         "server_name": "cm.g.doubleclick.net",
         "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 05 - xiaohe",
-      "server": "45.198.55.200",
-      "server_port": 25150,
-      "uuid": "056405e8-de9f-4d0d-8145-956f13cc34da",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Qvn7tV54mdqxJ40LmmoI1PRM1QKXEbfFOZS-omPKhGY",
-          "short_id": "4301a484cc762aa6"
-        }
       }
     },
     {
@@ -80,7 +121,9 @@
         "🇪🇸 西班牙 (Spain) 02 - xiaohe",
         "🇪🇸 西班牙 (Spain) 03 - xiaohe",
         "🇪🇸 西班牙 (Spain) 04 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 05 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 05 - xiaohe",
+        "🇪🇸 西班牙 (Spain) 06 - xiaohe",
+        "🇪🇸 西班牙 (Spain) 07 - xiaohe"
       ]
     },
     {
@@ -91,7 +134,9 @@
         "🇪🇸 西班牙 (Spain) 02 - xiaohe",
         "🇪🇸 西班牙 (Spain) 03 - xiaohe",
         "🇪🇸 西班牙 (Spain) 04 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 05 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 05 - xiaohe",
+        "🇪🇸 西班牙 (Spain) 06 - xiaohe",
+        "🇪🇸 西班牙 (Spain) 07 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

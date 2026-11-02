@@ -13,26 +13,19 @@ proxies:
   sni: crt.onecloudstream.com
   skip-cert-verify: false
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  server: 179.253.179.109
-  port: 57443
+  server: 185.225.205.53
+  port: 443
   udp: true
   type: vless
-  uuid: da8fab8e-4a25-4eb0-b224-88ab96c753ce
+  uuid: 3d526c7f-059c-4e2b-b09a-8569b268935b
+  flow: xtls-rprx-vision
   tls: true
-  servername: 87.121.86.24
-  skip-cert-verify: false
-  client-fingerprint: firefox
+  reality-opts:
+    public-key: 2XyUS3_ONl5REQ7NiwikdJphAe7oJ61-21zuqnN67y8
+    short-id: 2e82d7ac
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  server: 179.253.179.109
-  port: 57043
-  udp: true
-  type: vless
-  uuid: da8fab8e-4a25-4eb0-b224-88ab96c753ce
-  tls: true
-  servername: 87.121.86.24
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   server: 79.182.39.232
   port: 25895
   udp: true
@@ -44,14 +37,6 @@ proxies:
     short-id: a73f0410d728c823
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  server: 141.0.187.50
-  port: 443
-  udp: true
-  type: hysteria2
-  password: e5ec2586-59b3-40fa-91b7-bb37a2f7744e
-  sni: crt.onecloudstream.com
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,8 +45,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -70,7 +53,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
 rules:
 - MATCH,PROXIES

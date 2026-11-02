@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇭 菲律宾 (Philippines) 01 - xiaohe
+  server: 149.104.109.252
+  port: 8882
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: 🇵🇭 菲律宾 (Philippines) 02 - xiaohe
   server: ph001.zestapp778.com
   port: 46298
   udp: true
@@ -12,13 +19,6 @@ proxies:
   password: 5t6i121em5lkmsmk
   sni: ph001.zestapp778.com
   skip-cert-verify: false
-- name: 🇵🇭 菲律宾 (Philippines) 02 - xiaohe
-  server: 149.104.109.252
-  port: 8882
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
 proxy-groups:
 - name: PROXIES
   type: select

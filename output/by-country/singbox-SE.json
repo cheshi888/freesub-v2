@@ -4,15 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
-      "server": "70.34.207.14",
+      "server": "144.31.129.174",
       "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "uuid": "6f34a071-9a87-001e-b01a-4b5a5c95e552",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
-        "insecure": false
+        "server_name": "s3-fi-1.rucdn777.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "GDlgvx8exl9BJ5dD2HSVqE2oUbZyZZOFX5EdnCn5j2M",
+          "short_id": "20ed7ee26095771b"
+        }
       }
     },
     {
@@ -28,8 +37,43 @@
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
+      "server": "70.34.207.14",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
+      "server": "89.22.224.146",
+      "server_port": 43788,
+      "uuid": "6fbd9bd1-ccd4-4e2f-a918-a0f871965763",
+      "tls": {
+        "enabled": true,
+        "server_name": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
       "server": "5.178.109.174",
       "server_port": 14430,
       "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
@@ -38,38 +82,6 @@
         "path": "/vless",
         "headers": {
           "Host": "5.178.109.174"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
-      "server": "179.253.179.109",
-      "server_port": 54083,
-      "uuid": "0ef03752-c8bf-4482-8710-e563ca4808f9",
-      "tls": {
-        "enabled": true,
-        "server_name": "177.3.215.54",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
-      "server": "179.253.179.109",
-      "server_port": 54443,
-      "uuid": "0ef03752-c8bf-4482-8710-e563ca4808f9",
-      "tls": {
-        "enabled": true,
-        "server_name": "177.3.215.54",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
         }
       }
     },

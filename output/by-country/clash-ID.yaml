@@ -5,16 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇩 印尼 (Indonesia) 01 - xiaohe
-  server: 130.94.95.198
-  port: 57353
-  udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: in001.zestapp778.com
-  skip-cert-verify: true
-  client-fingerprint: firefox
-- name: 🇮🇩 印尼 (Indonesia) 02 - xiaohe
   server: id.huahua.wiki
   port: 443
   udp: true
@@ -27,6 +17,16 @@ proxies:
     short-id: b6343f999147d133
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇮🇩 印尼 (Indonesia) 02 - xiaohe
+  server: 130.94.95.198
+  port: 57353
+  udp: true
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: in001.zestapp778.com
+  skip-cert-verify: true
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

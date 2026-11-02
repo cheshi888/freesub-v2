@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
-  server: 3h-kazakhstan1.09vpn.com
+  server: 38.107.234.57
   port: 80
   udp: true
   type: vmess
@@ -16,19 +16,19 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: 3h-kazakhstan1.09vpn.com
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
-  server: 178.236.16.98
-  port: 35728
+  server: 3h-kazakhstan1.09vpn.com
+  port: 8443
   udp: true
   type: vless
-  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
+  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
   tls: true
-  reality-opts:
-    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
-    short-id: 69a2
-  servername: yahoo.com
-  client-fingerprint: chrome
+  servername: 3h-kazakhstan1.09vpn.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /vless/
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
   server: 109.248.170.119
   port: 13447

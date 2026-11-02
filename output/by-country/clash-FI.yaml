@@ -17,17 +17,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: ''
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 31.77.199.147
   port: 4443
   udp: true
@@ -40,23 +29,39 @@ proxies:
     short-id: 7da2eae792187ab9
   servername: images.unsplash.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 179.253.179.109
-  port: 62083
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  server: 65.109.211.81
+  port: 465
   udp: true
   type: vless
-  uuid: ef988d56-9c18-408e-ae1f-a144a332ebce
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
   tls: true
-  servername: 177.3.220.159
+  servername: hw6.divarkhaghazi.com
   skip-cert-verify: false
   client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw6.divarkhaghazi.com.
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
   server: ench-snet-app.w-ctrip.cn
   port: 41184
   udp: true
   type: trojan
   password: b17e9b52db9623bd6c16eea3d7adb5b3
-  sni: cm.g.doubleclick.net
+  sni: ench-snet-app.w-ctrip.cn
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
