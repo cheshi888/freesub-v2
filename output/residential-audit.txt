@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-11-02 14:30:59 UTC
+生成时间: 2026-11-03 00:28:29 UTC
 ==============================================================================
 
 说明:
@@ -15,44 +15,24 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 4
+本轮家宽节点数: 2
 
-[1] US  移动网络  置信度 85
-     exit_ip : 130.94.19.95
-     server  : 130.94.19.95:57277  (trojan)
-     ASN     : AS154177 LIGHT NODE LIMITED
-     ISP     : Light Node Limited
-     ORG     : -
-     ip-api  : hosting=False proxy=False mobile=True reverse=-
-     ipapi.is: company=LIGHT NODE LIMITED asn=AS154177 LIGHT NODE LIMITED
-     fraud   : 0  (-1 = 未取到评分)
-
-[2] US  移动网络  置信度 85
-     exit_ip : 130.94.18.21
-     server  : us001.zestapp778.com:57277  (trojan)
-     ASN     : AS154177 LIGHT NODE LIMITED
-     ISP     : Light Node Limited
-     ORG     : -
-     ip-api  : hosting=False proxy=False mobile=True reverse=-
-     ipapi.is: company=LIGHT NODE LIMITED asn=AS154177 LIGHT NODE LIMITED
-     fraud   : 0  (-1 = 未取到评分)
-
-[3] TR  移动网络  置信度 85
-     exit_ip : 206.1.99.201
-     server  : tr2.h1cloud.net:25021  (vless)
-     ASN     : AS44620 Netlen Internet Hizmetleri Ltd. Sti.
-     ISP     : Netlen Internet Hizmetleri Ltd. Sti.
-     ORG     : -
-     ip-api  : hosting=False proxy=False mobile=True reverse=-
-     ipapi.is: company=Netlen Internet Hizmetleri Ltd. Sti. asn=AS44620 Netlen Internet Hizmetleri Ltd. Sti.
-     fraud   : 0  (-1 = 未取到评分)
-
-[4] TW  严格家宽  置信度 82
-     exit_ip : 125.227.86.44
-     server  : 125.227.86.45:443  (trojan)
-     ASN     : AS3462 Data Communication Business Group
-     ISP     : Chunghwa Telecom Co., Ltd.
-     ORG     : Chunghwa Telecom Co. Ltd.
+[1] MY  严格家宽  置信度 70
+     exit_ip : 151.158.198.60
+     server  : 58.152.58.193:40006  (shadowsocks)
+     ASN     : AS154516 PERFECT NETWORK SDN. BHD.
+     ISP     : Perfect Network Sdn. Bhd.
+     ORG     : Perfect Internet Residential
      ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Chunghwa Telecom Co.,Ltd. asn=AS3462 Chunghwa Telecom Co., Ltd.
+     ipapi.is: company=Perfect Internet Residential asn=AS154516 PERFECT NETWORK SDN. BHD.
+     fraud   : 0  (-1 = 未取到评分)
+
+[2] HK  移动网络  置信度 85
+     exit_ip : 81.168.109.184
+     server  : dog-hk.kunlun01dns.com:21019  (vmess)
+     ASN     : AS9304 HGC Global Communications Limited
+     ISP     : HGC Global Communications Limited
+     ORG     : -
+     ip-api  : hosting=False proxy=False mobile=True reverse=-
+     ipapi.is: company=Company 6822f4faxZKZlk2L asn=AS9304 HGC Global Communications Limited
      fraud   : 0  (-1 = 未取到评分)
