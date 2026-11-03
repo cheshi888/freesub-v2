@@ -5,24 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe",
-      "server": "185.48.250.113",
-      "server_port": 8443,
-      "uuid": "3305c285-8d55-4f52-a3b0-2a582f5ffd59",
+      "tag": "🇬🇷 希腊 (Greece) 01 - xiaohe",
+      "server": "85.90.197.220",
+      "server_port": 443,
+      "uuid": "8f704ed6-9a1a-4d04-94dd-1bff501716de",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "sdwf-amq.pages.dev",
-        "insecure": false,
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "sdwf-amq.pages.dev"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4",
+          "short_id": "94acb54627612d43"
         }
       }
     },
@@ -31,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe"
+        "🇬🇷 希腊 (Greece) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe"
+        "🇬🇷 希腊 (Greece) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

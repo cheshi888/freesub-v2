@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇹 奥地利 (Austria) 01 - xiaohe
-  server: 152.53.1.57
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
-- name: 🇦🇹 奥地利 (Austria) 02 - xiaohe
   server: 82.110.60.9
   port: 19999
   udp: true
@@ -24,13 +17,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇦🇹 奥地利 (Austria) 01 - xiaohe
-  - 🇦🇹 奥地利 (Austria) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇦🇹 奥地利 (Austria) 01 - xiaohe
-  - 🇦🇹 奥地利 (Austria) 02 - xiaohe
 rules:
 - MATCH,PROXIES

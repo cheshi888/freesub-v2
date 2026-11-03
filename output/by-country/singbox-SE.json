@@ -4,23 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
-      "server": "se3.shtil.io",
+      "server": "70.34.207.14",
       "server_port": 443,
-      "uuid": "6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6",
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "se3.shtil.io",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
+        "insecure": false
       }
     },
     {
@@ -36,49 +28,47 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
-      "server": "70.34.207.14",
+      "server": "sw.golangwikito.cfd",
       "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
-      "server": "192.142.23.46",
-      "server_port": 443,
-      "password": "a0052f4f-4c63-0002-a16f-ab2d5d718cd3",
-      "tls": {
-        "enabled": true,
-        "server_name": "diffoscope.com",
-        "insecure": false
+        "server_name": "sw.golangwikito.cfd",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg",
+          "short_id": "a1037b25dcef6aa7"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
-      "server": "swidenafterlanzerotte.space",
-      "server_port": 443,
-      "uuid": "50a87e21-f0e2-4b53-a787-91adfe748f63",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "swidenafterlanzerotte.space",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM",
-          "short_id": ""
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
+      "server": "70.34.212.124",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "AxIYWtskJWIIaefW"
     },
     {
       "type": "selector",

@@ -1,0 +1,311 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🌐 其他地区 (Other) 01 - xiaohe
+  server: 188.114.97.1
+  port: 443
+  udp: true
+  type: vmess
+  uuid: ba1116e2-8c2f-4e3d-8e50-c954360cf970
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: www.windowssearchtools.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.windowssearchtools.com
+- name: 🌐 其他地区 (Other) 02 - xiaohe
+  server: www.ubuntuupdates.com
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: www.ubuntuupdates.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /truth
+    headers: &id001
+      Host: www.ubuntuupdates.com
+- name: 🌐 其他地区 (Other) 03 - xiaohe
+  server: www.ubuntuupdates.com
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: www.ubuntuupdates.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /truth
+    headers: *id001
+- name: 🌐 其他地区 (Other) 04 - xiaohe
+  server: www.ubuntuupdates.com
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: www.ubuntuupdates.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /truth
+    headers: *id001
+- name: 🌐 其他地区 (Other) 05 - xiaohe
+  server: www.ubuntuupdates.com
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: www.ubuntuupdates.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /truth
+    headers: *id001
+- name: 🌐 其他地区 (Other) 06 - xiaohe
+  server: 104.27.0.1
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers: &id002
+      Host: vmess.lbw666.dpdns.org
+- name: 🌐 其他地区 (Other) 07 - xiaohe
+  server: 104.27.0.1
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers: *id002
+- name: 🌐 其他地区 (Other) 08 - xiaohe
+  server: 104.27.0.1
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers: *id002
+- name: 🌐 其他地区 (Other) 09 - xiaohe
+  server: 104.27.0.1
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers: *id002
+- name: 🌐 其他地区 (Other) 10 - xiaohe
+  server: 104.27.0.1
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers: *id002
+- name: 🌐 其他地区 (Other) 11 - xiaohe
+  server: 104.27.0.1
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers: *id002
+- name: 🌐 其他地区 (Other) 12 - xiaohe
+  server: 104.17.136.198
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers: &id003
+      Host: vmess.lbw666.dpdns.org
+- name: 🌐 其他地区 (Other) 13 - xiaohe
+  server: 104.17.136.198
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers: *id003
+- name: 🌐 其他地区 (Other) 14 - xiaohe
+  server: 104.17.136.198
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers: *id003
+- name: 🌐 其他地区 (Other) 15 - xiaohe
+  server: 104.17.136.198
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers: *id003
+- name: 🌐 其他地区 (Other) 16 - xiaohe
+  server: 104.17.136.198
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers: *id003
+- name: 🌐 其他地区 (Other) 17 - xiaohe
+  server: 104.17.136.198
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers: *id003
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🌐 其他地区 (Other) 02 - xiaohe
+  - 🌐 其他地区 (Other) 03 - xiaohe
+  - 🌐 其他地区 (Other) 04 - xiaohe
+  - 🌐 其他地区 (Other) 05 - xiaohe
+  - 🌐 其他地区 (Other) 06 - xiaohe
+  - 🌐 其他地区 (Other) 07 - xiaohe
+  - 🌐 其他地区 (Other) 08 - xiaohe
+  - 🌐 其他地区 (Other) 09 - xiaohe
+  - 🌐 其他地区 (Other) 10 - xiaohe
+  - 🌐 其他地区 (Other) 11 - xiaohe
+  - 🌐 其他地区 (Other) 12 - xiaohe
+  - 🌐 其他地区 (Other) 13 - xiaohe
+  - 🌐 其他地区 (Other) 14 - xiaohe
+  - 🌐 其他地区 (Other) 15 - xiaohe
+  - 🌐 其他地区 (Other) 16 - xiaohe
+  - 🌐 其他地区 (Other) 17 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🌐 其他地区 (Other) 02 - xiaohe
+  - 🌐 其他地区 (Other) 03 - xiaohe
+  - 🌐 其他地区 (Other) 04 - xiaohe
+  - 🌐 其他地区 (Other) 05 - xiaohe
+  - 🌐 其他地区 (Other) 06 - xiaohe
+  - 🌐 其他地区 (Other) 07 - xiaohe
+  - 🌐 其他地区 (Other) 08 - xiaohe
+  - 🌐 其他地区 (Other) 09 - xiaohe
+  - 🌐 其他地区 (Other) 10 - xiaohe
+  - 🌐 其他地区 (Other) 11 - xiaohe
+  - 🌐 其他地区 (Other) 12 - xiaohe
+  - 🌐 其他地区 (Other) 13 - xiaohe
+  - 🌐 其他地区 (Other) 14 - xiaohe
+  - 🌐 其他地区 (Other) 15 - xiaohe
+  - 🌐 其他地区 (Other) 16 - xiaohe
+  - 🌐 其他地区 (Other) 17 - xiaohe
+rules:
+- MATCH,PROXIES
