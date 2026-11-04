@@ -5,16 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  server: 125.227.86.45
+  server: er8u54dh.df6h451rh.xin
   port: 443
   udp: true
-  type: trojan
-  password: 0a9f1f5a397bd427
-  sni: TG.freecodes
+  type: anytls
+  password: 0324fbc29561
+  sni: px.ads.linkedin.com
   skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: db
 proxy-groups:
 - name: PROXIES
   type: select
