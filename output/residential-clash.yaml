@@ -4,15 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  server: fc05feb7-tmm5c0-tpv2b9-1o8ak.hk3.hyhuawei.com
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  server: 125.227.86.45
   port: 443
   udp: true
-  type: hysteria2
-  password: 8bb68d04-6973-11ee-b518-f23c9164ca5d
-  sni: fc05feb7-tmm5c0-tpv2b9-1o8ak.hk3.hyhuawei.com
-  skip-cert-verify: false
+  type: trojan
+  password: 0a9f1f5a397bd427
+  sni: TG.freecodes
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: db
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
+  server: 210.0.244.227
+  port: 443
+  udp: true
+  type: vless
+  uuid: ebc368f4-c13c-4bd2-849b-4d245615728f
+  tls: true
+  reality-opts:
+    public-key: HhYjpNgNw0X_Qrjv9R5aHfV92hHbZmlY1u12DMTPrVw
+  servername: cloudflare.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
   server: 210.0.244.157
   port: 443
   udp: true
@@ -28,14 +42,16 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

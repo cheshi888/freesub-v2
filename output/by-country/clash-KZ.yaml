@@ -15,8 +15,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vmess/
-    headers:
-      Host: 3h-kazakhstan1.09vpn.com
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
   server: 109.248.170.119
   port: 13447
@@ -29,6 +27,19 @@ proxies:
     short-id: '83'
   servername: yahoo.com
   client-fingerprint: chrome
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
+  server: 3h-kazakhstan1.09vpn.com
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
+  tls: true
+  servername: 3h-kazakhstan1.09vpn.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vless/
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +47,7 @@ proxy-groups:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +55,6 @@ proxy-groups:
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
 rules:
 - MATCH,PROXIES

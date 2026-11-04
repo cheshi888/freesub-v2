@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-11-03 22:58:45 UTC
+生成时间: 2026-11-04 04:11:25 UTC
 ==============================================================================
 
 说明:
@@ -15,19 +15,29 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 2
+本轮家宽节点数: 3
 
-[1] HK  严格家宽  置信度 82
-     exit_ip : 203.218.231.16
-     server  : fc05feb7-tmm5c0-tpv2b9-1o8ak.hk3.hyhuawei.com:443  (hysteria2)
-     ASN     : AS4760 HKT Limited
-     ISP     : Hong Kong Telecommunications (HKT) Limited Mass Internet
-     ORG     : Hong Kong Telecommunications (HKT) Limited
+[1] TW  严格家宽  置信度 82
+     exit_ip : 125.227.86.44
+     server  : 125.227.86.45:443  (trojan)
+     ASN     : AS3462 Data Communication Business Group
+     ISP     : Chunghwa Telecom Co., Ltd.
+     ORG     : Chunghwa Telecom Co. Ltd.
      ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Hong Kong Telecommunications (HKT) Limited Mass Internet asn=AS4760 PCCW IMS Limited
+     ipapi.is: company=Chunghwa Telecom Co.,Ltd. asn=AS3462 Chunghwa Telecom Co., Ltd.
      fraud   : 0  (-1 = 未取到评分)
 
 [2] HK  严格家宽  置信度 70
+     exit_ip : 210.0.244.227
+     server  : 210.0.244.227:443  (vless)
+     ASN     : AS9304 HGC Global Communications Limited
+     ISP     : HGC Global Communications Limited
+     ORG     : HGC Global Communications Limited
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=HGC Global Communications Limited asn=AS9304 HGC Global Communications Limited
+     fraud   : 0  (-1 = 未取到评分)
+
+[3] HK  严格家宽  置信度 70
      exit_ip : 210.0.244.157
      server  : 210.0.244.157:443  (vless)
      ASN     : AS9304 HGC Global Communications Limited

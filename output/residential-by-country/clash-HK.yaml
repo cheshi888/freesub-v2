@@ -5,13 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  server: fc05feb7-tmm5c0-tpv2b9-1o8ak.hk3.hyhuawei.com
+  server: 210.0.244.227
   port: 443
   udp: true
-  type: hysteria2
-  password: 8bb68d04-6973-11ee-b518-f23c9164ca5d
-  sni: fc05feb7-tmm5c0-tpv2b9-1o8ak.hk3.hyhuawei.com
-  skip-cert-verify: false
+  type: vless
+  uuid: ebc368f4-c13c-4bd2-849b-4d245615728f
+  tls: true
+  reality-opts:
+    public-key: HhYjpNgNw0X_Qrjv9R5aHfV92hHbZmlY1u12DMTPrVw
+  servername: cloudflare.com
+  client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
   server: 210.0.244.157
   port: 443

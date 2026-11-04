@@ -4,15 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
-      "server": "fc05feb7-tmm5c0-tpv2b9-1o8ak.hk3.hyhuawei.com",
+      "server": "210.0.244.227",
       "server_port": 443,
-      "password": "8bb68d04-6973-11ee-b518-f23c9164ca5d",
+      "uuid": "ebc368f4-c13c-4bd2-849b-4d245615728f",
       "tls": {
         "enabled": true,
-        "server_name": "fc05feb7-tmm5c0-tpv2b9-1o8ak.hk3.hyhuawei.com",
-        "insecure": false
+        "server_name": "cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HhYjpNgNw0X_Qrjv9R5aHfV92hHbZmlY1u12DMTPrVw",
+          "short_id": ""
+        }
       }
     },
     {
