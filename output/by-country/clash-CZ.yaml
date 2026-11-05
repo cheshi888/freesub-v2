@@ -5,44 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 212.102.38.25
+  server: 193.124.17.190
   port: 443
   udp: true
   type: vless
-  uuid: b34a52cb-cd52-49a8-9362-b8e97c151d49
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 23cb4W9THzBKsrECsLh-A_FcKZfkAtUONoDze8-GnQE
-    short-id: e90360ec7cc61b20
-  servername: udemy.com
-  client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: server.slavkiti.monster
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6dfc9149-1ff9-41c3-8563-0ef284381731
+  uuid: 13aef2e0-b3fb-4322-a0e9-c10b908ce6b5
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: 1374bddeb25d
-  servername: www.tradingview.com
-  client-fingerprint: chrome
+    short-id: 87f895f23064
+  servername: www.techradar.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
-  - 🇨🇿 捷克 (Czech) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
-  - 🇨🇿 捷克 (Czech) 02 - xiaohe
 rules:
 - MATCH,PROXIES

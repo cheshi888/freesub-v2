@@ -5,27 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  server: 210.0.244.227
+  server: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
   port: 443
   udp: true
-  type: vless
-  uuid: ebc368f4-c13c-4bd2-849b-4d245615728f
-  tls: true
-  reality-opts:
-    public-key: HhYjpNgNw0X_Qrjv9R5aHfV92hHbZmlY1u12DMTPrVw
-  servername: cloudflare.com
-  client-fingerprint: firefox
+  type: hysteria2
+  password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
+  sni: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  server: 210.0.244.157
+  server: 33632b49-tmm5c0-tonrmx-8n27.nw4.hyhuawei.com
   port: 443
   udp: true
-  type: vless
-  uuid: f3ff9bac-2904-4f38-bae1-54ab1a72891b
-  tls: true
-  reality-opts:
-    public-key: T239VP3HbJ2KJCur7hDHJtrs6eKmKQfU_X1Xg6NmPgI
-  servername: cloudflare.com
-  client-fingerprint: firefox
+  type: hysteria2
+  password: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc
+  sni: 33632b49-tmm5c0-tonrmx-8n27.nw4.hyhuawei.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
