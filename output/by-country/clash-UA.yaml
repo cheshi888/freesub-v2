@@ -18,6 +18,18 @@ proxies:
   servername: www.bing.com
   client-fingerprint: chrome
 - name: 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
+  server: 31.222.235.81
+  port: 443
+  udp: true
+  type: vless
+  uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
+  tls: true
+  reality-opts:
+    public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
+    short-id: d8b58872
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇺🇦 乌克兰 (Ukraine) 03 - xiaohe
   server: 104.253.216.227
   port: 443
   udp: true
@@ -30,18 +42,6 @@ proxies:
     short-id: b27ba098687b
   servername: www.tradingview.com
   client-fingerprint: firefox
-- name: 🇺🇦 乌克兰 (Ukraine) 03 - xiaohe
-  server: 31.222.235.81
-  port: 443
-  udp: true
-  type: vless
-  uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
-  tls: true
-  reality-opts:
-    public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
-    short-id: d8b58872
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

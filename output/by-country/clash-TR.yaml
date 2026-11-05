@@ -15,21 +15,11 @@ proxies:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
     short-id: 457fab2ac885dbe0
   servername: github.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 153.56.210.134
-  port: 38045
-  udp: true
-  type: hysteria2
-  password: a81a7b45-dd70-42ef-822f-ef467f944382
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 642516f2-f9bd-41ce-9904-dee699c39cf9
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   server: 153.56.210.134
   port: 34121
   udp: true
@@ -39,20 +29,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  server: 153.56.210.61
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
-    short-id: a696de84963656de
-  servername: amd.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   server: 153.56.210.134
   port: 57251
   udp: true
@@ -62,7 +39,17 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 0ee2089e-70df-4c30-bfea-1fb9be61d93e
-- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  server: 153.56.210.134
+  port: 38045
+  udp: true
+  type: hysteria2
+  password: a81a7b45-dd70-42ef-822f-ef467f944382
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 642516f2-f9bd-41ce-9904-dee699c39cf9
+- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -73,6 +60,19 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
+  server: 147.45.66.60
+  port: 43000
+  udp: true
+  type: vless
+  uuid: 01e61db7-9e0b-4431-a995-a5288a01b951
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: DbL9RJFvJrnxBu6fFhWkHF8nsD6cK_DKMuMV00RmlWg
+    short-id: 4d3d8e15
+  servername: 147.45.66.60
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
