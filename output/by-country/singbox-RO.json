@@ -4,24 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇷🇴 罗马尼亚 (Romania) 01 - xiaohe",
-      "server": "hy2-new.aspidnet.xyz",
+      "server": "154.46.31.106",
       "server_port": 443,
-      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2-new.aspidnet.xyz",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "c1b4086fea89914496c7e10967a419216566"
-      }
+      "method": "chacha20-ietf-poly1305",
+      "password": "QFWzCw2uX9B9i6qAYeFBIE"
     },
     {
       "type": "shadowsocks",
       "tag": "🇷🇴 罗马尼亚 (Romania) 02 - xiaohe",
+      "server": "82.152.132.211",
+      "server_port": 8044,
+      "method": "chacha20-ietf-poly1305",
+      "password": "dCamglzrORaopqbpBlptzbt9QdiH4CSN"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - xiaohe",
       "server": "194.68.44.42",
       "server_port": 64546,
       "method": "chacha20-ietf-poly1305",
@@ -33,7 +33,8 @@
       "outbounds": [
         "auto",
         "🇷🇴 罗马尼亚 (Romania) 01 - xiaohe",
-        "🇷🇴 罗马尼亚 (Romania) 02 - xiaohe"
+        "🇷🇴 罗马尼亚 (Romania) 02 - xiaohe",
+        "🇷🇴 罗马尼亚 (Romania) 03 - xiaohe"
       ]
     },
     {
@@ -41,7 +42,8 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇴 罗马尼亚 (Romania) 01 - xiaohe",
-        "🇷🇴 罗马尼亚 (Romania) 02 - xiaohe"
+        "🇷🇴 罗马尼亚 (Romania) 02 - xiaohe",
+        "🇷🇴 罗马尼亚 (Romania) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

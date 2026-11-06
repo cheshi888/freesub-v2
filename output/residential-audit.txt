@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-11-05 23:20:19 UTC
+生成时间: 2026-11-06 04:28:32 UTC
 ==============================================================================
 
 说明:
@@ -15,7 +15,7 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 3
+本轮家宽节点数: 5
 
 [1] US  移动网络  置信度 85
      exit_ip : 130.94.19.95
@@ -27,9 +27,19 @@
      ipapi.is: company=LIGHT NODE LIMITED asn=AS154177 LIGHT NODE LIMITED
      fraud   : 0  (-1 = 未取到评分)
 
-[2] HK  严格家宽  置信度 82
-     exit_ip : 203.218.231.16
-     server  : e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com:443  (hysteria2)
+[2] TW  严格家宽  置信度 82
+     exit_ip : 125.227.86.44
+     server  : 125.227.86.45:443  (trojan)
+     ASN     : AS3462 Data Communication Business Group
+     ISP     : Chunghwa Telecom Co., Ltd.
+     ORG     : Chunghwa Telecom Co. Ltd.
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Chunghwa Telecom Co.,Ltd. asn=AS3462 Chunghwa Telecom Co., Ltd.
+     fraud   : 0  (-1 = 未取到评分)
+
+[3] HK  严格家宽  置信度 82
+     exit_ip : 112.120.54.238
+     server  : 112.120.54.238:39471  (vless)
      ASN     : AS4760 HKT Limited
      ISP     : Hong Kong Telecommunications (HKT) Limited Mass Internet
      ORG     : Hong Kong Telecommunications (HKT) Limited
@@ -37,12 +47,22 @@
      ipapi.is: company=Hong Kong Telecommunications (HKT) Limited Mass Internet asn=AS4760 PCCW IMS Limited
      fraud   : 0  (-1 = 未取到评分)
 
-[3] HK  严格家宽  置信度 82
-     exit_ip : 112.120.123.140
-     server  : 33632b49-tmm5c0-tonrmx-8n27.nw4.hyhuawei.com:443  (hysteria2)
-     ASN     : AS4760 HKT Limited
-     ISP     : Hong Kong Telecommunications (HKT) Limited Mass Internet
-     ORG     : Hong Kong Telecommunications (HKT) Limited
+[4] KZ  严格家宽  置信度 82
+     exit_ip : 95.57.50.87
+     server  : 95.57.50.87:443  (vless)
+     ASN     : AS9198 JSC Kazakhtelecom
+     ISP     : Megaline Karaganda
+     ORG     : -
      ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Hong Kong Telecommunications (HKT) Limited Mass Internet asn=AS4760 PCCW IMS Limited
+     ipapi.is: company=IP NBI asn=AS9198 JSC Kazakhtelecom
+     fraud   : 0  (-1 = 未取到评分)
+
+[5] TW  严格家宽  置信度 82
+     exit_ip : 60.248.219.52
+     server  : 60.248.219.78:443  (vless)
+     ASN     : AS3462 Data Communication Business Group
+     ISP     : Chunghwa Telecom Co., Ltd.
+     ORG     : Chunghwa Telecom Co. Ltd.
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
      fraud   : 0  (-1 = 未取到评分)

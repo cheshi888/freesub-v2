@@ -5,34 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  server: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  port: 443
+  server: 112.120.54.238
+  port: 39471
   udp: true
-  type: hysteria2
-  password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
-  sni: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  server: 33632b49-tmm5c0-tonrmx-8n27.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc
-  sni: 33632b49-tmm5c0-tonrmx-8n27.nw4.hyhuawei.com
-  skip-cert-verify: false
+  type: vless
+  uuid: 2fd1bce9-bba2-479e-83de-2b63a3ee88ea
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 79kBx_jBo5cqkQ-9Hlm5s-1i_DnddFx9rJ8NBaXY-GQ
+  servername: www.byu.edu
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

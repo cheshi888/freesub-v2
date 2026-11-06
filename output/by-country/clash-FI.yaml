@@ -28,21 +28,20 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 146.103.118.189
-  port: 443
+  server: 89.144.53.4
+  port: 8445
   udp: true
   type: vless
-  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
+  uuid: 5c32201a-6c0e-451b-8f0a-24b4bd40df59
+  flow: xtls-rprx-vision
   tls: true
-  servername: nl2.574ck.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /574ck-finland
-    headers:
-      Host: nl2.574ck.xyz
+  reality-opts:
+    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
+    short-id: 1a2b3c4d
+  servername: videos.porsche.com
+  client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 104.24.0.1
+  server: 104.18.0.1
   port: 2053
   udp: true
   type: trojan

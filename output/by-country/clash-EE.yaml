@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: 141.0.187.15
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 70043bfa-d6fb-4980-b27e-773e9e8b2004
-  sni: crt.onecloudstream.com
-  skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: 31.77.236.114
   port: 443
   udp: true
@@ -24,8 +16,8 @@ proxies:
     public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
     short-id: 1a2b3c4d
   servername: files.porsche.com
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: 31.77.236.113
   port: 443
   udp: true
@@ -38,7 +30,7 @@ proxies:
     short-id: 1a2b3c4d
   servername: files.porsche.com
   client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   server: steel7.hadsvpn.com
   port: 443
   udp: true
@@ -54,7 +46,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,6 +54,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
 rules:
 - MATCH,PROXIES

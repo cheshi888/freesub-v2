@@ -12,37 +12,75 @@ proxies:
   password: 5t6i121em5lkmsmk
   sni: us001.zestapp778.com
   skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  server: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  server: 125.227.86.45
   port: 443
   udp: true
-  type: hysteria2
-  password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
-  sni: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
+  type: trojan
+  password: 0a9f1f5a397bd427
+  sni: TG.freecodes
   skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: db
 - name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
-  server: 33632b49-tmm5c0-tonrmx-8n27.nw4.hyhuawei.com
+  server: 112.120.54.238
+  port: 39471
+  udp: true
+  type: vless
+  uuid: 2fd1bce9-bba2-479e-83de-2b63a3ee88ea
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 79kBx_jBo5cqkQ-9Hlm5s-1i_DnddFx9rJ8NBaXY-GQ
+  servername: www.byu.edu
+  client-fingerprint: ios
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 (家宽) - xiaohe
+  server: 95.57.50.87
   port: 443
   udp: true
-  type: hysteria2
-  password: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc
-  sni: 33632b49-tmm5c0-tonrmx-8n27.nw4.hyhuawei.com
-  skip-cert-verify: false
+  type: vless
+  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: eV6ewGF7oTHf2pTQHKYvwJt-vU8hUC-1CjiUl20HtXE
+    short-id: 4000cdda6278d236
+  servername: kz1.japancase.site
+  client-fingerprint: firefox
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
+  server: 60.248.219.78
+  port: 443
+  udp: true
+  type: vless
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  tls: true
+  servername: ty986gfazs.cainiaohub.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: ty986gfazs.cainiaohub.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
