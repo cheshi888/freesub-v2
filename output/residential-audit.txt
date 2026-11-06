@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-11-06 13:45:47 UTC
+生成时间: 2026-11-06 22:48:42 UTC
 ==============================================================================
 
 说明:
@@ -15,9 +15,19 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 2
+本轮家宽节点数: 3
 
-[1] KR  严格家宽  置信度 82
+[1] TW  严格家宽  置信度 82
+     exit_ip : 125.227.86.44
+     server  : 125.227.86.45:443  (trojan)
+     ASN     : AS3462 Data Communication Business Group
+     ISP     : Chunghwa Telecom Co., Ltd.
+     ORG     : Chunghwa Telecom Co. Ltd.
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Chunghwa Telecom Co.,Ltd. asn=AS3462 Chunghwa Telecom Co., Ltd.
+     fraud   : 0  (-1 = 未取到评分)
+
+[2] KR  严格家宽  置信度 82
      exit_ip : 49.254.204.133
      server  : 49.254.204.133:1774  (shadowsocks)
      ASN     : AS4766 Korea Telecom
@@ -27,7 +37,7 @@
      ipapi.is: company=HAIonNet asn=AS4766 Korea Telecom
      fraud   : 0  (-1 = 未取到评分)
 
-[2] KZ  严格家宽  置信度 82
+[3] KZ  严格家宽  置信度 82
      exit_ip : 95.57.50.87
      server  : 95.57.50.87:443  (vless)
      ASN     : AS9198 JSC Kazakhtelecom

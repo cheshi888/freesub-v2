@@ -5,12 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
-  server: 45.86.60.174
-  port: 16443
-  udp: true
-  type: vless
-  uuid: 13e541f3-d09d-4633-89df-8513db0ced20
-- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
   server: 45.86.60.190
   port: 443
   udp: true
@@ -23,6 +17,12 @@ proxies:
     short-id: 41ae8e266bc3346f
   servername: ee2.japancase.site
   client-fingerprint: ''
+- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
+  server: 45.86.60.174
+  port: 16443
+  udp: true
+  type: vless
+  uuid: 13e541f3-d09d-4633-89df-8513db0ced20
 proxy-groups:
 - name: PROXIES
   type: select
