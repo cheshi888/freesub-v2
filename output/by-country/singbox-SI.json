@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
-      "server": "103.172.197.3",
-      "server_port": 16006,
-      "uuid": "f8c9d2a1-da40-4f90-b671-11772a0b13d6",
+      "tag": "🇸🇮 斯洛文尼亚 (Slovenia) 01 - xiaohe",
+      "server": "92.42.201.160",
+      "server_port": 14443,
+      "uuid": "a60da2ca-0abf-49f8-9dcb-156989d76ad2",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "node-slo05.rkitman.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU",
-          "short_id": ""
+          "public_key": "fmZQYGYXw4xYtiuMFvH4Dgse1DBoGazt-vWM7LOdchY",
+          "short_id": "e013fa99a81badcc"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
+        "🇸🇮 斯洛文尼亚 (Slovenia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
+        "🇸🇮 斯洛文尼亚 (Slovenia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

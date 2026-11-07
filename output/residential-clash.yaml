@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  server: 125.227.86.45
+  server: 125.227.86.46
   port: 443
   udp: true
   type: trojan
@@ -15,14 +15,23 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: db
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  server: 49.254.204.133
-  port: 1774
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
+  server: 24f1571a-tmm5c0-tug19l-1go3q.hk3.hyhuawei.com
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 (家宽) - xiaohe
+  type: hysteria2
+  password: 19dd9c70-e4a5-11ed-8347-f23c9164ca5d
+  sni: 24f1571a-tmm5c0-tug19l-1go3q.hk3.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  server: 112.120.123.140
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9
+  sni: 9fc34650-tmm5c0-tmj4pk-1kcpe.nw4.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 (家宽) - xiaohe
   server: 95.57.50.87
   port: 443
   udp: true
@@ -35,21 +44,38 @@ proxies:
     short-id: 4000cdda6278d236
   servername: kz1.japancase.site
   client-fingerprint: firefox
+- name: 🇵🇪 秘鲁 (Peru) 05 (疑似家宽) - xiaohe
+  server: 134.185.81.5
+  port: 47881
+  udp: true
+  type: vless
+  uuid: 59b203b2-b1bc-4e9c-a9e5-ccb8f691bf72
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 6XmXX1QXGodmtqU37Zx9CDHnCnPtonRdq8ieLmt__g4
+    short-id: 38d72071
+  servername: www.tesla.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 (家宽) - xiaohe
+  - 🇵🇪 秘鲁 (Peru) 05 (疑似家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 (家宽) - xiaohe
+  - 🇵🇪 秘鲁 (Peru) 05 (疑似家宽) - xiaohe
 rules:
 - MATCH,PROXIES

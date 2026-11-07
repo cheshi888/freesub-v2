@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-11-06 22:48:42 UTC
+生成时间: 2026-11-07 04:04:14 UTC
 ==============================================================================
 
 说明:
@@ -15,11 +15,11 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 3
+本轮家宽节点数: 5
 
 [1] TW  严格家宽  置信度 82
      exit_ip : 125.227.86.44
-     server  : 125.227.86.45:443  (trojan)
+     server  : 125.227.86.46:443  (trojan)
      ASN     : AS3462 Data Communication Business Group
      ISP     : Chunghwa Telecom Co., Ltd.
      ORG     : Chunghwa Telecom Co. Ltd.
@@ -27,17 +27,27 @@
      ipapi.is: company=Chunghwa Telecom Co.,Ltd. asn=AS3462 Chunghwa Telecom Co., Ltd.
      fraud   : 0  (-1 = 未取到评分)
 
-[2] KR  严格家宽  置信度 82
-     exit_ip : 49.254.204.133
-     server  : 49.254.204.133:1774  (shadowsocks)
-     ASN     : AS4766 Korea Telecom
-     ISP     : Korea Telecom
-     ORG     : Haionnet
+[2] HK  严格家宽  置信度 82
+     exit_ip : 203.218.231.16
+     server  : 24f1571a-tmm5c0-tug19l-1go3q.hk3.hyhuawei.com:443  (hysteria2)
+     ASN     : AS4760 HKT Limited
+     ISP     : Hong Kong Telecommunications (HKT) Limited Mass Internet
+     ORG     : Hong Kong Telecommunications (HKT) Limited
      ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=HAIonNet asn=AS4766 Korea Telecom
+     ipapi.is: company=Hong Kong Telecommunications (HKT) Limited Mass Internet asn=AS4760 PCCW IMS Limited
      fraud   : 0  (-1 = 未取到评分)
 
-[3] KZ  严格家宽  置信度 82
+[3] HK  严格家宽  置信度 82
+     exit_ip : 112.120.123.140
+     server  : 112.120.123.140:443  (hysteria2)
+     ASN     : AS4760 HKT Limited
+     ISP     : Hong Kong Telecommunications (HKT) Limited Mass Internet
+     ORG     : Hong Kong Telecommunications (HKT) Limited
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Hong Kong Telecommunications (HKT) Limited Mass Internet asn=AS4760 PCCW IMS Limited
+     fraud   : 0  (-1 = 未取到评分)
+
+[4] KZ  严格家宽  置信度 82
      exit_ip : 95.57.50.87
      server  : 95.57.50.87:443  (vless)
      ASN     : AS9198 JSC Kazakhtelecom
@@ -46,3 +56,13 @@
      ip-api  : hosting=False proxy=False mobile=False reverse=-
      ipapi.is: company=IP NBI asn=AS9198 JSC Kazakhtelecom
      fraud   : 0  (-1 = 未取到评分)
+
+[5] PE  疑似家宽  置信度 55
+     exit_ip : 38.25.43.134
+     server  : 134.185.81.5:47881  (vless)
+     ASN     : AS265691 WI-NET TELECOM S.A.C.
+     ISP     : Cogent Communications
+     ORG     : Win Telecom S.A.C
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=WI-NET Telecom SAC asn=AS265691 WI-NET TELECOM S.A.C.
+     fraud   : 2  (-1 = 未取到评分)

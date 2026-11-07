@@ -16,27 +16,6 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 95.216.27.15
-  port: 2053
-  udp: true
-  type: vless
-  uuid: b79d736d-0f10-4169-b626-362059d18204
-  tls: true
-  reality-opts:
-    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
-    short-id: 10351b07c712d2a2
-  servername: www.cloudflare.com
-  client-fingerprint: ''
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 129.6.29.252
-  port: 80
-  udp: true
-  type: vmess
-  uuid: fe4d2b3e-965f-4389-a6e4-05887ef5fd2b
-  alterId: 0
-  cipher: auto
-  network: httpupgrade
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   server: 213.176.92.168
   port: 14430
   udp: true
@@ -47,7 +26,7 @@ proxies:
     path: /vless
     headers:
       Host: 213.176.92.168
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 213.176.92.168
   port: 10444
   udp: true
@@ -60,20 +39,7 @@ proxies:
     short-id: 8debcf36f1cc69ff
   servername: video.yandex.ru
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  server: 6.bmi.ir.asopardaz.ir
-  port: 8443
-  udp: true
-  type: vless
-  uuid: fe4d2b3e-965f-4389-a6e4-05887ef5fd2b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
-    short-id: e915
-  servername: hostgator.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   server: 104.18.0.1
   port: 2053
   udp: true
@@ -93,9 +59,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -105,8 +68,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
 rules:
 - MATCH,PROXIES

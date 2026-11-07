@@ -27,13 +27,33 @@
     {
       "type": "vless",
       "tag": "🇺🇦 乌克兰 (Ukraine) 02 - xiaohe",
+      "server": "31.222.235.81",
+      "server_port": 443,
+      "uuid": "d8b58872-cc25-4bb2-badb-b86399c075fa",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk",
+          "short_id": "d8b58872"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇦 乌克兰 (Ukraine) 03 - xiaohe",
       "server": "104.253.216.227",
       "server_port": 443,
-      "uuid": "594d466e-8ac3-4fda-b1d1-eeb817853518",
+      "uuid": "317bc783-340f-453c-afb5-b6bf637c0b23",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.microsoft.com",
+        "server_name": "www.tradingview.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
@@ -41,7 +61,7 @@
         "reality": {
           "enabled": true,
           "public_key": "FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg",
-          "short_id": "5a018643df03"
+          "short_id": "fc994ae7eb10"
         }
       }
     },
@@ -51,7 +71,8 @@
       "outbounds": [
         "auto",
         "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
-        "🇺🇦 乌克兰 (Ukraine) 02 - xiaohe"
+        "🇺🇦 乌克兰 (Ukraine) 02 - xiaohe",
+        "🇺🇦 乌克兰 (Ukraine) 03 - xiaohe"
       ]
     },
     {
@@ -59,7 +80,8 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
-        "🇺🇦 乌克兰 (Ukraine) 02 - xiaohe"
+        "🇺🇦 乌克兰 (Ukraine) 02 - xiaohe",
+        "🇺🇦 乌克兰 (Ukraine) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

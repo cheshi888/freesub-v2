@@ -6,16 +6,13 @@
     {
       "type": "trojan",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
-      "server": "125.227.86.45",
+      "server": "125.227.86.46",
       "server_port": 443,
       "password": "0a9f1f5a397bd427",
       "tls": {
         "enabled": true,
         "server_name": "TG.freecodes",
-        "insecure": true,
-        "alpn": [
-          "h2"
-        ]
+        "insecure": true
       },
       "transport": {
         "type": "grpc",
@@ -23,16 +20,32 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe",
-      "server": "49.254.204.133",
-      "server_port": 1774,
-      "method": "aes-256-cfb",
-      "password": "1234!@#$"
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
+      "server": "24f1571a-tmm5c0-tug19l-1go3q.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "19dd9c70-e4a5-11ed-8347-f23c9164ca5d",
+      "tls": {
+        "enabled": true,
+        "server_name": "24f1571a-tmm5c0-tug19l-1go3q.hk3.hyhuawei.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe",
+      "server": "112.120.123.140",
+      "server_port": 443,
+      "password": "3f514ea2-4662-11ed-a8bf-f23c91cfbbc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "9fc34650-tmm5c0-tmj4pk-1kcpe.nw4.hyhuawei.com",
+        "insecure": false
+      }
     },
     {
       "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 (家宽) - xiaohe",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 (家宽) - xiaohe",
       "server": "95.57.50.87",
       "server_port": 443,
       "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
@@ -52,13 +65,36 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇵🇪 秘鲁 (Peru) 05 (疑似家宽) - xiaohe",
+      "server": "134.185.81.5",
+      "server_port": 47881,
+      "uuid": "59b203b2-b1bc-4e9c-a9e5-ccb8f691bf72",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.tesla.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "6XmXX1QXGodmtqU37Zx9CDHnCnPtonRdq8ieLmt__g4",
+          "short_id": "38d72071"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 (家宽) - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 (家宽) - xiaohe",
+        "🇵🇪 秘鲁 (Peru) 05 (疑似家宽) - xiaohe"
       ]
     },
     {
@@ -66,8 +102,10 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 (家宽) - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 (家宽) - xiaohe",
+        "🇵🇪 秘鲁 (Peru) 05 (疑似家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

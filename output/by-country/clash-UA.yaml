@@ -18,17 +18,29 @@ proxies:
   servername: www.bing.com
   client-fingerprint: qq
 - name: 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
+  server: 31.222.235.81
+  port: 443
+  udp: true
+  type: vless
+  uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
+  tls: true
+  reality-opts:
+    public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
+    short-id: d8b58872
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇺🇦 乌克兰 (Ukraine) 03 - xiaohe
   server: 104.253.216.227
   port: 443
   udp: true
   type: vless
-  uuid: 594d466e-8ac3-4fda-b1d1-eeb817853518
+  uuid: 317bc783-340f-453c-afb5-b6bf637c0b23
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
-    short-id: 5a018643df03
-  servername: www.microsoft.com
+    short-id: fc994ae7eb10
+  servername: www.tradingview.com
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -37,6 +49,7 @@ proxy-groups:
   - AUTO
   - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
   - 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
+  - 🇺🇦 乌克兰 (Ukraine) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +57,6 @@ proxy-groups:
   proxies:
   - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
   - 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
+  - 🇺🇦 乌克兰 (Ukraine) 03 - xiaohe
 rules:
 - MATCH,PROXIES
