@@ -1,0 +1,27 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
+  server: 87.228.61.175
+  port: 1443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: tAGGzgRCi6W95UwG0qerf6
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
+rules:
+- MATCH,PROXIES
