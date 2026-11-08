@@ -5,7 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
-  server: 38.107.234.57
+  server: 90.156.230.179
+  port: 443
+  udp: true
+  type: vless
+  uuid: dc95c1dd-2cd3-414c-8cf1-71ae86dad666
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Au1rmQdDRjlEJk17IfLQv5PBUEEosMWNhAlrWZj6mnY
+    short-id: '14324280'
+  servername: kz-cdn-prsv-forum.keno.su
+  client-fingerprint: firefox
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
+  server: 3h-kazakhstan1.09vpn.com
   port: 80
   udp: true
   type: vmess
@@ -16,32 +29,19 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: viber.com
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
-  server: kz1.japancase.site
-  port: 443
-  udp: true
-  type: vless
-  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: eV6ewGF7oTHf2pTQHKYvwJt-vU8hUC-1CjiUl20HtXE
-    short-id: 4000cdda6278d236
-  servername: kz1.japancase.site
-  client-fingerprint: chrome
+      Host: 3h-kazakhstan1.09vpn.com
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
-  server: 109.248.170.119
-  port: 13447
+  server: 3h-kazakhstan1.09vpn.com
+  port: 8443
   udp: true
   type: vless
-  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
+  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
   tls: true
-  reality-opts:
-    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
-    short-id: '83'
-  servername: yahoo.com
-  client-fingerprint: chrome
+  servername: 3h-kazakhstan1.09vpn.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /vless/
 proxy-groups:
 - name: PROXIES
   type: select
