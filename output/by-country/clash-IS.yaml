@@ -1,0 +1,32 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇮🇸 冰岛 (Iceland) 01 - xiaohe
+  server: 93.95.226.159
+  port: 28150
+  udp: true
+  type: vless
+  uuid: b4e69d67-9d41-417c-b465-ebf1591fb792
+  tls: true
+  reality-opts:
+    public-key: KQW_o2BlCjMC8aH5lkNkO_rmMCAUykQIQCCIIehhsAo
+    short-id: '06'
+  servername: google.com
+  client-fingerprint: firefox
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇮🇸 冰岛 (Iceland) 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇮🇸 冰岛 (Iceland) 01 - xiaohe
+rules:
+- MATCH,PROXIES

@@ -4,25 +4,39 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  server: 633b0024-tmm5c0-ttx5yr-1j0y6.hk3.hyhuawei.com
-  port: 443
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  server: 49.254.204.133
+  port: 1774
   udp: true
-  type: hysteria2
-  password: 1cce7df2-251c-11ee-9409-f23c9164ca5d
-  sni: 633b0024-tmm5c0-ttx5yr-1j0y6.hk3.hyhuawei.com
-  skip-cert-verify: false
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+- name: 🇵🇪 秘鲁 (Peru) 02 (疑似家宽) - xiaohe
+  server: 134.185.81.5
+  port: 47881
+  udp: true
+  type: vless
+  uuid: 59b203b2-b1bc-4e9c-a9e5-ccb8f691bf72
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 6XmXX1QXGodmtqU37Zx9CDHnCnPtonRdq8ieLmt__g4
+    short-id: 38d72071
+  servername: www.tesla.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  - 🇵🇪 秘鲁 (Peru) 02 (疑似家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  - 🇵🇪 秘鲁 (Peru) 02 (疑似家宽) - xiaohe
 rules:
 - MATCH,PROXIES
