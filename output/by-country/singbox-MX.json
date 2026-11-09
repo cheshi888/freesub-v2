@@ -4,24 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇲🇽 墨西哥 (Mexico) 01 - xiaohe",
-      "server": "64.177.90.30",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "BWyPPTusFKhGgzKh"
-    },
-    {
       "type": "trojan",
-      "tag": "🇲🇽 墨西哥 (Mexico) 02 - xiaohe",
+      "tag": "🇲🇽 墨西哥 (Mexico) 01 - xiaohe",
       "server": "216.238.80.100",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
         "server_name": "connectwithtopemployersandfindidealjobs.com",
-        "insecure": false
+        "insecure": true
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇲🇽 墨西哥 (Mexico) 02 - xiaohe",
+      "server": "64.177.90.30",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "BWyPPTusFKhGgzKh"
     },
     {
       "type": "vless",
