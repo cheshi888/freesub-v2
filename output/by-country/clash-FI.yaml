@@ -5,33 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 65.108.240.210
-  port: 39018
+  server: oztq9osla2ad.dop15.com
+  port: 26412
   udp: true
-  type: vmess
-  uuid: 77fb7a80-4724-4e33-9558-4f20c1634c5a
-  alterId: 0
-  cipher: auto
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: L9F2GjYbyk6gICuLp2LFmHC0lKaEW7HOA32XTf29C6Y=:OvfxPVBCAsZFpN0pIx9AwgxwxV+U3A7XtRagdUwio+U=
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 177.202.75.56
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 146d567c-6335-4e63-a8aa-7ec068642440
-  sni: fi1.obxodvpn.us
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   server: 193.188.21.253
   port: 14430
   udp: true
@@ -42,22 +22,7 @@ proxies:
     path: /vless
     headers:
       Host: 193.188.21.253
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: 84.38.184.87
-  port: 2089
-  udp: true
-  type: vless
-  uuid: a628c583-24a8-4ce5-98ad-c6458abf1cc4
-  tls: true
-  reality-opts:
-    public-key: TGbaO5ocPEkI3J1M7y_TPvZheJa-N_rL7GSiluX-XB8
-    short-id: '37103087'
-  servername: s3.storage.selcloud.ru
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: cas-fi
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 213.176.92.168
   port: 14430
   udp: true
@@ -68,20 +33,44 @@ proxies:
     path: /vless
     headers:
       Host: 213.176.92.168
-- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
-  server: 213.176.92.168
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  server: 72.35.246.39
+  port: 2053
+  udp: true
+  type: vless
+  uuid: b6c29ae7-4748-4049-b642-b695c0d2c776
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: TSOm7XIZvGzYoCbh_lFFA9PTQJqI-JU5kKIAffGmUWg
+    short-id: 5e39e518bfac6392
+  servername: vk.ru
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  server: 193.188.21.253
   port: 10444
   udp: true
   type: vless
-  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
     short-id: 8debcf36f1cc69ff
   servername: video.yandex.ru
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
+  client-fingerprint: safari
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
   server: 146.103.118.189
   port: 443
   udp: true
@@ -96,7 +85,7 @@ proxies:
     path: /574ck-finland
     headers:
       Host: nl2.574ck.xyz
-- name: 🇫🇮 芬兰 (Finland) 09 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -107,19 +96,6 @@ proxies:
     public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
     short-id: 10351b07c712d2a2
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 10 - xiaohe
-  server: nele.neobo-tooth.ru
-  port: 2053
-  udp: true
-  type: vless
-  uuid: b6c29ae7-4748-4049-b642-b695c0d2c776
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: TSOm7XIZvGzYoCbh_lFFA9PTQJqI-JU5kKIAffGmUWg
-    short-id: 5e39e518bfac6392
-  servername: vk.ru
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -134,8 +110,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
   - 🇫🇮 芬兰 (Finland) 07 - xiaohe
   - 🇫🇮 芬兰 (Finland) 08 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 09 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -149,7 +123,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
   - 🇫🇮 芬兰 (Finland) 07 - xiaohe
   - 🇫🇮 芬兰 (Finland) 08 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 09 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 10 - xiaohe
 rules:
 - MATCH,PROXIES
