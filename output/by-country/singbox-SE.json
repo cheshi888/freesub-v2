@@ -6,28 +6,35 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
+      "server": "62.182.193.228",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "2e555e46dbc421452416834962fd014f"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
       "server": "138.199.55.243",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
+      "type": "vmess",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
+      "server": "138.199.55.230",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "xmfhlpy.com",
+        "insecure": false
       }
     },
     {
       "type": "trojan",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
       "server": "70.34.207.14",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -43,8 +50,8 @@
     },
     {
       "type": "vmess",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
-      "server": "138.199.55.230",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
+      "server": "62.93.166.184",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
       "security": "auto",
@@ -56,35 +63,16 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
-      "server": "194.104.94.141",
-      "server_port": 443,
-      "uuid": "6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6",
-      "tls": {
-        "enabled": true,
-        "server_name": "se3.shtil.io",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vmess",
       "tag": "🇸🇪 瑞典 (Sweden) 06 - xiaohe",
-      "server": "62.93.166.184",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
       }
     },
     {
@@ -117,6 +105,10 @@
         "enabled": true,
         "server_name": "connect-se.mimowhat.online",
         "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -124,27 +116,12 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 09 - xiaohe",
-      "server": "362c1eg.se1.h1clayd.click",
-      "server_port": 443,
-      "uuid": "c82031be-e90f-4b15-ab4f-7ccef236d3ca",
-      "tls": {
-        "enabled": true,
-        "server_name": "362c1eg.se1.h1clayd.click",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "BLhS7fE4Yh6kAADw7yRIn2PzKun-JDagJHJNOePYRSY",
-          "short_id": "bee802ae4ab66496"
-        }
-      },
-      "transport": {
-        "type": "grpc"
-      }
+      "server": "70.34.212.124",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "AxIYWtskJWIIaefW"
     },
     {
       "type": "selector",

@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-11-10 01:14:05 UTC
+生成时间: 2026-11-10 14:14:02 UTC
 ==============================================================================
 
 说明:
@@ -15,6 +15,14 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 0
+本轮家宽节点数: 1
 
-(本轮无节点通过家宽判定)
+[1] US  移动网络  置信度 85
+     exit_ip : 130.94.20.17
+     server  : us001.zestapp778.com:57277  (trojan)
+     ASN     : AS154177 LIGHT NODE LIMITED
+     ISP     : Light Node Limited
+     ORG     : -
+     ip-api  : hosting=False proxy=False mobile=True reverse=-
+     ipapi.is: company=LIGHT NODE LIMITED asn=AS154177 LIGHT NODE LIMITED
+     fraud   : 0  (-1 = 未取到评分)

@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vmess",
       "tag": "🇹🇭 泰国 (Thailand) 01 - xiaohe",
+      "server": "119.46.51.45",
+      "server_port": 37515,
+      "uuid": "9b76bc31-17a5-4454-934a-8d5fb602cd70",
+      "security": "auto"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇭 泰国 (Thailand) 02 - xiaohe",
       "server": "38.60.233.126",
       "server_port": 33079,
       "password": "5t6i121em5lkmsmk",
@@ -24,14 +32,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 泰国 (Thailand) 01 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 01 - xiaohe",
+        "🇹🇭 泰国 (Thailand) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 泰国 (Thailand) 01 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 01 - xiaohe",
+        "🇹🇭 泰国 (Thailand) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
