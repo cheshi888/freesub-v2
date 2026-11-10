@@ -5,32 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇽 墨西哥 (Mexico) 01 - xiaohe
-  server: 216.238.80.100
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: connectwithtopemployersandfindidealjobs.com
-  skip-cert-verify: true
-- name: 🇲🇽 墨西哥 (Mexico) 02 - xiaohe
   server: 64.177.90.30
   port: 8388
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: BWyPPTusFKhGgzKh
+- name: 🇲🇽 墨西哥 (Mexico) 02 - xiaohe
+  server: 38.60.224.173
+  port: 32153
+  udp: true
+  type: vmess
+  uuid: 5cf1f470-3f70-4589-a2a4-4657ea3a1edf
+  alterId: 0
+  cipher: auto
 - name: 🇲🇽 墨西哥 (Mexico) 03 - xiaohe
-  server: 147.78.1.253
+  server: 216.238.80.100
   port: 443
   udp: true
-  type: vless
-  uuid: 39a390af-1f90-4c0e-89e4-4e2023732e4b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: TefL2KtNcNLPmUY8TKlu5pA7ffipqgmbBN6gpyzyklk
-  servername: www.apple.com
-  client-fingerprint: chrome
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: connectwithtopemployersandfindidealjobs.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select

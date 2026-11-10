@@ -16,7 +16,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇮🇱 以色列 (Israel) 02 - xiaohe
   server: 64.176.163.182
   port: 443
@@ -24,21 +24,8 @@ proxies:
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: exploreeducationsectoropportunitiestodayandadvancecareers.com
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇮🇱 以色列 (Israel) 03 - xiaohe
-  server: no.gacvpn.site
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: mCLTVbcvg_tkaIuGqMVVBV-5d_ftEoLnJHhrCmeLDFk
-    short-id: 08d12dce
-  servername: no.gacvpn.site
-  client-fingerprint: chrome
-- name: 🇮🇱 以色列 (Israel) 04 - xiaohe
   server: 129.159.156.109
   port: 50160
   udp: true
@@ -54,7 +41,6 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 01 - xiaohe
   - 🇮🇱 以色列 (Israel) 02 - xiaohe
   - 🇮🇱 以色列 (Israel) 03 - xiaohe
-  - 🇮🇱 以色列 (Israel) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,6 +49,5 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 01 - xiaohe
   - 🇮🇱 以色列 (Israel) 02 - xiaohe
   - 🇮🇱 以色列 (Israel) 03 - xiaohe
-  - 🇮🇱 以色列 (Israel) 04 - xiaohe
 rules:
 - MATCH,PROXIES

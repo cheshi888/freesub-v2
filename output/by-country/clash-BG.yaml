@@ -6,11 +6,11 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
   server: 213.183.63.60
-  port: 9085
+  port: 9066
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 9ej82EKe2gq7gLAM
+  password: 2KUaE2a8NWTvuCZ3
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
   server: 213.183.63.60
   port: 9049
@@ -20,25 +20,25 @@ proxies:
   password: PRBf4BS2HvJqtWxY
 - name: 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
   server: 213.183.63.60
-  port: 9066
+  port: 9085
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 2KUaE2a8NWTvuCZ3
+  password: 9ej82EKe2gq7gLAM
 - name: 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
   server: 213.183.63.60
-  port: 9029
+  port: 9061
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: dU3DSNS8wYPXzEKw
+  password: 4R3hUfZ2FHhDmNcP
 - name: 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
   server: 213.183.63.60
-  port: 9030
+  port: 9064
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: GeregetR8cvQHzYr
+  password: cp8pRSUAyLhTfVWH
 - name: 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
   server: 213.183.63.60
   port: 9098
@@ -47,12 +47,18 @@ proxies:
   cipher: aes-256-cfb
   password: aLpQtfEZe445QyHk
 - name: 🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe
-  server: 213.183.63.60
-  port: 9064
+  server: 131.123.43.103
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: cp8pRSUAyLhTfVWH
+  type: vless
+  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SgFQg7srP1xgjWhnSU9lpUMDRlsoLIXlw6nX-mfOdlg
+    short-id: 1f8bab7ad81089f2
+  servername: bg2.gacvpn.site
+  client-fingerprint: firefox
 - name: 🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe
   server: 195.123.226.21
   port: 443
