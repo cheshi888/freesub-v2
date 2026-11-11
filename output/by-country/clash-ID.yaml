@@ -5,15 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇩 印尼 (Indonesia) 01 - xiaohe
-  server: 130.94.95.198
+  server: in001.zestapp778.com
   port: 57353
   udp: true
   type: vless
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   tls: true
   servername: in001.zestapp778.com
-  skip-cert-verify: true
-  client-fingerprint: firefox
+  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

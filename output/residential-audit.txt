@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-11-11 04:00:59 UTC
+生成时间: 2026-11-11 13:30:35 UTC
 ==============================================================================
 
 说明:
@@ -15,7 +15,7 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 6
+本轮家宽节点数: 10
 
 [1] US  移动网络  置信度 85
      exit_ip : 130.94.20.17
@@ -37,9 +37,19 @@
      ipapi.is: company=LIGHT NODE LIMITED asn=AS154177 LIGHT NODE LIMITED
      fraud   : 0  (-1 = 未取到评分)
 
-[3] HK  严格家宽  置信度 82
-     exit_ip : 219.79.98.16
-     server  : 2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com:443  (hysteria2)
+[3] US  移动网络  置信度 85
+     exit_ip : 130.51.96.24
+     server  : 23.95.72.244:5467  (vless)
+     ASN     : AS63129 AirRabbit, LLC
+     ISP     : AirRabbit, LLC
+     ORG     : AirRabbit, LLC
+     ip-api  : hosting=False proxy=False mobile=True reverse=-
+     ipapi.is: company=AirRabbit, LLC asn=AS63129 AirRabbit, LLC
+     fraud   : 0  (-1 = 未取到评分)
+
+[4] HK  严格家宽  置信度 82
+     exit_ip : 203.198.34.174
+     server  : 23.95.72.244:10000  (vless)
      ASN     : AS4760 HKT Limited
      ISP     : Hong Kong Telecommunications (HKT) Limited Mass Internet
      ORG     : Hong Kong Telecommunications (HKT) Limited
@@ -47,9 +57,9 @@
      ipapi.is: company=Hong Kong Telecommunications (HKT) Limited Mass Internet asn=AS4760 PCCW IMS Limited
      fraud   : 0  (-1 = 未取到评分)
 
-[4] TW  严格家宽  置信度 82
-     exit_ip : 111.252.178.30
-     server  : 161.114.15.215:30502  (trojan)
+[5] TW  严格家宽  置信度 82
+     exit_ip : 61.228.87.91
+     server  : 23.95.72.244:5463  (vless)
      ASN     : AS3462 Data Communication Business Group
      ISP     : Chunghwa Telecom Co., Ltd.
      ORG     : Chunghwa Telecom Co. Ltd.
@@ -57,7 +67,37 @@
      ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
      fraud   : 0  (-1 = 未取到评分)
 
-[5] KR  严格家宽  置信度 82
+[6] JP  严格家宽  置信度 70
+     exit_ip : 206.83.109.169
+     server  : 23.95.72.244:52541  (vless)
+     ASN     : AS14593 Space Exploration Technologies Corporation
+     ISP     : Space Exploration Technologies Corporation
+     ORG     : SpaceX Starlink
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=SpaceX Services Inc administrator asn=AS14593 Space Exploration Technologies Corporation
+     fraud   : 16  (-1 = 未取到评分)
+
+[7] US  移动网络  置信度 85
+     exit_ip : 130.51.96.25
+     server  : 23.95.72.244:5466  (vless)
+     ASN     : AS63129 AirRabbit, LLC
+     ISP     : AirRabbit, LLC
+     ORG     : AirRabbit, LLC
+     ip-api  : hosting=False proxy=False mobile=True reverse=-
+     ipapi.is: company=AirRabbit, LLC asn=AS63129 AirRabbit, LLC
+     fraud   : 0  (-1 = 未取到评分)
+
+[8] KR  严格家宽  置信度 82
+     exit_ip : 211.210.155.24
+     server  : 23.95.72.244:5455  (vless)
+     ASN     : AS9318 SK Broadband Co Ltd
+     ISP     : SK Broadband Co Ltd
+     ORG     : broadNnet
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=SK Broadband Co Ltd asn=AS9318 SK Broadband Co Ltd
+     fraud   : 2  (-1 = 未取到评分)
+
+[9] KR  严格家宽  置信度 82
      exit_ip : 210.92.144.160
      server  : 23.95.72.244:50135  (vless)
      ASN     : AS3786 LG DACOM Corporation
@@ -67,12 +107,12 @@
      ipapi.is: company=LG DACOM Corporation asn=AS3786 LG DACOM Corporation
      fraud   : 0  (-1 = 未取到评分)
 
-[6] SG  严格家宽  置信度 70
-     exit_ip : 116.88.224.217
-     server  : 116.88.224.217:8080  (vmess)
-     ASN     : AS55430 Starhub Ltd
-     ISP     : StarHub Cable Vision Ltd
-     ORG     : SGCABLEVISION
+[10] TW  严格家宽  置信度 82
+     exit_ip : 61.224.71.59
+     server  : 23.95.72.244:5462  (vless)
+     ASN     : AS3462 Data Communication Business Group
+     ISP     : Chunghwa Telecom Co., Ltd.
+     ORG     : Chunghwa Telecom Co. Ltd.
      ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=StarHub Cable Vision Ltd asn=AS55430 Starhub Ltd.
+     ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
      fraud   : 0  (-1 = 未取到评分)

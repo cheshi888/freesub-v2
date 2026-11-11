@@ -1,0 +1,33 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇳🇿 新西兰 (New Zealand) 01 - xiaohe
+  server: 23.95.72.244
+  port: 55419
+  udp: true
+  type: vless
+  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 4-zwh3OxBO8mnUu0G9nEAP56veE-F6-wzF87hNLOIyY
+    short-id: 2f745f3c3c
+  servername: api.adidas.com
+  client-fingerprint: edge
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇳🇿 新西兰 (New Zealand) 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇳🇿 新西兰 (New Zealand) 01 - xiaohe
+rules:
+- MATCH,PROXIES

@@ -5,24 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇸 冰岛 (Iceland) 01 - xiaohe",
-      "server": "191.44.112.170",
-      "server_port": 443,
-      "uuid": "46d221fa-e9b4-748c-4eae-019a88e42991",
+      "tag": "🇦🇷 阿根廷 (Argentina) 01 - xiaohe",
+      "server": "23.95.72.244",
+      "server_port": 59899,
+      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "orbylume.my.to",
-        "insecure": false,
+        "server_name": "api.adidas.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/tvpn-tor/is",
-        "headers": {
-          "Host": "orbylume.my.to"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5RmlkTNSD3o7K21MaILXo6_tAox6WCFeB3srTxkWIAM",
+          "short_id": "4ac1692abefd"
         }
       }
     },
@@ -31,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇸 冰岛 (Iceland) 01 - xiaohe"
+        "🇦🇷 阿根廷 (Argentina) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇸 冰岛 (Iceland) 01 - xiaohe"
+        "🇦🇷 阿根廷 (Argentina) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
