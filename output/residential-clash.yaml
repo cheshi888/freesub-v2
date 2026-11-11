@@ -11,7 +11,7 @@ proxies:
   type: trojan
   password: 5t6i121em5lkmsmk
   sni: us001.zestapp778.com
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇺🇸 美国 (United States) 02 (移动家宽) - xiaohe
   server: 130.94.19.95
   port: 57277
@@ -20,12 +20,41 @@ proxies:
   password: 5t6i121em5lkmsmk
   sni: us001.zestapp778.com
   skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 03 (家宽) - xiaohe
-  server: 195.133.135.238
-  port: 10086
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  server: 2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 5f091cbe-fb34-11ea-9777-f23c9164ca5d
+  sni: 2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  server: 161.114.15.215
+  port: 30502
+  udp: true
+  type: trojan
+  password: 5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe
+  server: 23.95.72.244
+  port: 50135
+  udp: true
+  type: vless
+  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ugirklnmY9hUeY9BQ9rdeVbu29iGblEM8N2_HHA8Rk4
+    short-id: 8cd0eddfb0
+  servername: api.adidas.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 06 (家宽) - xiaohe
+  server: 116.88.224.217
+  port: 8080
   udp: true
   type: vmess
-  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
+  uuid: 6f4f0eb5-fe86-41ca-eccb-a6ca68f88d9b
   alterId: 0
   cipher: auto
 proxy-groups:
@@ -35,7 +64,10 @@ proxy-groups:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
   - 🇺🇸 美国 (United States) 02 (移动家宽) - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 03 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 06 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,6 +75,9 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
   - 🇺🇸 美国 (United States) 02 (移动家宽) - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 03 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 06 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

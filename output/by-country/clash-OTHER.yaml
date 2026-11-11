@@ -4,28 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇳 CN 01 - xiaohe
-  server: 39.108.113.127
-  port: 10086
+- name: 🌐 其他地区 (Other) 01 - xiaohe
+  server: 104.21.57.84
+  port: 8443
   udp: true
   type: vmess
-  uuid: b0253c6c-0b96-4950-bde1-669f13bc1a01
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
   cipher: auto
+  tls: true
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇳 CN 01 - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 CN 01 - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 rules:
 - MATCH,PROXIES

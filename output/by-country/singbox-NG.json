@@ -1,0 +1,52 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇳🇬 尼日利亚 (Nigeria) 01 - xiaohe",
+      "server": "23.95.72.244",
+      "server_port": 50889,
+      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.adidas.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "nRsOy4cUKjMIi5k8HtdfY9qnrm8fMe031yi56zMtzSg",
+          "short_id": "2eae70bfca3776cc"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇳🇬 尼日利亚 (Nigeria) 01 - xiaohe"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇳🇬 尼日利亚 (Nigeria) 01 - xiaohe"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

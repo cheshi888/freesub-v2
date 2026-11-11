@@ -1,0 +1,95 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  server: 185.215.184.53
+  port: 443
+  udp: true
+  type: vless
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: dvizhok.su
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  server: 185.215.184.78
+  port: 443
+  udp: true
+  type: vless
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: dvizhok.su
+  client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+  server: 185.215.184.49
+  port: 443
+  udp: true
+  type: vless
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: dvizhok.su
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+  server: 185.215.184.85
+  port: 443
+  udp: true
+  type: vless
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: dvizhok.su
+  client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
+  server: 109.120.155.155
+  port: 444
+  udp: true
+  type: vless
+  uuid: c325206e-0f0c-4472-9d76-43e9b9b2ef63
+  tls: true
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
+rules:
+- MATCH,PROXIES

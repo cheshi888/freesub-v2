@@ -5,34 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: oztq9osla2ad.dop15.com
+  server: 2.29.138.56
   port: 26412
   udp: true
   type: ss
   cipher: 2022-blake3-aes-256-gcm
   password: L9F2GjYbyk6gICuLp2LFmHC0lKaEW7HOA32XTf29C6Y=:OvfxPVBCAsZFpN0pIx9AwgxwxV+U3A7XtRagdUwio+U=
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 193.188.21.253
-  port: 14430
+  server: 169.40.34.41
+  port: 443
   udp: true
   type: vless
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 193.188.21.253
+  uuid: 622654a4-b666-000b-9260-fb717e05154f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
+    short-id: 1c3e8241a8743df9
+  servername: key-master-saver.com
+  client-fingerprint: ios
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 213.176.92.168
-  port: 14430
+  server: fi1.obxodvpn.us
+  port: 443
   udp: true
-  type: vless
-  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 213.176.92.168
+  type: hysteria2
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
+  sni: fi1.obxodvpn.us
+  skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   server: 45.144.234.157
   port: 14430
@@ -45,6 +44,19 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  server: 213.176.92.168
+  port: 10444
+  udp: true
+  type: vless
+  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: video.yandex.ru
+  client-fingerprint: safari
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
   server: 72.35.246.39
   port: 2053
   udp: true
@@ -56,20 +68,7 @@ proxies:
     public-key: TSOm7XIZvGzYoCbh_lFFA9PTQJqI-JU5kKIAffGmUWg
     short-id: 5e39e518bfac6392
   servername: vk.ru
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  server: 193.188.21.253
-  port: 10444
-  udp: true
-  type: vless
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: video.yandex.ru
-  client-fingerprint: safari
+  client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
   server: 146.103.118.189
   port: 443
@@ -96,7 +95,18 @@ proxies:
     public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
     short-id: 10351b07c712d2a2
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: ''
+- name: 🇫🇮 芬兰 (Finland) 09 - xiaohe
+  server: 213.176.92.168
+  port: 14430
+  udp: true
+  type: vless
+  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 213.176.92.168
 proxy-groups:
 - name: PROXIES
   type: select
@@ -110,6 +120,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
   - 🇫🇮 芬兰 (Finland) 07 - xiaohe
   - 🇫🇮 芬兰 (Finland) 08 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -123,5 +134,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
   - 🇫🇮 芬兰 (Finland) 07 - xiaohe
   - 🇫🇮 芬兰 (Finland) 08 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 09 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-11-10 22:55:02 UTC
+生成时间: 2026-11-11 04:00:59 UTC
 ==============================================================================
 
 说明:
@@ -15,7 +15,7 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 3
+本轮家宽节点数: 6
 
 [1] US  移动网络  置信度 85
      exit_ip : 130.94.20.17
@@ -37,12 +37,42 @@
      ipapi.is: company=LIGHT NODE LIMITED asn=AS154177 LIGHT NODE LIMITED
      fraud   : 0  (-1 = 未取到评分)
 
-[3] SG  严格家宽  置信度 70
-     exit_ip : 195.133.135.238
-     server  : 195.133.135.238:10086  (vmess)
-     ASN     : AS18106 Viewqwest Pte Ltd
-     ISP     : Viewqwest Pte Ltd
-     ORG     : Viewqwest Pte Ltd
+[3] HK  严格家宽  置信度 82
+     exit_ip : 219.79.98.16
+     server  : 2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com:443  (hysteria2)
+     ASN     : AS4760 HKT Limited
+     ISP     : Hong Kong Telecommunications (HKT) Limited Mass Internet
+     ORG     : Hong Kong Telecommunications (HKT) Limited
      ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Viewqwest Pte Ltd asn=AS18106 Viewqwest Pte Ltd
-     fraud   : 2  (-1 = 未取到评分)
+     ipapi.is: company=Hong Kong Telecommunications (HKT) Limited Mass Internet asn=AS4760 PCCW IMS Limited
+     fraud   : 0  (-1 = 未取到评分)
+
+[4] TW  严格家宽  置信度 82
+     exit_ip : 111.252.178.30
+     server  : 161.114.15.215:30502  (trojan)
+     ASN     : AS3462 Data Communication Business Group
+     ISP     : Chunghwa Telecom Co., Ltd.
+     ORG     : Chunghwa Telecom Co. Ltd.
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
+     fraud   : 0  (-1 = 未取到评分)
+
+[5] KR  严格家宽  置信度 82
+     exit_ip : 210.92.144.160
+     server  : 23.95.72.244:50135  (vless)
+     ASN     : AS3786 LG DACOM Corporation
+     ISP     : LG DACOM Corporation
+     ORG     : LG DACOM Corporation
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=LG DACOM Corporation asn=AS3786 LG DACOM Corporation
+     fraud   : 0  (-1 = 未取到评分)
+
+[6] SG  严格家宽  置信度 70
+     exit_ip : 116.88.224.217
+     server  : 116.88.224.217:8080  (vmess)
+     ASN     : AS55430 Starhub Ltd
+     ISP     : StarHub Cable Vision Ltd
+     ORG     : SGCABLEVISION
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=StarHub Cable Vision Ltd asn=AS55430 Starhub Ltd.
+     fraud   : 0  (-1 = 未取到评分)

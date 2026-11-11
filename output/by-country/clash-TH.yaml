@@ -20,19 +20,6 @@ proxies:
   password: 5t6i121em5lkmsmk
   sni: th001.zestapp778.com
   skip-cert-verify: false
-- name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
-  server: 23.95.72.244
-  port: 5459
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Von3W6smD_9vmKScjCG9ex6xw4_sG9MFfBk-9zbrbzs
-    short-id: 3fdc9f533b3fb068
-  servername: api.adidas.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -40,7 +27,6 @@ proxy-groups:
   - AUTO
   - 🇹🇭 泰国 (Thailand) 01 - xiaohe
   - 🇹🇭 泰国 (Thailand) 02 - xiaohe
-  - 🇹🇭 泰国 (Thailand) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,6 +34,5 @@ proxy-groups:
   proxies:
   - 🇹🇭 泰国 (Thailand) 01 - xiaohe
   - 🇹🇭 泰国 (Thailand) 02 - xiaohe
-  - 🇹🇭 泰国 (Thailand) 03 - xiaohe
 rules:
 - MATCH,PROXIES

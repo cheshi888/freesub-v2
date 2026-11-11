@@ -1,0 +1,54 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇮🇸 冰岛 (Iceland) 01 - xiaohe",
+      "server": "191.44.112.170",
+      "server_port": 443,
+      "uuid": "46d221fa-e9b4-748c-4eae-019a88e42991",
+      "tls": {
+        "enabled": true,
+        "server_name": "orbylume.my.to",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tvpn-tor/is",
+        "headers": {
+          "Host": "orbylume.my.to"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇮🇸 冰岛 (Iceland) 01 - xiaohe"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇮🇸 冰岛 (Iceland) 01 - xiaohe"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
