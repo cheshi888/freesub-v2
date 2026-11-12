@@ -6,32 +6,32 @@ log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
   server: 185.135.86.175
-  port: 9068
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
-  server: 185.135.86.175
-  port: 9036
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: hbtvgUz5uNYyB3Rf
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
-  server: 185.135.86.175
   port: 9007
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: kSPmvwdFzGMMW5pY
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
+- name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
+  server: 185.135.86.175
+  port: 9017
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: HAVAdE3nXhqA5nHp
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
   server: 185.135.86.175
   port: 9094
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: rpgbNnU9rDDU4aWZ
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
+  server: 185.135.86.175
+  port: 9034
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: Yg4MbdXFQ9HFFVY6
 - name: 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
   server: 185.135.86.175
   port: 9033
@@ -41,26 +41,25 @@ proxies:
   password: UTJA57ypk2XKQpnm
 - name: 🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe
   server: 185.135.86.175
-  port: 9017
+  port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: HAVAdE3nXhqA5nHp
+  password: 37Z4TFCYhfxcpc9Q
 - name: 🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe
   server: 185.135.86.175
-  port: 9034
+  port: 9068
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: Yg4MbdXFQ9HFFVY6
+  password: mwgRg9hRq3b4Qnwb
 - name: 🇱🇻 拉脱维亚 (Latvia) 08 - xiaohe
-  server: 104.165.205.42
-  port: 8443
+  server: 185.135.86.175
+  port: 9036
   udp: true
-  type: hysteria2
-  password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
-  sni: speedtestmark.com
-  skip-cert-verify: false
+  type: ss
+  cipher: aes-256-cfb
+  password: hbtvgUz5uNYyB3Rf
 - name: 🇱🇻 拉脱维亚 (Latvia) 09 - xiaohe
   server: 138.124.180.137
   port: 443
@@ -74,58 +73,6 @@ proxies:
     short-id: 33acba1b
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇱🇻 拉脱维亚 (Latvia) 10 - xiaohe
-  server: 185.135.86.175
-  port: 9086
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇻 拉脱维亚 (Latvia) 11 - xiaohe
-  server: 109.248.161.235
-  port: 443
-  udp: true
-  type: vless
-  uuid: e5be613e-0b23-4c08-88fb-6b4a82055365
-  tls: true
-  servername: oslo.zovip2.ir
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /api/v3/pulse
-    headers:
-      Host: oslo.zovip2.ir
-- name: 🇱🇻 拉脱维亚 (Latvia) 12 - xiaohe
-  server: 31.56.177.27
-  port: 443
-  udp: true
-  type: vless
-  uuid: e5be613e-0b23-4c08-88fb-6b4a82055365
-  tls: true
-  servername: oslo.zovip2.ir
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /api/v3/pulse
-    headers:
-      Host: oslo.zovip2.ir
-- name: 🇱🇻 拉脱维亚 (Latvia) 13 - xiaohe
-  server: 46.8.228.144
-  port: 443
-  udp: true
-  type: vless
-  uuid: e5be613e-0b23-4c08-88fb-6b4a82055365
-  tls: true
-  servername: oslo.zovip2.ir
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /api/v3/pulse
-    headers:
-      Host: oslo.zovip2.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -140,10 +87,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 08 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 09 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 10 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 11 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 12 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -158,9 +101,5 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 08 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 09 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 10 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 11 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 12 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 13 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -17,6 +17,15 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 02 - xiaohe
+  server: 13.140.56.100
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  network: ws
+  ws-opts:
+    path: /vless
+- name: 🇮🇳 印度 (India) 03 - xiaohe
   server: in.smrtai.top
   port: 443
   udp: true
@@ -28,15 +37,6 @@ proxies:
     short-id: 6bdc8320
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 03 - xiaohe
-  server: 13.140.56.100
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  network: ws
-  ws-opts:
-    path: /vless
 - name: 🇮🇳 印度 (India) 04 - xiaohe
   server: 103.172.116.191
   port: 10303
@@ -51,33 +51,12 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 05 - xiaohe
-  server: 13.140.253.35
-  port: 443
+  server: 172.105.39.124
+  port: 7002
   udp: true
-  type: vless
-  uuid: bcd3798c-a56f-6bfc-b738-a17c43bd4a50
-  tls: true
-  servername: xray-m0642ki4-silver-nebula-10.cloady.io
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /362b2b2c7197d648
-    headers:
-      Host: xray-m0642ki4-silver-nebula-10.cloady.io
-- name: 🇮🇳 印度 (India) 06 - xiaohe
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: in-152.67.8.205-0202
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
 proxy-groups:
 - name: PROXIES
   type: select
@@ -88,7 +67,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03 - xiaohe
   - 🇮🇳 印度 (India) 04 - xiaohe
   - 🇮🇳 印度 (India) 05 - xiaohe
-  - 🇮🇳 印度 (India) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -99,6 +77,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03 - xiaohe
   - 🇮🇳 印度 (India) 04 - xiaohe
   - 🇮🇳 印度 (India) 05 - xiaohe
-  - 🇮🇳 印度 (India) 06 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -13,11 +13,11 @@ proxies:
   password: dU3DSNS8wYPXzEKw
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
   server: 213.183.63.60
-  port: 9049
+  port: 9085
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: PRBf4BS2HvJqtWxY
+  password: 9ej82EKe2gq7gLAM
 - name: 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
   server: 213.183.63.60
   port: 9066
@@ -27,32 +27,32 @@ proxies:
   password: 2KUaE2a8NWTvuCZ3
 - name: 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
   server: 213.183.63.60
-  port: 9064
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: cp8pRSUAyLhTfVWH
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
-  server: 213.183.63.60
   port: 9098
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: aLpQtfEZe445QyHk
+- name: 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
+  server: 213.183.63.60
+  port: 9028
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9eeJ2fwnZA5Fxgz8
 - name: 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
   server: 213.183.63.60
-  port: 9085
+  port: 9054
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 9ej82EKe2gq7gLAM
+  password: VcFuyXvND2yQWSFY
 - name: 🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe
   server: 213.183.63.60
-  port: 9061
+  port: 9064
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 4R3hUfZ2FHhDmNcP
+  password: cp8pRSUAyLhTfVWH
 - name: 🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe
   server: 195.123.226.21
   port: 443
@@ -67,18 +67,25 @@ proxies:
   servername: gateway.icloud.com
   client-fingerprint: chrome
 - name: 🇧🇬 保加利亚 (Bulgaria) 09 - xiaohe
-  server: bg2.gacvpn.site
+  server: 88.80.150.15
   port: 443
   udp: true
   type: vless
-  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
-  flow: xtls-rprx-vision
+  uuid: 1d46250c-f015-439d-a7fd-c4d9e2a4c63d
   tls: true
-  reality-opts:
-    public-key: SgFQg7srP1xgjWhnSU9lpUMDRlsoLIXlw6nX-mfOdlg
-    short-id: 1f8bab7ad81089f2
-  servername: bg2.gacvpn.site
-  client-fingerprint: firefox
+  servername: bg2.oncloudvpn.com
+  skip-cert-verify: false
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇧🇬 保加利亚 (Bulgaria) 10 - xiaohe
+  server: c17b957c5a76ec76.lebufflonfermegroup.us
+  port: 35000
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: 3411b0af-589e-40f3-b8d5-d2e04ce19fa9
 proxy-groups:
 - name: PROXIES
   type: select
@@ -93,6 +100,7 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 09 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -107,5 +115,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 09 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 10 - xiaohe
 rules:
 - MATCH,PROXIES
