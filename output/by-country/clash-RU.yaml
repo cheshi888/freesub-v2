@@ -26,29 +26,13 @@ proxies:
   cipher: aes-128-gcm
   password: 8722de56b6c0b3f6a4d01cf91c07e6aa
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: 185.22.153.117
+  server: 46.17.47.58
   port: 18443
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 130.49.189.158
-  port: 43558
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  server: 176.108.245.237
-  port: 443
-  udp: true
-  type: vless
-  uuid: 87c35d3a-36f1-fade-90b7-af60506efbb8
-  tls: true
-  servername: tfusq-ru-40sb.fade.mom
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   server: 201.24.121.243
   port: 443
   udp: true
@@ -61,39 +45,36 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vlgrpc
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  server: 176.108.245.237
+  port: 443
+  udp: true
+  type: vless
+  uuid: 87c35d3a-36f1-fade-90b7-af60506efbb8
+  tls: true
+  servername: tfusq-ru-40sb.fade.mom
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  server: vps2.nemnogogo.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 95f85937-7b95-45c4-8d69-95da6a978569
+  tls: true
+  servername: vps2.nemnogogo.com
+  skip-cert-verify: false
+  client-fingerprint: ios
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mobile.api.Event
 - name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  server: 46.17.47.58
+  server: 185.22.153.117
   port: 18443
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
 - name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
-  server: 92.243.66.79
-  port: 443
-  udp: true
-  type: vless
-  uuid: c5f59ef3-9540-49fa-bd1e-c6c2f79df49a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: siD4oj2gdtLLEphV6fUXb8ueIc2WHVn7msOUhNGPf2o
-    short-id: 8d03c10b6a874a9c
-  servername: ru-mow.probe.geomyip.com
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
-  server: 72.56.38.83
-  port: 443
-  udp: true
-  type: vless
-  uuid: Fluffy_VPN-zKZUa4Ie
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ZzIetLcQtENjIXQ9XZqFo8p3J81p8Emj0wi51Uy07n8
-  servername: absolute-disaster.org
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
   server: 201.51.12.98
   port: 443
   udp: true
@@ -106,6 +87,31 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: mobile.api.Event
+- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
+  server: 92.243.66.79
+  port: 443
+  udp: true
+  type: vless
+  uuid: c5f59ef3-9540-49fa-bd1e-c6c2f79df49a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: siD4oj2gdtLLEphV6fUXb8ueIc2WHVn7msOUhNGPf2o
+    short-id: 8d03c10b6a874a9c
+  servername: ru-mow.probe.geomyip.com
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
+  server: 201.51.11.65
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GiDgVRVYrTkv1mZJeFVWkr736Iey2kqLM6L0eUbffV8
+  servername: absolute-disaster.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
+- name: 🇭🇷 克罗地亚 (Croatia) 01 - xiaohe
   server: 23.95.72.244
-  port: 52541
+  port: 50131
   udp: true
   type: vless
   uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: _DBQoND5nxcCxxCU0tO0b-h0E10ZFtPTwSp8CJ-f-gs
-    short-id: ce5793a7ad9594
+    public-key: D-7bbtY-0R7n8bX_n-tMlnNPkgy1-y7zaxQvmHrcAHQ
+    short-id: edcd88f8279bfd9b
   servername: api.adidas.com
-  client-fingerprint: firefox
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
+  - 🇭🇷 克罗地亚 (Croatia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
+  - 🇭🇷 克罗地亚 (Croatia) 01 - xiaohe
 rules:
 - MATCH,PROXIES

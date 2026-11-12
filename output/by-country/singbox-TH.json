@@ -12,28 +12,18 @@
       "security": "auto"
     },
     {
-      "type": "vmess",
-      "tag": "🇹🇭 泰国 (Thailand) 02 - xiaohe",
-      "server": "8.213.209.1",
-      "server_port": 18918,
-      "uuid": "6d64789a-4d5e-4ef7-c9ac-0fc543b4e635",
-      "security": "auto"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 泰国 (Thailand) 01 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 02 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 泰国 (Thailand) 01 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 02 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
