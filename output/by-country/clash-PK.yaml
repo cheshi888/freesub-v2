@@ -4,17 +4,17 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇳🇿 新西兰 (New Zealand) 01 - xiaohe
+- name: 🇵🇰 巴基斯坦 (Pakistan) 01 - xiaohe
   server: 23.95.72.244
-  port: 55419
+  port: 51482
   udp: true
   type: vless
   uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 4-zwh3OxBO8mnUu0G9nEAP56veE-F6-wzF87hNLOIyY
-    short-id: 2f745f3c3c
+    public-key: ZqVGy04LsOyGwbiA_CLWVFXGqMs6vteg-wGaYZ1BbzA
+    short-id: b785a30c236e93
   servername: api.adidas.com
   client-fingerprint: edge
 proxy-groups:
@@ -22,12 +22,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇳🇿 新西兰 (New Zealand) 01 - xiaohe
+  - 🇵🇰 巴基斯坦 (Pakistan) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇿 新西兰 (New Zealand) 01 - xiaohe
+  - 🇵🇰 巴基斯坦 (Pakistan) 01 - xiaohe
 rules:
 - MATCH,PROXIES
