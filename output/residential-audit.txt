@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-11-12 05:10:22 UTC
+生成时间: 2026-11-12 14:33:46 UTC
 ==============================================================================
 
 说明:
@@ -15,16 +15,16 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 4
+本轮家宽节点数: 7
 
-[1] HK  严格家宽  置信度 82
-     exit_ip : 219.79.98.16
-     server  : 2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com:443  (hysteria2)
-     ASN     : AS4760 HKT Limited
-     ISP     : Hong Kong Telecommunications (HKT) Limited Mass Internet
-     ORG     : Hong Kong Telecommunications (HKT) Limited
+[1] KR  严格家宽  置信度 82
+     exit_ip : 49.254.204.133
+     server  : 49.254.204.133:1774  (shadowsocks)
+     ASN     : AS4766 Korea Telecom
+     ISP     : Korea Telecom
+     ORG     : Haionnet
      ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Hong Kong Telecommunications (HKT) Limited Mass Internet asn=AS4760 PCCW IMS Limited
+     ipapi.is: company=HAIonNet asn=AS4766 Korea Telecom
      fraud   : 0  (-1 = 未取到评分)
 
 [2] US  移动网络  置信度 85
@@ -37,22 +37,52 @@
      ipapi.is: company=AirRabbit, LLC asn=AS63129 AirRabbit, LLC
      fraud   : 0  (-1 = 未取到评分)
 
-[3] HK  严格家宽  置信度 82
-     exit_ip : 112.120.123.140
-     server  : 6d889de6-tly2o0-tn28ki-mv7m.nw4.hyhuawei.com:443  (hysteria2)
-     ASN     : AS4760 HKT Limited
-     ISP     : Hong Kong Telecommunications (HKT) Limited Mass Internet
-     ORG     : Hong Kong Telecommunications (HKT) Limited
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Hong Kong Telecommunications (HKT) Limited Mass Internet asn=AS4760 PCCW IMS Limited
+[3] US  移动网络  置信度 85
+     exit_ip : 130.51.96.26
+     server  : 23.95.72.244:5465  (vless)
+     ASN     : AS63129 AirRabbit, LLC
+     ISP     : AirRabbit, LLC
+     ORG     : AirRabbit, LLC
+     ip-api  : hosting=False proxy=False mobile=True reverse=-
+     ipapi.is: company=AirRabbit, LLC asn=AS63129 AirRabbit, LLC
      fraud   : 0  (-1 = 未取到评分)
 
-[4] US  严格家宽  置信度 70
-     exit_ip : 47.151.79.108
-     server  : 23.95.72.244:48543  (vless)
-     ASN     : AS5650 Verizon Business
-     ISP     : Frontier Communications Solutions
-     ORG     : FTR3 FIOS-D Whittier CA
+[4] TW  严格家宽  置信度 82
+     exit_ip : 111.252.178.30
+     server  : 161.114.15.215:30502  (trojan)
+     ASN     : AS3462 Data Communication Business Group
+     ISP     : Chunghwa Telecom Co., Ltd.
+     ORG     : Chunghwa Telecom Co. Ltd.
      ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Verizon Business asn=AS5650 Verizon Business
-     fraud   : 27  (-1 = 未取到评分)
+     ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
+     fraud   : 0  (-1 = 未取到评分)
+
+[5] TW  严格家宽  置信度 82
+     exit_ip : 61.224.72.224
+     server  : 23.95.72.244:5462  (vless)
+     ASN     : AS3462 Data Communication Business Group
+     ISP     : Chunghwa Telecom Co., Ltd.
+     ORG     : Chunghwa Telecom Co. Ltd.
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
+     fraud   : 0  (-1 = 未取到评分)
+
+[6] IN  严格家宽  置信度 82
+     exit_ip : 115.246.54.106
+     server  : 122.176.216.52:443  (vless)
+     ASN     : AS55836 Reliance Jio Infocomm Limited
+     ISP     : Reliance Jio Infocomm Limited
+     ORG     : RJIL Internet
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Reliance Jio Infocomm Limited asn=AS55836 Reliance Jio Infocomm Limited
+     fraud   : 2  (-1 = 未取到评分)
+
+[7] TW  严格家宽  置信度 82
+     exit_ip : 61.228.82.184
+     server  : 23.95.72.244:5463  (vless)
+     ASN     : AS3462 Data Communication Business Group
+     ISP     : Chunghwa Telecom Co., Ltd.
+     ORG     : Chunghwa Telecom Co. Ltd.
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
+     fraud   : 0  (-1 = 未取到评分)

@@ -6,17 +6,6 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 01 - xiaohe",
-      "server": "13.140.56.100",
-      "server_port": 14430,
-      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 02 - xiaohe",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -35,43 +24,39 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 02 - xiaohe",
+      "server": "in.smrtai.top",
+      "server_port": 443,
+      "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q",
+          "short_id": "6bdc8320"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇮🇳 印度 (India) 03 - xiaohe",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
+      "server": "13.140.56.100",
+      "server_port": 14430,
+      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
       "transport": {
         "type": "ws",
-        "path": "/"
+        "path": "/vless"
       }
     },
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 04 - xiaohe",
-      "server": "85.234.100.32",
-      "server_port": 443,
-      "uuid": "c1208c5a-2350-0003-affd-fc41b4319286",
-      "tls": {
-        "enabled": true,
-        "server_name": "decdn-28.nome-rkp.net",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/media/ws/",
-        "headers": {
-          "Host": "decdn-28.nome-rkp.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 05 - xiaohe",
       "server": "103.172.116.191",
       "server_port": 10303,
       "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
@@ -92,31 +77,41 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 06 - xiaohe",
-      "server": "178.212.35.198",
+      "tag": "🇮🇳 印度 (India) 05 - xiaohe",
+      "server": "13.140.253.35",
       "server_port": 443,
-      "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
+      "uuid": "bcd3798c-a56f-6bfc-b738-a17c43bd4a50",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "xray-m0642ki4-silver-nebula-10.cloady.io",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q",
-          "short_id": "6bdc8320"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/362b2b2c7197d648",
+        "headers": {
+          "Host": "xray-m0642ki4-silver-nebula-10.cloady.io"
         }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇳 印度 (India) 07 - xiaohe",
-      "server": "172.105.39.124",
-      "server_port": 7002,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
+      "type": "vmess",
+      "tag": "🇮🇳 印度 (India) 06 - xiaohe",
+      "server": "152.67.8.205",
+      "server_port": 80,
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "in-152.67.8.205-0202"
+        }
+      }
     },
     {
       "type": "selector",
@@ -128,8 +123,7 @@
         "🇮🇳 印度 (India) 03 - xiaohe",
         "🇮🇳 印度 (India) 04 - xiaohe",
         "🇮🇳 印度 (India) 05 - xiaohe",
-        "🇮🇳 印度 (India) 06 - xiaohe",
-        "🇮🇳 印度 (India) 07 - xiaohe"
+        "🇮🇳 印度 (India) 06 - xiaohe"
       ]
     },
     {
@@ -141,8 +135,7 @@
         "🇮🇳 印度 (India) 03 - xiaohe",
         "🇮🇳 印度 (India) 04 - xiaohe",
         "🇮🇳 印度 (India) 05 - xiaohe",
-        "🇮🇳 印度 (India) 06 - xiaohe",
-        "🇮🇳 印度 (India) 07 - xiaohe"
+        "🇮🇳 印度 (India) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

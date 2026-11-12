@@ -5,18 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 169.40.34.41
+  server: 65.109.208.183
   port: 443
   udp: true
   type: vless
-  uuid: 622654a4-b666-000b-9260-fb717e05154f
-  flow: xtls-rprx-vision
+  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
   tls: true
-  reality-opts:
-    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
-    short-id: 1c3e8241a8743df9
-  servername: key-master-saver.com
-  client-fingerprint: ios
+  servername: free.for.member.iiproxy.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 177.202.75.56
   port: 443
@@ -37,43 +34,28 @@ proxies:
     headers:
       Host: 213.176.92.168
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 213.176.92.168
-  port: 10444
+  server: 95.216.27.15
+  port: 2053
   udp: true
   type: vless
-  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
-  flow: xtls-rprx-vision
+  uuid: b79d736d-0f10-4169-b626-362059d18204
   tls: true
   reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: video.yandex.ru
+    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
+    short-id: 10351b07c712d2a2
+  servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: 146.103.118.189
-  port: 443
+  server: 45.144.234.157
+  port: 14430
   udp: true
   type: vless
-  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
-  tls: true
-  servername: nl2.574ck.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   network: ws
   ws-opts:
-    path: /574ck-finland
+    path: /vless
     headers:
-      Host: nl2.574ck.xyz
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  server: free.for.member.iiproxy.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
-  tls: true
-  servername: free.for.member.iiproxy.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
+      Host: 45.144.234.157
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,7 +66,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -95,6 +76,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
 rules:
 - MATCH,PROXIES
