@@ -5,27 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
-  server: 45.63.30.142
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: 45.63.30.142
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
-  server: 50.6.54.163
-  port: 443
-  udp: true
-  type: vless
-  uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 2vd1kmOeZpjjDpgN75FMhwFRzPjNfzvLoUM5LlLrm2U
-    short-id: 26b26357bfcd59a1
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   server: 152.67.115.203
   port: 443
   udp: true
@@ -35,7 +14,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
-- name: 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
+- name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   server: v1au.mateflora.com
   port: 443
   udp: true
@@ -48,8 +27,16 @@ proxies:
     short-id: 54cca3c1c1c7
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
-  server: 39.109.111.23
+- name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
+  server: 45.63.30.142
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: 45.63.30.142
+  skip-cert-verify: true
+- name: 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
+  server: doghkzf.zalolink.com
   port: 48158
   udp: true
   type: vless
@@ -60,7 +47,7 @@ proxies:
     public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
     short-id: 54cca3c1c1c7
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -70,7 +57,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -80,6 +66,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
 rules:
 - MATCH,PROXIES

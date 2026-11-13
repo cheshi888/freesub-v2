@@ -4,26 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇹🇭 泰国 (Thailand) 01 - xiaohe",
-      "server": "119.46.51.45",
-      "server_port": 37515,
-      "uuid": "9b76bc31-17a5-4454-934a-8d5fb602cd70",
-      "security": "auto"
+      "type": "vless",
+      "tag": "🇻🇳 越南 (Vietnam) 01 - xiaohe",
+      "server": "150.95.109.109",
+      "server_port": 2086,
+      "uuid": "b83faafc-cbb7-4655-99d4-2c4c39a49d1b"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 泰国 (Thailand) 01 - xiaohe"
+        "🇻🇳 越南 (Vietnam) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 泰国 (Thailand) 01 - xiaohe"
+        "🇻🇳 越南 (Vietnam) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

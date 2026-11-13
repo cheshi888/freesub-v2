@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
+  server: 5.253.42.164
+  port: 40443
+  udp: true
+  type: vless
+  uuid: e99ba96d-dec8-42eb-be53-19e71eef7cab
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
+    short-id: 68a8
+  servername: deepl.com
+  client-fingerprint: firefox
+- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
   server: 45.86.60.174
   port: 16443
   udp: true
@@ -16,11 +29,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
 rules:
 - MATCH,PROXIES
