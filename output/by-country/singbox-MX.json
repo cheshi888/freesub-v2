@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇲🇽 墨西哥 (Mexico) 01 - xiaohe",
-      "server": "64.177.90.30",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "BWyPPTusFKhGgzKh"
-    },
-    {
       "type": "trojan",
-      "tag": "🇲🇽 墨西哥 (Mexico) 02 - xiaohe",
+      "tag": "🇲🇽 墨西哥 (Mexico) 01 - xiaohe",
       "server": "149.104.87.125",
       "server_port": 15083,
       "password": "5t6i121em5lkmsmk",
@@ -32,16 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇽 墨西哥 (Mexico) 01 - xiaohe",
-        "🇲🇽 墨西哥 (Mexico) 02 - xiaohe"
+        "🇲🇽 墨西哥 (Mexico) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇽 墨西哥 (Mexico) 01 - xiaohe",
-        "🇲🇽 墨西哥 (Mexico) 02 - xiaohe"
+        "🇲🇽 墨西哥 (Mexico) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

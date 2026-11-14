@@ -5,6 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - xiaohe
+  server: 119.46.51.45
+  port: 37515
+  udp: true
+  type: vmess
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
+- name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
+  server: assets.opensignal.com
+  port: 80
+  udp: true
+  type: vless
+  uuid: 0c85001b-ad48-4f43-bdc9-b2b5c626a26e
+  network: ws
+  ws-opts:
+    path: /logout
+    headers:
+      Host: d36lt9hzl2ug3d.cloudfront.net:assets.opensignal.com
+- name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
   server: zfapi.zalolink.com
   port: 11802
   udp: true
@@ -17,17 +36,34 @@ proxies:
     short-id: 6c84fbac2d
   servername: psstatic.cdn.bcebos.com
   client-fingerprint: ios
+- name: 🇹🇭 泰国 (Thailand) 04 - xiaohe
+  server: www.true.th
+  port: 80
+  udp: true
+  type: vless
+  uuid: f4c5605a-8424-441e-b23d-d6384d012c28
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dcm4kwis2exkw.cloudfront.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇭 泰国 (Thailand) 01 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 02 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 03 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇭 泰国 (Thailand) 01 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 02 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 03 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 04 - xiaohe
 rules:
 - MATCH,PROXIES

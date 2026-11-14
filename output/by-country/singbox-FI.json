@@ -4,8 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
+      "server": "94.183.164.119",
+      "server_port": 24433,
+      "password": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
+      "tls": {
+        "enabled": true,
+        "server_name": "94.183.164.119",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
       "server": "45.144.234.157",
       "server_port": 14430,
       "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
@@ -19,29 +31,13 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-      "server": "177.202.65.158",
-      "server_port": 443,
-      "password": "247802ca-0fbb-428a-b807-91a6e571b5c7",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2-fi2.snobvpn.online",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "AJyvWNsoDgVkMkboZ3juMJXYNRf6uEQE"
-      }
-    },
-    {
-      "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
-      "server": "94.183.164.119",
-      "server_port": 24433,
-      "password": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
+      "server": "fi1.obxodvpn.us",
+      "server_port": 443,
+      "password": "146d567c-6335-4e63-a8aa-7ec068642440",
       "tls": {
         "enabled": true,
-        "server_name": "lakes.blog-forme.ru",
+        "server_name": "fi1.obxodvpn.us",
         "insecure": false
       }
     },
@@ -62,6 +58,36 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 05 - xiaohe",
+      "server": "213.176.92.168",
+      "server_port": 14430,
+      "uuid": "ba52cc43-700d-4040-9444-29214c98e6e0",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "213.176.92.168"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇮 芬兰 (Finland) 06 - xiaohe",
+      "server": "177.202.65.158",
+      "server_port": 443,
+      "password": "247802ca-0fbb-428a-b807-91a6e571b5c7",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2-fi2.snobvpn.online",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "AJyvWNsoDgVkMkboZ3juMJXYNRf6uEQE"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 07 - xiaohe",
       "server": "94.183.234.245",
       "server_port": 443,
       "uuid": "5de0c218-0138-45d8-94d2-c2c3f37a1a6d",
@@ -82,7 +108,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - xiaohe",
+      "tag": "🇫🇮 芬兰 (Finland) 08 - xiaohe",
       "server": "95.216.27.15",
       "server_port": 2053,
       "uuid": "b79d736d-0f10-4169-b626-362059d18204",
@@ -110,7 +136,9 @@
         "🇫🇮 芬兰 (Finland) 03 - xiaohe",
         "🇫🇮 芬兰 (Finland) 04 - xiaohe",
         "🇫🇮 芬兰 (Finland) 05 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 06 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 06 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 07 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 08 - xiaohe"
       ]
     },
     {
@@ -122,7 +150,9 @@
         "🇫🇮 芬兰 (Finland) 03 - xiaohe",
         "🇫🇮 芬兰 (Finland) 04 - xiaohe",
         "🇫🇮 芬兰 (Finland) 05 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 06 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 06 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 07 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 08 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

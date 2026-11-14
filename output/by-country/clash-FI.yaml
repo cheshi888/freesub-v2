@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  server: 94.183.164.119
+  port: 24433
+  udp: true
+  type: hysteria2
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
+  sni: 94.183.164.119
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -15,23 +23,13 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 177.202.65.158
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  server: fi1.obxodvpn.us
   port: 443
   udp: true
   type: hysteria2
-  password: 247802ca-0fbb-428a-b807-91a6e571b5c7
-  sni: hy2-fi2.snobvpn.online
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: AJyvWNsoDgVkMkboZ3juMJXYNRf6uEQE
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 94.183.164.119
-  port: 24433
-  udp: true
-  type: hysteria2
-  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
-  sni: lakes.blog-forme.ru
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
+  sni: fi1.obxodvpn.us
   skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   server: 193.188.21.253
@@ -45,6 +43,27 @@ proxies:
     headers:
       Host: 193.188.21.253
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  server: 213.176.92.168
+  port: 14430
+  udp: true
+  type: vless
+  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 213.176.92.168
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  server: 177.202.65.158
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 247802ca-0fbb-428a-b807-91a6e571b5c7
+  sni: hy2-fi2.snobvpn.online
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: AJyvWNsoDgVkMkboZ3juMJXYNRf6uEQE
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
   server: 94.183.234.245
   port: 443
   udp: true
@@ -57,7 +76,7 @@ proxies:
     short-id: 7f1e29593aa94ad1
   servername: www.bing.com
   client-fingerprint: qq
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -80,6 +99,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -91,5 +112,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 08 - xiaohe
 rules:
 - MATCH,PROXIES
