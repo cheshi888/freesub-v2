@@ -46,15 +46,26 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe",
-      "server": "156.239.224.107",
-      "server_port": 57278,
-      "uuid": "1270bed5-f908-4ecc-f1c8-de246033b186",
-      "security": "auto",
+      "server": "196.196.149.80",
+      "server_port": 443,
+      "uuid": "4201786b-d99b-4147-a5f0-20d47acddb81",
+      "tls": {
+        "enabled": true,
+        "server_name": "b3cd32g.es1.h1clayd.click",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "7efBhLzPwoTtEC1GlukCdiTllobUfa2_XuAKNSLJx30",
+          "short_id": "e7cffac9f8cfb434"
+        }
+      },
       "transport": {
-        "type": "ws",
-        "path": "/"
+        "type": "grpc"
       }
     },
     {

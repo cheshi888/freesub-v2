@@ -30,16 +30,20 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
-  server: 156.239.224.107
-  port: 57278
+  server: 196.196.149.80
+  port: 443
   udp: true
-  type: vmess
-  uuid: 1270bed5-f908-4ecc-f1c8-de246033b186
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
+  type: vless
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  tls: true
+  reality-opts:
+    public-key: 7efBhLzPwoTtEC1GlukCdiTllobUfa2_XuAKNSLJx30
+    short-id: e7cffac9f8cfb434
+  servername: b3cd32g.es1.h1clayd.click
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
 proxy-groups:
 - name: PROXIES
   type: select

@@ -6,6 +6,26 @@
     {
       "type": "vless",
       "tag": "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
+      "server": "31.222.235.81",
+      "server_port": 443,
+      "uuid": "d8b58872-cc25-4bb2-badb-b86399c075fa",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk",
+          "short_id": "d8b58872"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇦 乌克兰 (Ukraine) 02 - xiaohe",
       "server": "83.147.18.75",
       "server_port": 443,
       "uuid": "5de0c218-0138-45d8-94d2-c2c3f37a1a6d",
@@ -29,14 +49,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
+        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
+        "🇺🇦 乌克兰 (Ukraine) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
+        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
+        "🇺🇦 乌克兰 (Ukraine) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

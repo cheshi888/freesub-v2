@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - xiaohe
+  server: zfapi.zalolink.com
+  port: 11802
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: FUBjYwXlKIVwF7IuJf5dt_HU2sUnrEt10s4TIlTe8Q4
+    short-id: 6c84fbac2d
+  servername: psstatic.cdn.bcebos.com
+  client-fingerprint: ios
+- name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
   server: 119.46.51.45
   port: 37515
   udp: true
@@ -18,11 +31,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇭 泰国 (Thailand) 01 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇭 泰国 (Thailand) 01 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 02 - xiaohe
 rules:
 - MATCH,PROXIES
