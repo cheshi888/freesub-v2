@@ -4,28 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇳 CN 01 - xiaohe
-  server: 39.108.113.127
+- name: 🇲🇾 马来西亚 (Malaysia) 01 (家宽) - xiaohe
+  server: 192.228.145.118
   port: 10086
   udp: true
   type: vmess
-  uuid: d50cc563-0c03-4136-899f-85cbc0b02699
+  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
   alterId: 0
   cipher: auto
-  network: ws
-  ws-opts:
-    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇳 CN 01 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 CN 01 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

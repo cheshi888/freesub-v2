@@ -16,34 +16,17 @@ proxies:
     public-key: R6mPqCsjZMWauci4LHw7Qp1LGKmBd-sxMXplyOn9bSQ
   servername: cloudflare-dns.com
   client-fingerprint: firefox
-- name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  server: 179.254.115.201
-  port: 443
-  udp: true
-  type: vless
-  uuid: 95c2ba1e-a330-4e6b-bd81-bf9c0f647b2f
-  tls: true
-  reality-opts:
-    public-key: AK4PrvaK2WV1v1NEegq2rE53gVnlXUw_jo3XwA1aIEI
-    short-id: 7d0aaf84998bfe61
-  servername: 02104dg.es7.h1clayd.click
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: af7e99c1e3f1
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -25,44 +25,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe",
-      "server": "179.254.115.201",
-      "server_port": 443,
-      "uuid": "95c2ba1e-a330-4e6b-bd81-bf9c0f647b2f",
-      "tls": {
-        "enabled": true,
-        "server_name": "02104dg.es7.h1clayd.click",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "AK4PrvaK2WV1v1NEegq2rE53gVnlXUw_jo3XwA1aIEI",
-          "short_id": "7d0aaf84998bfe61"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "af7e99c1e3f1"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
-        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe"
+        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
-        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe"
+        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
