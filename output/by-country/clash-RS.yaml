@@ -12,17 +12,27 @@ proxies:
   password: X00HagvwL8gQXNDAnsxsN8dv1_VdneEo
   sni: rs.nebulaguard.org
   skip-cert-verify: false
+- name: 🇷🇸 塞尔维亚 (Serbia) 02 - xiaohe
+  server: s5.libertyrunet.store
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 307ee0e53ea04dfd86a7f2f9fcd53844
+  sni: s5.libertyrunet.store
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe
+  - 🇷🇸 塞尔维亚 (Serbia) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe
+  - 🇷🇸 塞尔维亚 (Serbia) 02 - xiaohe
 rules:
 - MATCH,PROXIES
