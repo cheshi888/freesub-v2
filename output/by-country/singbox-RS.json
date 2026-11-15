@@ -4,8 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "hysteria2",
       "tag": "🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe",
+      "server": "130.49.163.188",
+      "server_port": 443,
+      "password": "307ee0e53ea04dfd86a7f2f9fcd53844",
+      "tls": {
+        "enabled": true,
+        "server_name": "s5.libertyrunet.store",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇷🇸 塞尔维亚 (Serbia) 02 - xiaohe",
       "server": "38.180.101.235",
       "server_port": 5443,
       "password": "X00HagvwL8gQXNDAnsxsN8dv1_VdneEo",
@@ -21,18 +33,6 @@
           "enabled": true,
           "fingerprint": "firefox"
         }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇸 塞尔维亚 (Serbia) 02 - xiaohe",
-      "server": "130.49.163.188",
-      "server_port": 443,
-      "password": "307ee0e53ea04dfd86a7f2f9fcd53844",
-      "tls": {
-        "enabled": true,
-        "server_name": "s5.libertyrunet.store",
-        "insecure": false
       }
     },
     {
