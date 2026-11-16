@@ -6,14 +6,6 @@
     {
       "type": "shadowsocks",
       "tag": "🇨🇭 瑞士 (Switzerland) 01 - xiaohe",
-      "server": "79.127.184.104",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇭 瑞士 (Switzerland) 02 - xiaohe",
       "server": "23.166.88.127",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -21,22 +13,34 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03 - xiaohe",
+      "tag": "🇨🇭 瑞士 (Switzerland) 02 - xiaohe",
       "server": "23.166.88.189",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 - xiaohe",
+      "server": "186.190.215.251",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "trojan",
       "tag": "🇨🇭 瑞士 (Switzerland) 04 - xiaohe",
-      "server": "95.85.231.3",
+      "server": "208.69.78.29",
       "server_port": 443,
-      "password": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "guide.blog-forme.ru",
-        "insecure": false
+        "server_name": "learn.yourultimateprofessionalcareerhub.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -59,7 +63,7 @@
       "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 06 - xiaohe",
       "server": "208.69.78.217",
-      "server_port": 33187,
+      "server_port": 21046,
       "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
       "tls": {
         "enabled": true,
@@ -72,205 +76,20 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 07 - xiaohe",
-      "server": "74.161.152.237",
-      "server_port": 2083,
-      "uuid": "52a5a29f-c162-411a-8a37-a3f11b0dc537",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4",
-          "short_id": "0123456789abcdef"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 08 - xiaohe",
-      "server": "a813d5t.ch5.h1clayd.click",
+      "server": "95.85.231.3",
       "server_port": 443,
-      "uuid": "963f72cf-8465-46f5-996c-df45500b57a3",
+      "password": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
       "tls": {
         "enabled": true,
-        "server_name": "a813d5t.ch5.h1clayd.click",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "syYaWsZJOf114XAoEcIQodriOW8pyCjP5x_KEq38ozs",
-          "short_id": "7ded0da1ef58b7e2"
-        }
+        "server_name": "guide.blog-forme.ru",
+        "insecure": false
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 09 - xiaohe",
-      "server": "140.238.213.114",
-      "server_port": 50160,
-      "password": "84a506ca5aca505696a454d828420b3f",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 10 - xiaohe",
-      "server": "208.69.78.217",
-      "server_port": 21090,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 11 - xiaohe",
-      "server": "208.69.78.217",
-      "server_port": 33130,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 12 - xiaohe",
-      "server": "208.69.78.217",
-      "server_port": 21054,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 13 - xiaohe",
-      "server": "208.69.78.217",
-      "server_port": 33044,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 14 - xiaohe",
-      "server": "208.69.78.217",
-      "server_port": 33195,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 15 - xiaohe",
-      "server": "208.69.78.217",
-      "server_port": 21016,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 16 - xiaohe",
-      "server": "208.69.78.217",
-      "server_port": 21084,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 17 - xiaohe",
-      "server": "208.69.78.217",
-      "server_port": 21047,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 18 - xiaohe",
-      "server": "208.69.78.217",
-      "server_port": 21021,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 19 - xiaohe",
+      "tag": "🇨🇭 瑞士 (Switzerland) 08 - xiaohe",
       "server": "208.69.78.217",
       "server_port": 21161,
       "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
@@ -286,9 +105,173 @@
     },
     {
       "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 09 - xiaohe",
+      "server": "208.69.78.217",
+      "server_port": 33042,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇨🇭 瑞士 (Switzerland) 10 - xiaohe",
+      "server": "208.69.78.33",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "courses.yourultimateprofessionalcareerhub.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇨🇭 瑞士 (Switzerland) 11 - xiaohe",
+      "server": "208.69.78.158",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.yourultimateprofessionalcareerhub.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇨🇭 瑞士 (Switzerland) 12 - xiaohe",
+      "server": "208.69.78.222",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "yourultimateprofessionalcareerhub.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 13 - xiaohe",
+      "server": "208.69.78.217",
+      "server_port": 21147,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 14 - xiaohe",
+      "server": "153.52.85.187",
+      "server_port": 443,
+      "uuid": "963f72cf-8465-46f5-996c-df45500b57a3",
+      "tls": {
+        "enabled": true,
+        "server_name": "a813d5t.ch5.h1clayd.click",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "syYaWsZJOf114XAoEcIQodriOW8pyCjP5x_KEq38ozs",
+          "short_id": "7ded0da1ef58b7e2"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇭 瑞士 (Switzerland) 15 - xiaohe",
+      "server": "79.127.184.104",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 16 - xiaohe",
+      "server": "208.69.78.217",
+      "server_port": 21054,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 17 - xiaohe",
+      "server": "140.238.213.114",
+      "server_port": 50160,
+      "password": "84a506ca5aca505696a454d828420b3f",
+      "tls": {
+        "enabled": true,
+        "server_name": "off",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 18 - xiaohe",
+      "server": "208.69.78.217",
+      "server_port": 21090,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 19 - xiaohe",
+      "server": "208.69.78.217",
+      "server_port": 21158,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 20 - xiaohe",
       "server": "208.69.78.217",
-      "server_port": 33171,
+      "server_port": 33174,
       "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
       "tls": {
         "enabled": true,
@@ -304,7 +287,7 @@
       "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 21 - xiaohe",
       "server": "208.69.78.217",
-      "server_port": 21113,
+      "server_port": 33187,
       "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
       "tls": {
         "enabled": true,
@@ -320,7 +303,7 @@
       "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 22 - xiaohe",
       "server": "208.69.78.217",
-      "server_port": 21147,
+      "server_port": 33117,
       "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
       "tls": {
         "enabled": true,
@@ -335,6 +318,166 @@
     {
       "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 23 - xiaohe",
+      "server": "208.69.78.217",
+      "server_port": 33171,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 24 - xiaohe",
+      "server": "208.69.78.217",
+      "server_port": 21047,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 25 - xiaohe",
+      "server": "208.69.78.217",
+      "server_port": 33195,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 26 - xiaohe",
+      "server": "208.69.78.217",
+      "server_port": 33133,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 27 - xiaohe",
+      "server": "208.69.78.217",
+      "server_port": 33044,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 28 - xiaohe",
+      "server": "208.69.78.217",
+      "server_port": 33152,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 29 - xiaohe",
+      "server": "208.69.78.217",
+      "server_port": 21067,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 30 - xiaohe",
+      "server": "208.69.78.217",
+      "server_port": 8444,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 31 - xiaohe",
+      "server": "208.69.78.217",
+      "server_port": 33130,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 32 - xiaohe",
+      "server": "208.69.78.217",
+      "server_port": 21154,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 33 - xiaohe",
       "server": "208.69.78.217",
       "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
       "tls": {
@@ -353,41 +496,9 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 24 - xiaohe",
+      "tag": "🇨🇭 瑞士 (Switzerland) 34 - xiaohe",
       "server": "208.69.78.217",
-      "server_port": 33141,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 25 - xiaohe",
-      "server": "208.69.78.217",
-      "server_port": 33042,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 26 - xiaohe",
-      "server": "208.69.78.217",
-      "server_port": 21067,
+      "server_port": 21080,
       "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
       "tls": {
         "enabled": true,
@@ -429,7 +540,15 @@
         "🇨🇭 瑞士 (Switzerland) 23 - xiaohe",
         "🇨🇭 瑞士 (Switzerland) 24 - xiaohe",
         "🇨🇭 瑞士 (Switzerland) 25 - xiaohe",
-        "🇨🇭 瑞士 (Switzerland) 26 - xiaohe"
+        "🇨🇭 瑞士 (Switzerland) 26 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 27 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 28 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 29 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 30 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 31 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 32 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 33 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 34 - xiaohe"
       ]
     },
     {
@@ -461,7 +580,15 @@
         "🇨🇭 瑞士 (Switzerland) 23 - xiaohe",
         "🇨🇭 瑞士 (Switzerland) 24 - xiaohe",
         "🇨🇭 瑞士 (Switzerland) 25 - xiaohe",
-        "🇨🇭 瑞士 (Switzerland) 26 - xiaohe"
+        "🇨🇭 瑞士 (Switzerland) 26 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 27 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 28 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 29 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 30 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 31 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 32 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 33 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 34 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

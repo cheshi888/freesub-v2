@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: 201.8.71.59
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 23c82941-70f4-4381-90db-bd28e9a902e9
-  sni: steel7.hadsvpn.com
-  skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: 217.60.182.154
   port: 443
   udp: true
@@ -20,6 +12,19 @@ proxies:
   password: b36a14f8-fc3f-4142-968f-48031cf5f330
   sni: hy2-eee-1.aloranode.top
   skip-cert-verify: false
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  server: 201.8.71.252
+  port: 443
+  udp: true
+  type: vless
+  uuid: a88d4614-2134-404c-9479-6aba1ca9cdfd
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: pteJNuYbBCnVSyhYPlDbR9UZHIrnFzgAlsZGDNbwSD0
+    short-id: d61fdf9e283664b8
+  servername: 70480at.ee3.h1clayd.click
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

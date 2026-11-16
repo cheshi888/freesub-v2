@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+  server: 188.225.24.62
+  port: 443
+  udp: true
+  type: vless
+  uuid: c0c949fc-2ed6-4597-b680-a1a3276ebf87
+  flow: xtls-rprx-vision
+  tls: true
+  servername: img.bokovskay.app
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
   server: 46.29.255.123
   port: 59539
   udp: true
@@ -22,11 +33,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
 rules:
 - MATCH,PROXIES
