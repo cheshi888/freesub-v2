@@ -5,25 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: 217.60.182.154
-  port: 443
-  udp: true
-  type: hysteria2
-  password: b36a14f8-fc3f-4142-968f-48031cf5f330
-  sni: hy2-eee-1.aloranode.top
-  skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  server: 201.8.71.252
+  server: 185.223.171.1
   port: 443
   udp: true
   type: vless
-  uuid: a88d4614-2134-404c-9479-6aba1ca9cdfd
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: pteJNuYbBCnVSyhYPlDbR9UZHIrnFzgAlsZGDNbwSD0
-    short-id: d61fdf9e283664b8
-  servername: 70480at.ee3.h1clayd.click
+    public-key: z46-GwLD2TvzK2o95okMP7IMNPUfwYHmqt2JV6nJ03I
+    short-id: 8c9f899dba63f6c7
+  servername: ee1.gofizzin.com
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -31,13 +23,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
 rules:
 - MATCH,PROXIES
