@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-11-16 14:33:48 UTC
+生成时间: 2026-11-17 01:33:14 UTC
 ==============================================================================
 
 说明:
@@ -15,9 +15,19 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 2
+本轮家宽节点数: 8
 
-[1] KR  严格家宽  置信度 82
+[1] DE  移动网络  置信度 85
+     exit_ip : 163.123.193.9
+     server  : 8.220.81.25:443  (shadowsocks)
+     ASN     : AS36231 Tempest Hosting
+     ISP     : Tempest Hosting, LLC
+     ORG     : Tempest Hosting, LLC
+     ip-api  : hosting=False proxy=False mobile=True reverse=-
+     ipapi.is: company=AGX Management Consultancy - FZCO asn=AS36231 AGX Management Consultancy - FZCO
+     fraud   : 0  (-1 = 未取到评分)
+
+[2] KR  严格家宽  置信度 82
      exit_ip : 49.254.204.133
      server  : 49.254.204.133:1774  (shadowsocks)
      ASN     : AS4766 Korea Telecom
@@ -27,7 +37,57 @@
      ipapi.is: company=HAIonNet asn=AS4766 Korea Telecom
      fraud   : 0  (-1 = 未取到评分)
 
-[2] SG  严格家宽  置信度 70
+[3] HK  严格家宽  置信度 82
+     exit_ip : 116.49.173.65
+     server  : 9e5f5c4b-tomdc0-tpolhi-1rgxu.hk2.hyhuawei.com:443  (vless)
+     ASN     : AS4760 HKT Limited
+     ISP     : Hong Kong Telecommunications (HKT) Limited Mass Internet
+     ORG     : Hong Kong Telecommunications (HKT) Limited
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Hong Kong Telecommunications (HKT) Limited Mass Internet asn=AS4760 PCCW IMS Limited
+     fraud   : 0  (-1 = 未取到评分)
+
+[4] TW  严格家宽  置信度 82
+     exit_ip : 114.37.105.51
+     server  : 114.37.105.51:443  (vless)
+     ASN     : AS3462 Data Communication Business Group
+     ISP     : Chunghwa Telecom Co., Ltd.
+     ORG     : Chunghwa Telecom Co. Ltd.
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
+     fraud   : 0  (-1 = 未取到评分)
+
+[5] PH  严格家宽  置信度 72
+     exit_ip : 120.89.61.213
+     server  : 120.89.61.213:443  (vless)
+     ASN     : AS9658 Eastern Telecoms Phils., Inc.
+     ISP     : Eastern Telecommunications Philippines, Inc.
+     ORG     : Eastern Telecommunications Philippines, Inc
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Eastern Telecommunications Philippines, Inc. asn=AS9658 Eastern Telecommunications Philippines, Inc.
+     fraud   : 2  (-1 = 未取到评分)
+
+[6] TR  严格家宽  置信度 70
+     exit_ip : 212.98.224.35
+     server  : 212.98.224.35:443  (vless)
+     ASN     : AS48678 Pentech Bilisim Teknolojileri Sanayi Ve Ticaret Limited Sirketi
+     ISP     : Pentech Bilisim Teknolojileri
+     ORG     : Vodafone NET Iletisim Hizmetleri Anonim Sirketi
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Vodafone Net Iletisim Hizmetler AS asn=AS48678 Pentech Bilisim Teknolojileri Sanayi Ve Ticaret Limited Sirketi
+     fraud   : 0  (-1 = 未取到评分)
+
+[7] AR  移动网络  置信度 85
+     exit_ip : 186.122.177.79
+     server  : 186.122.177.79:443  (vless)
+     ASN     : AS11664 Techtel LMDS Comunicaciones Interactivas S.A.
+     ISP     : Techtel LMDS Comunicaciones Interactivas S.A.
+     ORG     : AMX Argentina S.A
+     ip-api  : hosting=False proxy=False mobile=True reverse=-
+     ipapi.is: company=AMX Argentina S.A. asn=AS11664 Techtel LMDS Comunicaciones Interactivas S.A.
+     fraud   : 2  (-1 = 未取到评分)
+
+[8] SG  严格家宽  置信度 70
      exit_ip : 195.133.135.238
      server  : 195.133.135.238:10086  (vmess)
      ASN     : AS18106 Viewqwest Pte Ltd

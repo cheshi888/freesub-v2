@@ -5,15 +5,127 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe",
+      "tag": "🇩🇪 德国 (Germany) 01 (移动家宽) - xiaohe",
+      "server": "8.220.81.25",
+      "server_port": 443,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe",
       "server": "49.254.204.133",
       "server_port": 1774,
       "method": "aes-256-cfb",
       "password": "1234!@#$"
     },
     {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe",
+      "server": "9e5f5c4b-tomdc0-tpolhi-1rgxu.hk2.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "ea93064c-176c-11f0-885d-f23c91cfbbc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "download.windowsupdate.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe",
+      "server": "114.37.105.51",
+      "server_port": 443,
+      "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "tw1.gofizzin.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3OEqq4MiCKoUP5yKBOmZsjuwg4i8A1fb8WrEDOFQek8",
+          "short_id": "2c14765d0b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇭 菲律宾 (Philippines) 05 (家宽) - xiaohe",
+      "server": "120.89.61.213",
+      "server_port": 443,
+      "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ph1.gofizz.in",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wAh4gvnTR3NRk0SFrkBRkX3tNeybFNodcmg7piumxiM",
+          "short_id": "87395f88"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 06 (家宽) - xiaohe",
+      "server": "212.98.224.35",
+      "server_port": 443,
+      "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "tr1.gofizzin.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "9_UhwEt_9pf8WahM1K9O6-_0vAK6q0uiNGFoHBO7s3A",
+          "short_id": "0e3e4d96"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇷 阿根廷 (Argentina) 07 (移动家宽) - xiaohe",
+      "server": "186.122.177.79",
+      "server_port": 443,
+      "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ar1.gofizz.in",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pBEW9XYZQsXxjgt44pCQcxoEOe-B1CdxaTdTnL2QhAA",
+          "short_id": "a5d67406"
+        }
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "🇸🇬 新加坡 (Singapore) 02 (家宽) - xiaohe",
+      "tag": "🇸🇬 新加坡 (Singapore) 08 (家宽) - xiaohe",
       "server": "195.133.135.238",
       "server_port": 10086,
       "uuid": "b831381d-6324-4d53-ad4f-8cda48b30811",
@@ -24,16 +136,28 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 02 (家宽) - xiaohe"
+        "🇩🇪 德国 (Germany) 01 (移动家宽) - xiaohe",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe",
+        "🇵🇭 菲律宾 (Philippines) 05 (家宽) - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 06 (家宽) - xiaohe",
+        "🇦🇷 阿根廷 (Argentina) 07 (移动家宽) - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 08 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 02 (家宽) - xiaohe"
+        "🇩🇪 德国 (Germany) 01 (移动家宽) - xiaohe",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe",
+        "🇵🇭 菲律宾 (Philippines) 05 (家宽) - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 06 (家宽) - xiaohe",
+        "🇦🇷 阿根廷 (Argentina) 07 (移动家宽) - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 08 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

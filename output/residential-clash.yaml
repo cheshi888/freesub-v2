@@ -4,14 +4,84 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+- name: 🇩🇪 德国 (Germany) 01 (移动家宽) - xiaohe
+  server: 8.220.81.25
+  port: 443
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
   server: 49.254.204.133
   port: 1774
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 1234!@#$
-- name: 🇸🇬 新加坡 (Singapore) 02 (家宽) - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  server: 9e5f5c4b-tomdc0-tpolhi-1rgxu.hk2.hyhuawei.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: ea93064c-176c-11f0-885d-f23c91cfbbc9
+  tls: true
+  reality-opts:
+    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
+  servername: download.windowsupdate.com
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  server: 114.37.105.51
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 3OEqq4MiCKoUP5yKBOmZsjuwg4i8A1fb8WrEDOFQek8
+    short-id: 2c14765d0b
+  servername: tw1.gofizzin.com
+  client-fingerprint: firefox
+- name: 🇵🇭 菲律宾 (Philippines) 05 (家宽) - xiaohe
+  server: 120.89.61.213
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: wAh4gvnTR3NRk0SFrkBRkX3tNeybFNodcmg7piumxiM
+    short-id: 87395f88
+  servername: ph1.gofizz.in
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 06 (家宽) - xiaohe
+  server: 212.98.224.35
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 9_UhwEt_9pf8WahM1K9O6-_0vAK6q0uiNGFoHBO7s3A
+    short-id: 0e3e4d96
+  servername: tr1.gofizzin.com
+  client-fingerprint: firefox
+- name: 🇦🇷 阿根廷 (Argentina) 07 (移动家宽) - xiaohe
+  server: 186.122.177.79
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: pBEW9XYZQsXxjgt44pCQcxoEOe-B1CdxaTdTnL2QhAA
+    short-id: a5d67406
+  servername: ar1.gofizz.in
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 08 (家宽) - xiaohe
   server: 195.133.135.238
   port: 10086
   udp: true
@@ -24,14 +94,26 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 02 (家宽) - xiaohe
+  - 🇩🇪 德国 (Germany) 01 (移动家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  - 🇵🇭 菲律宾 (Philippines) 05 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 06 (家宽) - xiaohe
+  - 🇦🇷 阿根廷 (Argentina) 07 (移动家宽) - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 08 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 02 (家宽) - xiaohe
+  - 🇩🇪 德国 (Germany) 01 (移动家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  - 🇵🇭 菲律宾 (Philippines) 05 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 06 (家宽) - xiaohe
+  - 🇦🇷 阿根廷 (Argentina) 07 (移动家宽) - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 08 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

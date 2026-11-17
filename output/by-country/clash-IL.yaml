@@ -18,13 +18,18 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇱 以色列 (Israel) 02 - xiaohe
-  server: 129.159.156.109
-  port: 50160
+  server: 45.150.108.180
+  port: 443
   udp: true
-  type: hysteria2
-  password: f25f19f29ce3fb53a35bf1b35b452a43
-  sni: www.bing.com
-  skip-cert-verify: true
+  type: vless
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Jw--SSPecJpt9-lke7H9Bdr8F73xxtvC_5ZrxiWRog0
+    short-id: dc1bf50b0e0a
+  servername: il1.gofizzin.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
