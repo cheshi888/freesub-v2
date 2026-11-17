@@ -25,41 +25,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 02 - xiaohe",
-      "server": "45.150.108.180",
-      "server_port": 443,
-      "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "il1.gofizzin.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Jw--SSPecJpt9-lke7H9Bdr8F73xxtvC_5ZrxiWRog0",
-          "short_id": "dc1bf50b0e0a"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇱 以色列 (Israel) 01 - xiaohe",
-        "🇮🇱 以色列 (Israel) 02 - xiaohe"
+        "🇮🇱 以色列 (Israel) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇱 以色列 (Israel) 01 - xiaohe",
-        "🇮🇱 以色列 (Israel) 02 - xiaohe"
+        "🇮🇱 以色列 (Israel) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

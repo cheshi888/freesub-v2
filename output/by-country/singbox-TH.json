@@ -4,42 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 01 - xiaohe",
-      "server": "203.146.170.195",
-      "server_port": 443,
-      "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "th1.gofizzin.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4LwH3FEPZZqjen5iuUlRqV4Buatjv8DxL3KUvE1ULWs",
-          "short_id": "faaf02e8469f34"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 02 - xiaohe",
-      "server": "99.86.77.123",
-      "server_port": 80,
-      "uuid": "f4c5605a-8424-441e-b23d-d6384d012c28",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "dcm4kwis2exkw.cloudfront.net"
-        }
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇹🇭 泰国 (Thailand) 03 - xiaohe",
+      "tag": "🇹🇭 泰国 (Thailand) 01 - xiaohe",
       "server": "119.46.51.45",
       "server_port": 37515,
       "uuid": "9b76bc31-17a5-4454-934a-8d5fb602cd70",
@@ -50,18 +16,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 泰国 (Thailand) 01 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 02 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 03 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 泰国 (Thailand) 01 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 02 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 03 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

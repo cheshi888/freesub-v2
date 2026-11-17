@@ -4,137 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-      "server": "195.114.14.91",
-      "server_port": 443,
-      "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "au1.gofizz.in",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "CcxdRFcNF4OLIFqS999iAHZSa6dsFB6wuhyKlBr45DI",
-          "short_id": "7d9e4e85e6f9"
-        }
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
+      "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
       "server": "45.63.30.142",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
         "server_name": "connectwithemployerstohireyouridealteam.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
-      "server": "176.97.68.100",
-      "server_port": 443,
-      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo",
-          "short_id": "54cca3c1c1c7"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
-      "server": "159.13.55.48",
-      "password": "b42d90fa667942aebc734d60",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2-au2.whuiy.xyz",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "b42d90fa667942aebc734d60"
-      },
-      "server_ports": [
-        "20000:30000",
-        "20000:20000"
-      ]
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
-      "server": "zfapi.zalolink.com",
-      "server_port": 54528,
-      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo",
-          "short_id": "54cca3c1c1c7"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 06 - xiaohe",
-      "server": "43.255.157.53",
-      "server_port": 48158,
-      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo",
-          "short_id": "54cca3c1c1c7"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 07 - xiaohe",
-      "server": "ujp.xn--ghqu5fm27b67w.com",
-      "server_port": 443,
-      "uuid": "debafe5b-6760-4b00-b0b2-ee30cbf769f0",
-      "tls": {
-        "enabled": true,
-        "server_name": "portland-wins-robbie-skirt.trycloudflare.com",
         "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/e0843c8ad581",
-        "headers": {
-          "Host": "portland-wins-robbie-skirt.trycloudflare.com"
-        }
       }
     },
     {
@@ -142,26 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 06 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 07 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 06 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 07 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
