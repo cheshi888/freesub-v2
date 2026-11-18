@@ -5,6 +5,47 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  server: 45.141.148.46
+  port: 443
+  udp: true
+  type: vless
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  tls: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  servername: tr1b.galioncc.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  server: 185.39.204.117
+  port: 10002
+  udp: true
+  type: vless
+  uuid: facb802c-de2e-11f1-9a22-a3404e852f3b
+  tls: true
+  servername: tr2.vpnjantit.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vpnjantit
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  server: 87.76.154.28
+  port: 57231
+  udp: true
+  type: vless
+  uuid: c34a41b6-598f-46ac-bea3-8b39a906f922
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  server: panel.autonetshop.ir
+  port: 43345
+  udp: true
+  type: hysteria2
+  password: d1gkicdgem3bsoaa
+  sni: panel.autonetshop.ir
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: km9oqmefh2km1i5n
+- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   server: 62.133.63.45
   port: 8444
   udp: true
@@ -19,41 +60,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 185.246.155.91
-  port: 10103
-  udp: true
-  type: vless
-  uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: obQkp5VlQpnlt1hRLQ3VfHISYiiISZJyJZAMaIdjCko
-    short-id: 6859f5b59e55aa30
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  server: 45.92.219.47
-  port: 443
-  udp: true
-  type: vless
-  uuid: ecc0e60a-f2cc-4266-8353-b228df89730a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4
-  servername: ty.galactichub.online
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  server: panel.autonetshop.ir
-  port: 43345
-  udp: true
-  type: hysteria2
-  password: d1gkicdgem3bsoaa
-  sni: panel.autonetshop.ir
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: km9oqmefh2km1i5n
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,6 +69,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -72,5 +79,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
 rules:
 - MATCH,PROXIES
