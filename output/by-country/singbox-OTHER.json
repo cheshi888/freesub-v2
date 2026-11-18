@@ -6,19 +6,58 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "fast.145779.xyz",
-      "server_port": 2053,
-      "uuid": "e3149c82-00f6-4227-b2c0-b78f1dd81279",
+      "server": "104.18.11.66",
+      "server_port": 443,
+      "uuid": "2874e26b-45e3-4d12-9e01-3f5a1c6a7105",
       "tls": {
         "enabled": true,
-        "server_name": "fast.145779.xyz",
+        "server_name": "dietary-forms-begun-orientation.trycloudflare.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/d9fb7b4f14c1",
+        "headers": {
+          "Host": "dietary-forms-begun-orientation.trycloudflare.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 02 - xiaohe",
+      "server": "US122207.ssgreen.org",
+      "server_port": 443,
+      "uuid": "74d216a3-fdb8-4774-a9c3-35f9e5a46819",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "US122207.ssgreen.org",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/ws-tesla",
+        "path": "/wes",
         "headers": {
-          "Host": "fast.145779.xyz"
+          "Host": "US122207.ssgreen.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 03 - xiaohe",
+      "server": "cf.0sm.com",
+      "server_port": 80,
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "vmess.lbw666.dpdns.org"
         }
       }
     },
@@ -27,14 +66,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe",
+        "🌐 其他地区 (Other) 02 - xiaohe",
+        "🌐 其他地区 (Other) 03 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe",
+        "🌐 其他地区 (Other) 02 - xiaohe",
+        "🌐 其他地区 (Other) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

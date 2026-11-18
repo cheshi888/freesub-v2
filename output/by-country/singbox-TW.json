@@ -4,24 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe",
-      "server": "85.237.207.221",
+      "server": "160.187.100.109",
       "server_port": 443,
-      "uuid": "b59bcb5b-5150-4c6b-9227-681886197014",
-      "flow": "xtls-rprx-vision",
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "dl.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "lJz7AGWUC-ZTEIJaU5y1GRrROWJ9J_VzQRyrYPmOygs",
-          "short_id": "fd2fa5e06670120b"
-        }
+        "server_name": "127.0.0.1",
+        "insecure": true
       }
     },
     {
@@ -32,20 +23,24 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2foneclickvpnkeys",
+        "server_name": "https://t.me/wangcai2🇨🇳",
         "insecure": true
       }
     },
     {
-      "type": "hysteria2",
+      "type": "trojan",
       "tag": "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
-      "server": "vpn-tw-002.fastervpn.world",
+      "server": "34.80.15.95",
       "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "password": "123456",
       "tls": {
         "enabled": true,
-        "server_name": "vpn-tw-002.fastervpn.world",
-        "insecure": true
+        "server_name": "tw.ctt25.uk",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {

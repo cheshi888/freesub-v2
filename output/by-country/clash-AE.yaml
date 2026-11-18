@@ -29,16 +29,16 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: 95.174.68.188
-  port: 14430
+  server: 31.58.213.201
+  port: 443
   udp: true
   type: vless
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
+  uuid: fd90e601-a56c-42b8-aab7-aa02d26fcb04
+  flow: xtls-rprx-vision
+  tls: true
+  servername: app.streamru1.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   server: uae.unixzone.us
   port: 22573
@@ -48,6 +48,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
