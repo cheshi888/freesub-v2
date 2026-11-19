@@ -5,18 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
-  server: 3h-kazakhstan1.09vpn.com
-  port: 80
+  server: 91.217.10.237
+  port: 443
   udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  type: vless
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  tls: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  servername: api-ns-mgr.galioncc.com
+  client-fingerprint: chrome
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
   server: 185.246.155.91
   port: 10403

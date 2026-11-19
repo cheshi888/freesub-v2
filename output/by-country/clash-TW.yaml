@@ -18,29 +18,21 @@ proxies:
   servername: dl.google.com
   client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
-  server: 103.115.109.49
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   server: vpn-tw-002.fastervpn.world
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: css.rbxcdn.com
+  sni: vpn-tw-002.fastervpn.world%5cu0026insecure%3d1%5cu0026allowinsecure%3d1
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
-  server: 34.80.15.95
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
+  server: 103.115.109.49
   port: 443
   udp: true
-  type: trojan
-  password: '123456'
-  sni: tw.ctt25.uk
-  skip-cert-verify: false
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2🇨🇳
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,7 +41,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,6 +49,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
 rules:
 - MATCH,PROXIES
