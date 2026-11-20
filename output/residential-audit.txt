@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-11-20 00:16:09 UTC
+生成时间: 2026-11-20 14:51:34 UTC
 ==============================================================================
 
 说明:
@@ -15,16 +15,16 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 3
+本轮家宽节点数: 2
 
-[1] DE  移动网络  置信度 85
-     exit_ip : 163.123.193.9
-     server  : 8.220.81.25:443  (shadowsocks)
-     ASN     : AS36231 Tempest Hosting
-     ISP     : Tempest Hosting, LLC
-     ORG     : Tempest Hosting, LLC
-     ip-api  : hosting=False proxy=False mobile=True reverse=-
-     ipapi.is: company=AGX Management Consultancy - FZCO asn=AS36231 AGX Management Consultancy - FZCO
+[1] KR  严格家宽  置信度 82
+     exit_ip : 49.254.204.133
+     server  : 49.254.204.133:1774  (shadowsocks)
+     ASN     : AS4766 Korea Telecom
+     ISP     : Korea Telecom
+     ORG     : Haionnet
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=HAIonNet asn=AS4766 Korea Telecom
      fraud   : 0  (-1 = 未取到评分)
 
 [2] TW  严格家宽  置信度 82
@@ -35,14 +35,4 @@
      ORG     : Chunghwa Telecom Co. Ltd.
      ip-api  : hosting=False proxy=False mobile=False reverse=-
      ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
-     fraud   : 0  (-1 = 未取到评分)
-
-[3] DE  移动网络  置信度 85
-     exit_ip : 163.123.193.7
-     server  : 47.85.162.44:443  (shadowsocks)
-     ASN     : AS36231 Tempest Hosting
-     ISP     : Tempest Hosting, LLC
-     ORG     : Tempest Hosting, LLC
-     ip-api  : hosting=False proxy=False mobile=True reverse=-
-     ipapi.is: company=AGX Management Consultancy - FZCO asn=AS36231 AGX Management Consultancy - FZCO
      fraud   : 0  (-1 = 未取到评分)

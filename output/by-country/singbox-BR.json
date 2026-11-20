@@ -4,19 +4,19 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "hysteria2",
       "tag": "🇧🇷 巴西 (Brazil) 01 - xiaohe",
-      "server": "216.238.104.154",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "server": "150.230.229.100",
+      "server_port": 20000,
+      "password": "CyG0RFxMjzs41uQD4OLuHQ==",
       "tls": {
         "enabled": true,
-        "server_name": "216.238.104.154",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "hy2-br2.whuiy.xyz",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "CyG0RFxMjzs41uQD4OLuHQ=="
       }
     },
     {
@@ -33,24 +33,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇧🇷 巴西 (Brazil) 03 - xiaohe",
-      "server": "150.230.229.100",
-      "server_port": 20000,
-      "password": "CyG0RFxMjzs41uQD4OLuHQ==",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2-br2.whuiy.xyz",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "CyG0RFxMjzs41uQD4OLuHQ=="
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇧🇷 巴西 (Brazil) 04 - xiaohe",
+      "tag": "🇧🇷 巴西 (Brazil) 03 - xiaohe",
       "server": "103.88.232.55",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -68,8 +52,7 @@
         "auto",
         "🇧🇷 巴西 (Brazil) 01 - xiaohe",
         "🇧🇷 巴西 (Brazil) 02 - xiaohe",
-        "🇧🇷 巴西 (Brazil) 03 - xiaohe",
-        "🇧🇷 巴西 (Brazil) 04 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 03 - xiaohe"
       ]
     },
     {
@@ -78,8 +61,7 @@
       "outbounds": [
         "🇧🇷 巴西 (Brazil) 01 - xiaohe",
         "🇧🇷 巴西 (Brazil) 02 - xiaohe",
-        "🇧🇷 巴西 (Brazil) 03 - xiaohe",
-        "🇧🇷 巴西 (Brazil) 04 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
