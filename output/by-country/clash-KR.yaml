@@ -21,22 +21,14 @@ proxies:
   sni: connectgraduateswithjobopeningsandgrowprofessionally.com
   skip-cert-verify: false
 - name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
-  server: 152.70.237.123
-  port: 2053
+  server: 140.238.2.250
+  port: 443
   udp: true
-  type: hysteria2
-  password: maintell
-  sni: 152.70.237.123
-  skip-cert-verify: true
+  type: vmess
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
-  server: 152.67.200.82
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: vk.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
   server: 152.69.226.63
   port: 25555
   udp: true
@@ -45,7 +37,30 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: 152.69.226.63
+- name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
+  server: 152.70.237.123
+  port: 2053
+  udp: true
+  type: hysteria2
+  password: maintell
+  sni: bing.com
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 06 - xiaohe
+  server: 132.145.80.230
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: kr02.a0a.xyz
+- name: 🇰🇷 韩国 (South Korea) 07 - xiaohe
   server: 154.90.62.70
   port: 56127
   udp: true
@@ -53,15 +68,22 @@ proxies:
   password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
   sni: 154.90.62.70
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 07 - xiaohe
-  server: 152.69.231.175
+- name: 🇰🇷 韩国 (South Korea) 08 - xiaohe
+  server: 115.161.136.145
+  port: 10099
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: '12242'
+- name: 🇰🇷 韩国 (South Korea) 09 - xiaohe
+  server: 152-69-231-175.liao.kdns.fr
   port: 50160
   udp: true
   type: hysteria2
   password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152.69.231.175
+  sni: 127.0.0.1
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 08 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 10 - xiaohe
   server: 132.226.226.189
   port: 50160
   udp: true
@@ -69,14 +91,14 @@ proxies:
   password: 1671a252e2a97dc2bda4e515475931da
   sni: 'off'
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 09 - xiaohe
-  server: 140.238.2.250
-  port: 443
+- name: 🇰🇷 韩国 (South Korea) 11 - xiaohe
+  server: 152.67.200.82
+  port: 50160
   udp: true
-  type: vmess
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
+  type: hysteria2
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  sni: 'off'
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -91,6 +113,8 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 07 - xiaohe
   - 🇰🇷 韩国 (South Korea) 08 - xiaohe
   - 🇰🇷 韩国 (South Korea) 09 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 10 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -105,5 +129,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 07 - xiaohe
   - 🇰🇷 韩国 (South Korea) 08 - xiaohe
   - 🇰🇷 韩国 (South Korea) 09 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 10 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 11 - xiaohe
 rules:
 - MATCH,PROXIES

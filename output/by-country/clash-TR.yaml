@@ -5,23 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 77.83.245.79
-  port: 443
-  udp: true
-  type: vless
-  uuid: a346c521-7a7f-452b-9356-a4893feb5982
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-  servername: tr1-r.bankai.party
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   server: 87.76.154.28
   port: 57231
   udp: true
   type: vless
   uuid: c34a41b6-598f-46ac-bea3-8b39a906f922
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  server: 64.49.13.12
+  port: 2089
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: lZZzfo1mqH7PqnloAogdi2XBhlgiofMy
 proxy-groups:
 - name: PROXIES
   type: select
