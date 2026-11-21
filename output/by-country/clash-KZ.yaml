@@ -16,7 +16,7 @@ proxies:
     public-key: obQkp5VlQpnlt1hRLQ3VfHISYiiISZJyJZAMaIdjCko
     short-id: 6859f5b59e55aa30
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: ''
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
   server: 3h-kazakhstan1.09vpn.com
   port: 80
@@ -29,17 +29,17 @@ proxies:
   ws-opts:
     path: /vmess/
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
-  server: 3h-kazakhstan1.09vpn.com
-  port: 8443
+  server: 109.248.170.119
+  port: 13447
   udp: true
   type: vless
-  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
+  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
   tls: true
-  servername: 3h-kazakhstan1.09vpn.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vless/
+  reality-opts:
+    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
+    short-id: '83'
+  servername: yahoo.com
+  client-fingerprint: chrome
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
   server: 38.107.234.57
   port: 8443
@@ -53,17 +53,31 @@ proxies:
   ws-opts:
     path: /vless/
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
-  server: 109.248.170.119
-  port: 13447
+  server: 144.31.90.235
+  port: 8445
   udp: true
   type: vless
-  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
+  uuid: cac10246-5b76-4809-9fd0-417c58a3ca90
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
-    short-id: '83'
-  servername: yahoo.com
+    public-key: 32eua16pKE179lLHv-VNZGrX287qQFMXA3n0VgEzNTQ
+    short-id: b3a633bc754b648d
+  servername: portal.gifmems.com
+  client-fingerprint: firefox
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaohe
+  server: 3h-kazakhstan1.09vpn.com
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
+  tls: true
+  servername: 3h-kazakhstan1.09vpn.com
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vless/
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,6 +88,7 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -84,5 +99,6 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaohe
 rules:
 - MATCH,PROXIES
