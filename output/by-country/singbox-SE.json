@@ -22,7 +22,7 @@
         "server_name": "api-svc-mgr.galioncc.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -32,23 +32,22 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
+      "server": "138.199.55.230",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "xmfhlpy.com",
+        "insecure": false
       }
     },
     {
       "type": "vmess",
       "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
-      "server": "138.199.55.230",
+      "server": "62.93.166.184",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
       "security": "auto",
@@ -67,11 +66,7 @@
       "tls": {
         "enabled": true,
         "server_name": "138-124-86-230.sslip.io",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "insecure": false
       },
       "transport": {
         "type": "grpc",
@@ -79,98 +74,29 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 06 - xiaohe",
-      "server": "62.93.166.184",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
       }
     },
     {
       "type": "trojan",
       "tag": "🇸🇪 瑞典 (Sweden) 07 - xiaohe",
-      "server": "95.143.196.97",
+      "server": "95.143.196.32",
       "server_port": 443,
       "password": "FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF",
       "tls": {
         "enabled": true,
         "server_name": "connect-se.mimowhat.online",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 08 - xiaohe",
-      "server": "81.90.21.200",
-      "server_port": 2096,
-      "uuid": "fbe22815-0718-4eae-816f-e91c67d15b54",
-      "tls": {
-        "enabled": true,
-        "server_name": "stadc07.rumedia-cdn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cdn/v3/live",
-        "headers": {
-          "Host": "stadc07.rumedia-cdn.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 09 - xiaohe",
-      "server": "81.90.21.163",
-      "server_port": 2096,
-      "uuid": "fbe22815-0718-4eae-816f-e91c67d15b54",
-      "tls": {
-        "enabled": true,
-        "server_name": "stb71e5.rumedia-cdn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cdn/v3/live",
-        "headers": {
-          "Host": "stb71e5.rumedia-cdn.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 10 - xiaohe",
-      "server": "subgift.gcorecdn.com",
-      "server_port": 443,
-      "uuid": "740b2630-b42d-425c-bacd-37e7e30d78f1",
-      "tls": {
-        "enabled": true,
-        "server_name": "subgift.gcorecdn.com",
         "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/t.me-SubGift"
       }
     },
     {
@@ -184,10 +110,7 @@
         "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 06 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 07 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 08 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 09 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 10 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 07 - xiaohe"
       ]
     },
     {
@@ -200,10 +123,7 @@
         "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 06 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 07 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 08 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 09 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 10 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 07 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

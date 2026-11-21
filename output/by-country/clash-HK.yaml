@@ -18,24 +18,6 @@ proxies:
   servername: mensura.cdn-apple.com
   client-fingerprint: ''
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8\u0001f1e8\u0001f1f3
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
-  server: 152.32.254.68
-  port: 5010
-  udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
   server: vpn-hk-004.fastervpn.world
   port: 443
   udp: true
@@ -43,14 +25,26 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: vpn-hk-004.fastervpn.world
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
-  server: 213.176.92.148
-  port: 40647
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  server: 202.146.222.89
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2fclashv8%f0%9f%87%a8%f0%9f%87%b3
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
+  server: 156.245.234.97
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 93c0244e-6eb2-41bc-ad9c-1a7606747e13
+  flow: xtls-rprx-vision
+  tls: true
+  servername: lyhk.mihoyo.site
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
   server: 45.192.193.54
   port: 35600
   udp: true
@@ -62,6 +56,13 @@ proxies:
     public-key: fJwbUNPAxu-CcoWnzWrvtDkX7QMDvJwFGWzJ3lDcFC4
   servername: www.iij.ad.jp
   client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
+  server: 213.176.92.148
+  port: 40647
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
 proxy-groups:
 - name: PROXIES
   type: select
