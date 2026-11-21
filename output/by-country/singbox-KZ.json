@@ -45,18 +45,19 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe",
       "server": "38.107.234.57",
-      "server_port": 80,
-      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-      "security": "auto",
+      "server_port": 8443,
+      "uuid": "2424febb-43cb-488d-bdd1-401e923c8e48",
+      "tls": {
+        "enabled": true,
+        "server_name": "3h-kazakhstan1.09vpn.com",
+        "insecure": true
+      },
       "transport": {
         "type": "ws",
-        "path": "/vmess/",
-        "headers": {
-          "Host": "38.107.234.57"
-        }
+        "path": "/vless/"
       }
     },
     {

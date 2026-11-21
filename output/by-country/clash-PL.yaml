@@ -6,74 +6,92 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
   server: 217.30.10.44
+  port: 9062
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: tkhHVxxfM2QErBWe
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  server: 217.30.10.44
   port: 9006
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: FAdUvMJUq5vDgKEq
-- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: 217.30.10.44
-  port: 9076
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: S2zDyyPcmZN2h8EC
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: 217.30.10.44
-  port: 9052
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: jt2ekBNc9HuVtm2a
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  server: 217.30.10.44
-  port: 9071
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mENfxTFQpRKKh4As
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
-  server: 217.30.10.44
-  port: 9063
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: aQqJbtwFGcCCaeL3
-- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
-  server: 217.30.10.70
-  port: 9098
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: aLpQtfEZe445QyHk
-- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
   server: 217.30.10.44
   port: 9099
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 7heRqkPG3hg4UnRm
-- name: 🇵🇱 波兰 (Poland) 08 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
   server: 217.30.10.44
-  port: 9062
+  port: 9063
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: tkhHVxxfM2QErBWe
-- name: 🇵🇱 波兰 (Poland) 09 - xiaohe
+  password: aQqJbtwFGcCCaeL3
+- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
+  server: 217.30.10.44
+  port: 9095
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: N7j3pdTYkKmsy8CR
+- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
+  server: 217.30.10.44
+  port: 9071
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: mENfxTFQpRKKh4As
+- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
   server: 217.30.10.70
-  port: 9003
+  port: 9038
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: JdmRK9gMEqFgs8nP
-- name: 🇵🇱 波兰 (Poland) 10 - xiaohe
+  password: gYCYXfkUQEs2TaJQ
+- name: 🇵🇱 波兰 (Poland) 08 - xiaohe
   server: 217.30.10.70
   port: 9059
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 9XwYyZsK8SNzQDtY
+- name: 🇵🇱 波兰 (Poland) 09 - xiaohe
+  server: 217.30.10.44
+  port: 9052
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: jt2ekBNc9HuVtm2a
+- name: 🇵🇱 波兰 (Poland) 10 - xiaohe
+  server: 13.143.239.94
+  port: 443
+  udp: true
+  type: vless
+  uuid: be146d46-ae50-4691-838c-b6c87dbaec8f
+  tls: true
+  reality-opts:
+    public-key: 8OI8rEgAiWxH-cG03xgzuz7XTFHrbA1MY9HnPHcgSUA
+    short-id: 1d5ac21e988c571f
+  servername: 702e56t.pl5.h1clayd.click
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 11 - xiaohe
+  server: 54.37.131.126
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 1e55beca-3c69-4fa7-fb1f-15c1b767435f
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 proxy-groups:
 - name: PROXIES
   type: select
@@ -89,6 +107,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 08 - xiaohe
   - 🇵🇱 波兰 (Poland) 09 - xiaohe
   - 🇵🇱 波兰 (Poland) 10 - xiaohe
+  - 🇵🇱 波兰 (Poland) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -104,5 +123,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 08 - xiaohe
   - 🇵🇱 波兰 (Poland) 09 - xiaohe
   - 🇵🇱 波兰 (Poland) 10 - xiaohe
+  - 🇵🇱 波兰 (Poland) 11 - xiaohe
 rules:
 - MATCH,PROXIES

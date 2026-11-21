@@ -5,30 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
-  server: 151.241.19.36
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   server: 151.241.19.29
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  server: 151.241.19.36
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  server: 95.174.68.188
-  port: 14430
+  server: uae.unixzone.us
+  port: 22573
   udp: true
   type: vless
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   network: ws
   ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select

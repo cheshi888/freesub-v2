@@ -4,25 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
-  server: 185.156.44.99
-  port: 443
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  server: 49.254.204.133
+  port: 1774
   udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: css.rbxcdn.com
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
