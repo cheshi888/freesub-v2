@@ -6,53 +6,53 @@ log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
   server: 185.135.86.175
-  port: 9007
+  port: 9034
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: kSPmvwdFzGMMW5pY
+  password: Yg4MbdXFQ9HFFVY6
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
-  server: 185.135.86.175
-  port: 9082
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 45xgMgm386pjWjTx
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
-  server: 185.135.86.175
-  port: 9017
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: HAVAdE3nXhqA5nHp
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
-  server: 185.135.86.175
-  port: 9094
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: rpgbNnU9rDDU4aWZ
-- name: 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
   server: 185.135.86.175
   port: 9033
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: UTJA57ypk2XKQpnm
-- name: 🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
   server: 185.135.86.175
-  port: 9036
+  port: 9082
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: hbtvgUz5uNYyB3Rf
-- name: 🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe
+  password: 45xgMgm386pjWjTx
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
   server: 185.135.86.175
   port: 9068
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: mwgRg9hRq3b4Qnwb
+- name: 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
+  server: 185.135.86.175
+  port: 9007
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: kSPmvwdFzGMMW5pY
+- name: 🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe
+  server: 185.135.86.175
+  port: 9094
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: rpgbNnU9rDDU4aWZ
+- name: 🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe
+  server: 185.135.86.175
+  port: 9017
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: HAVAdE3nXhqA5nHp
 - name: 🇱🇻 拉脱维亚 (Latvia) 08 - xiaohe
   server: 195.123.209.159
   port: 8443
@@ -68,11 +68,11 @@ proxies:
   client-fingerprint: ''
 - name: 🇱🇻 拉脱维亚 (Latvia) 09 - xiaohe
   server: 185.135.86.175
-  port: 9034
+  port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: Yg4MbdXFQ9HFFVY6
+  password: 37Z4TFCYhfxcpc9Q
 - name: 🇱🇻 拉脱维亚 (Latvia) 10 - xiaohe
   server: 195.123.213.28
   port: 443
@@ -88,11 +88,18 @@ proxies:
   client-fingerprint: chrome
 - name: 🇱🇻 拉脱维亚 (Latvia) 11 - xiaohe
   server: 185.135.86.175
-  port: 9086
+  port: 9036
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
+  password: hbtvgUz5uNYyB3Rf
+- name: 🇱🇻 拉脱维亚 (Latvia) 12 - xiaohe
+  server: 185.135.86.175
+  port: 9036
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: hbtvgUz5uNYyB3Rf
 proxy-groups:
 - name: PROXIES
   type: select
@@ -109,6 +116,7 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 09 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 10 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 11 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -125,5 +133,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 09 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 10 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 11 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 12 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -11,13 +11,13 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  server: 49.254.204.133
-  port: 1774
+- name: 🇩🇪 德国 (Germany) 02 (移动家宽) - xiaohe
+  server: 8.211.57.86
+  port: 443
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   server: 60.248.219.78
   port: 443
@@ -38,7 +38,7 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇩🇪 德国 (Germany) 01 (移动家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  - 🇩🇪 德国 (Germany) 02 (移动家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
 - name: AUTO
   type: url-test
@@ -46,7 +46,7 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇩🇪 德国 (Germany) 01 (移动家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  - 🇩🇪 德国 (Germany) 02 (移动家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

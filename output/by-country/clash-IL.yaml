@@ -16,15 +16,20 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇮🇱 以色列 (Israel) 02 - xiaohe
-  server: 129.159.156.109
-  port: 50160
+  server: 45.140.204.17
+  port: 22444
   udp: true
-  type: hysteria2
-  password: f25f19f29ce3fb53a35bf1b35b452a43
-  sni: www.bing.com
-  skip-cert-verify: true
+  type: vless
+  uuid: a9ff24d3-f308-4e72-acb9-a76062583837
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: T1BWBw3lq9G1LiQ7eQSPfdNQic7bUMEbdFNJBewAwB8
+    short-id: 6ad3c0f1e9b2478a
+  servername: fontanka.ru
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
