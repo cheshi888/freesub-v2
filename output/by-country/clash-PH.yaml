@@ -4,29 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇻🇳 越南 (Vietnam) 01 - xiaohe
-  server: 38.60.230.151
+- name: 🇵🇭 菲律宾 (Philippines) 01 - xiaohe
+  server: 47.80.76.105
   port: 443
   udp: true
   type: vless
-  uuid: 3a1c6827-72a1-4d1c-9413-44109ff815f4
+  uuid: ecdcc5d3-644a-4606-9e9e-130315da68cd
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  servername: navi.bankrate.com
+    public-key: T7_XLYoPP1_kxIaOov9SovRMk-P1mS-FRhdWueHxaR0
+    short-id: 58aa532948cab4a4
+  servername: www.amazon.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇻🇳 越南 (Vietnam) 01 - xiaohe
+  - 🇵🇭 菲律宾 (Philippines) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 (Vietnam) 01 - xiaohe
+  - 🇵🇭 菲律宾 (Philippines) 01 - xiaohe
 rules:
 - MATCH,PROXIES

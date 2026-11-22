@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
+  server: 3.106.35.101
+  port: 36712
+  udp: true
+  type: hysteria2
+  password: linlin-2026
+  sni: 3.106.35.101
+  skip-cert-verify: true
+- name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   server: 13.237.192.121
   port: 36712
   udp: true
@@ -12,23 +20,7 @@ proxies:
   password: linlin-2026
   sni: 13.237.192.121
   skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
-  server: 13.55.52.44
-  port: 36712
-  udp: true
-  type: hysteria2
-  password: linlin-2026
-  sni: 13.55.52.44
-  skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
-  server: 45.63.30.142
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: connectwithemployerstohireyouridealteam.com
-  skip-cert-verify: false
-- name: 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
   server: 159.13.55.48
   port: 20000
   udp: true
@@ -39,7 +31,7 @@ proxies:
   obfs: salamander
   obfs-password: b42d90fa667942aebc734d60
   ports: 20000-30000,20000-20000
-- name: 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
+- name: 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
   server: 152.67.115.203
   port: 443
   udp: true
@@ -49,6 +41,14 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
+- name: 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
+  server: 13.55.52.44
+  port: 36712
+  udp: true
+  type: hysteria2
+  password: linlin-2026
+  sni: 13.55.52.44
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select

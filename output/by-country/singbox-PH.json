@@ -5,21 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇻🇳 越南 (Vietnam) 01 - xiaohe",
-      "server": "38.60.230.151",
+      "tag": "🇵🇭 菲律宾 (Philippines) 01 - xiaohe",
+      "server": "47.80.76.105",
       "server_port": 443,
-      "uuid": "3a1c6827-72a1-4d1c-9413-44109ff815f4",
+      "uuid": "ecdcc5d3-644a-4606-9e9e-130315da68cd",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "navi.bankrate.com",
+        "server_name": "www.amazon.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc",
-          "short_id": "2da72ce6"
+          "public_key": "T7_XLYoPP1_kxIaOov9SovRMk-P1mS-FRhdWueHxaR0",
+          "short_id": "58aa532948cab4a4"
         }
       }
     },
@@ -28,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇻🇳 越南 (Vietnam) 01 - xiaohe"
+        "🇵🇭 菲律宾 (Philippines) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇻🇳 越南 (Vietnam) 01 - xiaohe"
+        "🇵🇭 菲律宾 (Philippines) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -12,20 +12,7 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: 138.124.86.230
-  port: 48115
-  udp: true
-  type: vless
-  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
-  tls: true
-  servername: 138-124-86-230.sslip.io
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: 138.199.55.230
+  server: 62.93.166.184
   port: 1270
   udp: true
   type: vmess
@@ -35,8 +22,20 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  server: 138.124.86.230
+  port: 48115
+  udp: true
+  type: vless
+  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
+  tls: true
+  servername: 138-124-86-230.sslip.io
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 138-124-86-230-sslip-io
 - name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  server: 62.93.166.184
+  server: 138.199.55.230
   port: 1270
   udp: true
   type: vmess
@@ -58,32 +57,6 @@ proxies:
     headers:
       Host: 5.178.109.174
 - name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
-  server: volumestyle.komediyatorg.net
-  port: 443
-  udp: true
-  type: vless
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-  tls: true
-  servername: volumestyle.komediyatorg.net
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /media/ws/
-- name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
-  server: 2.26.93.106
-  port: 443
-  udp: true
-  type: vless
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-  tls: true
-  servername: depotchannel.lucheeebezlimitnoekino.stream
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /media/ws/
-- name: 🇸🇪 瑞典 (Sweden) 08 - xiaohe
   server: 185.117.88.9
   port: 8443
   udp: true
@@ -95,20 +68,7 @@ proxies:
     public-key: 6FI4VM9WlQEGVjyCvLDQLz1jOkrzzhtfGl9eQTBn6HU
     short-id: f8d0271b4b5f9efc
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 09 - xiaohe
-  server: 193.188.21.253
-  port: 10444
-  udp: true
-  type: vless
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: video.yandex.ru
-  client-fingerprint: safari
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -120,9 +80,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 08 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -134,8 +91,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 08 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 09 - xiaohe
 rules:
 - MATCH,PROXIES

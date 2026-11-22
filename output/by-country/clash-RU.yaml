@@ -5,32 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: leviko-fr9155.shopingggg.ir
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 27f26dee-9cf1-4cca-93f8-9ac23d311408
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-  servername: apple.com
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 37.235.247.81
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 2ae0670d-0bdf-409e-9a55-4e970252d378
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-  servername: apple.com
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   server: 48.103.133.47
   port: 8443
   udp: true
@@ -43,16 +17,36 @@ proxies:
     short-id: 6ba85179e30d4fc2
   servername: apple.com
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 103.88.243.142
-  port: 11592
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  server: 130.49.189.158
+  port: 43558
   udp: true
-  type: hysteria2
-  password: 41edb44c8e
-  sni: srv-17e124.21freedom.net
-  skip-cert-verify: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  server: 46.17.42.129
+  port: 18443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  server: 78.159.245.147
+  port: 445
+  udp: true
+  type: vless
+  uuid: 37af0181-5598-4aad-a040-d926bcb65757
+  tls: true
+  reality-opts:
+    public-key: VHWmCkZwC5XE-ctv0p8BinjoIx4SWgJUIsZPrhNf6TA
+  servername: passport.yandex.ru
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  server: vps3.nemnogogo.com
+  server: 201.24.116.192
   port: 443
   udp: true
   type: vless
@@ -60,21 +54,36 @@ proxies:
   tls: true
   servername: vps3.nemnogogo.com
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: mobile.api.Event
 - name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  server: 136.148.83.69
+  server: 176.32.33.126
+  port: 18443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+  server: srv-17e124.21freedom.net
+  port: 11592
+  udp: true
+  type: hysteria2
+  password: 41edb44c8e
+  sni: srv-17e124
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
+  server: 168.113.253.178
   port: 443
   udp: true
   type: vless
-  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
+  uuid: d6d40100-9442-0001-b5b9-6d259318c421
   tls: true
-  servername: szqbx-ru-77dc.my-fade.cloud
+  servername: uzndiuvzvqqljdyhzs.fcloudservices.site
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
   server: xssite.webredirect.org
   port: 443
   udp: true
@@ -87,33 +96,47 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
-  server: 147.45.108.45
+- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
+  server: 168.113.253.178
   port: 443
   udp: true
   type: vless
-  uuid: 1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200
+  uuid: 608172ed-68e4-0001-85dc-f92c25d0eb92
+  tls: true
+  servername: uzndiuvzvqqljdyhzs.fcloudservices.site
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
+  server: 147.45.221.225
+  port: 443
+  udp: true
+  type: vless
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  tls: true
+  servername: nl.lucheeebezlimitnoekino.stream
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /media/ws/
+- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
+  server: 212.233.90.78
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9548ef84-b54d-41dc-b17c-9da21d52ba82
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: IuzAWh6UM62Txrnh_No9y5n6wmZecyR1ki8z5xor-0g
-  servername: absolute-disaster.org
-  client-fingerprint: ''
-- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
-  server: 147.45.175.81
-  port: 443
-  udp: true
-  type: vless
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  tls: true
-  servername: xsru2.freeddns.org
-  skip-cert-verify: false
+    public-key: FwPphm8xGAKY6u74WDRVrcVye3A7GdLDfJoNSDWFsFQ
+    short-id: 2c6df23e
+  servername: birch-ledger.justext.space
   client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /wsru
-    headers:
-      Host: xsru2.freeddns.org
+- name: 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
+  server: 90.156.203.62
+  port: 5112
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: VVlAff77CnAU43Aoc5j15Y
 proxy-groups:
 - name: PROXIES
   type: select
@@ -128,6 +151,10 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -142,5 +169,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
 rules:
 - MATCH,PROXIES
