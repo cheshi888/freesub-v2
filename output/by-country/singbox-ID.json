@@ -1,0 +1,43 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "trojan",
+      "tag": "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
+      "server": "149.33.27.162",
+      "server_port": 443,
+      "password": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "tls": {
+        "enabled": true,
+        "server_name": "i1tr.mateflora.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

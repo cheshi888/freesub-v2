@@ -4,17 +4,17 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇭 菲律宾 (Philippines) 01 - xiaohe
-  server: 47.80.76.105
+- name: 🇺🇸 美国 (United States) 01 (疑似家宽) - xiaohe
+  server: 103.119.15.175
   port: 443
   udp: true
   type: vless
-  uuid: ecdcc5d3-644a-4606-9e9e-130315da68cd
+  uuid: 89be587f-0e93-4c67-822e-98ad0a56c29e
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: T7_XLYoPP1_kxIaOov9SovRMk-P1mS-FRhdWueHxaR0
-    short-id: 58aa532948cab4a4
+    public-key: vQgrNIQTmbTIqtauDixzp2ePvd-aK_zlTctIDRPk3wQ
+    short-id: ce90a4459f024897
   servername: www.amazon.com
   client-fingerprint: chrome
 proxy-groups:
@@ -22,12 +22,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇵🇭 菲律宾 (Philippines) 01 - xiaohe
+  - 🇺🇸 美国 (United States) 01 (疑似家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇭 菲律宾 (Philippines) 01 - xiaohe
+  - 🇺🇸 美国 (United States) 01 (疑似家宽) - xiaohe
 rules:
 - MATCH,PROXIES

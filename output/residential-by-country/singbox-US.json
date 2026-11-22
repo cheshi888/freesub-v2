@@ -5,26 +5,23 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "79.182.70.220",
+      "tag": "🇺🇸 美国 (United States) 01 (疑似家宽) - xiaohe",
+      "server": "103.119.15.175",
       "server_port": 443,
-      "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
+      "uuid": "89be587f-0e93-4c67-822e-98ad0a56c29e",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "15b171g.nl7.h1clayd.click",
+        "server_name": "www.amazon.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE",
-          "short_id": "50a749f0eccb628c"
+          "public_key": "vQgrNIQTmbTIqtauDixzp2ePvd-aK_zlTctIDRPk3wQ",
+          "short_id": "ce90a4459f024897"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "5b79e8a94241"
       }
     },
     {
@@ -32,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - xiaohe"
+        "🇺🇸 美国 (United States) 01 (疑似家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - xiaohe"
+        "🇺🇸 美国 (United States) 01 (疑似家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

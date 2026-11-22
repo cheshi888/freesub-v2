@@ -6,11 +6,11 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
   server: 213.183.63.60
-  port: 9064
+  port: 9029
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: cp8pRSUAyLhTfVWH
+  password: dU3DSNS8wYPXzEKw
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
   server: 213.183.63.60
   port: 9098
@@ -27,34 +27,26 @@ proxies:
   password: 2KUaE2a8NWTvuCZ3
 - name: 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
   server: 213.183.63.60
-  port: 9029
+  port: 9064
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: dU3DSNS8wYPXzEKw
+  password: cp8pRSUAyLhTfVWH
 - name: 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
-  server: 213.183.63.60
-  port: 9049
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: PRBf4BS2HvJqtWxY
-- name: 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
   server: 213.183.63.60
   port: 9054
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: VcFuyXvND2yQWSFY
-- name: 🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe
-  server: 87.121.112.83
-  port: 443
+- name: 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
+  server: 213.183.63.60
+  port: 9061
   udp: true
-  type: hysteria2
-  password: 9a9f167d-b461-466f-be50-f0ffd598a6f8
-  sni: bulghys.live
-  skip-cert-verify: true
-- name: 🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe
+  type: ss
+  cipher: aes-256-cfb
+  password: 4R3hUfZ2FHhDmNcP
+- name: 🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe
   server: 213.183.63.60
   port: 9028
   udp: true
@@ -73,7 +65,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -86,6 +77,5 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe
 rules:
 - MATCH,PROXIES

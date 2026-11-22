@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaohe
-  server: in.smrtai.top
+  server: 178.212.35.198
   port: 443
   udp: true
   type: vless
@@ -15,18 +15,79 @@ proxies:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
     short-id: 6bdc8320
   servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇮🇳 印度 (India) 02 - xiaohe
+  server: 13.140.56.100
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 03 - xiaohe
+  server: 13.140.253.35
+  port: 443
+  udp: true
+  type: vless
+  uuid: 213224a4-6cd1-b7f4-8bbc-4f50e5ed847b
+  tls: true
+  servername: xray-ikmqcro3-rapid-river-6.cloady.io
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /c54a815e676d9acc
+    headers:
+      Host: xray-ikmqcro3-rapid-river-6.cloady.io
+- name: 🇮🇳 印度 (India) 04 - xiaohe
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: in-152.67.8.205-0204
+- name: 🇮🇳 印度 (India) 05 - xiaohe
+  server: 13.140.253.35
+  port: 443
+  udp: true
+  type: vless
+  uuid: 06a5afa1-2bbc-a5d1-1770-becd1089c636
+  tls: true
+  servername: xray-dmr3b3hy-calm-maple-7.cloady.io
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /0175469f14317d82
+    headers:
+      Host: xray-dmr3b3hy-calm-maple-7.cloady.io
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇳 印度 (India) 01 - xiaohe
+  - 🇮🇳 印度 (India) 02 - xiaohe
+  - 🇮🇳 印度 (India) 03 - xiaohe
+  - 🇮🇳 印度 (India) 04 - xiaohe
+  - 🇮🇳 印度 (India) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇳 印度 (India) 01 - xiaohe
+  - 🇮🇳 印度 (India) 02 - xiaohe
+  - 🇮🇳 印度 (India) 03 - xiaohe
+  - 🇮🇳 印度 (India) 04 - xiaohe
+  - 🇮🇳 印度 (India) 05 - xiaohe
 rules:
 - MATCH,PROXIES

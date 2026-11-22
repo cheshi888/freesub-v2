@@ -27,22 +27,24 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
-      "server": "37.221.76.116",
-      "server_port": 2090,
-      "uuid": "f131d292-d3c2-42b3-bcea-f9712c31b303",
-      "flow": "xtls-rprx-vision",
+      "server": "188.225.78.178",
+      "server_port": 443,
+      "uuid": "a4740bee-81ad-4a58-99c9-eca576ecb6e6",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "cadrin.wtf",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "qBobe6KSNkFLqTPCffcJo0nXgxy-3JKru9WRqY9rkjk",
-          "short_id": "bb472a184677af64"
+          "fingerprint": "edge"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "cache.sync.v1"
       }
     },
     {

@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-11-22 14:05:38 UTC
+生成时间: 2026-11-22 23:19:56 UTC
 ==============================================================================
 
 说明:
@@ -15,7 +15,7 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 2
+本轮家宽节点数: 7
 
 [1] DE  移动网络  置信度 85
      exit_ip : 163.123.193.7
@@ -27,12 +27,62 @@
      ipapi.is: company=AGX Management Consultancy - FZCO asn=AS36231 AGX Management Consultancy - FZCO
      fraud   : 0  (-1 = 未取到评分)
 
-[2] DE  移动网络  置信度 85
+[2] US  疑似家宽  置信度 55
+     exit_ip : 103.119.15.175
+     server  : 103.119.15.175:443  (vless)
+     ASN     : AS60539 Huicast Telecom Limited
+     ISP     : Huize LTD
+     ORG     : Huicast Telecom Limited
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Turing Group Limited asn=AS140869 Turing Group Limited
+     fraud   : 0  (-1 = 未取到评分)
+
+[3] KR  严格家宽  置信度 82
+     exit_ip : 49.254.204.133
+     server  : 49.254.204.133:1774  (shadowsocks)
+     ASN     : AS4766 Korea Telecom
+     ISP     : Korea Telecom
+     ORG     : Haionnet
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=HAIonNet asn=AS4766 Korea Telecom
+     fraud   : 0  (-1 = 未取到评分)
+
+[4] DE  移动网络  置信度 85
      exit_ip : 163.123.193.9
-     server  : 8.211.57.86:443  (shadowsocks)
+     server  : 47.254.167.157:443  (shadowsocks)
      ASN     : AS36231 Tempest Hosting
      ISP     : Tempest Hosting, LLC
      ORG     : Tempest Hosting, LLC
      ip-api  : hosting=False proxy=False mobile=True reverse=-
      ipapi.is: company=AGX Management Consultancy - FZCO asn=AS36231 AGX Management Consultancy - FZCO
+     fraud   : 0  (-1 = 未取到评分)
+
+[5] HK  严格家宽  置信度 82
+     exit_ip : 112.120.48.146
+     server  : hkgb707.ifastcdncache.com:60852  (vmess)
+     ASN     : AS4760 HKT Limited
+     ISP     : Hong Kong Telecommunications (HKT) Limited Mass Internet
+     ORG     : Hong Kong Telecommunications (HKT) Limited
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Hong Kong Telecommunications (HKT) Limited Mass Internet asn=AS4760 PCCW IMS Limited
+     fraud   : 0  (-1 = 未取到评分)
+
+[6] TW  严格家宽  置信度 82
+     exit_ip : 125.224.61.217
+     server  : 161.114.15.215:30502  (trojan)
+     ASN     : AS3462 Data Communication Business Group
+     ISP     : Chunghwa Telecom Co., Ltd.
+     ORG     : Chunghwa Telecom Co. Ltd.
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
+     fraud   : 0  (-1 = 未取到评分)
+
+[7] TW  严格家宽  置信度 82
+     exit_ip : 60.248.219.52
+     server  : 60.248.219.78:443  (vless)
+     ASN     : AS3462 Data Communication Business Group
+     ISP     : Chunghwa Telecom Co., Ltd.
+     ORG     : Chunghwa Telecom Co. Ltd.
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
      fraud   : 0  (-1 = 未取到评分)
