@@ -5,19 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.16.10.234
+  server: 172.67.139.189
   port: 443
   udp: true
   type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 43BCAE0A-10A6-4003-8615-BD510F4215BA
   tls: true
-  servername: jp3.yohototo.top
+  servername: fr-free.fastestrelay.com
   skip-cert-verify: false
+  client-fingerprint: random
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /700gvl-us-free
     headers:
-      Host: jp3.yohototo.top
+      Host: fr-free.fastestrelay.com
 proxy-groups:
 - name: PROXIES
   type: select

@@ -6,30 +6,6 @@
     {
       "type": "vless",
       "tag": "🇦🇱 AL 01 - xiaohe",
-      "server": "147.45.221.225",
-      "server_port": 443,
-      "uuid": "58e22afd-bf74-4736-984d-63a8ca03d7f0",
-      "tls": {
-        "enabled": true,
-        "server_name": "nl.lucheeebezlimitnoekino.stream",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/media/ws/"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇦🇱 AL 02 - xiaohe",
-      "server": "dns22.m3hrzd.ir",
-      "server_port": 1348,
-      "method": "chacha20-ietf-poly1305",
-      "password": "pFlEjR_10osoxyR2CnNIhUMpAy4CzfXr"
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇱 AL 03 - xiaohe",
       "server": "31.171.152.222",
       "server_port": 8443,
       "uuid": "9a597d68-6688-4046-bf24-a5a541e115e0",
@@ -49,13 +25,20 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇦🇱 AL 02 - xiaohe",
+      "server": "dns22.m3hrzd.ir",
+      "server_port": 1348,
+      "method": "chacha20-ietf-poly1305",
+      "password": "pFlEjR_10osoxyR2CnNIhUMpAy4CzfXr"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇱 AL 01 - xiaohe",
-        "🇦🇱 AL 02 - xiaohe",
-        "🇦🇱 AL 03 - xiaohe"
+        "🇦🇱 AL 02 - xiaohe"
       ]
     },
     {
@@ -63,8 +46,7 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇱 AL 01 - xiaohe",
-        "🇦🇱 AL 02 - xiaohe",
-        "🇦🇱 AL 03 - xiaohe"
+        "🇦🇱 AL 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

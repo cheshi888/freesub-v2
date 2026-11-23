@@ -5,25 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇱 AL 01 - xiaohe
-  server: 147.45.221.225
-  port: 443
-  udp: true
-  type: vless
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-  tls: true
-  servername: nl.lucheeebezlimitnoekino.stream
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /media/ws/
-- name: 🇦🇱 AL 02 - xiaohe
-  server: dns22.m3hrzd.ir
-  port: 1348
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: pFlEjR_10osoxyR2CnNIhUMpAy4CzfXr
-- name: 🇦🇱 AL 03 - xiaohe
   server: 31.171.152.222
   port: 8443
   udp: true
@@ -36,6 +17,13 @@ proxies:
     short-id: f8d0271b4b5f9efc
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇦🇱 AL 02 - xiaohe
+  server: dns22.m3hrzd.ir
+  port: 1348
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: pFlEjR_10osoxyR2CnNIhUMpAy4CzfXr
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,7 +31,6 @@ proxy-groups:
   - AUTO
   - 🇦🇱 AL 01 - xiaohe
   - 🇦🇱 AL 02 - xiaohe
-  - 🇦🇱 AL 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -51,6 +38,5 @@ proxy-groups:
   proxies:
   - 🇦🇱 AL 01 - xiaohe
   - 🇦🇱 AL 02 - xiaohe
-  - 🇦🇱 AL 03 - xiaohe
 rules:
 - MATCH,PROXIES
