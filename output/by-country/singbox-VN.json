@@ -4,14 +4,21 @@
   },
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "🇻🇳 越南 (Vietnam) 01 - xiaohe",
+      "server": "150.95.109.109",
+      "server_port": 2086,
+      "uuid": "b83faafc-cbb7-4655-99d4-2c4c39a49d1b"
+    },
+    {
       "type": "trojan",
-      "tag": "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
-      "server": "149.33.27.162",
+      "tag": "🇻🇳 越南 (Vietnam) 02 - xiaohe",
+      "server": "xvxn1hkzf.mateflora.com",
       "server_port": 443,
       "password": "57beeeb0-03fc-4fc9-94da-7604488a7134",
       "tls": {
         "enabled": true,
-        "server_name": "i1tr.mateflora.com",
+        "server_name": "xvxn1hkzf.mateflora.com",
         "insecure": true
       }
     },
@@ -20,14 +27,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
+        "🇻🇳 越南 (Vietnam) 01 - xiaohe",
+        "🇻🇳 越南 (Vietnam) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
+        "🇻🇳 越南 (Vietnam) 01 - xiaohe",
+        "🇻🇳 越南 (Vietnam) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

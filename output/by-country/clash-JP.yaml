@@ -5,42 +5,50 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - xiaohe
-  server: 149.22.87.204
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 02 - xiaohe
-  server: 149.22.87.241
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 03 - xiaohe
-  server: 149.22.87.240
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 04 - xiaohe
-  server: 64.176.34.102
-  port: 46130
-  udp: true
-  type: vmess
-  uuid: 477350b2-7536-4f38-ee21-020efdde2d1d
-  alterId: 0
-  cipher: auto
-- name: 🇯🇵 日本 (Japan) 05 - xiaohe
   server: 168.138.205.100
   port: 53758
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: Bwlqh7GcFB
+- name: 🇯🇵 日本 (Japan) 02 - xiaohe
+  server: 149.22.87.204
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 03 - xiaohe
+  server: 149.22.87.241
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 04 - xiaohe
+  server: 149.22.87.240
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 05 - xiaohe
+  server: 8.211.175.236
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: 8.211.175.236
+  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 06 - xiaohe
+  server: 8.209.247.109
+  port: 443
+  udp: true
+  type: hysteria2
+  password: usqmqUKJFIlCmvkCNSY64L3k
+  sni: 8.209.247.109
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 07 - xiaohe
   server: 161.33.20.255
   port: 8880
   udp: true
@@ -51,39 +59,7 @@ proxies:
   network: ws
   ws-opts:
     path: e0856508-d693-450a-a099-455091dc4f25-vm
-- name: 🇯🇵 日本 (Japan) 07 - xiaohe
-  server: 168.110.63.247
-  port: 8081
-  udp: true
-  type: vmess
-  uuid: c3bde296-8e44-4b8c-a325-577d5b3cc7c8
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vless
 - name: 🇯🇵 日本 (Japan) 08 - xiaohe
-  server: 129.225.181.46
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: oracle_hy2_pass_2026
-  sni: bing.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 09 - xiaohe
-  server: 158.101.151.157
-  port: 443
-  udp: true
-  type: vless
-  uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8
-    short-id: 684c7531e599dec0
-  servername: www.microsoft.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 10 - xiaohe
   server: 168.138.43.75
   port: 80
   udp: true
@@ -95,27 +71,16 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: jp01.a0a.xyz
-- name: 🇯🇵 日本 (Japan) 11 - xiaohe
-  server: 155.248.175.201
-  port: 23169
+      Host: none
+- name: 🇯🇵 日本 (Japan) 09 - xiaohe
+  server: 129.225.181.46
+  port: 8443
   udp: true
-  type: vless
-  uuid: 7318caa1-93d1-4a9d-c481-504599902700
-  flow: xtls-rprx-vision
-  tls: true
-  servername: djj.zjlo.top
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 12 - xiaohe
-  server: nu2rb.supertoolify.com
-  port: 443
-  udp: true
-  type: trojan
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  sni: nu2rb.supertoolify.com
+  type: hysteria2
+  password: oracle_hy2_pass_2026
+  sni: bing.com
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 13 - xiaohe
+- name: 🇯🇵 日本 (Japan) 10 - xiaohe
   server: jpg1api.jumpernode.site
   port: 443
   udp: true
@@ -128,7 +93,27 @@ proxies:
     short-id: 2c92d6
   servername: buybox.amazon.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 14 - xiaohe
+- name: 🇯🇵 日本 (Japan) 11 - xiaohe
+  server: 158.101.151.157
+  port: 443
+  udp: true
+  type: vless
+  uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8
+    short-id: 684c7531e599dec0
+  servername: www.microsoft.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 12 - xiaohe
+  server: 84.247.155.196
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 13 - xiaohe
   server: 198.13.53.39
   port: 443
   udp: true
@@ -145,7 +130,7 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 15 - xiaohe
+- name: 🇯🇵 日本 (Japan) 14 - xiaohe
   server: 149.28.29.156
   port: 443
   udp: true
@@ -162,30 +147,7 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 16 - xiaohe
-  server: 156.246.93.237
-  port: 17443
-  udp: true
-  type: trojan
-  password: LDSLDq9XlM4-92pvTPOUuklMb99BLOCrdyejsupEca4
-  sni: jpk.wentibuxiaobuda.xyz
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 17 - xiaohe
-  server: 43.170.8.95
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 18 - xiaohe
+- name: 🇯🇵 日本 (Japan) 15 - xiaohe
   server: 45.76.222.108
   port: 443
   udp: true
@@ -202,62 +164,43 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 19 - xiaohe
-  server: xinbulongdong.com
-  port: 443
-  udp: true
-  type: trojan
-  password: +vuY9gGdZ/h7Yk4Q
-  sni: xinbulongdong.com
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 20 - xiaohe
-  server: jpk.wentibuxiaobuda.xyz
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 36187bef1c708c82fd4099b9d70116ffd8c0f1f5bfd19cbb319eeb67899714f6
-  sni: jpk.wentibuxiaobuda.xyz
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 21 - xiaohe
-  server: nb5rb.hikigo.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  sni: nb5rb.hikigo.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: yhlbhcysaba0wtn1
-- name: 🇯🇵 日本 (Japan) 22 - xiaohe
-  server: 94.177.131.113
-  port: 443
-  udp: true
-  type: vless
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  tls: true
-  servername: kuruish.org
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 23 - xiaohe
-  server: 193.123.160.109
-  port: 8443
-  udp: true
-  type: trojan
-  password: F3NzMNuYnG7akU2mSlBY
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 24 - xiaohe
-  server: afzuv.xiaoyan.io
-  port: 16617
+- name: 🇯🇵 日本 (Japan) 16 - xiaohe
+  server: 168.110.63.247
+  port: 8081
   udp: true
   type: vmess
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
+  uuid: c3bde296-8e44-4b8c-a325-577d5b3cc7c8
   alterId: 0
   cipher: auto
   network: ws
   ws-opts:
-    path: /
+    path: /vless
+- name: 🇯🇵 日本 (Japan) 17 - xiaohe
+  server: 155.248.175.201
+  port: 23169
+  udp: true
+  type: vless
+  uuid: 7318caa1-93d1-4a9d-c481-504599902700
+  flow: xtls-rprx-vision
+  tls: true
+  servername: djj.zjlo.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 18 - xiaohe
+  server: 104.16.10.104
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /tyxyws
     headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -281,12 +224,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 16 - xiaohe
   - 🇯🇵 日本 (Japan) 17 - xiaohe
   - 🇯🇵 日本 (Japan) 18 - xiaohe
-  - 🇯🇵 日本 (Japan) 19 - xiaohe
-  - 🇯🇵 日本 (Japan) 20 - xiaohe
-  - 🇯🇵 日本 (Japan) 21 - xiaohe
-  - 🇯🇵 日本 (Japan) 22 - xiaohe
-  - 🇯🇵 日本 (Japan) 23 - xiaohe
-  - 🇯🇵 日本 (Japan) 24 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -310,11 +247,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 16 - xiaohe
   - 🇯🇵 日本 (Japan) 17 - xiaohe
   - 🇯🇵 日本 (Japan) 18 - xiaohe
-  - 🇯🇵 日本 (Japan) 19 - xiaohe
-  - 🇯🇵 日本 (Japan) 20 - xiaohe
-  - 🇯🇵 日本 (Japan) 21 - xiaohe
-  - 🇯🇵 日本 (Japan) 22 - xiaohe
-  - 🇯🇵 日本 (Japan) 23 - xiaohe
-  - 🇯🇵 日本 (Japan) 24 - xiaohe
 rules:
 - MATCH,PROXIES

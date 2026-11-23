@@ -5,19 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 48.103.133.47
+  server: 90.156.203.62
+  port: 5112
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: VVlAff77CnAU43Aoc5j15Y
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  server: 48.103.218.77
+  port: 18443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  server: 109.107.189.69
   port: 8443
   udp: true
   type: vless
-  uuid: 2ed34e7c-45c5-4e0e-bcab-42fe99a7bd25
+  uuid: cfd6ce74-f4c5-4815-bba4-2fd0fa77bf4e
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-  servername: apple.com
+    public-key: q1EhO97gyUBlF7LiAfeAESI0O2Mg95T4yIk7keOnMEE
+    short-id: 0912cc7f28aa26ba
+  servername: gw-721bd5.dobry.monster
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   server: 200.169.179.233
   port: 443
   udp: true
@@ -26,27 +40,10 @@ proxies:
   tls: true
   servername: vps3.nemnogogo.com
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: mobile.api.Event
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: 130.49.189.158
-  port: 43558
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 168.113.253.178
-  port: 443
-  udp: true
-  type: vless
-  uuid: aea0ed55-4e5e-0001-a4fe-5d626d914a9f
-  tls: true
-  servername: uzndiuvzvqqljdyhzs.fcloudservices.site
-  skip-cert-verify: false
-  client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   server: 147.45.175.81
   port: 443
@@ -61,18 +58,48 @@ proxies:
   grpc-opts:
     grpc-service-name: grpc-ru
 - name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  server: 147.45.97.130
-  port: 2066
+  server: 95.129.236.117
+  port: 443
   udp: true
   type: vless
-  uuid: 4bec3709-0954-4173-ae59-3dee6cb8b961
+  uuid: 77998cc6-8a4d-4251-b974-ebff48a84c4d
+  tls: true
+  servername: cdn.dash.gearmonster.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /edge/node8/push
+    headers:
+      Host: cdn.dash.gearmonster.org
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+  server: 185.178.208.167
+  port: 443
+  udp: true
+  type: vless
+  uuid: c2b17066-5386-0001-803b-5e652c0528f9
+  tls: true
+  servername: trx.tools
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /session
+    headers:
+      Host: api.14887277.xyz
+- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
+  server: 48.103.133.47
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 2ed34e7c-45c5-4e0e-bcab-42fe99a7bd25
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: kLCwYNBhCg68BQah9El1lNg6GQ7-7Y7xfTtIs6MiTEg
-    short-id: 1b2a3f
-  servername: google.com
-  client-fingerprint: chrome
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  servername: apple.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,6 +111,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -95,5 +124,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
 rules:
 - MATCH,PROXIES
