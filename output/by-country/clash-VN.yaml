@@ -5,46 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇻🇳 越南 (Vietnam) 01 - xiaohe
-  server: xvxn1hkzf.mateflora.com
+  server: 43.255.157.222
   port: 443
   udp: true
   type: trojan
   password: 57beeeb0-03fc-4fc9-94da-7604488a7134
   sni: xvxn1hkzf.mateflora.com
   skip-cert-verify: true
-- name: 🇻🇳 越南 (Vietnam) 02 - xiaohe
-  server: 150.95.109.109
-  port: 2086
-  udp: true
-  type: vless
-  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
-- name: 🇻🇳 越南 (Vietnam) 03 - xiaohe
-  server: 103.163.24.22
-  port: 56026
-  udp: true
-  type: vless
-  uuid: a1f0cbb8-c74a-4c27-b881-7b14d96aece1
-  tls: true
-  reality-opts:
-    public-key: gjOKbmRb5cGDPbdz3x8xkBFL43pn3xqL-I6sALHO7ls
-    short-id: 99676967e6867063
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇻🇳 越南 (Vietnam) 01 - xiaohe
-  - 🇻🇳 越南 (Vietnam) 02 - xiaohe
-  - 🇻🇳 越南 (Vietnam) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇻🇳 越南 (Vietnam) 01 - xiaohe
-  - 🇻🇳 越南 (Vietnam) 02 - xiaohe
-  - 🇻🇳 越南 (Vietnam) 03 - xiaohe
 rules:
 - MATCH,PROXIES
