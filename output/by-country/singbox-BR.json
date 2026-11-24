@@ -6,7 +6,7 @@
     {
       "type": "vmess",
       "tag": "🇧🇷 巴西 (Brazil) 01 - xiaohe",
-      "server": "103.14.27.207",
+      "server": "103.88.232.55",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
       "security": "auto",
@@ -19,7 +19,7 @@
     {
       "type": "vmess",
       "tag": "🇧🇷 巴西 (Brazil) 02 - xiaohe",
-      "server": "103.88.232.55",
+      "server": "103.14.27.207",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
       "security": "auto",
@@ -46,13 +46,35 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 04 - xiaohe",
+      "server": "dddz-4-z.473221.xyz",
+      "server_port": 33161,
+      "uuid": "5807f1c4-b50e-4ec0-8d01-274045da0da5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "v1-dy.ixigua.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "BECARsUsTAoGzHFcGEquyFHKnI_LVL5FL6s1jZbLhVk",
+          "short_id": "6dbd86dc61ccb46d"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇧🇷 巴西 (Brazil) 01 - xiaohe",
         "🇧🇷 巴西 (Brazil) 02 - xiaohe",
-        "🇧🇷 巴西 (Brazil) 03 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 03 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 04 - xiaohe"
       ]
     },
     {
@@ -61,7 +83,8 @@
       "outbounds": [
         "🇧🇷 巴西 (Brazil) 01 - xiaohe",
         "🇧🇷 巴西 (Brazil) 02 - xiaohe",
-        "🇧🇷 巴西 (Brazil) 03 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 03 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

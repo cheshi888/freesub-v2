@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - xiaohe
-  server: 103.14.27.207
+  server: 103.88.232.55
   port: 1270
   udp: true
   type: vmess
@@ -16,7 +16,7 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: false
 - name: 🇧🇷 巴西 (Brazil) 02 - xiaohe
-  server: 103.88.232.55
+  server: 103.14.27.207
   port: 1270
   udp: true
   type: vmess
@@ -36,6 +36,19 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
+- name: 🇧🇷 巴西 (Brazil) 04 - xiaohe
+  server: dddz-4-z.473221.xyz
+  port: 33161
+  udp: true
+  type: vless
+  uuid: 5807f1c4-b50e-4ec0-8d01-274045da0da5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: BECARsUsTAoGzHFcGEquyFHKnI_LVL5FL6s1jZbLhVk
+    short-id: 6dbd86dc61ccb46d
+  servername: v1-dy.ixigua.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,6 +57,7 @@ proxy-groups:
   - 🇧🇷 巴西 (Brazil) 01 - xiaohe
   - 🇧🇷 巴西 (Brazil) 02 - xiaohe
   - 🇧🇷 巴西 (Brazil) 03 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,5 +66,6 @@ proxy-groups:
   - 🇧🇷 巴西 (Brazil) 01 - xiaohe
   - 🇧🇷 巴西 (Brazil) 02 - xiaohe
   - 🇧🇷 巴西 (Brazil) 03 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 04 - xiaohe
 rules:
 - MATCH,PROXIES

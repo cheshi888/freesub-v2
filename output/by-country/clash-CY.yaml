@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
-  server: 132.243.242.246
+  server: 132.243.242.97
   port: 9543
   udp: true
   type: vless
@@ -16,9 +16,9 @@ proxies:
     public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
     short-id: 123abcdf
   servername: storage.yandexcloud.net
-  client-fingerprint: ios
+  client-fingerprint: firefox
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
-  server: 132.243.242.40
+  server: 132.243.242.216
   port: 9543
   udp: true
   type: vless
@@ -29,7 +29,7 @@ proxies:
     public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
     short-id: 123abcdf
   servername: storage.yandexcloud.net
-  client-fingerprint: chrome
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select

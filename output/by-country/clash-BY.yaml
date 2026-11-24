@@ -5,17 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe
-  server: 178.172.227.228
+  server: 178.172.227.124
+  port: 10443
+  udp: true
+  type: vless
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+- name: 🇧🇾 白俄罗斯 (Belarus) 02 - xiaohe
+  server: 178.172.227.124
   port: 14430
   udp: true
   type: vless
-  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
   network: ws
   ws-opts:
     path: /vless
     headers:
-      Host: 178.172.227.228
-- name: 🇧🇾 白俄罗斯 (Belarus) 02 - xiaohe
+      Host: 178.172.227.124
+- name: 🇧🇾 白俄罗斯 (Belarus) 03 - xiaohe
   server: 178.172.227.124
   port: 10444
   udp: true
@@ -35,6 +41,7 @@ proxy-groups:
   - AUTO
   - 🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe
   - 🇧🇾 白俄罗斯 (Belarus) 02 - xiaohe
+  - 🇧🇾 白俄罗斯 (Belarus) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -42,5 +49,6 @@ proxy-groups:
   proxies:
   - 🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe
   - 🇧🇾 白俄罗斯 (Belarus) 02 - xiaohe
+  - 🇧🇾 白俄罗斯 (Belarus) 03 - xiaohe
 rules:
 - MATCH,PROXIES

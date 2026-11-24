@@ -6,14 +6,43 @@
     {
       "type": "shadowsocks",
       "tag": "🇦🇹 奥地利 (Austria) 01 - xiaohe",
+      "server": "152.53.1.57",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "AdawffFMHymlasRb0VOP3HFf7sTG5sJx"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇦🇹 奥地利 (Austria) 02 - xiaohe",
       "server": "82.110.60.9",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 03 - xiaohe",
+      "server": "152.53.1.170",
+      "server_port": 443,
+      "uuid": "4fddfe0e-fddc-4032-b4c8-09c6d811fed0",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "node-au.neverlock.uk",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "🇦🇹 奥地利 (Austria) 02 - xiaohe",
+      "tag": "🇦🇹 奥地利 (Austria) 04 - xiaohe",
       "server": "154.47.19.225",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -30,7 +59,9 @@
       "outbounds": [
         "auto",
         "🇦🇹 奥地利 (Austria) 01 - xiaohe",
-        "🇦🇹 奥地利 (Austria) 02 - xiaohe"
+        "🇦🇹 奥地利 (Austria) 02 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 03 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 04 - xiaohe"
       ]
     },
     {
@@ -38,7 +69,9 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇹 奥地利 (Austria) 01 - xiaohe",
-        "🇦🇹 奥地利 (Austria) 02 - xiaohe"
+        "🇦🇹 奥地利 (Austria) 02 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 03 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

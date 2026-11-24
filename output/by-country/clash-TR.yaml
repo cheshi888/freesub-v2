@@ -13,21 +13,52 @@ proxies:
   tls: true
   servername: cadrin.wtf
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: edge
   network: grpc
   grpc-opts:
     grpc-service-name: cache.sync.v1
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  server: 130.94.2.227
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3a1c6827-72a1-4d1c-9413-44109ff815f4
+  tls: true
+  reality-opts:
+    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
+    short-id: 2da72ce6
+  servername: navi.bankrate.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  server: 172.64.155.209
+  port: 443
+  udp: true
+  type: vless
+  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
+  tls: true
+  servername: sinavm3.soft10.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
+    headers:
+      Host: sinavm3.soft10.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -5,36 +5,47 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 188.114.99.137
+  server: 188.114.98.0
   port: 443
   udp: true
-  type: vmess
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
   tls: true
-  servername: guanwang.awsno.com
+  servername: fr-free.fastestrelay.com
   skip-cert-verify: false
+  client-fingerprint: ios
   network: ws
   ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers: &id001
-      Host: guanwang.awsno.com
+    path: /700gvl
+    headers:
+      Host: fr-free.fastestrelay.com
 - name: 🌐 其他地区 (Other) 02 - xiaohe
-  server: 188.114.99.137
+  server: 104.19.164.155
   port: 443
   udp: true
-  type: vmess
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   tls: true
-  servername: guanwang.awsno.com
+  servername: jp3.yohototo.top
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers: *id001
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 03 - xiaohe
+  server: 104.21.7.133
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,6 +53,7 @@ proxy-groups:
   - AUTO
   - 🌐 其他地区 (Other) 01 - xiaohe
   - 🌐 其他地区 (Other) 02 - xiaohe
+  - 🌐 其他地区 (Other) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,5 +61,6 @@ proxy-groups:
   proxies:
   - 🌐 其他地区 (Other) 01 - xiaohe
   - 🌐 其他地区 (Other) 02 - xiaohe
+  - 🌐 其他地区 (Other) 03 - xiaohe
 rules:
 - MATCH,PROXIES
