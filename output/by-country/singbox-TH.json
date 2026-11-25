@@ -4,30 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
-      "server": "i1tr.mateflora.com",
-      "server_port": 443,
-      "password": "57beeeb0-03fc-4fc9-94da-7604488a7134",
-      "tls": {
-        "enabled": true,
-        "server_name": "i1tr.mateflora.com",
-        "insecure": true
-      }
+      "type": "vmess",
+      "tag": "🇹🇭 泰国 (Thailand) 01 - xiaohe",
+      "server": "47.81.36.173",
+      "server_port": 18565,
+      "uuid": "853a251f-de85-40cc-84a6-ab8748c7258c",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -19,7 +19,7 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  server: 212.192.3.113
+  server: 212.192.3.222
   port: 9543
   udp: true
   type: vless
@@ -32,14 +32,15 @@ proxies:
   servername: storage.yandexcloud.net
   client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: uae.unixzone.us
-  port: 22573
+  server: 94.183.167.172
+  port: 443
   udp: true
   type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
+  uuid: d7121b33-e335-4921-bb00-4c0b157e7fc1
+  tls: true
+  servername: s8k4.scan-cdn.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
