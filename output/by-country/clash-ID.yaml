@@ -4,25 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  server: 5641sdds.df6h451rh.xin
+- name: 🇮🇩 印尼 (Indonesia) 01 - xiaohe
+  server: i1tr.mateflora.com
   port: 443
   udp: true
-  type: anytls
-  password: 0324fbc29561
-  sni: images.ctfassets.net
+  type: trojan
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  sni: i1tr.mateflora.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+  - 🇮🇩 印尼 (Indonesia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+  - 🇮🇩 印尼 (Indonesia) 01 - xiaohe
 rules:
 - MATCH,PROXIES
