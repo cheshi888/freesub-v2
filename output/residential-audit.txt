@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-11-25 16:44:39 UTC
+生成时间: 2026-11-26 01:34:01 UTC
 ==============================================================================
 
 说明:
@@ -17,17 +17,7 @@
 
 本轮家宽节点数: 4
 
-[1] TW  严格家宽  置信度 82
-     exit_ip : 125.224.51.253
-     server  : a54ge.df6h451rh.xin:443  (anytls)
-     ASN     : AS3462 Data Communication Business Group
-     ISP     : Chunghwa Telecom Co., Ltd.
-     ORG     : Chunghwa Telecom Co. Ltd.
-     ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
-     fraud   : 0  (-1 = 未取到评分)
-
-[2] DE  移动网络  置信度 85
+[1] DE  移动网络  置信度 85
      exit_ip : 163.123.193.9
      server  : 8.209.73.203:443  (shadowsocks)
      ASN     : AS36231 Tempest Hosting
@@ -37,8 +27,18 @@
      ipapi.is: company=AGX Management Consultancy - FZCO asn=AS36231 AGX Management Consultancy - FZCO
      fraud   : 0  (-1 = 未取到评分)
 
+[2] HK  严格家宽  置信度 82
+     exit_ip : 1.36.11.110
+     server  : 5641sdds.df6h451rh.xin:443  (anytls)
+     ASN     : AS4760 HKT Limited
+     ISP     : Hong Kong Telecommunications (HKT) Limited Mass Internet
+     ORG     : Hong Kong Telecommunications (HKT) Limited
+     ip-api  : hosting=False proxy=False mobile=False reverse=-
+     ipapi.is: company=Hong Kong Telecommunications (HKT) Limited Mass Internet asn=AS4760 PCCW IMS Limited
+     fraud   : 0  (-1 = 未取到评分)
+
 [3] HK  严格家宽  置信度 82
-     exit_ip : 218.250.250.38
+     exit_ip : 218.250.145.235
      server  : ibsdsf.df6h451rh.xin:443  (anytls)
      ASN     : AS4760 HKT Limited
      ISP     : Pccw IMS
@@ -47,12 +47,12 @@
      ipapi.is: company=Hong Kong Telecommunications (HKT) Limited Mass Internet asn=AS4760 PCCW IMS Limited
      fraud   : 4  (-1 = 未取到评分)
 
-[4] HK  严格家宽  置信度 82
-     exit_ip : 219.79.192.157
-     server  : 5641sdds.df6h451rh.xin:443  (anytls)
-     ASN     : AS4760 HKT Limited
-     ISP     : Hong Kong Telecommunications (HKT) Limited Mass Internet
-     ORG     : Hong Kong Telecommunications (HKT) Limited
+[4] TW  严格家宽  置信度 82
+     exit_ip : 125.224.51.253
+     server  : a54ge.df6h451rh.xin:443  (anytls)
+     ASN     : AS3462 Data Communication Business Group
+     ISP     : Chunghwa Telecom Co., Ltd.
+     ORG     : Chunghwa Telecom Co. Ltd.
      ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Hong Kong Telecommunications (HKT) Limited Mass Internet asn=AS4760 PCCW IMS Limited
+     ipapi.is: company=Chunghwa Telecom Data Communication Business Group asn=AS3462 Chunghwa Telecom Co., Ltd.
      fraud   : 0  (-1 = 未取到评分)
