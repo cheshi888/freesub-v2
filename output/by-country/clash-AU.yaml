@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
-  server: 3.106.35.101
+  server: 13.55.52.44
   port: 36712
   udp: true
   type: hysteria2
   password: linlin-2026
-  sni: 3.106.35.101
+  sni: 13.55.52.44
   skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   server: 13.237.192.121
@@ -21,12 +21,12 @@ proxies:
   sni: 13.237.192.121
   skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
-  server: 13.55.52.44
+  server: 3.106.35.101
   port: 36712
   udp: true
   type: hysteria2
   password: linlin-2026
-  sni: 13.55.52.44
+  sni: 3.106.35.101
   skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
   server: 152.67.115.203
@@ -45,9 +45,10 @@ proxies:
   type: hysteria2
   password: b42d90fa667942aebc734d60
   sni: hy2-au2.whuiy.xyz
-  skip-cert-verify: false
+  skip-cert-verify: true
   obfs: salamander
   obfs-password: b42d90fa667942aebc734d60
+  ports: 20000-30000,20000-20000
 proxy-groups:
 - name: PROXIES
   type: select

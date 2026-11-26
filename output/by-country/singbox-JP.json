@@ -6,7 +6,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 01 - xiaohe",
-      "server": "149.22.87.204",
+      "server": "149.22.87.240",
       "server_port": 443,
       "method": "aes-128-gcm",
       "password": "shadowsocks"
@@ -14,10 +14,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 02 - xiaohe",
-      "server": "149.22.87.240",
-      "server_port": 443,
+      "server": "168.138.205.100",
+      "server_port": 53758,
       "method": "aes-128-gcm",
-      "password": "shadowsocks"
+      "password": "Bwlqh7GcFB"
     },
     {
       "type": "shadowsocks",
@@ -30,26 +30,14 @@
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 04 - xiaohe",
-      "server": "168.138.205.100",
-      "server_port": 53758,
+      "server": "149.22.87.204",
+      "server_port": 443,
       "method": "aes-128-gcm",
-      "password": "Bwlqh7GcFB"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 05 - xiaohe",
-      "server": "161.33.20.255",
-      "server_port": 8880,
-      "uuid": "e0856508-d693-450a-a099-455091dc4f25",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/e0856508-d693-450a-a099-455091dc4f25-vm"
-      }
+      "password": "shadowsocks"
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 06 - xiaohe",
+      "tag": "🇯🇵 日本 (Japan) 05 - xiaohe",
       "server": "158.101.151.157",
       "server_port": 443,
       "uuid": "66171cbe-0b4b-4b24-99f6-d5a822f4dc9a",
@@ -69,37 +57,50 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 06 - xiaohe",
+      "server": "168.138.43.75",
+      "server_port": 80,
+      "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/cctv13.m3u8",
+        "headers": {
+          "Host": "None"
+        }
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 07 - xiaohe",
-      "server": "103.75.118.228",
-      "server_port": 11452,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
+      "server": "172.104.86.181",
+      "server_port": 443,
+      "uuid": "010431f3-04f6-4404-a801-b93bf2e3c2b2",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "itunes.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
+          "public_key": "ujYDprigWFLxcj4BtitDNa-hoPjIbpSzrnEcqp3cgjk",
+          "short_id": "c8559ca1"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "itunes.apple.com"
         }
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 08 - xiaohe",
-      "server": "zfd-jpv2.kunlun01dns.com",
-      "server_port": 16120,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 09 - xiaohe",
+      "tag": "🇯🇵 日本 (Japan) 08 - xiaohe",
       "server": "198.13.53.39",
       "server_port": 443,
       "uuid": "8f21c635-ef0a-4b05-8356-f44d463b6e34",
@@ -126,7 +127,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 10 - xiaohe",
+      "tag": "🇯🇵 日本 (Japan) 09 - xiaohe",
       "server": "149.28.29.156",
       "server_port": 443,
       "uuid": "aa1a9052-720f-4bb0-92be-21b6baf9f386",
@@ -153,113 +154,14 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 11 - xiaohe",
-      "server": "129.225.181.46",
+      "tag": "🇯🇵 日本 (Japan) 10 - xiaohe",
+      "server": "8.211.175.236",
       "server_port": 8443,
-      "password": "oracle_hy2_pass_2026",
+      "password": "u63SxILNwtrQZ7Y1ZrFaZfsA",
       "tls": {
         "enabled": true,
-        "server_name": "bing.com",
+        "server_name": "8.211.175.236",
         "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 12 - xiaohe",
-      "server": "156.231.117.190",
-      "server_port": 443,
-      "uuid": "ed94398f-893f-40c6-b14c-bf02b5f6be16",
-      "tls": {
-        "enabled": true,
-        "server_name": "navi.bankrate.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc",
-          "short_id": "2da72ce6"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 13 - xiaohe",
-      "server": "155.248.175.201",
-      "server_port": 23169,
-      "uuid": "7318caa1-93d1-4a9d-c481-504599902700",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "djj.zjlo.top",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 14 - xiaohe",
-      "server": "104.24.0.1",
-      "server_port": 443,
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
-      "tls": {
-        "enabled": true,
-        "server_name": "jp3.yohototo.top",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/tyxyws",
-        "headers": {
-          "Host": "jp3.yohototo.top"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 15 - xiaohe",
-      "server": "213.183.41.31",
-      "server_port": 8463,
-      "uuid": "eb62cabf-5901-403a-aa0c-b1d9ed1b346d",
-      "tls": {
-        "enabled": true,
-        "server_name": "share.plumstatic.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 16 - xiaohe",
-      "server": "43.129.80.179",
-      "server_port": 8443,
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
-      "tls": {
-        "enabled": true,
-        "server_name": "jp3.yohototo.top",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/tyxyws",
-        "headers": {
-          "Host": "jp3.yohototo.top"
-        }
       }
     },
     {
@@ -276,13 +178,7 @@
         "🇯🇵 日本 (Japan) 07 - xiaohe",
         "🇯🇵 日本 (Japan) 08 - xiaohe",
         "🇯🇵 日本 (Japan) 09 - xiaohe",
-        "🇯🇵 日本 (Japan) 10 - xiaohe",
-        "🇯🇵 日本 (Japan) 11 - xiaohe",
-        "🇯🇵 日本 (Japan) 12 - xiaohe",
-        "🇯🇵 日本 (Japan) 13 - xiaohe",
-        "🇯🇵 日本 (Japan) 14 - xiaohe",
-        "🇯🇵 日本 (Japan) 15 - xiaohe",
-        "🇯🇵 日本 (Japan) 16 - xiaohe"
+        "🇯🇵 日本 (Japan) 10 - xiaohe"
       ]
     },
     {
@@ -298,13 +194,7 @@
         "🇯🇵 日本 (Japan) 07 - xiaohe",
         "🇯🇵 日本 (Japan) 08 - xiaohe",
         "🇯🇵 日本 (Japan) 09 - xiaohe",
-        "🇯🇵 日本 (Japan) 10 - xiaohe",
-        "🇯🇵 日本 (Japan) 11 - xiaohe",
-        "🇯🇵 日本 (Japan) 12 - xiaohe",
-        "🇯🇵 日本 (Japan) 13 - xiaohe",
-        "🇯🇵 日本 (Japan) 14 - xiaohe",
-        "🇯🇵 日本 (Japan) 15 - xiaohe",
-        "🇯🇵 日本 (Japan) 16 - xiaohe"
+        "🇯🇵 日本 (Japan) 10 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

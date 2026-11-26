@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 195.123.245.241
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7c053ca8-38cc-45e2-930c-eda1fd66f903
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: hlY5ce1UsVIgE46y5PlEZhUsSaXUnCtoDLLaGrhInjw
-    short-id: 23d0950d60bc0d5b
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
   server: 153.52.69.249
   port: 443
   udp: true
@@ -30,20 +17,20 @@ proxies:
     short-id: d5492c7a39515c65
   servername: cache-78.topp-con.xyz
   client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
-  server: leviko-nl9472.shopingggg.ir
-  port: 9543
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
+  server: 195.123.245.241
+  port: 443
   udp: true
   type: vless
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
+  uuid: 7c053ca8-38cc-45e2-930c-eda1fd66f903
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-  servername: storage.yandexcloud.net
+    public-key: hlY5ce1UsVIgE46y5PlEZhUsSaXUnCtoDLLaGrhInjw
+    short-id: 23d0950d60bc0d5b
+  servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 04 - xiaohe
+- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
   server: 109.248.17.252
   port: 443
   udp: true
@@ -52,7 +39,7 @@ proxies:
   tls: true
   servername: v4.clequinix.globalinetforallalwaysandneverbanyoubelieveme.com
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: v4-clequinix-globalinetforallalwaysandneverbanyoubelieveme-com
@@ -64,7 +51,6 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
   - 🇨🇿 捷克 (Czech) 03 - xiaohe
-  - 🇨🇿 捷克 (Czech) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,6 +59,5 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
   - 🇨🇿 捷克 (Czech) 03 - xiaohe
-  - 🇨🇿 捷克 (Czech) 04 - xiaohe
 rules:
 - MATCH,PROXIES

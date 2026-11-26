@@ -5,17 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
-  server: 31.222.235.81
+  server: 172.67.199.12
   port: 443
   udp: true
-  type: vless
-  uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
-  tls: true
-  reality-opts:
-    public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
-    short-id: d8b58872
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  type: trojan
+  password: 963A4918-A630-29DA-A873-093CDF8AD784
+  sni: bitter-math-4364.vpnetwork3567.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select

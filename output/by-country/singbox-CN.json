@@ -4,30 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "anytls",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
-      "server": "a54ge.df6h451rh.xin",
-      "server_port": 443,
-      "password": "0324fbc29561",
-      "tls": {
-        "enabled": true,
-        "server_name": "docs.microsoft.com",
-        "insecure": true
-      }
+      "type": "vmess",
+      "tag": "🇨🇳 CN 01 - xiaohe",
+      "server": "150.242.244.116",
+      "server_port": 2648,
+      "uuid": "44712929-c2b7-4fa4-93bd-9de332a78c8c",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
+        "🇨🇳 CN 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
+        "🇨🇳 CN 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

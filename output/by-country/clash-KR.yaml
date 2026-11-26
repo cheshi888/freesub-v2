@@ -21,54 +21,6 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
-  server: 218.237.185.234
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
-  server: 152.69.231.175
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152.69.231.175
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
-  server: 152.67.200.82
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: 152.67.200.82
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 06 - xiaohe
-  server: 152.69.226.63
-  port: 25555
-  udp: true
-  type: vless
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇰🇷 韩国 (South Korea) 07 - xiaohe
-  server: 132.226.226.189
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 1671a252e2a97dc2bda4e515475931da
-  sni: 132.226.226.189
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 08 - xiaohe
-  server: 152.70.237.123
-  port: 2053
-  udp: true
-  type: hysteria2
-  password: maintell
-  sni: bing.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 09 - xiaohe
   server: 168.107.51.32
   port: 20045
   udp: true
@@ -76,7 +28,31 @@ proxies:
   password: 463f7453753f4d47
   sni: ikr200.zxom.eu.org
   skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 10 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
+  server: 152-69-231-175.liao.kdns.fr
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
+  server: 152.67.200.82
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  sni: google.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 06 - xiaohe
+  server: 152.70.237.123
+  port: 2053
+  udp: true
+  type: hysteria2
+  password: maintell
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 07 - xiaohe
   server: 154.90.62.70
   port: 56127
   udp: true
@@ -84,14 +60,42 @@ proxies:
   password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
   sni: 154.90.62.70
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 11 - xiaohe
-  server: 146.56.112.110
-  port: 8888
+- name: 🇰🇷 韩国 (South Korea) 08 - xiaohe
+  server: 104.25.128.15
+  port: 443
   udp: true
-  type: vmess
-  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: db906786-8c49-4b17-9182-cea680ef954d
+  tls: true
+  servername: krc.80782636.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /kw7x2mq9
+    headers:
+      Host: krc.80782636.xyz
+- name: 🇰🇷 韩国 (South Korea) 09 - xiaohe
+  server: 8.220.198.29
+  port: 443
+  udp: true
+  type: vless
+  uuid: 91d2a8f3-6eb0-4b6a-a8f7-0beabcf06fb7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8hnBOcqsETW6u3TchfqlE0Y7wZ002v60fPlFM1qrww4
+    short-id: ad9e6079
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 10 - xiaohe
+  server: www.ddsos.cc
+  port: 7788
+  udp: true
+  type: hysteria2
+  password: c8aa4ba6a243ddfdeb67515aa849624b
+  sni: www.ddsos.cc
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -107,7 +111,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 08 - xiaohe
   - 🇰🇷 韩国 (South Korea) 09 - xiaohe
   - 🇰🇷 韩国 (South Korea) 10 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -123,6 +126,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 08 - xiaohe
   - 🇰🇷 韩国 (South Korea) 09 - xiaohe
   - 🇰🇷 韩国 (South Korea) 10 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 11 - xiaohe
 rules:
 - MATCH,PROXIES
