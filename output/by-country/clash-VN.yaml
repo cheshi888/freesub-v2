@@ -1,0 +1,32 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇻🇳 越南 (Vietnam) 01 - xiaohe
+  server: 103.163.24.22
+  port: 56026
+  udp: true
+  type: vless
+  uuid: a1f0cbb8-c74a-4c27-b881-7b14d96aece1
+  tls: true
+  reality-opts:
+    public-key: gjOKbmRb5cGDPbdz3x8xkBFL43pn3xqL-I6sALHO7ls
+    short-id: 99676967e6867063
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇻🇳 越南 (Vietnam) 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇻🇳 越南 (Vietnam) 01 - xiaohe
+rules:
+- MATCH,PROXIES

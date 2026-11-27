@@ -1,0 +1,41 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇹🇭 泰国 (Thailand) 01 - xiaohe
+  server: 119.46.51.45
+  port: 37515
+  udp: true
+  type: vmess
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
+- name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
+  server: 108.138.26.63
+  port: 80
+  udp: true
+  type: vless
+  uuid: 05f53797-bd04-4006-8a78-41c071e67837
+  network: ws
+  ws-opts:
+    path: /tikvpn2/
+    headers:
+      Host: d27g7kjkk3cw22.cloudfront.net
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇹🇭 泰国 (Thailand) 01 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 02 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇹🇭 泰国 (Thailand) 01 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 02 - xiaohe
+rules:
+- MATCH,PROXIES
