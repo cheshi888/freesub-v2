@@ -18,33 +18,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇱 以色列 (Israel) 02 - xiaohe
-  server: 164.37.224.238
-  port: 443
-  udp: true
-  type: vless
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  tls: true
-  reality-opts:
-    public-key: xn7KVKS5MOnsFrYrEeRS04JssBCOxh12rxegaDFyGkA
-    short-id: 6d289ff0f47c0aac
-  servername: 961ec0g.nl13.h1clayd.click
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 7d5abcd7d8a1
-- name: 🇮🇱 以色列 (Israel) 03 - xiaohe
-  server: 153.56.229.218
-  port: 443
-  udp: true
-  type: vless
-  uuid: 26843758-24de-4f76-b5d0-624038e353c4
-  tls: true
-  reality-opts:
-    public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
-    short-id: e572b6579ea525d4
-  servername: 71b840t.de7.h1clayd.click
-  client-fingerprint: firefox
-- name: 🇮🇱 以色列 (Israel) 04 - xiaohe
   server: 129.159.156.109
   port: 50160
   udp: true
@@ -52,18 +25,29 @@ proxies:
   password: f25f19f29ce3fb53a35bf1b35b452a43
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇮🇱 以色列 (Israel) 05 - xiaohe
-  server: 153.56.229.207
+- name: 🇮🇱 以色列 (Israel) 03 - xiaohe
+  server: 193.148.253.75
   port: 443
   udp: true
   type: vless
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  flow: xtls-rprx-vision
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   tls: true
   reality-opts:
-    public-key: MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw
-    short-id: 6976d670818644cc
-  servername: 4935e4t.de25.h1clayd.click
+    public-key: kkCGiCQCKnkozJR1KKCRNtmdBECmThCgI9VSv7iDcWI
+    short-id: 8956c57cb4c4f8d2
+  servername: f0d7aft.nl13.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇮🇱 以色列 (Israel) 04 - xiaohe
+  server: 153.56.229.218
+  port: 443
+  udp: true
+  type: vless
+  uuid: ba0dbd83-3569-46dc-bc3d-ef6e58ffc97b
+  tls: true
+  reality-opts:
+    public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
+    short-id: e572b6579ea525d4
+  servername: 71b840t.de7.h1clayd.click
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -74,7 +58,6 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 02 - xiaohe
   - 🇮🇱 以色列 (Israel) 03 - xiaohe
   - 🇮🇱 以色列 (Israel) 04 - xiaohe
-  - 🇮🇱 以色列 (Israel) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -84,6 +67,5 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 02 - xiaohe
   - 🇮🇱 以色列 (Israel) 03 - xiaohe
   - 🇮🇱 以色列 (Israel) 04 - xiaohe
-  - 🇮🇱 以色列 (Israel) 05 - xiaohe
 rules:
 - MATCH,PROXIES
