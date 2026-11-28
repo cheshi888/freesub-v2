@@ -5,59 +5,85 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇦 加拿大 (Canada) 01 - xiaohe
-  server: 51.222.136.236
-  port: 8882
+  server: 134.195.196.211
+  port: 18000
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 - name: 🇨🇦 加拿大 (Canada) 02 - xiaohe
-  server: 192.99.151.230
+  server: 184.107.106.77
   port: 8388
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: itzvpn@321
 - name: 🇨🇦 加拿大 (Canada) 03 - xiaohe
-  server: 148.113.196.75
-  port: 8443
+  server: 23.162.200.198
+  port: 18000
   udp: true
-  type: vless
-  uuid: 08f96221-9b7b-4e6f-8ffe-aee8b9c9b504
-  tls: true
-  servername: ov-canada1.09vpn.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 - name: 🇨🇦 加拿大 (Canada) 04 - xiaohe
-  server: 134.195.198.163
-  port: 443
+  server: 138.197.141.58
+  port: 8080
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: PmCqK98WqhSC
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇨🇦 加拿大 (Canada) 05 - xiaohe
-  server: 184.107.179.150
-  port: 8443
-  udp: true
-  type: vless
-  uuid: d3895603-3164-4003-b85c-70f171ab30b5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: FZvOenkKu_0DspnZA7Nc7xgWhR0_Z0MvqhntPqPchV4
-    short-id: 40a4615253b8f75d
-  servername: www.kpn.com
-  client-fingerprint: firefox
-- name: 🇨🇦 加拿大 (Canada) 06 - xiaohe
   server: 51.222.141.125
   port: 445
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: zDNVedRFPQexG9v
+- name: 🇨🇦 加拿大 (Canada) 06 - xiaohe
+  server: 51.222.136.236
+  port: 8882
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
 - name: 🇨🇦 加拿大 (Canada) 07 - xiaohe
+  server: 51.222.12.127
+  port: 445
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+- name: 🇨🇦 加拿大 (Canada) 08 - xiaohe
+  server: 192.99.151.230
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: itzvpn@321
+- name: 🇨🇦 加拿大 (Canada) 09 - xiaohe
+  server: 149.22.95.183
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇨🇦 加拿大 (Canada) 10 - xiaohe
+  server: 137.184.174.93
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇨🇦 加拿大 (Canada) 11 - xiaohe
+  server: 134.195.198.163
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: PmCqK98WqhSC
+- name: 🇨🇦 加拿大 (Canada) 12 - xiaohe
   server: 66.163.113.9
   port: 443
   udp: true
@@ -67,90 +93,7 @@ proxies:
   servername: kuruish.org
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 08 - xiaohe
-  server: 138.197.141.58
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇨🇦 加拿大 (Canada) 09 - xiaohe
-  server: 137.184.174.93
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇨🇦 加拿大 (Canada) 10 - xiaohe
-  server: 149.22.95.183
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇨🇦 加拿大 (Canada) 11 - xiaohe
-  server: 51.222.12.127
-  port: 445
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-- name: 🇨🇦 加拿大 (Canada) 12 - xiaohe
-  server: 103.106.229.177
-  port: 21003
-  udp: true
-  type: vless
-  uuid: 67952583-8572-42e1-943d-0602794f885b
-  tls: true
-  reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-    short-id: f3602a3a1cf928b7
-  servername: www.cloudflare.com
-  client-fingerprint: ''
 - name: 🇨🇦 加拿大 (Canada) 13 - xiaohe
-  server: 510.150333.xyz
-  port: 21004
-  udp: true
-  type: vless
-  uuid: 67952583-8572-42e1-943d-0602794f885b
-  tls: true
-  reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-    short-id: 4e0418d648f86141
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 14 - xiaohe
-  server: 510.150333.xyz
-  port: 21001
-  udp: true
-  type: vless
-  uuid: 67952583-8572-42e1-943d-0602794f885b
-  tls: true
-  reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-    short-id: a51c3ccb2320024a
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 15 - xiaohe
-  server: 510.150333.xyz
-  port: 21002
-  udp: true
-  type: vless
-  uuid: 67952583-8572-42e1-943d-0602794f885b
-  tls: true
-  reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-    short-id: d9a6b52e98121db2
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 16 - xiaohe
-  server: 51.222.200.165
-  port: 5000
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇨🇦 加拿大 (Canada) 17 - xiaohe
   server: 209.200.246.148
   port: 443
   udp: true
@@ -162,7 +105,81 @@ proxies:
     public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
     short-id: f98843107912e782
   servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇨🇦 加拿大 (Canada) 14 - xiaohe
+  server: 148.113.196.75
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08f96221-9b7b-4e6f-8ffe-aee8b9c9b504
+  tls: true
+  servername: ov-canada1.09vpn.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇨🇦 加拿大 (Canada) 15 - xiaohe
+  server: 51.79.85.185
+  port: 8118
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇨🇦 加拿大 (Canada) 16 - xiaohe
+  server: 510.150333.xyz
+  port: 21001
+  udp: true
+  type: vless
+  uuid: 67952583-8572-42e1-943d-0602794f885b
+  tls: true
+  reality-opts:
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+    short-id: a51c3ccb2320024a
+  servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 17 - xiaohe
+  server: 103.106.229.177
+  port: 21004
+  udp: true
+  type: vless
+  uuid: 67952583-8572-42e1-943d-0602794f885b
+  tls: true
+  reality-opts:
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+    short-id: 4e0418d648f86141
+  servername: www.cloudflare.com
+  client-fingerprint: ''
+- name: 🇨🇦 加拿大 (Canada) 18 - xiaohe
+  server: 510.150333.xyz
+  port: 21002
+  udp: true
+  type: vless
+  uuid: 67952583-8572-42e1-943d-0602794f885b
+  tls: true
+  reality-opts:
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+    short-id: d9a6b52e98121db2
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 19 - xiaohe
+  server: 510.150333.xyz
+  port: 21003
+  udp: true
+  type: vless
+  uuid: 67952583-8572-42e1-943d-0602794f885b
+  tls: true
+  reality-opts:
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+    short-id: f3602a3a1cf928b7
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 20 - xiaohe
+  server: 51.222.200.165
+  port: 5000
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
 proxy-groups:
 - name: PROXIES
   type: select
@@ -185,6 +202,9 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 15 - xiaohe
   - 🇨🇦 加拿大 (Canada) 16 - xiaohe
   - 🇨🇦 加拿大 (Canada) 17 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 18 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 19 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 20 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -207,5 +227,8 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 15 - xiaohe
   - 🇨🇦 加拿大 (Canada) 16 - xiaohe
   - 🇨🇦 加拿大 (Canada) 17 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 18 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 19 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 20 - xiaohe
 rules:
 - MATCH,PROXIES

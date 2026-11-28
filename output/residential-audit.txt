@@ -1,6 +1,6 @@
 ==============================================================================
 家宽判定审计单 / Residential IP Audit
-生成时间: 2026-11-27 16:05:48 UTC
+生成时间: 2026-11-28 01:05:10 UTC
 ==============================================================================
 
 说明:
@@ -15,24 +15,34 @@
   · 复核建议 : 把 exit_ip 贴进 https://scamalytics.com/ip/<IP> 与
                https://bgp.he.net/ip/<IP> 看 ASN 归属是否真是民用运营商
 
-本轮家宽节点数: 2
+本轮家宽节点数: 3
 
-[1] KR  移动网络  置信度 85
-     exit_ip : 130.94.30.242
-     server  : 130.94.30.242:443  (vless)
-     ASN     : AS154177 LIGHT NODE LIMITED
-     ISP     : Light Node Limited
-     ORG     : -
+[1] DE  移动网络  置信度 85
+     exit_ip : 163.123.193.7
+     server  : 47.254.128.109:443  (shadowsocks)
+     ASN     : AS36231 Tempest Hosting
+     ISP     : Tempest Hosting, LLC
+     ORG     : Tempest Hosting, LLC
      ip-api  : hosting=False proxy=False mobile=True reverse=-
-     ipapi.is: company=LIGHT NODE LIMITED asn=AS154177 LIGHT NODE LIMITED
-     fraud   : 6  (-1 = 未取到评分)
+     ipapi.is: company=AGX Management Consultancy - FZCO asn=AS36231 AGX Management Consultancy - FZCO
+     fraud   : 0  (-1 = 未取到评分)
 
-[2] HK  严格家宽  置信度 82
-     exit_ip : 218.250.145.235
-     server  : ibsdsf.df6h451rh.xin:443  (anytls)
-     ASN     : AS4760 HKT Limited
-     ISP     : Pccw IMS
-     ORG     : PCCW Limited
+[2] DE  移动网络  置信度 85
+     exit_ip : 163.123.193.9
+     server  : 8.209.117.187:443  (shadowsocks)
+     ASN     : AS36231 Tempest Hosting
+     ISP     : Tempest Hosting, LLC
+     ORG     : Tempest Hosting, LLC
+     ip-api  : hosting=False proxy=False mobile=True reverse=-
+     ipapi.is: company=AGX Management Consultancy - FZCO asn=AS36231 AGX Management Consultancy - FZCO
+     fraud   : 0  (-1 = 未取到评分)
+
+[3] KR  严格家宽  置信度 82
+     exit_ip : 49.254.204.133
+     server  : 49.254.204.133:1774  (shadowsocks)
+     ASN     : AS4766 Korea Telecom
+     ISP     : Korea Telecom
+     ORG     : Haionnet
      ip-api  : hosting=False proxy=False mobile=False reverse=-
-     ipapi.is: company=Hong Kong Telecommunications (HKT) Limited Mass Internet asn=AS4760 PCCW IMS Limited
-     fraud   : 5  (-1 = 未取到评分)
+     ipapi.is: company=HAIonNet asn=AS4766 Korea Telecom
+     fraud   : 0  (-1 = 未取到评分)

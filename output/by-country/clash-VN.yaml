@@ -5,7 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇻🇳 越南 (Vietnam) 01 - xiaohe
-  server: 103.163.24.22
+  server: 150.95.109.109
+  port: 2086
+  udp: true
+  type: vless
+  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
+- name: 🇻🇳 越南 (Vietnam) 02 - xiaohe
+  server: kir3.crackerbinam.org
   port: 56026
   udp: true
   type: vless
@@ -15,18 +21,20 @@ proxies:
     public-key: gjOKbmRb5cGDPbdz3x8xkBFL43pn3xqL-I6sALHO7ls
     short-id: 99676967e6867063
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇻🇳 越南 (Vietnam) 01 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇻🇳 越南 (Vietnam) 01 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 02 - xiaohe
 rules:
 - MATCH,PROXIES

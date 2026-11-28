@@ -1,0 +1,81 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vmess",
+      "tag": "🇹🇭 泰国 (Thailand) 01 - xiaohe",
+      "server": "119.46.51.45",
+      "server_port": 37515,
+      "uuid": "9b76bc31-17a5-4454-934a-8d5fb602cd70",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 02 - xiaohe",
+      "server": "108.138.26.63",
+      "server_port": 80,
+      "uuid": "05f53797-bd04-4006-8a78-41c071e67837",
+      "transport": {
+        "type": "ws",
+        "path": "/tikvpn2/",
+        "headers": {
+          "Host": "d27g7kjkk3cw22.cloudfront.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 03 - xiaohe",
+      "server": "195.58.46.231",
+      "server_port": 443,
+      "uuid": "bbb945a6-7d16-4099-b802-d3a7ccebd3ca",
+      "tls": {
+        "enabled": true,
+        "server_name": "node43.lmdscdn.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PVlnR_I9tZ8hKhOHW6ySpSofhsaShcBQ_JV2-0TePVA",
+          "short_id": "b8abb26d3cfadcfb"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "livestreamcontent"
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇹🇭 泰国 (Thailand) 01 - xiaohe",
+        "🇹🇭 泰国 (Thailand) 02 - xiaohe",
+        "🇹🇭 泰国 (Thailand) 03 - xiaohe"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇹🇭 泰国 (Thailand) 01 - xiaohe",
+        "🇹🇭 泰国 (Thailand) 02 - xiaohe",
+        "🇹🇭 泰国 (Thailand) 03 - xiaohe"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
