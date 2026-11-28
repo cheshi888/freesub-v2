@@ -12,30 +12,20 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 194.87.69.12
-  port: 18443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   server: 185.22.152.168
   port: 18443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 136.148.83.69
-  port: 443
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  server: 194.87.69.12
+  port: 18443
   udp: true
-  type: vless
-  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
-  tls: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  type: ss
+  cipher: aes-256-gcm
+  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   server: 201.51.12.98
   port: 443
   udp: true
@@ -43,26 +33,34 @@ proxies:
   uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
   tls: true
   servername: vps3.nemnogogo.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  skip-cert-verify: true
   network: grpc
   grpc-opts:
     grpc-service-name: mobile.api.Event
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  server: 147.45.175.81
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  server: 136.148.83.69
   port: 443
   udp: true
+  type: hysteria2
+  password: 87bb2ac4-b7a1-0001-b11d-2107709ea6cb
+  sni: szqbx-ru-77dc.my-fade.cloud
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  server: 78.159.240.11
+  port: 445
+  udp: true
   type: vless
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  uuid: 37af0181-5598-4aad-a040-d926bcb65757
   tls: true
-  servername: xssite.webredirect.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  reality-opts:
+    public-key: VHWmCkZwC5XE-ctv0p8BinjoIx4SWgJUIsZPrhNf6TA
+  servername: passport.yandex.ru
+  client-fingerprint: safari
   network: grpc
   grpc-opts:
-    grpc-service-name: grpc-ru
+    grpc-service-name: grpc
 - name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  server: xssite.webredirect.org
+  server: 147.45.175.81
   port: 443
   udp: true
   type: vless

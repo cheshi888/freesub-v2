@@ -26,37 +26,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 03 - xiaohe",
-      "server": "195.58.46.231",
-      "server_port": 443,
-      "uuid": "bbb945a6-7d16-4099-b802-d3a7ccebd3ca",
-      "tls": {
-        "enabled": true,
-        "server_name": "node43.lmdscdn.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PVlnR_I9tZ8hKhOHW6ySpSofhsaShcBQ_JV2-0TePVA",
-          "short_id": "b8abb26d3cfadcfb"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "livestreamcontent"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇭 泰国 (Thailand) 01 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 02 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 03 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 02 - xiaohe"
       ]
     },
     {
@@ -64,8 +39,7 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇭 泰国 (Thailand) 01 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 02 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 03 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,47 +5,44 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: cf.877774.xyz
+  server: 172.64.155.209
   port: 443
   udp: true
   type: vless
-  uuid: 53580685-9d8b-42ca-9b84-c93765d9b952
+  uuid: 55b3fd10-3658-40a2-8951-ec90932d1d30
   tls: true
-  servername: institutes-creativity-cards-affairs.trycloudflare.com
-  skip-cert-verify: true
+  servername: sinavm2.soft10.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vl-53580685
+    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
     headers:
-      Host: institutes-creativity-cards-affairs.trycloudflare.com
+      Host: sinavm2.soft10.ir
 - name: 🌐 其他地区 (Other) 02 - xiaohe
-  server: 104.21.70.21
-  port: 443
+  server: 172.67.187.145
+  port: 80
   udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
-  client-fingerprint: firefox
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /ws
     headers: &id001
-      Host: jp3.yohototo.top
+      Host: vmess.lbw666.dpdns.org
 - name: 🌐 其他地区 (Other) 03 - xiaohe
-  server: 104.21.70.21
-  port: 443
+  server: 172.67.187.145
+  port: 80
   udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
-  client-fingerprint: firefox
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /ws
     headers: *id001
 proxy-groups:
 - name: PROXIES
